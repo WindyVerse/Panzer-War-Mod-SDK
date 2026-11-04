@@ -21,6 +21,8 @@ jobs:
           python-version: '3.12'
       - name: Verify downloaded LFS objects
         run: git lfs fsck
+      - name: Test packaging integrity
+        run: python -m unittest discover -s Tools/tests -v
       - name: Assemble the complete Unity project
         env:
           SDK_TAG: ${{ github.ref_name }}

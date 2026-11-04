@@ -23,4 +23,5 @@ UnityProject/mod.io/
 UnityProject/mods/
 UnityProject/saves/
 UnityProject/Packages/packages-lock.json
+Packages/Sdk/com.shanghaiwindy.middlelayer/RuntimeRes/**/packages/*.meta
 
