@@ -1,51 +1,98 @@
-# Panzer War Mod SDK · 装甲纷争模组工程
+# Panzer War Mod SDK
 
-给模组作者使用的 Unity 工程，包含载具、地图、瞄具、涂装、贴花等示例，以及配套编辑器与运行库。
+**English** | [简体中文](README.zh-CN.md) | [Русский](README.ru.md)
 
-## 下载和打开
+Create your own vehicles, maps, sights, camouflage, decals and more for **Panzer War**. This Unity project includes the modding tools, runtime libraries and example assets you need to get started.
 
-1. 安装 **Unity 2022.3.62f1**。制作 Android 模组时，在 Unity Hub 中额外安装 Android Build Support（含 SDK/NDK 和 OpenJDK）。
-2. 从 [Releases](https://github.com/WindyVerse/Panzer-War-Mod-SDK/releases) 下载 `Panzer-War-Mod-SDK-sdk-*.zip` 并完整解压。
-3. 在 Unity Hub 中添加解压后的 **`UnityProject`** 文件夹。首次打开会下载 Unity 包并导入资源。
-4. 示例位于 `Assets/Template-*`；打包配置位于 `Assets/ModManager`。从示例复制自己的资源后，在模组编辑器里配置并打包。
+[Download the project](https://github.com/WindyVerse/Panzer-War-Mod-SDK/releases/latest) · [Modding documentation](https://doc.game.windyverse.net/)
 
-整个目录需要一起保留：`UnityProject` 通过相对路径引用旁边的 `Packages`。
-发行 ZIP 已包含完整 DLL，不需要额外安装 Git LFS。`SHA256SUMS.txt` 可用于核对下载文件。
+## 1. Install Unity
 
-## 用 Git 获取工程
+Use **Unity 2022.3.62f1**, installed through Unity Hub. Use this exact version when opening the project.
 
-本仓库的 **DLL、原生插件和其他大型二进制资源均使用 Git LFS**。
+To build Android mods, also install **Android Build Support**, including the Android SDK & NDK Tools and OpenJDK modules. You will need the game to test your finished mod.
+
+## 2. Download and open the project
+
+1. Open the [latest release](https://github.com/WindyVerse/Panzer-War-Mod-SDK/releases/latest).
+2. Download **`Panzer-War-Mod-SDK-sdk-*.zip`** from Assets and extract the entire archive.
+3. In Unity Hub, add the extracted **`UnityProject`** folder and open it with Unity 2022.3.62f1.
+4. Let Unity finish downloading packages, importing assets and compiling scripts. The first import takes longer than later launches.
+
+Keep `UnityProject` and `Packages` together in their original layout. The project references the neighboring `Packages` folder; copying only `UnityProject` will leave dependencies missing.
+
+The release ZIP contains the actual DLLs and local dependencies, so **Git and Git LFS are not required** for this download. Choose the named project ZIP rather than GitHub's automatically generated **Source code (zip)**, which may contain LFS pointers instead of binary files.
+
+## 3. Build your first mod
+
+Start by building the included vehicle template before changing its assets. Paths beginning with `Assets/` below are relative to `UnityProject`.
+
+1. Open **File → Build Settings**. For a Windows mod, select **PC, Mac & Linux Standalone**, choose Windows and the x86_64 architecture, then switch platform if necessary. For Android, select Android and switch platform.
+2. In the Project window, select `Assets/ModManager/BuildPipline-Template-Vehicle.asset`.
+3. In its Inspector, click **Build Linked Objects to AssetBundle** and wait for the resource build to finish.
+4. Select `Assets/ModManager/Template-Blank-Vehicle.asset`, the mod package linked to that pipeline.
+5. Click **Package Mod Now**. The editor opens the output folder when packaging finishes.
+6. Install the generated `.modpack` in the game using the [mod installation guide](https://doc.game.windyverse.net/manual/gameplay/64310317e9947d97.html), then test it in the garage and in battle.
+
+For the Windows vehicle example, the output is under:
+
+```text
+UnityProject/Build/Mod-Package/StandaloneWindows64/Template-Blank-Vehicle/
+```
+
+**Build separately for each target platform.** After changing assets or switching platforms, rebuild the linked objects before packaging again. A Windows mod package cannot be used as an Android package.
+
+To try the map example, use `BuildPipline-Template-Blank.asset` and its linked package `Template-Blank-Scene.asset` in the same `Assets/ModManager` folder.
+
+## 4. Create your own content
+
+Use the [modding documentation](https://doc.game.windyverse.net/) for the full creation and publishing workflows. Start with the matching example:
+
+| Content | Example assets |
+| --- | --- |
+| Vehicles | `Assets/Template-Vehicle` |
+| Maps | `Assets/Template-Scene` |
+| Sights | `Assets/Template-UserSight` |
+| Camouflage | `Assets/Template-Camo` |
+| Decals | `Assets/Template-Decal` |
+| Voice packs | `Assets/Template-VoicePack` |
+
+Keep your own content in a separate folder under `Assets`. Create your own mod package and build pipeline using the examples as a reference, assign unique mod identifiers, and update the name, author, description and linked assets before sharing your mod. Keep those identifiers stable when releasing updates.
+
+Set personal game paths and optional output-copy destinations in the editor's configuration tools. Personal settings are saved in `UnityProject/Assets/EditorStorage.json`; they do not need to be shared with other creators.
+
+The bundled `Tutorials` folder contains older reference material. Some screenshots, download links and Unity versions there are outdated; use this README for installing this project and the documentation website for current guides.
+
+## Get the project with Git instead
+
+Install Git and Git LFS, then run:
 
 ```bash
 git lfs install
 git clone https://github.com/WindyVerse/Panzer-War-Mod-SDK.git
 cd Panzer-War-Mod-SDK
 git lfs pull
-python Tools/project.py check
 ```
 
-若 Unity 提示 DLL 格式无效，先确认已安装 Git LFS 并完成 `git lfs pull`。
-网页默认生成的 `Source code.zip` 可能只有 LFS 指针；请优先使用 Release 中命名完整的发行 ZIP。
+Then open `UnityProject` in Unity Hub. DLLs and other binary assets use **Git LFS**; the LFS download must finish before opening Unity.
 
-## 个人设置和升级
+## Troubleshooting
 
-首次运行从 `UnityProject/EditorStorage.template.json` 读取默认设置。游戏路径、账号和复制目的地在编辑器中设置，个人配置写入被 Git 忽略的 `Assets/EditorStorage.json`。
+| Problem | What to check |
+| --- | --- |
+| Invalid DLL, missing plugin or a tiny text file where a DLL should be | For a Git checkout, run `git lfs pull`. For a ZIP download, use the named release ZIP, not Source code (zip). |
+| Local packages cannot be found | Keep the full extracted directory and its original `UnityProject` / `Packages` layout. |
+| Missing build cache when packaging | Build the pipeline's linked objects first, for the currently selected platform. |
+| The game cannot load the mod | Check that the package targets your game's platform, then follow the installation guide above. |
+| Errors on first opening the project | Confirm Unity 2022.3.62f1, let imports finish, then check the first relevant error in the Console. |
 
-升级时下载并解压到新目录，再迁移自己的模组资源和对应 `.meta` 文件。保留资源 GUID；不要把旧版 SDK 覆盖到新版目录上。
+For an unresolved issue, include your SDK release version, Unity version, target platform and relevant Console error when [reporting it](https://github.com/WindyVerse/Panzer-War-Mod-SDK/issues).
 
-教程：[装甲纷争模组开发文档](https://www.yuque.com/chaojiduolajiang/panzerwar/abep3y)。`Tutorials` 中保留了原工程的参考资料；旧截图与当前编辑器可能存在差异。
+## Updating the SDK
 
-## 维护与发行
+Back up your work, extract the new release into a **new folder**, and migrate your own assets together with their `.meta` files, mod packages and build pipelines. Preserve existing asset references and mod identifiers. Reapply your personal settings as needed, then rebuild and test your mods. Avoid copying the old SDK's `Packages` folder over the new one.
 
-- `sdk-source.json` 记录工程所用 SDK 的源提交与 Unity 版本。
-- `Packages/Sdk` 与列入 `Tools/project.py` 的共享工具由官方 SDK 同步；用户模板在本仓库维护。
-- 私有客户端仓库的 **Publish mod SDK project** 工作流同步选定的官方 SDK、导入工程并实际打包示例载具和地图。成功后推送工程提交和 `sdk-YYYY.MM.DD.N` 标签。
-- 标签触发本仓库的 **Release SDK project**：下载 LFS 原文件，校验内容，生成完整 ZIP、SHA-256 校验文件和版本清单，再发布 Release。
-- 常规提交和 PR 只运行静态检查，不接触 Unity 授权。只有通过私有构建流程的版本才应打发行标签。
+## License
 
-本地检查：`python Tools/project.py check`。发行脚本测试：`python -m unittest discover -s Tools/tests -v`。
-
-## 许可
-
-保留原工程的 `LICENSE`。第三方插件和资源保留各自随附的许可与声明，仓库许可证不替代它们的使用条款。
+See [LICENSE](LICENSE). Third-party plugins and assets retain their own licenses and notices.
 
