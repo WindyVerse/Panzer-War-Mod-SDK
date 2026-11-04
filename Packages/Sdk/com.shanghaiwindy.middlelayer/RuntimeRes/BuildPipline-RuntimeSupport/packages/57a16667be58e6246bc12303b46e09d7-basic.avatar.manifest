@@ -1,0 +1,22 @@
+ManifestFileVersion: 0
+CRC: 739664541
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 126e7b051c8a44e2ed3fea2c9b290024
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 2d8df09e698f722ada1caa03d3413830
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 126e7b051c8a44e2ed3fea2c9b290024
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Packages/com.shanghaiwindy.coreresources/Crew/KujouTsubaki/Casual-Avatar.png
+Dependencies: []

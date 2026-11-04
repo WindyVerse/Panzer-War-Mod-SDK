@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1393852707, guid: 0512a3c011ce1c84db3d9ccc1f4d6d2e, type: 3}
+  m_Name: TSH-2B32
+  m_EditorClassIdentifier: 
+  comment: "SH-2B32\u578B\u663C\u95F4\u70AE\u957F\u955C  T-54/55\u7684\u65E9\u671F\u663C\u95F4\u70AE\u957F\u955C\uFF0C\u671B\u8FDC\u5F0F\u70AE\u957F\u955C\uFF0C\u524D\u90E8\u5B89\u88C5\u4E8E\u70AE\u5854\u5DE6\u4FA7\u524D\u90E8\u5F00\u53E3\u5904\uFF0C\u58F3\u4F53\u5DE6\u4FA7\u7684\u8F6C\u6362\u6746\u7528\u4E8E\u9009\u62E93.5x\u62167x\u653E\u5927\u500D\u7387\u3002"
+  zoomName:
+    isLocalizeTable: 0
+    defaultName: TSH-2B32
+    items: []
+    localizeTableKey: 
+  minRatio: 3.5
+  maxRatio: 7
+  isVisionOverride: 0
+  isThermalVision: 1

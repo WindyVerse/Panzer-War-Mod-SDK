@@ -1,0 +1,22 @@
+ManifestFileVersion: 0
+CRC: 1076311625
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 5c2451e9d925d8fe0f4bd94598020722
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 923768aebf385ad86f7762daa8034951
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 5c2451e9d925d8fe0f4bd94598020722
+HashAppended: 0
+ClassTypes:
+- Class: 213
+  Script: {instanceID: 0}
+- Class: 687078895
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Packages/com.shanghaiwindy.coreresources/Flags/Countries/nz.png
+Dependencies: []

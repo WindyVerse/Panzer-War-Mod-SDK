@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 438321784, guid: 0512a3c011ce1c84db3d9ccc1f4d6d2e, type: 3}
+  m_Name: AnimBakerProject
+  m_EditorClassIdentifier: 
+  characterPrefab: {fileID: -1728013695380148634, guid: 046cf337e20f440d8b291b52dcced5db,
+    type: 3}
+  outputDir: Packages/com.shanghaiwindy.middlelayer/FPS/
+  categories:
+  - P3CommonAnimation/Clips
+  compression: 1
+  overlays:
+  - {fileID: 11400000, guid: 7a1b2c3d4e5f6071829300000000a001, type: 2}
+  - {fileID: 11400000, guid: b936badc3ee88c2459e430372d9c4eaf, type: 2}
+  - {fileID: 11400000, guid: 05dd81733831e14468fc2eeadf5fda36, type: 2}
+  - {fileID: 11400000, guid: b4d45b94032527142b1a6c3a27893ed1, type: 2}
+  - {fileID: 11400000, guid: 4bfcde1f920a9af4a9346b1c59d9a6d8, type: 2}

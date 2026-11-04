@@ -1,0 +1,20 @@
+fileFormatVersion: 2
+guid: 65a4d0dc93d5413d8c8da15efd88bcca
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 716516760, guid: d3c021ef3534d634db63571efb758943, type: 3}
+  template: {instanceID: 0}
+  settings:
+    shaderName: 
+    hidden: 0
+    type: 0
+    autoIntegration: 1
+    fogIntegration: 1
+    lightCookies: 0
+    customIncludeDirectives: []
+  dependencies: []

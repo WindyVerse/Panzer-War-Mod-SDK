@@ -1,0 +1,20 @@
+ManifestFileVersion: 0
+CRC: 1822629251
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 00735f9c6f1f577d12fcc30598aa8e2d
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 2612ac43db082a73502ee80f2eceb73f
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 00735f9c6f1f577d12fcc30598aa8e2d
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Packages/com.shanghaiwindy.coreresources/VFX/Muzzle/Textures/fire_muzzle_2x4.png
+Dependencies: []

@@ -1,0 +1,20 @@
+ManifestFileVersion: 0
+CRC: 1102290555
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 7a7d61c36e7e6bd2aae1e9338c4959b0
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 2612ac43db082a73502ee80f2eceb73f
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 7a7d61c36e7e6bd2aae1e9338c4959b0
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Packages/com.shanghaiwindy.coreresources/Decals/geo/projection_decal_09.png
+Dependencies: []

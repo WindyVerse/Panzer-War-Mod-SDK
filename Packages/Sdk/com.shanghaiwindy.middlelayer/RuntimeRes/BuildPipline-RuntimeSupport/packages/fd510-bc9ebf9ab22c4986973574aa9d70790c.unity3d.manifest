@@ -1,0 +1,22 @@
+ManifestFileVersion: 0
+CRC: 3823812502
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 006b7f422b8b7014a8dd88f753dbf1a8
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 923768aebf385ad86f7762daa8034951
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 006b7f422b8b7014a8dd88f753dbf1a8
+HashAppended: 0
+ClassTypes:
+- Class: 213
+  Script: {instanceID: 0}
+- Class: 687078895
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Packages/com.shanghaiwindy.coreresources/GUI/Common/Prefab/Icons/GarageV2/TechTree.png
+Dependencies: []

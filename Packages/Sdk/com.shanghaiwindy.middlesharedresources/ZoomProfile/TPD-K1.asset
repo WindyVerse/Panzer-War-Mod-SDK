@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1393852707, guid: 0512a3c011ce1c84db3d9ccc1f4d6d2e, type: 3}
+  m_Name: TPD-K1
+  m_EditorClassIdentifier: 
+  comment: "TPD-K1\u662F\u82CF\u8054\u81EA1970\u5E74\u4EE3\u540E\u671F\u5F00\u59CB\u5E7F\u6CDB\u4F7F\u7528\u5728\u5766\u514B\u4E0A\u7684\u4E3B\u8981\u5C04\u624B\u7784\u51C6\u4EEA\uFF08Primary
+    Gunner Sight, PGS\uFF09\uFF0C\u914D\u5907\u5728T-64\uFF0FT-72\uFF0FT-80\u4E3B\u6218\u5766\u514B\u4E0A\uFF0C\u5B83\u7684\u6539\u826F\u578B\u662F\u5177\u6709\u524D\u7F6E\u91CF\u8BA1\u7B97\u529F\u80FD\u76841A40\u4E0E\u5177\u6709\u5BFC\u5F39\u63A7\u5236\u5957\u4EF6\u76841A40-1\u3002TPD-K1\u5177\u6709\u72EC\u7ACB\u7684\u5782\u76F4\u8F74\u7A33\u5B9A\uFF0C\u5185\u5EFA\u6FC0\u5149\u6D4B\u8DDD\u4EEA\u4EE5\u53CA\u7B80\u6613\u7684\u5F39\u9053\u3001\u8DDD\u79BB\u4FEE\u6B63\u529F\u80FD\uFF0C\u5728\u82CF\u8054\u89E3\u4F53\u540E\u56E0\u4E3A\u6027\u80FD\u843D\u4F0D\u6240\u4EE5\u88AB\u66F4\u5148\u8FDB\u7684\u7784\u51C6\u4EEA\u59821G46\u53D6\u4EE3\uFF0C\u6216\u662F\u88AB\u52A0\u4EE5\u6539\u826F\u5E76\u4E14\u642D\u914D\u70ED\u5F71\u50CF\u4EEA\u4E0E\u65B0\u5F0F\u5F39\u9053\u8BA1\u7B97\u673A\u6A21\u7EC4\u4EE5\u63D0\u5347\u6027\u80FD\u8868\u73B0\u3002"
+  zoomName:
+    isLocalizeTable: 0
+    defaultName: TPD-K1
+    items: []
+    localizeTableKey: 
+  minRatio: 3.5
+  maxRatio: 8
+  isVisionOverride: 0
+  isThermalVision: 1

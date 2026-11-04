@@ -1,0 +1,30 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements">
+    <Style src="../GameTheme.uss" />
+    <Style src="LoadingPanel.uss" />
+
+    <ui:VisualElement name="gen_Root" class="ld-root">
+        <!-- Background image + dark overlay -->
+        <ui:VisualElement name="gen_Background" class="ld-bg" />
+        <ui:VisualElement name="gen_BackgroundOverlay" class="ld-bg-overlay" />
+
+        <!-- Center content -->
+        <ui:VisualElement class="ld-center">
+            <!-- Spinner -->
+            <ui:VisualElement name="gen_Spinner" class="ld-spinner">
+                <ui:VisualElement class="ld-spinner-arc" />
+            </ui:VisualElement>
+
+            <!-- Status text (e.g. "Loading maps...  45%") -->
+            <ui:Label name="gen_StatusLabel" class="ld-status" />
+
+            <!-- Detail text (resource file names, non-supervised only) -->
+            <ui:Label name="gen_DetailLabel" class="ld-detail" />
+
+            <!-- Random game advice -->
+            <ui:Label name="gen_AdviceLabel" class="ld-advice" />
+        </ui:VisualElement>
+
+        <!-- Debug log (bottom-left, non-supervised only) -->
+        <ui:Label name="gen_LogLabel" class="ld-log" />
+    </ui:VisualElement>
+</ui:UXML>

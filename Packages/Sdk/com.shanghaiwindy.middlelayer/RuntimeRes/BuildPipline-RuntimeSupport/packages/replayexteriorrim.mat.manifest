@@ -1,0 +1,22 @@
+ManifestFileVersion: 0
+CRC: 2320428624
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: c22068cefc90f4e89c62dc01ab817baa
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 5e762ccb57c4caaabbb5a4199ac82c23
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: c22068cefc90f4e89c62dc01ab817baa
+HashAppended: 0
+ClassTypes:
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Packages/com.shanghaiwindy.coreresources/Shader/DamageReplay/ReplayExteriorRimMat.mat
+Dependencies: []

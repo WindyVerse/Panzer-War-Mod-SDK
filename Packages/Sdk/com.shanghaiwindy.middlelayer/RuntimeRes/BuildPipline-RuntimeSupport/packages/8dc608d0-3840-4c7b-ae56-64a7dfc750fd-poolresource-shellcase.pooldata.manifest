@@ -1,0 +1,71 @@
+ManifestFileVersion: 0
+CRC: 2280402702
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 4e72c13dfbdf25318b122e6cd01f3c6c
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: d18c768e342e82ea51a98f1ece2244c5
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 4e72c13dfbdf25318b122e6cd01f3c6c
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 34d6e281874c61b4599024dcd49c3e2e, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 89e9ea64bf9c8254d9844adadde27b8e, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: ca7e7767cca2b6940b59ea0e88e8f0e7, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 31829bec55f164345b28e01d08d3beb9, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 198
+  Script: {instanceID: 0}
+- Class: 199
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers:
+- AssemblyName: Core
+  ClassName: ShanghaiWindy.Core.FmodPlayComponent/PlayParm
+- AssemblyName: Core
+  ClassName: ShanghaiWindy.Core.LocalizedName
+- AssemblyName: Core
+  ClassName: ShanghaiWindy.Core.SpawnRes
+- AssemblyName: FMODUnity
+  ClassName: FMOD.GUID
+- AssemblyName: FMODUnity
+  ClassName: FMODUnity.EventReference
+- AssemblyName: GameFramework.Runtime
+  ClassName: ShanghaiWindy.Core.ItemLocalizedName
+Assets:
+- Packages/com.shanghaiwindy.coreresources/Pool/PoolResource/PoolResource-ShellCase.asset
+Dependencies:
+- C:/github/workspace/Projects/DE/Build/Mod-BuildPipline/StandaloneWindows64/BuildPipline-RuntimeSupport/packages/fd510-080dcc3899515794e84c375b789fd11f.unity3d
+- C:/github/workspace/Projects/DE/Build/Mod-BuildPipline/StandaloneWindows64/BuildPipline-RuntimeSupport/packages/fd510-1555e5885569e264b939e4ab2386465f.unity3d
+- C:/github/workspace/Projects/DE/Build/Mod-BuildPipline/StandaloneWindows64/BuildPipline-RuntimeSupport/packages/fd510-22804bab77497d4499dfb9b0197025d3.unity3d
+- C:/github/workspace/Projects/DE/Build/Mod-BuildPipline/StandaloneWindows64/BuildPipline-RuntimeSupport/packages/fd510-354e2c40b5e799344a9ee9e2ff092fbf.unity3d
+- C:/github/workspace/Projects/DE/Build/Mod-BuildPipline/StandaloneWindows64/BuildPipline-RuntimeSupport/packages/fd510-39720adc1cc2953429e43e2f1bd0e535.unity3d
+- C:/github/workspace/Projects/DE/Build/Mod-BuildPipline/StandaloneWindows64/BuildPipline-RuntimeSupport/packages/fd510-89703cb4ca6f87943acb1ac33492f2cf.unity3d
+- C:/github/workspace/Projects/DE/Build/Mod-BuildPipline/StandaloneWindows64/BuildPipline-RuntimeSupport/packages/fd510-89fffecf02125fe4dbb9c7489ce0f6b0.unity3d
+- C:/github/workspace/Projects/DE/Build/Mod-BuildPipline/StandaloneWindows64/BuildPipline-RuntimeSupport/packages/fd510-8f0ca2fef2bfe0a4a8adaa2910b9ccf2.unity3d
+- C:/github/workspace/Projects/DE/Build/Mod-BuildPipline/StandaloneWindows64/BuildPipline-RuntimeSupport/packages/fd510-a89e181458ffba4458d17e3a33164485.unity3d
+- C:/github/workspace/Projects/DE/Build/Mod-BuildPipline/StandaloneWindows64/BuildPipline-RuntimeSupport/packages/fd510-ad015fae7c3677948aaf1df3a307da78.unity3d
+- C:/github/workspace/Projects/DE/Build/Mod-BuildPipline/StandaloneWindows64/BuildPipline-RuntimeSupport/packages/fd510-c0c292dce8a2cbe4496bbfd8cfb15831.unity3d
+- C:/github/workspace/Projects/DE/Build/Mod-BuildPipline/StandaloneWindows64/BuildPipline-RuntimeSupport/packages/fd510-cbd3b6ef77be95344812e82f4c4c54e1.unity3d
+- C:/github/workspace/Projects/DE/Build/Mod-BuildPipline/StandaloneWindows64/BuildPipline-RuntimeSupport/packages/fd510-f3ca150b38523464a8046887e23edfc6.unity3d
+- C:/github/workspace/Projects/DE/Build/Mod-BuildPipline/StandaloneWindows64/BuildPipline-RuntimeSupport/packages/fd510-f68f5154414d0084bb7d04370e85a817.unity3d
+- C:/github/workspace/Projects/DE/Build/Mod-BuildPipline/StandaloneWindows64/BuildPipline-RuntimeSupport/packages/fd510d96-3761-4c83-940e-67083716ae45-svc.shader

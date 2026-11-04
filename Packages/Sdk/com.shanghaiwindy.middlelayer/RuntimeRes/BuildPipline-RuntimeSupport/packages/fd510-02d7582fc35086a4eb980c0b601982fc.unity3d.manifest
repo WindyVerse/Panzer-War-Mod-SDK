@@ -1,0 +1,22 @@
+ManifestFileVersion: 0
+CRC: 1171173740
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: f89cd5737a4ce0273ae14ead0770ccd1
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 923768aebf385ad86f7762daa8034951
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: f89cd5737a4ce0273ae14ead0770ccd1
+HashAppended: 0
+ClassTypes:
+- Class: 213
+  Script: {instanceID: 0}
+- Class: 687078895
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Packages/com.shanghaiwindy.coreresources/Flags/Countries/lv.png
+Dependencies: []

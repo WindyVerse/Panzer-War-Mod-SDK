@@ -1,0 +1,22 @@
+ManifestFileVersion: 0
+CRC: 123564983
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 6ca0ce55a087bd1df713b474f2697948
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 923768aebf385ad86f7762daa8034951
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 6ca0ce55a087bd1df713b474f2697948
+HashAppended: 0
+ClassTypes:
+- Class: 213
+  Script: {instanceID: 0}
+- Class: 687078895
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Packages/com.shanghaiwindy.coreresources/BulletIcon/LASER.png
+Dependencies: []

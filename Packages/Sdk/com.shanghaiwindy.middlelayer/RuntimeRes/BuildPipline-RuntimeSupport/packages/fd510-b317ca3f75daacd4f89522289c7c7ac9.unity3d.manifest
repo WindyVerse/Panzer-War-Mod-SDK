@@ -1,0 +1,20 @@
+ManifestFileVersion: 0
+CRC: 4283541513
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 011b2a911ce0845179f5af7d31102579
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 2612ac43db082a73502ee80f2eceb73f
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 011b2a911ce0845179f5af7d31102579
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Packages/com.shanghaiwindy.coreresources/Skill/Altius-U/mat_Altius_Hull_MaskMap.png
+Dependencies: []

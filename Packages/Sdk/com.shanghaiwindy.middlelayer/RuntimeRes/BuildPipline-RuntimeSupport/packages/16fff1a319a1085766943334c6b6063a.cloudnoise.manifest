@@ -1,0 +1,20 @@
+ManifestFileVersion: 0
+CRC: 1981837022
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: f024ab118411ded8d80d373f473fa06c
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: e4eae1b20857bcc286a48eae81f3ecb5
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: f024ab118411ded8d80d373f473fa06c
+HashAppended: 0
+ClassTypes:
+- Class: 117
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Packages/com.shanghaiwindy.coreresources/Weather/CloudVariants/Noise/Worley_8x8_o5_s2_m0p5_3d.png
+Dependencies: []

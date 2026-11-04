@@ -1,0 +1,22 @@
+ManifestFileVersion: 0
+CRC: 237747820
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 5b6d3c582580e49299f82be139226e14
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 923768aebf385ad86f7762daa8034951
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 5b6d3c582580e49299f82be139226e14
+HashAppended: 0
+ClassTypes:
+- Class: 213
+  Script: {instanceID: 0}
+- Class: 687078895
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Packages/com.shanghaiwindy.coreresources/Flags/Countries/frg.png
+Dependencies: []

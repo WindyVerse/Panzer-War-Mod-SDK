@@ -1,0 +1,38 @@
+ManifestFileVersion: 0
+CRC: 790685617
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 9022e88f3487eb9bb71e7d11a103fbb0
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 96760e04de6033d07934fe44a6c99c53
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 9022e88f3487eb9bb71e7d11a103fbb0
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: c4fba027ec113b845add57ee23fe8e1e, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 30e1dfd3c6ab19b43b1cc4a3400d8a38, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers:
+- AssemblyName: Core
+  ClassName: ShanghaiWindy.Core.LocalizedName
+- AssemblyName: Core
+  ClassName: ShanghaiWindy.Core.MapData/BuildInfo
+- AssemblyName: Core
+  ClassName: ShanghaiWindy.Core.MiniMapBatch
+- AssemblyName: GameFramework.Runtime
+  ClassName: ShanghaiWindy.Core.Data.AssetProp
+- AssemblyName: GameFramework.Runtime
+  ClassName: ShanghaiWindy.Core.ItemLocalizedName
+Assets:
+- Packages/com.shanghaiwindy.urpresources/Main/Maps/DefaultMap/PrototypeMap.asset
+Dependencies: []

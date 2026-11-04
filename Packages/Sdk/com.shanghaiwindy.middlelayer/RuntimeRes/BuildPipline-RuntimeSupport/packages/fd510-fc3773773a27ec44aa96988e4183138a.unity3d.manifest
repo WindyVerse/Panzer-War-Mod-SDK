@@ -1,0 +1,20 @@
+ManifestFileVersion: 0
+CRC: 1519441452
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 6d7659cfa71fdf032f8cd36331705d01
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 2612ac43db082a73502ee80f2eceb73f
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 6d7659cfa71fdf032f8cd36331705d01
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Packages/com.shanghaiwindy.coreresources/VFX/_Shared/Textures/Trail/trail_fire_streak.tga
+Dependencies: []

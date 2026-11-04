@@ -1,0 +1,15 @@
+{
+    "name": "com.windyverse.urp.water",
+    "version": "1.0.0",
+    "displayName": "Urp Water",
+    "description": "Complied Water",
+    "unity": "2022.3",
+    "unityRelease": "21f1",
+    "hideInEditor": false,
+    "author": {
+        "name": "Wave Harmonic",
+        "email": "support@waveharmonic.com",
+        "url": "https://waveharmonic.com/"
+    },
+    "keywords": []
+}

@@ -1,0 +1,20 @@
+ManifestFileVersion: 0
+CRC: 3811034443
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 87464d70e2bc988e1fa908e901264cbd
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 2612ac43db082a73502ee80f2eceb73f
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 87464d70e2bc988e1fa908e901264cbd
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Packages/com.shanghaiwindy.coreresources/Skill/EnergyShield/Textures/HologramStripes4.png
+Dependencies: []

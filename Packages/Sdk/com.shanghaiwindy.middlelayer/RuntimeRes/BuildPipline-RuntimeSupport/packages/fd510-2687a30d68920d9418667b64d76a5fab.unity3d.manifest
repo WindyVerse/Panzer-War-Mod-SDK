@@ -1,0 +1,26 @@
+ManifestFileVersion: 0
+CRC: 2906985180
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 785e99153066d0be3946485d16518985
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: b30fce1a9ad74efb72be6c308c56e365
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 785e99153066d0be3946485d16518985
+HashAppended: 0
+ClassTypes:
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Packages/com.shanghaiwindy.coreresources/VFX/_Shared/Materials/debris_stone.mat
+Dependencies:
+- C:/github/workspace/Projects/DE/Build/Mod-BuildPipline/StandaloneWindows64/BuildPipline-RuntimeSupport/packages/fd510-66a3f4188e734d947a4c6a47225252f9.unity3d
+- C:/github/workspace/Projects/DE/Build/Mod-BuildPipline/StandaloneWindows64/BuildPipline-RuntimeSupport/packages/fd510d96-3761-4c83-940e-67083716ae45-svc.shader

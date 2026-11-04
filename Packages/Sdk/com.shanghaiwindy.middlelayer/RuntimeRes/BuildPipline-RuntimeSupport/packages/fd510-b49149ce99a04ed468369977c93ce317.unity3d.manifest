@@ -1,0 +1,22 @@
+ManifestFileVersion: 0
+CRC: 1132046309
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 590a9b68d6a3291823a7b906fee60245
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 923768aebf385ad86f7762daa8034951
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 590a9b68d6a3291823a7b906fee60245
+HashAppended: 0
+ClassTypes:
+- Class: 213
+  Script: {instanceID: 0}
+- Class: 687078895
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Packages/com.shanghaiwindy.coreresources/GUI/Common/Prefab/Icons/PlayerUI/Trailer.png
+Dependencies: []

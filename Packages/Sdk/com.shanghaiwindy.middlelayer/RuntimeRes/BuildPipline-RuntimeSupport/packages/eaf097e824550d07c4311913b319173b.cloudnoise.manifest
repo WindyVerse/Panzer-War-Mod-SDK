@@ -1,0 +1,20 @@
+ManifestFileVersion: 0
+CRC: 3369576769
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: f1cac426856c5d9795ab1b38b8988265
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 2612ac43db082a73502ee80f2eceb73f
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: f1cac426856c5d9795ab1b38b8988265
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Packages/com.shanghaiwindy.coreresources/Weather/CloudVariants/Noise/Value_4x16_o6_s2_m0p25_2d.png
+Dependencies: []

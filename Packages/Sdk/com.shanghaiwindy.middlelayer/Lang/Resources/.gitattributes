@@ -1,0 +1,3 @@
+# Tools/mcp-localization writes these with LF. Keep the working tree LF whatever
+# core.autocrlf says, so loc_build is idempotent in every clone.
+Lang_*.txt text eol=lf

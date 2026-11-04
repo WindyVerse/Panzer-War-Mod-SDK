@@ -1,0 +1,20 @@
+ManifestFileVersion: 0
+CRC: 924251623
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: ffa6b71800a60aae64aac0da98cca0d7
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 0df1dec30b5d061d422d3e6493d27647
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: ffa6b71800a60aae64aac0da98cca0d7
+HashAppended: 0
+ClassTypes:
+- Class: 48
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Packages/com.shanghaiwindy.coreresources/Shader/Gizmo/InfiniteGrid.windyshader
+Dependencies: []

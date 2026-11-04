@@ -1,0 +1,41 @@
+ManifestFileVersion: 0
+CRC: 1606301947
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 4d2136d8d1fec63cbeb5753b053c23a6
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 9600116c7a96b5581f39d4221ed6aa9c
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 4d2136d8d1fec63cbeb5753b053c23a6
+HashAppended: 0
+ClassTypes:
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 89
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: e1943b9c5459a3743a72a611758cb8da, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: b29f1df1e9be25f489dec639160620ee, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 02090ecc0b73f4642b97ab31dfb302d7, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers:
+- AssemblyName: Core
+  ClassName: ShanghaiWindy.Core.CloudVariantEntry
+- AssemblyName: FMODUnity
+  ClassName: FMOD.GUID
+- AssemblyName: FMODUnity
+  ClassName: FMODUnity.EventReference
+Assets:
+- Packages/com.shanghaiwindy.coreresources/Weather/Profiles/WeatherCatalog.asset
+Dependencies:
+- C:/github/workspace/Projects/DE/Build/Mod-BuildPipline/StandaloneWindows64/BuildPipline-RuntimeSupport/packages/fd510d96-3761-4c83-940e-67083716ae45-svc.shader

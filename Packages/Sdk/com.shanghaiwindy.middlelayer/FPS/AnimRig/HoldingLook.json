@@ -1,0 +1,47 @@
+{
+  "checks": { "maxHeadForwardAngle": 5, "maxReach": 0.99 },
+  "tracks": {
+    "neck": {
+      "keys": [
+        {
+          "at": "start",
+          "target": [
+            0,
+            1.4,
+            10
+          ],
+          "weight": 0.5
+        },
+        {
+          "at": "end",
+          "target": [
+            0,
+            1.4,
+            10
+          ],
+          "weight": 0.5
+        }
+      ]
+    },
+    "head": {
+      "keys": [
+        {
+          "at": "start",
+          "target": [
+            0,
+            1.45,
+            10
+          ]
+        },
+        {
+          "at": "end",
+          "target": [
+            0,
+            1.45,
+            10
+          ]
+        }
+      ]
+    }
+  }
+}

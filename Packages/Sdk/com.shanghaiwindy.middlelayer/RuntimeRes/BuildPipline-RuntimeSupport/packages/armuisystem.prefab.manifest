@@ -1,0 +1,109 @@
+ManifestFileVersion: 0
+CRC: 4059267404
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 5995b9252afc8bb114d239badcba480b
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 0c51dfb2141e9b67509a70837e6819c8
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 5995b9252afc8bb114d239badcba480b
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 9c504a3b9f1a07c42855ea8eed1770c9, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: b0ee8d79bbab14d439f2a9ca8384f18a, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 98589f945248fe34096004ac1994dfb1, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: cfabb0440166ab443bba8876756fdfa9, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 6c46a99a67cb82d45bcfd266571dbeae, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 326e19cccd0343e39b7411187cbcc0f1, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 5b5b2419fda0e47618d50b41ff7d32a7, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 3ccf7863ee4f43d7a811e07139891fa5, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 128
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+- Class: 222
+  Script: {instanceID: 0}
+- Class: 223
+  Script: {instanceID: 0}
+- Class: 224
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers:
+- AssemblyName: UnityEngine.CoreModule
+  ClassName: UnityEngine.Events.PersistentCallGroup
+- AssemblyName: UnityEngine.UI
+  ClassName: UnityEngine.UI.AnimationTriggers
+- AssemblyName: UnityEngine.UI
+  ClassName: UnityEngine.UI.Button/ButtonClickedEvent
+- AssemblyName: UnityEngine.UI
+  ClassName: UnityEngine.UI.ColorBlock
+- AssemblyName: UnityEngine.UI
+  ClassName: UnityEngine.UI.FontData
+- AssemblyName: UnityEngine.UI
+  ClassName: UnityEngine.UI.MaskableGraphic/CullStateChangedEvent
+- AssemblyName: UnityEngine.UI
+  ClassName: UnityEngine.UI.Navigation
+- AssemblyName: UnityEngine.UI
+  ClassName: UnityEngine.UI.Slider/SliderEvent
+- AssemblyName: UnityEngine.UI
+  ClassName: UnityEngine.UI.SpriteState
+Assets:
+- Packages/com.shanghaiwindy.coreresources/GUI/Common/Prefab/RuntimePlayerPrefab/ArmUISystem.prefab
+Dependencies:
+- C:/github/workspace/Projects/DE/Build/Mod-BuildPipline/StandaloneWindows64/BuildPipline-RuntimeSupport/packages/fd510-00942c1375a6556c9ca1c00a81916955.unity3d
+- C:/github/workspace/Projects/DE/Build/Mod-BuildPipline/StandaloneWindows64/BuildPipline-RuntimeSupport/packages/fd510-0bde03708e275a25964ab6ae1bbdc418.unity3d
+- C:/github/workspace/Projects/DE/Build/Mod-BuildPipline/StandaloneWindows64/BuildPipline-RuntimeSupport/packages/fd510-12ea22c628195f9b80d34f75f0092b8b.unity3d
+- C:/github/workspace/Projects/DE/Build/Mod-BuildPipline/StandaloneWindows64/BuildPipline-RuntimeSupport/packages/fd510-1a9302cf8e6baea4c9d09a0b5931aa69.unity3d
+- C:/github/workspace/Projects/DE/Build/Mod-BuildPipline/StandaloneWindows64/BuildPipline-RuntimeSupport/packages/fd510-1aa41b75b0fa5e29addee5542f31d898.unity3d
+- C:/github/workspace/Projects/DE/Build/Mod-BuildPipline/StandaloneWindows64/BuildPipline-RuntimeSupport/packages/fd510-1d975ca4cf2a443c93cc3400237d2ff4.unity3d
+- C:/github/workspace/Projects/DE/Build/Mod-BuildPipline/StandaloneWindows64/BuildPipline-RuntimeSupport/packages/fd510-3ae0ecfc7f9542d428b38d3d977200b2.unity3d
+- C:/github/workspace/Projects/DE/Build/Mod-BuildPipline/StandaloneWindows64/BuildPipline-RuntimeSupport/packages/fd510-3b48bdb8670b4946b6d6dcf126d51591.unity3d
+- C:/github/workspace/Projects/DE/Build/Mod-BuildPipline/StandaloneWindows64/BuildPipline-RuntimeSupport/packages/fd510-3e4b8956c529fcd48ab4ecaca163d7a0.unity3d
+- C:/github/workspace/Projects/DE/Build/Mod-BuildPipline/StandaloneWindows64/BuildPipline-RuntimeSupport/packages/fd510-479a6b4e368656f29a79c6bd70297495.unity3d
+- C:/github/workspace/Projects/DE/Build/Mod-BuildPipline/StandaloneWindows64/BuildPipline-RuntimeSupport/packages/fd510-5fb53def241354049c28faa544c75f31.unity3d
+- C:/github/workspace/Projects/DE/Build/Mod-BuildPipline/StandaloneWindows64/BuildPipline-RuntimeSupport/packages/fd510-7fac71a084cae0a4ab862c5eba3060a8.unity3d
+- C:/github/workspace/Projects/DE/Build/Mod-BuildPipline/StandaloneWindows64/BuildPipline-RuntimeSupport/packages/fd510-826fd7a326d8505cb61e16b4175cf62d.unity3d
+- C:/github/workspace/Projects/DE/Build/Mod-BuildPipline/StandaloneWindows64/BuildPipline-RuntimeSupport/packages/fd510-93c5deffa36e5462a805809c7884e6c1.unity3d
+- C:/github/workspace/Projects/DE/Build/Mod-BuildPipline/StandaloneWindows64/BuildPipline-RuntimeSupport/packages/fd510-93d0654664315ddfae22f457e2c73335.unity3d
+- C:/github/workspace/Projects/DE/Build/Mod-BuildPipline/StandaloneWindows64/BuildPipline-RuntimeSupport/packages/fd510-b117609eaab877d4da4818715489b8c3.unity3d
+- C:/github/workspace/Projects/DE/Build/Mod-BuildPipline/StandaloneWindows64/BuildPipline-RuntimeSupport/packages/fd510-b21575f47a1c398438544f4ea1510865.unity3d
+- C:/github/workspace/Projects/DE/Build/Mod-BuildPipline/StandaloneWindows64/BuildPipline-RuntimeSupport/packages/fd510-d169c7eb73a241fe9cb499dadc1444a7.unity3d
+- C:/github/workspace/Projects/DE/Build/Mod-BuildPipline/StandaloneWindows64/BuildPipline-RuntimeSupport/packages/fd510-d1d7d07fc2bebdf47a646cf991b727a2.unity3d
+- C:/github/workspace/Projects/DE/Build/Mod-BuildPipline/StandaloneWindows64/BuildPipline-RuntimeSupport/packages/fd510-d498ed7c966c423ca787072e72b55ec5.unity3d
+- C:/github/workspace/Projects/DE/Build/Mod-BuildPipline/StandaloneWindows64/BuildPipline-RuntimeSupport/packages/fd510-d8bb06a982924cd084d5b8fc0a37efbc.unity3d
+- C:/github/workspace/Projects/DE/Build/Mod-BuildPipline/StandaloneWindows64/BuildPipline-RuntimeSupport/packages/fd510-db974815202c5dad9e18151aa6dc063b.unity3d
+- C:/github/workspace/Projects/DE/Build/Mod-BuildPipline/StandaloneWindows64/BuildPipline-RuntimeSupport/packages/fd510-e2c055e556ca551a8f86269a8ec796c0.unity3d
+- C:/github/workspace/Projects/DE/Build/Mod-BuildPipline/StandaloneWindows64/BuildPipline-RuntimeSupport/packages/fd510-ec932e6459e55466ac6bd9e173fcc440.unity3d
+- C:/github/workspace/Projects/DE/Build/Mod-BuildPipline/StandaloneWindows64/BuildPipline-RuntimeSupport/packages/fd510-f87c0e98821d0a04db62053a32ab39b1.unity3d

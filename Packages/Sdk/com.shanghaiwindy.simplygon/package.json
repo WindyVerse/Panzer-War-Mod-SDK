@@ -1,0 +1,17 @@
+{
+  "name": "com.shanghaiwindy.simplygon",
+  "version": "1.0.0",
+  "displayName": "ShanghaiWindy Simplygon",
+  "documentationUrl": "",
+  "changelogUrl": "",
+  "licensesUrl": "",
+  "dependencies": {
+  },
+  "keywords": [],
+  "author": {
+    "name": "ShanghaiWindy",
+    "email": "dev@waroftanks.cn",
+    "url": "https://www.waroftanks.cn"
+  },
+  "type": "library"
+}

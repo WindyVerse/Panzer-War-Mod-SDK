@@ -1,0 +1,43 @@
+ManifestFileVersion: 0
+CRC: 3199010936
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: c62d85c9bcd805c533d853def88278f6
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 1a78b22c0b96f873c7bbbc487754ff38
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: c62d85c9bcd805c533d853def88278f6
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 2288bc936783d8544992d8f9aa543d22, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers:
+- AssemblyName: Core
+  ClassName: ShanghaiWindy.Core.TextureRef
+- AssemblyName: Core
+  ClassName: ShanghaiWindy.Core.TextureRef/Ref
+Assets:
+- Packages/com.shanghaiwindy.coreresources/DIY/Function/HingedHatch/8a1d4c3b5e624f7ab8c92d3e4f5a6b02_pre.prefab
+Dependencies:
+- C:/github/workspace/Projects/DE/Build/Mod-BuildPipline/StandaloneWindows64/BuildPipline-RuntimeSupport/packages/vehicleplaceholder.shader

@@ -1,0 +1,20 @@
+ManifestFileVersion: 0
+CRC: 3432322950
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 10f1cd32da649a98444ab25751edb007
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 2612ac43db082a73502ee80f2eceb73f
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 10f1cd32da649a98444ab25751edb007
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Packages/com.shanghaiwindy.coreresources/Vrm/AvatarCharacter/BritishSoldier/BritishSoldierAvatar.png
+Dependencies: []

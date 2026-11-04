@@ -1,0 +1,22 @@
+ManifestFileVersion: 0
+CRC: 2601713052
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: c576cbbe8fcfd18489093f2d15107326
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 923768aebf385ad86f7762daa8034951
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: c576cbbe8fcfd18489093f2d15107326
+HashAppended: 0
+ClassTypes:
+- Class: 213
+  Script: {instanceID: 0}
+- Class: 687078895
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Packages/com.shanghaiwindy.coreresources/GUI/Common/Prefab/Icons/CombatControls/Desktop/DesktopSlotFill.png
+Dependencies: []

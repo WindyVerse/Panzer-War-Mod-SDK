@@ -1,0 +1,22 @@
+ManifestFileVersion: 0
+CRC: 3372228938
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 00c4158712f9ad566fbbb1e2740c45ae
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 923768aebf385ad86f7762daa8034951
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 00c4158712f9ad566fbbb1e2740c45ae
+HashAppended: 0
+ClassTypes:
+- Class: 213
+  Script: {instanceID: 0}
+- Class: 687078895
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Packages/com.shanghaiwindy.coreresources/GUI/Common/Prefab/Icons/Workshop/Exit.png
+Dependencies: []

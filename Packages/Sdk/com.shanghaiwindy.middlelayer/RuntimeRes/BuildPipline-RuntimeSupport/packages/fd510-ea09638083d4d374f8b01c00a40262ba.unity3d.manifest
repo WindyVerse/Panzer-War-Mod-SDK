@@ -1,0 +1,20 @@
+ManifestFileVersion: 0
+CRC: 2689088289
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: c75ef803333f264c0b0af286be4872a6
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 2612ac43db082a73502ee80f2eceb73f
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: c75ef803333f264c0b0af286be4872a6
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Packages/com.shanghaiwindy.coreresources/VFX/SpecialWeapon/Textures/energy_swirl.tga
+Dependencies: []

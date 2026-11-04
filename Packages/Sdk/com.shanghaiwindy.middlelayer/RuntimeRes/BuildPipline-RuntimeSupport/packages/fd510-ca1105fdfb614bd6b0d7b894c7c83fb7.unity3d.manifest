@@ -1,0 +1,22 @@
+ManifestFileVersion: 0
+CRC: 2622949783
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: ec466eb8ec7cf406f55d203833585f5e
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 923768aebf385ad86f7762daa8034951
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: ec466eb8ec7cf406f55d203833585f5e
+HashAppended: 0
+ClassTypes:
+- Class: 213
+  Script: {instanceID: 0}
+- Class: 687078895
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Packages/com.shanghaiwindy.coreresources/GUI/Common/Prefab/Icons/GarageV2/Physics.png
+Dependencies: []

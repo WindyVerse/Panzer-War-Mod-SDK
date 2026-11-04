@@ -1,0 +1,90 @@
+ManifestFileVersion: 0
+CRC: 2654943784
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 4bf564d8fd58127edefd7e77b8fe7173
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 91a8095161834cfde9fff284c49cc3bb
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 4bf564d8fd58127edefd7e77b8fe7173
+HashAppended: 0
+ClassTypes:
+- Class: 114
+  Script: {fileID: 11995, guid: 0000000000000000e000000000000000, type: 0}
+- Class: 114
+  Script: {fileID: 11998, guid: 0000000000000000e000000000000000, type: 0}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers:
+- AssemblyName: UnityEngine.UIElementsModule
+  ClassName: UnityEngine.UIElements.Button/UxmlFactory
+- AssemblyName: UnityEngine.UIElementsModule
+  ClassName: UnityEngine.UIElements.DropdownField/UxmlFactory
+- AssemblyName: UnityEngine.UIElementsModule
+  ClassName: UnityEngine.UIElements.Label/UxmlFactory
+- AssemblyName: UnityEngine.UIElementsModule
+  ClassName: UnityEngine.UIElements.ScrollView/UxmlFactory
+- AssemblyName: UnityEngine.UIElementsModule
+  ClassName: UnityEngine.UIElements.Slider/UxmlFactory
+- AssemblyName: UnityEngine.UIElementsModule
+  ClassName: UnityEngine.UIElements.StyleComplexSelector
+- AssemblyName: UnityEngine.UIElementsModule
+  ClassName: UnityEngine.UIElements.StyleProperty
+- AssemblyName: UnityEngine.UIElementsModule
+  ClassName: UnityEngine.UIElements.StyleRule
+- AssemblyName: UnityEngine.UIElementsModule
+  ClassName: UnityEngine.UIElements.StyleSelector
+- AssemblyName: UnityEngine.UIElementsModule
+  ClassName: UnityEngine.UIElements.StyleSelectorPart
+- AssemblyName: UnityEngine.UIElementsModule
+  ClassName: UnityEngine.UIElements.StyleSheets.Dimension
+- AssemblyName: UnityEngine.UIElementsModule
+  ClassName: UnityEngine.UIElements.StyleValueHandle
+- AssemblyName: UnityEngine.UIElementsModule
+  ClassName: UnityEngine.UIElements.TemplateAsset
+- AssemblyName: UnityEngine.UIElementsModule
+  ClassName: UnityEngine.UIElements.TextField/UxmlFactory
+- AssemblyName: UnityEngine.UIElementsModule
+  ClassName: UnityEngine.UIElements.Toggle/UxmlFactory
+- AssemblyName: UnityEngine.UIElementsModule
+  ClassName: UnityEngine.UIElements.TreeView/UxmlFactory
+- AssemblyName: UnityEngine.UIElementsModule
+  ClassName: UnityEngine.UIElements.UxmlRootElementFactory
+- AssemblyName: UnityEngine.UIElementsModule
+  ClassName: UnityEngine.UIElements.VisualElement/UxmlFactory
+- AssemblyName: UnityEngine.UIElementsModule
+  ClassName: UnityEngine.UIElements.VisualElementAsset
+- AssemblyName: UnityEngine.UIElementsModule
+  ClassName: UnityEngine.UIElements.VisualTreeAsset/UsingEntry
+Assets:
+- Packages/com.shanghaiwindy.coreresources/GUI/Common/Prefab/Uxml/HistoricalGameMode/HistoricalGameMode.uxml
+Dependencies:
+- C:/github/workspace/Projects/DE/Build/Mod-BuildPipline/StandaloneWindows64/BuildPipline-RuntimeSupport/packages/fd510-00f035be4bd44844d90c97df589a1651.unity3d
+- C:/github/workspace/Projects/DE/Build/Mod-BuildPipline/StandaloneWindows64/BuildPipline-RuntimeSupport/packages/fd510-0b06380b31402d147a4fbcea9f21bcf2.unity3d
+- C:/github/workspace/Projects/DE/Build/Mod-BuildPipline/StandaloneWindows64/BuildPipline-RuntimeSupport/packages/fd510-10c021e71b982ae4facfaa23e9d5ff43.unity3d
+- C:/github/workspace/Projects/DE/Build/Mod-BuildPipline/StandaloneWindows64/BuildPipline-RuntimeSupport/packages/fd510-183a4803bebdd42499ec5f6585c6dc5d.unity3d
+- C:/github/workspace/Projects/DE/Build/Mod-BuildPipline/StandaloneWindows64/BuildPipline-RuntimeSupport/packages/fd510-2c11bc5dd3837544badc516c2e02730a.unity3d
+- C:/github/workspace/Projects/DE/Build/Mod-BuildPipline/StandaloneWindows64/BuildPipline-RuntimeSupport/packages/fd510-3234e4098765fdd45a4989057c99af5f.unity3d
+- C:/github/workspace/Projects/DE/Build/Mod-BuildPipline/StandaloneWindows64/BuildPipline-RuntimeSupport/packages/fd510-3a27d93f0a8ab1146a823a1c0a28f3a0.unity3d
+- C:/github/workspace/Projects/DE/Build/Mod-BuildPipline/StandaloneWindows64/BuildPipline-RuntimeSupport/packages/fd510-3f80f68f0c7cd5d48afd7f6629381250.unity3d
+- C:/github/workspace/Projects/DE/Build/Mod-BuildPipline/StandaloneWindows64/BuildPipline-RuntimeSupport/packages/fd510-4d381332ecb4b4d458da5944377591b1.unity3d
+- C:/github/workspace/Projects/DE/Build/Mod-BuildPipline/StandaloneWindows64/BuildPipline-RuntimeSupport/packages/fd510-59dac2d9814e6b4489026aa2f84ab629.unity3d
+- C:/github/workspace/Projects/DE/Build/Mod-BuildPipline/StandaloneWindows64/BuildPipline-RuntimeSupport/packages/fd510-64e6b2852c2947a40a19bbbcfea14bf3.unity3d
+- C:/github/workspace/Projects/DE/Build/Mod-BuildPipline/StandaloneWindows64/BuildPipline-RuntimeSupport/packages/fd510-6dd0435d8588244408d4ff6895cb4705.unity3d
+- C:/github/workspace/Projects/DE/Build/Mod-BuildPipline/StandaloneWindows64/BuildPipline-RuntimeSupport/packages/fd510-7f571d7ee0c894f49b85d7abded62754.unity3d
+- C:/github/workspace/Projects/DE/Build/Mod-BuildPipline/StandaloneWindows64/BuildPipline-RuntimeSupport/packages/fd510-803f65e5b1960574dbad49954c0fcd94.unity3d
+- C:/github/workspace/Projects/DE/Build/Mod-BuildPipline/StandaloneWindows64/BuildPipline-RuntimeSupport/packages/fd510-8186adda022ec1441adbf36aa9b670b1.unity3d
+- C:/github/workspace/Projects/DE/Build/Mod-BuildPipline/StandaloneWindows64/BuildPipline-RuntimeSupport/packages/fd510-8c15f4abc01a205419b387dfe5471730.unity3d
+- C:/github/workspace/Projects/DE/Build/Mod-BuildPipline/StandaloneWindows64/BuildPipline-RuntimeSupport/packages/fd510-96d2c95ba2388314a960f608df00ed89.unity3d
+- C:/github/workspace/Projects/DE/Build/Mod-BuildPipline/StandaloneWindows64/BuildPipline-RuntimeSupport/packages/fd510-a3330a5b302c721498967b7c99b08ae8.unity3d
+- C:/github/workspace/Projects/DE/Build/Mod-BuildPipline/StandaloneWindows64/BuildPipline-RuntimeSupport/packages/fd510-b51868d9726799641b180bf17fed89de.unity3d
+- C:/github/workspace/Projects/DE/Build/Mod-BuildPipline/StandaloneWindows64/BuildPipline-RuntimeSupport/packages/fd510-b7b18a246d2b10148a89deae7c185184.unity3d
+- C:/github/workspace/Projects/DE/Build/Mod-BuildPipline/StandaloneWindows64/BuildPipline-RuntimeSupport/packages/fd510-bc204f820d7754f4dab188cb3880bd57.unity3d
+- C:/github/workspace/Projects/DE/Build/Mod-BuildPipline/StandaloneWindows64/BuildPipline-RuntimeSupport/packages/fd510-c8e71f611d7627943abebcf3621cae03.unity3d
+- C:/github/workspace/Projects/DE/Build/Mod-BuildPipline/StandaloneWindows64/BuildPipline-RuntimeSupport/packages/fd510-db7ce5398ec219a4ab502acec9cce9bd.unity3d
+- C:/github/workspace/Projects/DE/Build/Mod-BuildPipline/StandaloneWindows64/BuildPipline-RuntimeSupport/packages/fd510-fad91b53a6434dc40aafeb7c69a21302.unity3d

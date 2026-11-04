@@ -1,0 +1,219 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-2749832842616925213
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 2055631538, guid: 0512a3c011ce1c84db3d9ccc1f4d6d2e, type: 3}
+  m_Name: Gr.39 Hl
+  m_EditorClassIdentifier: 
+  comment: 
+  bulletVFX: {fileID: 11400000, guid: 85ea3a1e7c1abb546a32378a357ad755, type: 2}
+  damage: 260
+  velocity: 600
+  gravityDamper: 9.8
+  parabolaType: 0
+  fireRecoil: 120
+  caliber: 88
+  isOverrideLifeTime: 0
+  overrideLifetime: 10
+  maxCapability: 0
+  penetration: 110
+  warHeadMaterial: {fileID: 0}
+  warheadSlope: {fileID: 0}
+  moduleData:
+    explosiveMassEqualTNT: 1100
+    mass: 7.64
+    fuseDelay: 0
+    fuseSensitivity: 10
+  secondaryShatterMaterial: {fileID: 0}
+  canOverpressure: 1
+  overpressurePower: 1
+  velocityDeclineScalingType: 0
+  customVelocityDeclineScaling: 1
+  isDeclineByDistance: 0
+  heatBulletWarhead: 1000
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 359232964, guid: 0512a3c011ce1c84db3d9ccc1f4d6d2e, type: 3}
+  m_Name: 88 mm KwK36
+  m_EditorClassIdentifier: 
+  comment: 
+  tankFireParameter:
+    crosshairPreferType: 0
+    fireState: 0
+    ReloadTime: 8.51
+    isEnableSimpleReloadSound: 1
+    overrideSimpleReloadSound:
+      rid: -2
+    AmmoCount: 60
+    hasSlot: 0
+    slotCount: 0
+    slotDuration: 0
+    canFireUnderWater: 0
+    advanceFireClass:
+      SmallReloadTime: 0
+      LargeReloadTime: 0
+      MaxSmallAmmo: 0
+      disableMegaIcon: 0
+      isEnableSmallReloadSound: 0
+      overrideSmallReloadSound:
+        rid: -2
+      isEnableLargeReloadSound: 0
+      overrideLargeReloadSound:
+        rid: -2
+    drumFire:
+      fireDuration: 0
+      reloadTime: []
+      isEnableDrumReloadSound: 0
+      overrideDrumReloadSound:
+        rid: -2
+      disableMegaIcon: 0
+    energyVFX: {fileID: 0}
+    energyFire:
+      perShotEnergy: 0
+      totalEnergy: 0
+      perShotInterval: 0
+      vfxDuration: 0
+      isEnableEnergyReloadSound: 0
+      overrideEnergyReloadSound:
+        rid: -2
+    dispersion: 0
+    fireSpread:
+      dispersion: 0.34
+      aimTime: 2.5
+      moveSpreadCoff: 0.2
+      traverseSpreadCoff: 0.2
+      gunSpreadCoff: 0.12
+      afterFiredCoff: 4
+      damagedCoff: 2
+    fmodBulletSound: {fileID: 11400000, guid: bcb948413bf423c43abdb6c0e041ad4a, type: 2}
+    bulletData:
+    - {fileID: 2288848403892203283}
+    - {fileID: 2860599914445571479}
+    - {fileID: -2749832842616925213}
+    muzzleFire: 1
+    overrideMuzzleFires: []
+    waveInteractType: 0
+    customWaveInteract:
+      respondTime: 0
+      radius: 0
+      weight: 0
+    fireDymScale: 1
+    fireCycleTime: 0
+    isFireDymIfExtraTurret: 0
+    disableGunAnimation: 0
+    isInRangeFire: 0
+    IsOverrideRangeFireAngle: 0
+    rangeFireAngle: 0
+    isEnableFireGroup: 0
+    fireGroupParm:
+      groupID: 0
+      priority: 0
+      fireMinDelay: 0
+    canBrakeSubFireLoop: 0
+    canFireIfMainClick: 0
+    canFireIfSubClick: 0
+    isEnableSeparateFireButton: 0
+    separateFireType: 0
+    separateFireShortKeyType: 0
+    zoomProfileData: {fileID: 11400000, guid: fd823d4dc67ceba4bbfc80d76a508e9e, type: 2}
+    fireActionData: {fileID: 0}
+    customSightData: {fileID: 11400000, guid: 1261da894e6be0f4290dda13ecfcecae, type: 2}
+    reloadStatePreferType: 0
+    vehicleLuaBehaviors: []
+    buffRefs: []
+    buffs: []
+  references:
+    version: 2
+    RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }
+--- !u!114 &2288848403892203283
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1355950744, guid: 0512a3c011ce1c84db3d9ccc1f4d6d2e, type: 3}
+  m_Name: PzGr
+  m_EditorClassIdentifier: 
+  comment: 
+  bulletVFX: {fileID: 11400000, guid: 282db7a4061fcf7459757b0ecd3e4031, type: 2}
+  damage: 220
+  velocity: 810
+  gravityDamper: 9.8
+  parabolaType: 0
+  fireRecoil: 120
+  caliber: 88
+  isOverrideLifeTime: 0
+  overrideLifetime: 10
+  maxCapability: 0
+  penetration: 153
+  warHeadMaterial: {fileID: 0}
+  warheadSlope: {fileID: 0}
+  moduleData:
+    explosiveMassEqualTNT: 215.04
+    mass: 9.3
+    fuseDelay: 1.2
+    fuseSensitivity: 10
+  secondaryShatterMaterial: {fileID: 0}
+  canOverpressure: 1
+  overpressurePower: 1
+  velocityDeclineScalingType: 0
+  customVelocityDeclineScaling: 1
+  isDeclineByDistance: 1
+  warhead: 8
+--- !u!114 &2860599914445571479
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1355950744, guid: 0512a3c011ce1c84db3d9ccc1f4d6d2e, type: 3}
+  m_Name: PzGr.40
+  m_EditorClassIdentifier: 
+  comment: 
+  bulletVFX: {fileID: 11400000, guid: 282db7a4061fcf7459757b0ecd3e4031, type: 2}
+  damage: 180
+  velocity: 930
+  gravityDamper: 9.8
+  parabolaType: 0
+  fireRecoil: 120
+  caliber: 88
+  isOverrideLifeTime: 0
+  overrideLifetime: 10
+  maxCapability: 0
+  penetration: 211
+  warHeadMaterial: {fileID: 0}
+  warheadSlope: {fileID: 0}
+  moduleData:
+    explosiveMassEqualTNT: 0
+    mass: 7.3
+    fuseDelay: 0
+    fuseSensitivity: 10
+  secondaryShatterMaterial: {fileID: 0}
+  canOverpressure: 1
+  overpressurePower: 1
+  velocityDeclineScalingType: 0
+  customVelocityDeclineScaling: 1
+  isDeclineByDistance: 1
+  warhead: 6

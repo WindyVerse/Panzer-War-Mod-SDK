@@ -1,0 +1,22 @@
+ManifestFileVersion: 0
+CRC: 691577754
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 988b8631631894737f25e99e2927784c
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 923768aebf385ad86f7762daa8034951
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 988b8631631894737f25e99e2927784c
+HashAppended: 0
+ClassTypes:
+- Class: 213
+  Script: {instanceID: 0}
+- Class: 687078895
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Packages/com.shanghaiwindy.coreresources/Flags/Countries/gdr.png
+Dependencies: []

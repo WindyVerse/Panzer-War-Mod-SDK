@@ -1,0 +1,22 @@
+ManifestFileVersion: 0
+CRC: 1811844903
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: fa705c1dfb70556d2bed2b72011fbcac
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 923768aebf385ad86f7762daa8034951
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: fa705c1dfb70556d2bed2b72011fbcac
+HashAppended: 0
+ClassTypes:
+- Class: 213
+  Script: {instanceID: 0}
+- Class: 687078895
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Packages/com.shanghaiwindy.coreresources/BulletIcon/HEAT_FS.png
+Dependencies: []

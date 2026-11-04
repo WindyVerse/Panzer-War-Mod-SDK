@@ -1,0 +1,22 @@
+ManifestFileVersion: 0
+CRC: 3135689262
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 7da0f82de2760adf94561bbec69ce37d
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 923768aebf385ad86f7762daa8034951
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 7da0f82de2760adf94561bbec69ce37d
+HashAppended: 0
+ClassTypes:
+- Class: 213
+  Script: {instanceID: 0}
+- Class: 687078895
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Packages/com.shanghaiwindy.coreresources/GUI/Common/Prefab/Icons/PlayerUI/CrosshairLeft.png
+Dependencies: []

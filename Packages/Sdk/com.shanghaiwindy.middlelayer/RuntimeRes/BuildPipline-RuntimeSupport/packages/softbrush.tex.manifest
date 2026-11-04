@@ -1,0 +1,20 @@
+ManifestFileVersion: 0
+CRC: 2123272270
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 8bdf2e3e3fa9a3de38c53d0814412ff8
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 2612ac43db082a73502ee80f2eceb73f
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 8bdf2e3e3fa9a3de38c53d0814412ff8
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Packages/com.shanghaiwindy.coreresources/Brush/SoftTerrainBrush.psd
+Dependencies: []

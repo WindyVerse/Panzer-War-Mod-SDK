@@ -1,0 +1,64 @@
+{
+  "extends": "../HoldingLook.json",
+  "version": 1,
+  "name": "BodyFire",
+  "category": "P3CommonAnimation/Clips",
+  "duration": 0.15,
+  "loop": true,
+  "sampleRate": 30,
+  "base": {
+    "clip": "BodyIdle",
+    "mode": "staticFrame",
+    "frame": 0
+  },
+  "tracks": {
+    "leftHand": {
+      "keys": [
+        {
+          "at": 0,
+          "keepBase": true,
+          "weight": 0
+        },
+        {
+          "at": 0.0595,
+          "posOffset": [
+            0,
+            0,
+            -0.002842
+          ],
+          "ease": "easeInOut"
+        },
+        {
+          "at": 0.15,
+          "keepBase": true,
+          "weight": 0,
+          "ease": "easeInOut"
+        }
+      ]
+    },
+    "rightHand": {
+      "keys": [
+        {
+          "at": 0,
+          "keepBase": true,
+          "weight": 0
+        },
+        {
+          "at": 0.0595,
+          "posOffset": [
+            0,
+            0,
+            -0.005477
+          ],
+          "ease": "easeInOut"
+        },
+        {
+          "at": 0.15,
+          "keepBase": true,
+          "weight": 0,
+          "ease": "easeInOut"
+        }
+      ]
+    }
+  }
+}

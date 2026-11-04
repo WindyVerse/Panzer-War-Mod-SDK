@@ -1,0 +1,57 @@
+ManifestFileVersion: 0
+CRC: 2003766102
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 6fc446014c5078e51067600f938d3674
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: d18c768e342e82ea51a98f1ece2244c5
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 6fc446014c5078e51067600f938d3674
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 34d6e281874c61b4599024dcd49c3e2e, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 89e9ea64bf9c8254d9844adadde27b8e, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: ca7e7767cca2b6940b59ea0e88e8f0e7, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 31829bec55f164345b28e01d08d3beb9, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 198
+  Script: {instanceID: 0}
+- Class: 199
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers:
+- AssemblyName: Core
+  ClassName: ShanghaiWindy.Core.FmodPlayComponent/PlayParm
+- AssemblyName: Core
+  ClassName: ShanghaiWindy.Core.LocalizedName
+- AssemblyName: Core
+  ClassName: ShanghaiWindy.Core.SpawnRes
+- AssemblyName: FMODUnity
+  ClassName: FMOD.GUID
+- AssemblyName: FMODUnity
+  ClassName: FMODUnity.EventReference
+- AssemblyName: GameFramework.Runtime
+  ClassName: ShanghaiWindy.Core.ItemLocalizedName
+Assets:
+- Packages/com.shanghaiwindy.coreresources/Pool/PoolResource/PoolResource-VFX-Water.asset
+Dependencies:
+- C:/github/workspace/Projects/DE/Build/Mod-BuildPipline/StandaloneWindows64/BuildPipline-RuntimeSupport/packages/fd510d96-3761-4c83-940e-67083716ae45-svc.shader

@@ -1,0 +1,35 @@
+name: Release SDK project
+on:
+  push:
+    tags: ['sdk-*']
+permissions:
+  contents: read
+concurrency:
+  group: sdk-release-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          lfs: true
+      - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6
+        with:
+          python-version: '3.12'
+      - name: Verify downloaded LFS objects
+        run: git lfs fsck
+      - name: Assemble the complete Unity project
+        env:
+          SDK_TAG: ${{ github.ref_name }}
+        run: python Tools/project.py package "$SDK_TAG"
+      - name: Publish the versioned download
+        env:
+          GH_TOKEN: ${{ github.token }}
+          SDK_TAG: ${{ github.ref_name }}
+        run: >-
+          gh release create "$SDK_TAG" Artifacts/release/* --verify-tag
+          --title "Panzer War Mod SDK $SDK_TAG" --notes-file RELEASE_NOTES.md
+

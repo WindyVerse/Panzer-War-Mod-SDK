@@ -1,0 +1,20 @@
+ManifestFileVersion: 0
+CRC: 3920149994
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: cd39eb0c0f489a8401aab4d6b2bdb3c5
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 2612ac43db082a73502ee80f2eceb73f
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: cd39eb0c0f489a8401aab4d6b2bdb3c5
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Packages/com.shanghaiwindy.coreresources/Decals/nation/decal-ger.png
+Dependencies: []

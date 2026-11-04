@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: ScopeLens
+  m_Shader: {fileID: 4800000, guid: cc2b2aa14fce4ef89d583c4083ea4cb1, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs: []
+    m_Ints: []
+    m_Floats:
+    - _Curvature: 0.7
+    - _InnerStrength: 0.1
+    - _Reflectance: 0.12
+    - _RimDarken: 0.65
+    - _Roughness: 0.06
+    m_Colors:
+    - _CoatingColor: {r: 0.45, g: 0.85, b: 0.65, a: 1}
+    - _CoatingColor2: {r: 0.6, g: 0.45, b: 0.85, a: 1}
+    - _InnerColorA: {r: 1, g: 0.62, b: 0.28, a: 1}
+    - _InnerColorB: {r: 0.4, g: 0.9, b: 0.7, a: 1}
+    - _LensColor: {r: 0.03, g: 0.05, b: 0.06, a: 0.92}
+  m_BuildTextureStacks: []

@@ -1,0 +1,24 @@
+ManifestFileVersion: 0
+CRC: 1037244317
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 1ace7d711c62a30a55254a9fe04d800e
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 344ae3af047a2137a92323b105875e8f
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 1ace7d711c62a30a55254a9fe04d800e
+HashAppended: 0
+ClassTypes:
+- Class: 114
+  Script: {fileID: 11500000, guid: 0ae7e9ab32334243b480b3dfef1a4654, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers:
+- AssemblyName: GameFramework.Runtime
+  ClassName: ShanghaiWindy.Core.Data.AssetProp
+Assets:
+- Packages/com.shanghaiwindy.coreresources/Vrm/VrmCharacter/SydneyBlackwood/SydneyBlackwoodVrmCharacterData.asset
+Dependencies: []

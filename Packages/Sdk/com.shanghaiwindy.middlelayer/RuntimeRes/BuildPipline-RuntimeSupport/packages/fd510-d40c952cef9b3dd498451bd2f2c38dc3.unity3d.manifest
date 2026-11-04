@@ -1,0 +1,22 @@
+ManifestFileVersion: 0
+CRC: 3919160851
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 24a34ab345a0c63253718059e96d0f73
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 923768aebf385ad86f7762daa8034951
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 24a34ab345a0c63253718059e96d0f73
+HashAppended: 0
+ClassTypes:
+- Class: 213
+  Script: {instanceID: 0}
+- Class: 687078895
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Packages/com.shanghaiwindy.coreresources/GUI/Common/Prefab/Icons/Garage/Branch.png
+Dependencies: []

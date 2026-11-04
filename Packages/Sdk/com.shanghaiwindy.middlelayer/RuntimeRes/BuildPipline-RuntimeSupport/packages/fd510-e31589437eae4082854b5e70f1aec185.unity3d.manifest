@@ -1,0 +1,22 @@
+ManifestFileVersion: 0
+CRC: 15962026
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 26cb1178f15d5d2f245501993f6d2c6b
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 923768aebf385ad86f7762daa8034951
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 26cb1178f15d5d2f245501993f6d2c6b
+HashAppended: 0
+ClassTypes:
+- Class: 213
+  Script: {instanceID: 0}
+- Class: 687078895
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Packages/com.shanghaiwindy.coreresources/GUI/Common/Prefab/Icons/Social/FriendActions/friend-chat.png
+Dependencies: []

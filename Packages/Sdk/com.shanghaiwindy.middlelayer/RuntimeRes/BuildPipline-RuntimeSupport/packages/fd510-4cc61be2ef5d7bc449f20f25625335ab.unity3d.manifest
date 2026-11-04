@@ -1,0 +1,22 @@
+ManifestFileVersion: 0
+CRC: 1307428758
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 7cdaeca9c4a4e9ed05e48f10f3907e9e
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 923768aebf385ad86f7762daa8034951
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 7cdaeca9c4a4e9ed05e48f10f3907e9e
+HashAppended: 0
+ClassTypes:
+- Class: 213
+  Script: {instanceID: 0}
+- Class: 687078895
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Packages/com.shanghaiwindy.coreresources/BulletIcon/APHE.png
+Dependencies: []

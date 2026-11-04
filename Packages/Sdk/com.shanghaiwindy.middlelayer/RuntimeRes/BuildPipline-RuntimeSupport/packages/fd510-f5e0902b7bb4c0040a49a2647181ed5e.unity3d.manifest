@@ -1,0 +1,20 @@
+ManifestFileVersion: 0
+CRC: 2524909490
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 817a0fe1cbfb8300848f42b60b664fe0
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 2612ac43db082a73502ee80f2eceb73f
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 817a0fe1cbfb8300848f42b60b664fe0
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Packages/com.shanghaiwindy.coreresources/VFX/_Shared/Textures/Glow/glow_tracer_streak.tga
+Dependencies: []

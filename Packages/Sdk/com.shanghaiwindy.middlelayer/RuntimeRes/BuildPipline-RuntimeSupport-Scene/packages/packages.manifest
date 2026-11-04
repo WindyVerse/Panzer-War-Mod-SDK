@@ -1,0 +1,19 @@
+ManifestFileVersion: 0
+CRC: 3938226896
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: 87e0de4d-f025-4f14-b5db-7120f354dc94.scene
+      Dependencies: {}
+    Info_1:
+      Name: 87e0de4d-f025-4f14-b5db-7120f354dc94_mapdata.mapdata
+      Dependencies: {}
+    Info_2:
+      Name: 87e0de4d-f025-4f14-b5db-7120f354dc94_thumbnail.sprite
+      Dependencies: {}
+    Info_3:
+      Name: 08b3b0e2-c40c-40f9-bc7b-32e4ce571da4.scene
+      Dependencies: {}
+    Info_4:
+      Name: 08b3b0e2-c40c-40f9-bc7b-32e4ce571da4_mapdata.mapdata
+      Dependencies: {}

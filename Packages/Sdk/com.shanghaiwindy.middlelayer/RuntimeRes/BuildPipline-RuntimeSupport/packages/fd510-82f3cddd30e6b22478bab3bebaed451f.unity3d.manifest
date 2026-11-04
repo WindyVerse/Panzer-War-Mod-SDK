@@ -1,0 +1,22 @@
+ManifestFileVersion: 0
+CRC: 677670242
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: d76afebe5cbfbf4763bce5ac2f65f47a
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 2d8df09e698f722ada1caa03d3413830
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: d76afebe5cbfbf4763bce5ac2f65f47a
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Packages/com.shanghaiwindy.coreresources/GUI/Common/Classic-Tex/PlayerUISystem/Ground/TotalDamage.png
+Dependencies: []

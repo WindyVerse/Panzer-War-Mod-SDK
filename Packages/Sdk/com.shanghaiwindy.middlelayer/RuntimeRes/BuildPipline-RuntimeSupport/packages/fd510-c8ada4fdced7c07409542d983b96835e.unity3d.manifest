@@ -1,0 +1,20 @@
+ManifestFileVersion: 0
+CRC: 4278367996
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: e990e49feb8673f4b9a93cfac506087a
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 2612ac43db082a73502ee80f2eceb73f
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: e990e49feb8673f4b9a93cfac506087a
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Packages/com.shanghaiwindy.coreresources/VFX/_Shared/Textures/Glow/glow_round_hotcore.png
+Dependencies: []

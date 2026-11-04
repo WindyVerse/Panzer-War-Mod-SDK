@@ -1,0 +1,149 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 359232964, guid: 0512a3c011ce1c84db3d9ccc1f4d6d2e, type: 3}
+  m_Name: 8mm-DT
+  m_EditorClassIdentifier: 
+  comment: "\u82CF\u7CFB\u901A\u7528\u673A\u67AA"
+  tankFireParameter:
+    crosshairPreferType: 0
+    fireState: 1
+    ReloadTime: 0.15
+    isEnableSimpleReloadSound: 0
+    overrideSimpleReloadSound:
+      rid: -2
+    AmmoCount: 3087
+    hasSlot: 0
+    slotCount: 0
+    slotDuration: 0
+    canFireUnderWater: 0
+    advanceFireClass:
+      SmallReloadTime: 0.1
+      LargeReloadTime: 7.4
+      MaxSmallAmmo: 63
+      disableMegaIcon: 1
+      isEnableSmallReloadSound: 0
+      overrideSmallReloadSound:
+        rid: -2
+      isEnableLargeReloadSound: 1
+      overrideLargeReloadSound:
+        rid: 2421261383233175554
+    drumFire:
+      fireDuration: 0
+      reloadTime: []
+      isEnableDrumReloadSound: 0
+      overrideDrumReloadSound:
+        rid: -2
+      disableMegaIcon: 0
+    energyVFX: {fileID: 0}
+    energyFire:
+      perShotEnergy: 0
+      totalEnergy: 0
+      perShotInterval: 0
+      vfxDuration: 0
+      isEnableEnergyReloadSound: 0
+      overrideEnergyReloadSound:
+        rid: -2
+    dispersion: 0.5
+    fireSpread:
+      dispersion: 0.5
+      aimTime: 0.4
+      moveSpreadCoff: 0.12
+      traverseSpreadCoff: 0.12
+      gunSpreadCoff: 0.12
+      afterFiredCoff: 0.12
+      damagedCoff: 2
+    fmodBulletSound: {fileID: 11400000, guid: 10ca25e23a4604c418646ed121585123, type: 2}
+    bulletData:
+    - {fileID: 491821468657857310}
+    muzzleFire: 3
+    overrideMuzzleFires: []
+    waveInteractType: 0
+    customWaveInteract:
+      respondTime: 0
+      radius: 0
+      weight: 0
+    fireDymScale: 0
+    fireCycleTime: 0
+    isFireDymIfExtraTurret: 0
+    disableGunAnimation: 0
+    isInRangeFire: 1
+    IsOverrideRangeFireAngle: 1
+    rangeFireAngle: 15
+    isEnableFireGroup: 0
+    fireGroupParm:
+      groupID: 0
+      priority: 0
+      fireMinDelay: 0
+    canBrakeSubFireLoop: 0
+    canFireIfMainClick: 0
+    canFireIfSubClick: 0
+    isEnableSeparateFireButton: 0
+    separateFireType: 0
+    separateFireShortKeyType: 0
+    zoomProfileData: {fileID: 0}
+    fireActionData: {fileID: 0}
+    customSightData: {fileID: 0}
+    reloadStatePreferType: 0
+    vehicleLuaBehaviors: []
+    buffRefs: []
+    buffs: []
+  references:
+    version: 2
+    RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }
+    - rid: 2421261383233175554
+      type: {class: ReloadFmodSoundParameter, ns: ShanghaiWindy.Core, asm: Core}
+      data:
+        advancePlayTime: 1
+        soundData: {fileID: 11400000, guid: 99dde0d4dd1e4ef43bed87ab8dc02df0, type: 2}
+--- !u!114 &491821468657857310
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1355950744, guid: 0512a3c011ce1c84db3d9ccc1f4d6d2e, type: 3}
+  m_Name: 8mm-DT-Bullet
+  m_EditorClassIdentifier: 
+  comment: 'The 7.62 mm DT is a Soviet machine gun used on a variety of armoured
+    fighting vehicles. A conversion of an infantry light machine gun for ground vehicle
+    mounts, the DT provides a steady rate of fire to suppress or harass enemy vehicles
+    and their crew with.  '
+  bulletVFX: {fileID: 11400000, guid: 5ef1467a78cafcf41a0b6167b0e6cab7, type: 2}
+  damage: 4
+  velocity: 840
+  gravityDamper: 9.8
+  parabolaType: 0
+  fireRecoil: 0
+  caliber: 8
+  isOverrideLifeTime: 0
+  overrideLifetime: 10
+  maxCapability: 0
+  penetration: 13
+  warHeadMaterial: {fileID: 0}
+  warheadSlope: {fileID: 0}
+  moduleData:
+    explosiveMassEqualTNT: 0
+    mass: 0.01
+    fuseDelay: 0
+    fuseSensitivity: 10
+  secondaryShatterMaterial: {fileID: 0}
+  canOverpressure: 1
+  overpressurePower: 1
+  velocityDeclineScalingType: 0
+  customVelocityDeclineScaling: 1
+  isDeclineByDistance: 1
+  warhead: 9

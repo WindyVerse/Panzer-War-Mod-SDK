@@ -1,0 +1,100 @@
+ManifestFileVersion: 0
+CRC: 3867802311
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: 3f99ebc9-dc30-454c-99c3-0a4f0520f006-sound-config.soundconfig
+      Dependencies: {}
+    Info_1:
+      Name: 1887563a-c7c8-4a9c-9c49-b6b75dcf9310-sound-config.soundconfig
+      Dependencies: {}
+    Info_2:
+      Name: 8ef80b2c-030c-416f-b4a3-644ac3764bb7-sound-config.soundconfig
+      Dependencies: {}
+    Info_3:
+      Name: 236d1c20-6604-493b-9868-0ac44421684d-sound-config.soundconfig
+      Dependencies: {}
+    Info_4:
+      Name: 3a777d50-0408-4f5d-8350-8bd3f9f6c1b9-sound-config.soundconfig
+      Dependencies: {}
+    Info_5:
+      Name: 4208369d-2f4e-48d7-b576-560d57495334-sound-config.soundconfig
+      Dependencies: {}
+    Info_6:
+      Name: 54749fa5-8932-43c5-b257-8745b80c04de-sound-config.soundconfig
+      Dependencies: {}
+    Info_7:
+      Name: 0b9c6318-e8e0-4afd-8617-0188f55cff30-sound-config.soundconfig
+      Dependencies: {}
+    Info_8:
+      Name: 24bb00a9-11a5-4c0a-b84c-e29b9cc6fdec-sound-config.soundconfig
+      Dependencies: {}
+    Info_9:
+      Name: 39ebdf66-cd5f-407d-930c-ac9078a435ca-sound-config.soundconfig
+      Dependencies: {}
+    Info_10:
+      Name: 68b53ab9-2538-43c3-9226-1cec5b4a4657-sound-config.soundconfig
+      Dependencies: {}
+    Info_11:
+      Name: 7f956dc4-2e5d-4671-801b-0028da8b95e5-sound-config.soundconfig
+      Dependencies: {}
+    Info_12:
+      Name: 49b28a66-80c7-4c9d-90a2-4f1d8c0bb68b-sound-config.soundconfig
+      Dependencies: {}
+    Info_13:
+      Name: 3bf23eb3-f3dd-4733-b17a-463e286f9110-sound-config.soundconfig
+      Dependencies: {}
+    Info_14:
+      Name: c1f33e32-8fa6-4c1f-9ce1-9fa1ca1bcaf7-sound-config.soundconfig
+      Dependencies: {}
+    Info_15:
+      Name: af93ec76-282a-4b3a-8f27-1fc1618dfc56-sound-config.soundconfig
+      Dependencies: {}
+    Info_16:
+      Name: b8bb07a7-99f9-4648-807f-741f5056ae3d-sound-config.soundconfig
+      Dependencies: {}
+    Info_17:
+      Name: c2b72198-f4ad-4e03-8625-2bf98731bf99-sound-config.soundconfig
+      Dependencies: {}
+    Info_18:
+      Name: f7d127c1-1a5b-4c7b-965d-af8dcecea1d3-sound-config.soundconfig
+      Dependencies: {}
+    Info_19:
+      Name: b41322ea-7d70-40cc-a062-e21f0bba881c-sound-config.soundconfig
+      Dependencies: {}
+    Info_20:
+      Name: 75b32d2e-a8f4-4b24-b377-a042e5dfaf73-sound-config.soundconfig
+      Dependencies: {}
+    Info_21:
+      Name: 95c8abd4-b34a-407a-a9f6-6128fc144176-sound-config.soundconfig
+      Dependencies: {}
+    Info_22:
+      Name: a8886f52-3be1-4b1d-8f17-73aae6db6bed-sound-config.soundconfig
+      Dependencies: {}
+    Info_23:
+      Name: 82fd348f-2d92-4e5b-9fe8-37664cdb48c6-sound-config.soundconfig
+      Dependencies: {}
+    Info_24:
+      Name: e0fca17b-fb07-4a68-ac9e-f1c34c18ae4b-sound-config.soundconfig
+      Dependencies: {}
+    Info_25:
+      Name: 18a3cffb-0762-4a84-9216-71bbfc63d404-sound-config.soundconfig
+      Dependencies: {}
+    Info_26:
+      Name: d06eaad0-cf31-4515-8662-0fc3261e1e63-sound-config.soundconfig
+      Dependencies: {}
+    Info_27:
+      Name: a53b5df1-7541-41a1-b4f6-05ebcce9efb3-sound-config.soundconfig
+      Dependencies: {}
+    Info_28:
+      Name: cd5a561b-11e2-4d99-a7b6-e5921feb1b86-sound-config.soundconfig
+      Dependencies: {}
+    Info_29:
+      Name: 052e065a-c200-4482-9a55-c6386a747d4a-sound.backgroundsound
+      Dependencies: {}
+    Info_30:
+      Name: d3d12fd7-773e-466f-a858-c2ba18f6fe36-sound.backgroundsound
+      Dependencies: {}
+    Info_31:
+      Name: 73feec91-32e6-4abb-9d4c-1f1257b48737-sound.backgroundsound
+      Dependencies: {}

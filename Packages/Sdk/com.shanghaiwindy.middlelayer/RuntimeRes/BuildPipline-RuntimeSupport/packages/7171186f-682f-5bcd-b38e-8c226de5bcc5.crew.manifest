@@ -1,0 +1,28 @@
+ManifestFileVersion: 0
+CRC: 54509922
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: f5836d1fb5a817bc435f63ba05339625
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 319a356bda55dc5ee5627d6214d01742
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: f5836d1fb5a817bc435f63ba05339625
+HashAppended: 0
+ClassTypes:
+- Class: 114
+  Script: {fileID: 11500000, guid: 89207b81a44d448681819cfee27ee6c5, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers:
+- AssemblyName: Core
+  ClassName: ShanghaiWindy.Core.LocalizedName
+- AssemblyName: GameFramework.Runtime
+  ClassName: ShanghaiWindy.Core.Data.AssetProp
+- AssemblyName: GameFramework.Runtime
+  ClassName: ShanghaiWindy.Core.ItemLocalizedName
+Assets:
+- Packages/com.shanghaiwindy.coreresources/Crew/AlliedSolider/AlliedSolider.asset
+Dependencies: []

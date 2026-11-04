@@ -1,0 +1,32 @@
+ManifestFileVersion: 0
+CRC: 2907843112
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 26b2f63f7aefc09d29d65d27bdef2e76
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: b4a5f256428a7c84e39c3ab14b32f497
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 26b2f63f7aefc09d29d65d27bdef2e76
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 67f0a6afd258d65458ea7f84fa1060f4, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Packages/com.shanghaiwindy.coreresources/GameModeRes/ArmorInspector.prefab
+Dependencies:
+- C:/github/workspace/Projects/DE/Build/Mod-BuildPipline/StandaloneWindows64/BuildPipline-RuntimeSupport/packages/fd510d96-3761-4c83-940e-67083716ae45-svc.shader
+- C:/github/workspace/Projects/DE/Build/Mod-BuildPipline/StandaloneWindows64/BuildPipline-RuntimeSupport/packages/topcameramodule.mat

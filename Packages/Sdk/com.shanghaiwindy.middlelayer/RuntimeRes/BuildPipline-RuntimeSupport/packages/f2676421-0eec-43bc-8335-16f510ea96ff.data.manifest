@@ -1,0 +1,54 @@
+ManifestFileVersion: 0
+CRC: 9640128
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 6f291f1344c2847591b9822285ba2c21
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: d1b508b22fefd44ac3830e556f21a520
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 6f291f1344c2847591b9822285ba2c21
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: f07351aa301f6014fb81671dbd4f07d7, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: c8d02328a3acddf40846071709255796, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 57c1a9c479f4d6f44a6202d3c8ed5e51, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 8b978ad018be71e42916b3e4d727f949, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers:
+- AssemblyName: Core
+  ClassName: ShanghaiWindy.Core.CountermeasureData
+- AssemblyName: Core
+  ClassName: ShanghaiWindy.Core.FlightCausalData
+- AssemblyName: Core
+  ClassName: ShanghaiWindy.Core.FlightFireData
+- AssemblyName: Core
+  ClassName: ShanghaiWindy.Core.FlightModuleGuid
+- AssemblyName: Core
+  ClassName: ShanghaiWindy.Core.FlightRadarData
+- AssemblyName: Core
+  ClassName: ShanghaiWindy.Core.IRSeekerData
+- AssemblyName: Core
+  ClassName: ShanghaiWindy.Core.InternalModuleBulletData
+- AssemblyName: Core
+  ClassName: ShanghaiWindy.Core.SemiRealisticData
+- AssemblyName: Core
+  ClassName: ShanghaiWindy.Core.ThermalVisionProfile
+- AssemblyName: Core
+  ClassName: ShanghaiWindy.Core.VehicleModuleGuid
+- AssemblyName: Core
+  ClassName: ShanghaiWindy.Core.WaveInteractParameter
+Assets:
+- Packages/com.shanghaiwindy.coreresources/BuiltInVehicles/Altius-U/BuiltIn-Altius-U_FlightTextData.asset
+Dependencies: []

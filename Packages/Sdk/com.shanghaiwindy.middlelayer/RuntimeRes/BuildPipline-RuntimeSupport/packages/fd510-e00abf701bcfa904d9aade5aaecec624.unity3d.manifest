@@ -1,0 +1,22 @@
+ManifestFileVersion: 0
+CRC: 2099462049
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 6303306da5de65810e2f482073a26c71
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 923768aebf385ad86f7762daa8034951
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 6303306da5de65810e2f482073a26c71
+HashAppended: 0
+ClassTypes:
+- Class: 213
+  Script: {instanceID: 0}
+- Class: 687078895
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Packages/com.shanghaiwindy.coreresources/GUI/Common/Prefab/Icons/Lobby/Ship.png
+Dependencies: []

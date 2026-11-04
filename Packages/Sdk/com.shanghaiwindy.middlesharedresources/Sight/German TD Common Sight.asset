@@ -1,0 +1,239 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1845641451, guid: 0512a3c011ce1c84db3d9ccc1f4d6d2e, type: 3}
+  m_Name: German TD Common Sight
+  m_EditorClassIdentifier: 
+  displayName:
+    defaultName: German TD Sight
+    items:
+    - lang: 0
+      localizedName: "\u5FB7\u5F0F\u53CD\u5766\u7784\u5177"
+  guid: c804bd20-670f-4c37-9772-1e39bbaedf35
+  thousandth: 1
+  drawCentralLineVert: 0
+  drawCentralLineHorz: 0
+  centralLineVertThickness: 1
+  centralLineHorzThickness: 1
+  ballistics:
+  - defaultGravity: 9.8
+    dynamicGravity: 1
+    defaultVelocity: 480
+    dynamicVelocity: 1
+    crosshairDistances:
+    - range: 1
+      number: 0
+      notchSize: 0
+    - range: 200
+      number: 0
+      notchSize: 0
+    - range: 400
+      number: 4
+      notchSize: -0.01
+    - range: 600
+      number: 0
+      notchSize: 0
+    - range: 800
+      number: 8
+      notchSize: -0.01
+    - range: 1000
+      number: 0
+      notchSize: 0
+    - range: 1200
+      number: 12
+      notchSize: -0.01
+    - range: 1400
+      number: 0
+      notchSize: 0
+    - range: 1600
+      number: 16
+      notchSize: -0.01
+    - range: 1800
+      number: 0
+      notchSize: 0
+    - range: 2000
+      number: 20
+      notchSize: -0.01
+    - range: 2200
+      number: 0
+      notchSize: 0
+    - range: 2400
+      number: 24
+      notchSize: -0.01
+    - range: 2600
+      number: 0
+      notchSize: 0
+    - range: 2800
+      number: 28
+      notchSize: -0.01
+    - range: 3000
+      number: 0
+      notchSize: 0
+    - range: 3200
+      number: 32
+      notchSize: -0.01
+    horzOffSet: 0.1
+    textHorzOffSet: -0.01
+    textVertOffSet: 0
+    crosshairHorRanges: []
+    crosshairHorRangeVertOffSet: 0
+    textHorRangeVertOffSet: 0
+    drawCircle: 1
+  lineThousandths:
+  - points:
+    - {x: 0, y: 0}
+    - {x: 0, y: -0.01}
+    range: 4
+    thickness: 1
+    isOverrideColor: 0
+    color: {r: 0, g: 0, b: 0, a: 0}
+  - points:
+    - {x: -0.0015, y: -0.015}
+    - {x: -0.004, y: -0.015}
+    - {x: 0, y: 0}
+    - {x: 0.004, y: -0.015}
+    - {x: 0.0015, y: -0.015}
+    range: 8
+    thickness: 1
+    isOverrideColor: 0
+    color: {r: 0, g: 0, b: 0, a: 0}
+  - points:
+    - {x: 0, y: 0}
+    - {x: 0, y: -0.01}
+    range: 12
+    thickness: 1
+    isOverrideColor: 0
+    color: {r: 0, g: 0, b: 0, a: 0}
+  - points:
+    - {x: -0.0015, y: -0.015}
+    - {x: -0.004, y: -0.015}
+    - {x: 0, y: 0}
+    - {x: 0.004, y: -0.015}
+    - {x: 0.0015, y: -0.015}
+    range: 16
+    thickness: 1
+    isOverrideColor: 0
+    color: {r: 0, g: 0, b: 0, a: 0}
+  - points:
+    - {x: 0, y: 0}
+    - {x: 0, y: -0.01}
+    range: 20
+    thickness: 1
+    isOverrideColor: 0
+    color: {r: 0, g: 0, b: 0, a: 0}
+  - points:
+    - {x: -0.0015, y: -0.015}
+    - {x: -0.004, y: -0.015}
+    - {x: 0, y: 0}
+    - {x: 0.004, y: -0.015}
+    - {x: 0.0015, y: -0.015}
+    range: 24
+    thickness: 1
+    isOverrideColor: 0
+    color: {r: 0, g: 0, b: 0, a: 0}
+  - points:
+    - {x: 0, y: 0}
+    - {x: 0, y: -0.01}
+    range: -4
+    thickness: 1
+    isOverrideColor: 0
+    color: {r: 0, g: 0, b: 0, a: 0}
+  - points:
+    - {x: -0.0015, y: -0.015}
+    - {x: -0.004, y: -0.015}
+    - {x: 0, y: 0}
+    - {x: 0.004, y: -0.015}
+    - {x: 0.0015, y: -0.015}
+    range: -8
+    thickness: 1
+    isOverrideColor: 0
+    color: {r: 0, g: 0, b: 0, a: 0}
+  - points:
+    - {x: 0, y: 0}
+    - {x: 0, y: -0.01}
+    range: -12
+    thickness: 1
+    isOverrideColor: 0
+    color: {r: 0, g: 0, b: 0, a: 0}
+  - points:
+    - {x: -0.0015, y: -0.015}
+    - {x: -0.004, y: -0.015}
+    - {x: 0, y: 0}
+    - {x: 0.004, y: -0.015}
+    - {x: 0.0015, y: -0.015}
+    range: -16
+    thickness: 1
+    isOverrideColor: 0
+    color: {r: 0, g: 0, b: 0, a: 0}
+  - points:
+    - {x: 0, y: 0}
+    - {x: 0, y: -0.01}
+    range: -20
+    thickness: 1
+    isOverrideColor: 0
+    color: {r: 0, g: 0, b: 0, a: 0}
+  - points:
+    - {x: -0.0015, y: -0.015}
+    - {x: -0.004, y: -0.015}
+    - {x: 0, y: 0}
+    - {x: 0.004, y: -0.015}
+    - {x: 0.0015, y: -0.015}
+    range: -24
+    thickness: 1
+    isOverrideColor: 0
+    color: {r: 0, g: 0, b: 0, a: 0}
+  lines:
+  - points:
+    - {x: 0.5, y: 0.5}
+    - {x: 0.2, y: 0}
+    thickness: 1
+    isRelativeSize: 1
+    isOverrideColor: 0
+    color: {r: 0, g: 0, b: 0, a: 0}
+  - points:
+    - {x: 0.5, y: 0.5}
+    - {x: 0.8, y: 0}
+    thickness: 1
+    isRelativeSize: 1
+    isOverrideColor: 0
+    color: {r: 0, g: 0, b: 0, a: 0}
+  - points:
+    - {x: 0.5, y: 0.7}
+    - {x: 0.5, y: 1}
+    thickness: 1
+    isRelativeSize: 1
+    isOverrideColor: 0
+    color: {r: 0, g: 0, b: 0, a: 0}
+  - points:
+    - {x: 0.5, y: 0.4}
+    - {x: 0.5, y: 0}
+    thickness: 1
+    isRelativeSize: 1
+    isOverrideColor: 0
+    color: {r: 0, g: 0, b: 0, a: 0}
+  - points:
+    - {x: 0.575, y: 0.5}
+    - {x: 0.625, y: 0.5}
+    thickness: 1
+    isRelativeSize: 1
+    isOverrideColor: 0
+    color: {r: 0, g: 0, b: 0, a: 0}
+  circles: []
+  uiTexts: []
+  uiImages: []
+  circleMode: 0
+  radialAngle: 180
+  initialRadialAngle: 90
+  drawCircleLines: 1
+  circleEdge: 0.7
+  circleTextOffSet: 0.07
+  circleNotchOffSet: 0.025
+  overrideFireCrossEffectData: {fileID: 0}

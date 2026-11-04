@@ -1,0 +1,53 @@
+ManifestFileVersion: 0
+CRC: 4016395414
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: bf169c13a5af9d48bb8daa08f187da00
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 2b019ed192c9c235668164f8b8d94a5f
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: bf169c13a5af9d48bb8daa08f187da00
+HashAppended: 0
+ClassTypes:
+- Class: 114
+  Script: {fileID: 11500000, guid: 57c1a9c479f4d6f44a6202d3c8ed5e51, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 6d3f90d396e2d3345a9f4905234b04d7, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 89207b81a44d448681819cfee27ee6c5, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers:
+- AssemblyName: Core
+  ClassName: ShanghaiWindy.Core.CrewSkillBuffRef
+- AssemblyName: Core
+  ClassName: ShanghaiWindy.Core.FriendShipUnlockSkill
+- AssemblyName: Core
+  ClassName: ShanghaiWindy.Core.InternalModuleBulletData
+- AssemblyName: Core
+  ClassName: ShanghaiWindy.Core.LocalizedName
+- AssemblyName: Core
+  ClassName: ShanghaiWindy.Core.SerializableBuffCasterRef
+- AssemblyName: Core
+  ClassName: ShanghaiWindy.Core.SkinContent
+- AssemblyName: Core
+  ClassName: ShanghaiWindy.Core.UpgradableSkillContent
+- AssemblyName: Core
+  ClassName: ShanghaiWindy.Core.WaveInteractParameter
+- AssemblyName: GameFramework.Runtime
+  ClassName: ShanghaiWindy.Core.Data.AssetProp
+- AssemblyName: GameFramework.Runtime
+  ClassName: ShanghaiWindy.Core.ItemLocalizedName
+- AssemblyName: GameFramework.Runtime
+  ClassName: ShanghaiWindy.Core.SafeRefAsset
+- AssemblyName: GameFramework.Runtime
+  ClassName: ShanghaiWindy.Core.SafeRefAssetProvider
+Assets:
+- Packages/com.shanghaiwindy.coreresources/Crew/ErinBlake/ErinBlake.asset
+Dependencies:
+- C:/github/workspace/Projects/DE/Build/Mod-BuildPipline/StandaloneWindows64/BuildPipline-RuntimeSupport/packages/fd510-3899ae8726af2444ba9fdb2b352427bf.unity3d

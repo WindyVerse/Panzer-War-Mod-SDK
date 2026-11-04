@@ -1,0 +1,10 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" editor-extension-mode="False">
+    <Style src="GameLogOverlay.uss" />
+    <Style src="../GameTheme.uss" />
+    <ui:VisualElement class="gl-comp-node">
+        <ui:Label class="gl-comp-arrow" />
+        <ui:VisualElement class="gl-comp-dot" />
+        <ui:Label class="gl-comp-name" />
+        <ui:Label class="gl-comp-order" />
+    </ui:VisualElement>
+</ui:UXML>

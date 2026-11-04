@@ -1,0 +1,22 @@
+ManifestFileVersion: 0
+CRC: 3709634684
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: efe73edc88588cf2a3fb4d9fbe2022fd
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 923768aebf385ad86f7762daa8034951
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: efe73edc88588cf2a3fb4d9fbe2022fd
+HashAppended: 0
+ClassTypes:
+- Class: 213
+  Script: {instanceID: 0}
+- Class: 687078895
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Packages/com.shanghaiwindy.coreresources/Flags/unknown.png
+Dependencies: []

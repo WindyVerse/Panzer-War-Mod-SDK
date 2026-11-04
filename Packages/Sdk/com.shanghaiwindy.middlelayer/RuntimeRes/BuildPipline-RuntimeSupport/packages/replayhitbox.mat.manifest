@@ -1,0 +1,23 @@
+ManifestFileVersion: 0
+CRC: 3915702967
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 55671acc86b8aebed1b0e311a525868d
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 5e762ccb57c4caaabbb5a4199ac82c23
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 55671acc86b8aebed1b0e311a525868d
+HashAppended: 0
+ClassTypes:
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Packages/com.shanghaiwindy.coreresources/Shader/DamageReplay/ReplayHitBoxMat.mat
+Dependencies:
+- C:/github/workspace/Projects/DE/Build/Mod-BuildPipline/StandaloneWindows64/BuildPipline-RuntimeSupport/packages/fd510d96-3761-4c83-940e-67083716ae45-svc.shader

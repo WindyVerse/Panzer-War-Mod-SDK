@@ -1,0 +1,18 @@
+{
+  "name": "com.shanghaiwindy.urp",
+  "version": "1.0.0",
+  "displayName": "ShanghaiWindy URP",
+  "documentationUrl": "",
+  "changelogUrl": "",
+  "licensesUrl": "",
+  "dependencies": {
+    "com.unity.render-pipelines.universal": "14.0.12"
+  },
+  "keywords": [],
+  "author": {
+    "name": "ShanghaiWindy",
+    "email": "dev@waroftanks.cn",
+    "url": "https://www.waroftanks.cn"
+  },
+  "type": "library"
+}

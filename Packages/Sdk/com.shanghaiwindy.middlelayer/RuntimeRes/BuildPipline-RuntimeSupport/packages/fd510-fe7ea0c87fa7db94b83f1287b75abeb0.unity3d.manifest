@@ -1,0 +1,26 @@
+ManifestFileVersion: 0
+CRC: 2310791194
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 2b3f64ada667b46f5c4eac7bd4cbf4f2
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: b30fce1a9ad74efb72be6c308c56e365
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 2b3f64ada667b46f5c4eac7bd4cbf4f2
+HashAppended: 0
+ClassTypes:
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Packages/com.shanghaiwindy.coreresources/VFX/Impact/Armor/Materials/armor_fireball_radial_large.mat
+Dependencies:
+- C:/github/workspace/Projects/DE/Build/Mod-BuildPipline/StandaloneWindows64/BuildPipline-RuntimeSupport/packages/fd510-a7ae8aa33605cd74887e2058372b64a1.unity3d
+- C:/github/workspace/Projects/DE/Build/Mod-BuildPipline/StandaloneWindows64/BuildPipline-RuntimeSupport/packages/fd510d96-3761-4c83-940e-67083716ae45-svc.shader

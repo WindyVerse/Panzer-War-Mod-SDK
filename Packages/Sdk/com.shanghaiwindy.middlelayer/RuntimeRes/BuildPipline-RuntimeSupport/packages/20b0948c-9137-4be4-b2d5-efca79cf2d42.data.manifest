@@ -1,0 +1,96 @@
+ManifestFileVersion: 0
+CRC: 4151228488
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: ce10882e383c58323d0d6458fbe92c69
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 8aacdfc2f6a18890ceefc5e9c7323050
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: ce10882e383c58323d0d6458fbe92c69
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 54
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 10bad776e7395fe42baac54bcce3239a, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 60dcaf22382aa4ff6b99fcc1496a5594, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: d83105c1dd82493489d9621f692d085b, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 35e692b4760ec5845892d4555fb071d9, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: e0e5a5f12fda959459178b8f78601b32, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 57c1a9c479f4d6f44a6202d3c8ed5e51, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 146
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers:
+- AssemblyName: Core
+  ClassName: ShanghaiWindy.Core.BinocularProfile
+- AssemblyName: Core
+  ClassName: ShanghaiWindy.Core.CarControllerParameter
+- AssemblyName: Core
+  ClassName: ShanghaiWindy.Core.Data.PassiveWaterInteractParameter
+- AssemblyName: Core
+  ClassName: ShanghaiWindy.Core.Data.ShipControllerParameter
+- AssemblyName: Core
+  ClassName: ShanghaiWindy.Core.FireSpreadParameter
+- AssemblyName: Core
+  ClassName: ShanghaiWindy.Core.GearParameter
+- AssemblyName: Core
+  ClassName: ShanghaiWindy.Core.GroundAARadarData
+- AssemblyName: Core
+  ClassName: ShanghaiWindy.Core.IRSeekerData
+- AssemblyName: Core
+  ClassName: ShanghaiWindy.Core.InternalModuleBulletData
+- AssemblyName: Core
+  ClassName: ShanghaiWindy.Core.LuaVehicleControllerParameter
+- AssemblyName: Core
+  ClassName: ShanghaiWindy.Core.MechParameter
+- AssemblyName: Core
+  ClassName: ShanghaiWindy.Core.PlayerStateParameter
+- AssemblyName: Core
+  ClassName: ShanghaiWindy.Core.SmokeEmitProfile
+- AssemblyName: Core
+  ClassName: ShanghaiWindy.Core.SmokeProfile
+- AssemblyName: Core
+  ClassName: ShanghaiWindy.Core.TankControllerParameter
+- AssemblyName: Core
+  ClassName: ShanghaiWindy.Core.TankFireFireGroupParameter
+- AssemblyName: Core
+  ClassName: ShanghaiWindy.Core.TankFireParameter
+- AssemblyName: Core
+  ClassName: ShanghaiWindy.Core.TankFireParameter/AdvanceFireClass
+- AssemblyName: Core
+  ClassName: ShanghaiWindy.Core.TankFireParameter/DrumFire
+- AssemblyName: Core
+  ClassName: ShanghaiWindy.Core.TankFireParameter/EnergyFire
+- AssemblyName: Core
+  ClassName: ShanghaiWindy.Core.TankModuleGuid
+- AssemblyName: Core
+  ClassName: ShanghaiWindy.Core.ThermalVisionProfile
+- AssemblyName: Core
+  ClassName: ShanghaiWindy.Core.TurretParameter
+- AssemblyName: Core
+  ClassName: ShanghaiWindy.Core.TurretParameter/ModuleData
+- AssemblyName: Core
+  ClassName: ShanghaiWindy.Core.VehicleModuleGuid
+- AssemblyName: Core
+  ClassName: ShanghaiWindy.Core.WaveInteractParameter
+- AssemblyName: FMODUnity
+  ClassName: FMOD.GUID
+- AssemblyName: FMODUnity
+  ClassName: FMODUnity.EventReference
+Assets:
+- Packages/com.shanghaiwindy.coreresources/BuiltInVehicles/PatriotRadar/BuiltIn-Patriot-Radar_VehicleTextData.asset
+Dependencies: []

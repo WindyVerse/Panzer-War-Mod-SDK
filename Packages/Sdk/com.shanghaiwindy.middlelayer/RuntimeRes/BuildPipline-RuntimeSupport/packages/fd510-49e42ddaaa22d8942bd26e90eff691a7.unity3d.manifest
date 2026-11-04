@@ -1,0 +1,20 @@
+ManifestFileVersion: 0
+CRC: 2641161369
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: db35905abe7be77b89bc47569338a881
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 2612ac43db082a73502ee80f2eceb73f
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: db35905abe7be77b89bc47569338a881
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Packages/com.shanghaiwindy.coreresources/VFX/_Shared/Textures/Distortion/dist_shockwave_ring.tga
+Dependencies: []

@@ -1,0 +1,22 @@
+ManifestFileVersion: 0
+CRC: 2087940248
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 770e55f5ea69590b4d8b5b296aed792f
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 2d8df09e698f722ada1caa03d3413830
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 770e55f5ea69590b4d8b5b296aed792f
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Packages/com.shanghaiwindy.coreresources/Crew/ElodieMontparnasse/Festival-In-Game-Avatar.png
+Dependencies: []

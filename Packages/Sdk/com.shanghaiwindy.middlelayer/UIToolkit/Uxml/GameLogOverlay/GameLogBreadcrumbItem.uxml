@@ -1,0 +1,8 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" editor-extension-mode="False">
+    <Style src="GameLogOverlay.uss" />
+    <Style src="../GameTheme.uss" />
+    <ui:VisualElement class="gl-breadcrumb-entry">
+        <ui:Label class="gl-breadcrumb-sep" />
+        <ui:Label class="gl-breadcrumb-item" />
+    </ui:VisualElement>
+</ui:UXML>

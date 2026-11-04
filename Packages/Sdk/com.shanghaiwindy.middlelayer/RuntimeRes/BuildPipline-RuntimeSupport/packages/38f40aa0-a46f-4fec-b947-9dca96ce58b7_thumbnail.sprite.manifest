@@ -1,0 +1,22 @@
+ManifestFileVersion: 0
+CRC: 2712796137
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 0992db245be1a07749e0d1074079bece
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 2d8df09e698f722ada1caa03d3413830
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 0992db245be1a07749e0d1074079bece
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Packages/com.shanghaiwindy.coreresources/BuiltInVehicles/PatriotLauncher/BuiltIn-Patriot-Launcher_Model.png
+Dependencies: []

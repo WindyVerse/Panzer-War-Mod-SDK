@@ -1,0 +1,22 @@
+ManifestFileVersion: 0
+CRC: 3289340557
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: e8b7c68a3dcf27d68e27f610f23f687e
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 923768aebf385ad86f7762daa8034951
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: e8b7c68a3dcf27d68e27f610f23f687e
+HashAppended: 0
+ClassTypes:
+- Class: 213
+  Script: {instanceID: 0}
+- Class: 687078895
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Packages/com.shanghaiwindy.coreresources/GUI/Common/Prefab/Icons/CombatControls/Infantry/Crouch.png
+Dependencies: []

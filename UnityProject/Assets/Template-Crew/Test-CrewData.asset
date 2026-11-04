@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1177606089, guid: 0512a3c011ce1c84db3d9ccc1f4d6d2e, type: 3}
+  m_Name: Test-CrewData
+  m_EditorClassIdentifier: 
+  comment: 
+  guid: ef8d5dea-3895-4579-bc23-451b52d3717f
+  category: 
+  crewName:
+    isLocalizeTable: 0
+    defaultName: 
+    items: []
+    localizeTableKey: 
+  age: 0
+  specialCrewVoiceGuid: 
+  vrmCharacterGuid: 
+  maxFriendship: 100
+  friendshipGrowCoff: 1
+  shortCrewDescription:
+    isLocalizeTable: 0
+    defaultName: 
+    items: []
+    localizeTableKey: 
+  crewDescription:
+    isLocalizeTable: 0
+    defaultName: 
+    items: []
+    localizeTableKey: 
+  avatarTex:
+    assetGUID: 
+    extra: 
+  inGameAvatarTex:
+    assetGUID: 
+    extra: 
+  skinContents: []
+  buffRefs:
+  - safeRefAssetProvider:
+      assets: []
+    fullName: ShanghaiWindy.Core.CrewSkillBuff
+    className: ShanghaiWindy.Core.CrewSkillBuff, Core, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+    json: '{"isMultipleCoff":true,"buffValue":0.0,"title":{"isLocalizeTable":false,"defaultName":"","items":[],"localizeTableKey":""},"description":{"isLocalizeTable":false,"defaultName":"","items":[],"localizeTableKey":""},"crewSkill":{"rid":1000},"references":{"version":2,"RefIds":[{"rid":1000,"type":{"class":"EnergyShieldSkillConfig","ns":"ShanghaiWindy.Core","asm":"Core"},"data":{"version":3,"initialCdType":0,"customInitialCdRatio":0.0,"coolDownTime":15.0,"hasSkillReadyVoice":false,"skillReadyVoiceFmodGuid":"","hasSkillReleaseVoice":false,"skillReleaseVoiceFmodGuid":"","energyShieldInfo":{"duration":10.0,"armor":200,"distance":15.0,"sizeScale":{"x":1.0,"y":1.0,"z":1.0},"shieldType":0,"customModel":""}}}]}}'
+  upgradableSkillContents: []
+  buffs: []
+  references:
+    version: 2
+    RefIds: []

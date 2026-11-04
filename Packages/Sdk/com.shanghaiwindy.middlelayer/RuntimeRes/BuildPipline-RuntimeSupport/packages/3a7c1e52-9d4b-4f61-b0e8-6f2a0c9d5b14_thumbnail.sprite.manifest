@@ -1,0 +1,22 @@
+ManifestFileVersion: 0
+CRC: 1371108406
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: bcf1f2c497dd95caa73ca37e2d603997
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 2d8df09e698f722ada1caa03d3413830
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: bcf1f2c497dd95caa73ca37e2d603997
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Packages/com.shanghaiwindy.coreresources/BuiltInVehicles/QuadBomber/QuadBomber_DynamicsData.png
+Dependencies: []

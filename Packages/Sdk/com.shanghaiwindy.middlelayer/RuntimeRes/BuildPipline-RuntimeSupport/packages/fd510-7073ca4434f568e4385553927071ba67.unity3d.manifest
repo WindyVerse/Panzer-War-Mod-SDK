@@ -1,0 +1,22 @@
+ManifestFileVersion: 0
+CRC: 633782487
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: a0e97a66fcc1ca84a128eb11bfc727fe
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 923768aebf385ad86f7762daa8034951
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: a0e97a66fcc1ca84a128eb11bfc727fe
+HashAppended: 0
+ClassTypes:
+- Class: 213
+  Script: {instanceID: 0}
+- Class: 687078895
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Packages/com.shanghaiwindy.coreresources/Flags/Countries/bq.png
+Dependencies: []

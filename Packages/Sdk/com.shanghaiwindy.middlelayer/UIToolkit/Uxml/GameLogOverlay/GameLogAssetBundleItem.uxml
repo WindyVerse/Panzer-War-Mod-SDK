@@ -1,0 +1,13 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" editor-extension-mode="False">
+    <Style src="GameLogOverlay.uss" />
+    <Style src="../GameTheme.uss" />
+    <ui:VisualElement class="gl-asset-row">
+        <ui:Label class="gl-asset-name" />
+        <ui:Label class="gl-asset-pkg" />
+        <ui:Label class="gl-asset-refs" />
+        <ui:Label class="gl-asset-bytes" />
+        <ui:Label class="gl-asset-age" />
+        <ui:Label class="gl-asset-load" />
+        <ui:Label class="gl-asset-retention" />
+    </ui:VisualElement>
+</ui:UXML>

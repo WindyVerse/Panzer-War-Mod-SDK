@@ -1,0 +1,22 @@
+ManifestFileVersion: 0
+CRC: 1497977713
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: ce459794f83a9292be936b062e6e2a4d
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 923768aebf385ad86f7762daa8034951
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: ce459794f83a9292be936b062e6e2a4d
+HashAppended: 0
+ClassTypes:
+- Class: 213
+  Script: {instanceID: 0}
+- Class: 687078895
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Packages/com.shanghaiwindy.coreresources/GUI/Common/Prefab/Icons/Workshop/time.png
+Dependencies: []

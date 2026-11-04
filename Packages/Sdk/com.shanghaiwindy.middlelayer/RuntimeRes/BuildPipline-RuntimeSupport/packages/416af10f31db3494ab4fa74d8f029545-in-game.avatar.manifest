@@ -1,0 +1,20 @@
+ManifestFileVersion: 0
+CRC: 2104193463
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: d45d917c83cf6d0e9f1d1f1dab1f6fdb
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 2612ac43db082a73502ee80f2eceb73f
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: d45d917c83cf6d0e9f1d1f1dab1f6fdb
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Packages/com.shanghaiwindy.coreresources/Vrm/AvatarCharacter/Allied-Soldier/AlliedSoliderPortrait.png
+Dependencies: []

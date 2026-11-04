@@ -1,0 +1,22 @@
+ManifestFileVersion: 0
+CRC: 2837344880
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 8d17be188599847fc81af6ddd90e70d6
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 923768aebf385ad86f7762daa8034951
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 8d17be188599847fc81af6ddd90e70d6
+HashAppended: 0
+ClassTypes:
+- Class: 213
+  Script: {instanceID: 0}
+- Class: 687078895
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Packages/com.shanghaiwindy.coreresources/GUI/Common/Prefab/Icons/PlayerUI/Head_Back.png
+Dependencies: []

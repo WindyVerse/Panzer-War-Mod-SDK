@@ -1,0 +1,8 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" editor-extension-mode="False">
+    <Style src="GameLogOverlay.uss" />
+    <Style src="../GameTheme.uss" />
+    <ui:VisualElement class="gl-command-item">
+        <ui:Label class="gl-command-item-name" />
+        <ui:Label class="gl-command-item-desc" />
+    </ui:VisualElement>
+</ui:UXML>

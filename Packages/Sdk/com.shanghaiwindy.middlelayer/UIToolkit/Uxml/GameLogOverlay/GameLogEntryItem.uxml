@@ -1,0 +1,11 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" editor-extension-mode="False">
+    <Style src="GameLogOverlay.uss" />
+    <Style src="../GameTheme.uss" />
+    <ui:VisualElement class="gl-entry">
+        <ui:VisualElement class="gl-entry-header">
+            <ui:Label class="gl-entry-module" />
+            <ui:Label class="gl-entry-message" />
+        </ui:VisualElement>
+        <ui:Label class="gl-entry-stack" />
+    </ui:VisualElement>
+</ui:UXML>

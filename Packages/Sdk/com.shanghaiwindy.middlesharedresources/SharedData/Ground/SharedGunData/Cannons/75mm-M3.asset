@@ -1,0 +1,260 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8685819256498674601
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1355950744, guid: 0512a3c011ce1c84db3d9ccc1f4d6d2e, type: 3}
+  m_Name: T45
+  m_EditorClassIdentifier: 
+  comment: 
+  bulletVFX: {fileID: 11400000, guid: 1f43bc75465ab554da410a1c67167a6f, type: 2}
+  damage: 110
+  velocity: 868
+  gravityDamper: 9.8
+  parabolaType: 0
+  fireRecoil: 120
+  caliber: 75
+  isOverrideLifeTime: 0
+  overrideLifetime: 10
+  maxCapability: 0
+  penetration: 139
+  warHeadMaterial: {fileID: 0}
+  warheadSlope: {fileID: 0}
+  moduleData:
+    explosiveMassEqualTNT: 0
+    mass: 3.81
+    fuseDelay: 0
+    fuseSensitivity: 10
+  secondaryShatterMaterial: {fileID: 0}
+  canOverpressure: 1
+  overpressurePower: 1
+  velocityDeclineScalingType: 0
+  customVelocityDeclineScaling: 1
+  isDeclineByDistance: 1
+  warhead: 6
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 359232964, guid: 0512a3c011ce1c84db3d9ccc1f4d6d2e, type: 3}
+  m_Name: 75mm-M3
+  m_EditorClassIdentifier: 
+  comment: "M4A1 75 \u70AE"
+  tankFireParameter:
+    crosshairPreferType: 0
+    fireState: 0
+    ReloadTime: 5.6
+    isEnableSimpleReloadSound: 1
+    overrideSimpleReloadSound:
+      rid: -2
+    AmmoCount: 90
+    hasSlot: 0
+    slotCount: 0
+    slotDuration: 0
+    canFireUnderWater: 0
+    advanceFireClass:
+      SmallReloadTime: 0
+      LargeReloadTime: 0
+      MaxSmallAmmo: 0
+      disableMegaIcon: 0
+      isEnableSmallReloadSound: 0
+      overrideSmallReloadSound:
+        rid: -2
+      isEnableLargeReloadSound: 0
+      overrideLargeReloadSound:
+        rid: -2
+    drumFire:
+      fireDuration: 0
+      reloadTime: []
+      isEnableDrumReloadSound: 0
+      overrideDrumReloadSound:
+        rid: -2
+      disableMegaIcon: 0
+    energyVFX: {fileID: 0}
+    energyFire:
+      perShotEnergy: 0
+      totalEnergy: 0
+      perShotInterval: 0
+      vfxDuration: 0
+      isEnableEnergyReloadSound: 0
+      overrideEnergyReloadSound:
+        rid: -2
+    dispersion: 0.1
+    fireSpread:
+      dispersion: 0.43
+      aimTime: 2.3
+      moveSpreadCoff: 0.24
+      traverseSpreadCoff: 0.24
+      gunSpreadCoff: 0.18
+      afterFiredCoff: 4
+      damagedCoff: 2
+    fmodBulletSound: {fileID: 11400000, guid: b7c111a9222d18d49afb656b056a36d0, type: 2}
+    bulletData:
+    - {fileID: 7588634151649993216}
+    - {fileID: 458668136923804308}
+    - {fileID: -8685819256498674601}
+    - {fileID: 1990063158564391554}
+    muzzleFire: 1
+    overrideMuzzleFires: []
+    waveInteractType: 0
+    customWaveInteract:
+      respondTime: 0
+      radius: 0
+      weight: 0
+    fireDymScale: 1
+    fireCycleTime: 1
+    isFireDymIfExtraTurret: 0
+    disableGunAnimation: 0
+    isInRangeFire: 0
+    IsOverrideRangeFireAngle: 0
+    rangeFireAngle: 0
+    isEnableFireGroup: 0
+    fireGroupParm:
+      groupID: 0
+      priority: 0
+      fireMinDelay: 0
+    canBrakeSubFireLoop: 0
+    canFireIfMainClick: 0
+    canFireIfSubClick: 0
+    isEnableSeparateFireButton: 0
+    separateFireType: 0
+    separateFireShortKeyType: 0
+    zoomProfileData: {fileID: 0}
+    fireActionData: {fileID: 0}
+    customSightData: {fileID: 0}
+    reloadStatePreferType: 0
+    vehicleLuaBehaviors: []
+    buffRefs: []
+    buffs: []
+  references:
+    version: 2
+    RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }
+--- !u!114 &458668136923804308
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1355950744, guid: 0512a3c011ce1c84db3d9ccc1f4d6d2e, type: 3}
+  m_Name: M72
+  m_EditorClassIdentifier: 
+  comment: 
+  bulletVFX: {fileID: 11400000, guid: 1f43bc75465ab554da410a1c67167a6f, type: 2}
+  damage: 110
+  velocity: 619
+  gravityDamper: 9.8
+  parabolaType: 0
+  fireRecoil: 120
+  caliber: 75
+  isOverrideLifeTime: 0
+  overrideLifetime: 10
+  maxCapability: 0
+  penetration: 91
+  warHeadMaterial: {fileID: 0}
+  warheadSlope: {fileID: 0}
+  moduleData:
+    explosiveMassEqualTNT: 0
+    mass: 6.3
+    fuseDelay: 0
+    fuseSensitivity: 10
+  secondaryShatterMaterial: {fileID: 0}
+  canOverpressure: 1
+  overpressurePower: 1
+  velocityDeclineScalingType: 0
+  customVelocityDeclineScaling: 1
+  isDeclineByDistance: 1
+  warhead: 1
+--- !u!114 &1990063158564391554
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -2110409414, guid: 0512a3c011ce1c84db3d9ccc1f4d6d2e, type: 3}
+  m_Name: M48
+  m_EditorClassIdentifier: 
+  comment: 
+  bulletVFX: {fileID: 11400000, guid: c65b6a353c7152c439ce780e94d74bc4, type: 2}
+  damage: 175
+  velocity: 463
+  gravityDamper: 9.8
+  parabolaType: 0
+  fireRecoil: 120
+  caliber: 75
+  isOverrideLifeTime: 0
+  overrideLifetime: 10
+  maxCapability: 0
+  penetration: 10
+  warHeadMaterial: {fileID: 0}
+  warheadSlope: {fileID: 0}
+  moduleData:
+    explosiveMassEqualTNT: 666
+    mass: 6.3
+    fuseDelay: 0
+    fuseSensitivity: 10
+  secondaryShatterMaterial: {fileID: 0}
+  canOverpressure: 1
+  overpressurePower: 1
+  velocityDeclineScalingType: 0
+  customVelocityDeclineScaling: 1
+  ExplosionRange: 1.1
+  maxDamagePershell: 17.5
+  forceModuleDestroyedRange: 0
+  explosionWarhead: 3001
+--- !u!114 &7588634151649993216
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1355950744, guid: 0512a3c011ce1c84db3d9ccc1f4d6d2e, type: 3}
+  m_Name: M61
+  m_EditorClassIdentifier: 
+  comment: 
+  bulletVFX: {fileID: 11400000, guid: 1f43bc75465ab554da410a1c67167a6f, type: 2}
+  damage: 110
+  velocity: 618
+  gravityDamper: 9.8
+  parabolaType: 0
+  fireRecoil: 120
+  caliber: 75
+  isOverrideLifeTime: 0
+  overrideLifetime: 10
+  maxCapability: 0
+  penetration: 104
+  warHeadMaterial: {fileID: 0}
+  warheadSlope: {fileID: 0}
+  moduleData:
+    explosiveMassEqualTNT: 63.7
+    mass: 6.79
+    fuseDelay: 1.2
+    fuseSensitivity: 10
+  secondaryShatterMaterial: {fileID: 0}
+  canOverpressure: 1
+  overpressurePower: 1
+  velocityDeclineScalingType: 0
+  customVelocityDeclineScaling: 1
+  isDeclineByDistance: 1
+  warhead: 8

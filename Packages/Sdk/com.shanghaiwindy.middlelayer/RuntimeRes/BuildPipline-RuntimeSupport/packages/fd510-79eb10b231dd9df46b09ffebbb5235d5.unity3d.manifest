@@ -1,0 +1,22 @@
+ManifestFileVersion: 0
+CRC: 3474855371
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 9b5fbaececa7c628ec7cc367bb45a7c5
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 923768aebf385ad86f7762daa8034951
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 9b5fbaececa7c628ec7cc367bb45a7c5
+HashAppended: 0
+ClassTypes:
+- Class: 213
+  Script: {instanceID: 0}
+- Class: 687078895
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Packages/com.shanghaiwindy.coreresources/GUI/Common/Prefab/Icons/Crew/Heart.png
+Dependencies: []

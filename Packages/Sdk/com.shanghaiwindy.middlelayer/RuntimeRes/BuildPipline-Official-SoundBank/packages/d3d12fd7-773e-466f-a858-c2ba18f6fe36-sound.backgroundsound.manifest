@@ -1,0 +1,28 @@
+ManifestFileVersion: 0
+CRC: 2623780476
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 8ed6580438cc04a591836ac4ea1c40e8
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: a8309e7bc5b8b7442866aae32b2c73b0
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 8ed6580438cc04a591836ac4ea1c40e8
+HashAppended: 0
+ClassTypes:
+- Class: 114
+  Script: {fileID: 11500000, guid: 07a259e254ba46fc9bd74c682430a1d1, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers:
+- AssemblyName: Core
+  ClassName: ShanghaiWindy.Core.LocalizedName
+- AssemblyName: FMODUnity
+  ClassName: FMOD.GUID
+- AssemblyName: FMODUnity
+  ClassName: FMODUnity.EventReference
+Assets:
+- "Packages/com.windyverse.client.shared/OfficialSoundBank/Bgm/\u30EA\u30D1\u30D6\u30EA\u30C3\u30AF\u8B83\u6B4C-Bgm.asset"
+Dependencies: []

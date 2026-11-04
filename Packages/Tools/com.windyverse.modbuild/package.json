@@ -1,0 +1,7 @@
+{
+  "name": "com.windyverse.modbuild",
+  "version": "1.0.0",
+  "displayName": "Panzer War Modpack Build",
+  "description": "Batch-mode entry that builds one modpack per CI job.",
+  "unity": "2022.3"
+}

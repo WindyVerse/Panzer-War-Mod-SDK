@@ -1,0 +1,22 @@
+ManifestFileVersion: 0
+CRC: 2584480327
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 10a58d01ec4df7e3480cc874a58a9115
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 923768aebf385ad86f7762daa8034951
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 10a58d01ec4df7e3480cc874a58a9115
+HashAppended: 0
+ClassTypes:
+- Class: 213
+  Script: {instanceID: 0}
+- Class: 687078895
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Packages/com.shanghaiwindy.coreresources/GUI/Common/Prefab/Icons/GarageV2/Equipment.png
+Dependencies: []

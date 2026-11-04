@@ -1,0 +1,433 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-2366123728439323481
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -494410347, guid: 0512a3c011ce1c84db3d9ccc1f4d6d2e, type: 3}
+  m_Name: AKM-MainProperty
+  m_EditorClassIdentifier: 
+  comment: 
+  coolDown: 0.12
+  clipMaxBulletCount: 30
+  bulletData: {fileID: 11400000, guid: c4f5182bce654ab448e5e4f3972f0ffa, type: 2}
+  reloadTime: 2.5
+  hasEmptyReload: 1
+  emptyReloadTime: 3.2
+  hasReloadAim: 0
+  SpreadOverTime:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0.8
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  AimSpreadFactor: 0.8
+  CrouchSpreadFactor: 0.95
+  IdleSpreadFactor: 1
+  WalkSpreadFactor: 0.95
+  RunSpreadFactor: 0.95
+  JumpSpreadFactor: 1.5
+  baseSpread: 1
+  maxSpread: 5
+  spreadPerShot: 0.5
+  spreadRecoveryRate: 3
+  aimSpreadMultiplier: 0.3
+  moveSpreadMultiplier: 1.5
+  crouchSpreadMultiplier: 0.8
+  aimInDuration: 0.2
+  aimOutDuration: 0.15
+  aimFOVMultiplier: 0.75
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 308447777, guid: 0512a3c011ce1c84db3d9ccc1f4d6d2e, type: 3}
+  m_Name: AKM
+  m_EditorClassIdentifier: 
+  prettyInternalWeaponName: AKM
+  itemGUID: f991b11d-52ed-4f72-b87d-8b500b45c067
+  tpsWeaponPrefab: {fileID: 7873227246539708678, guid: cbccb8edd43bc124099acac116fbe47c,
+    type: 3}
+  weaponInfoProp:
+    assetGUID: 66b7386525581254e82598ab4e20fa03
+    extra: Assets/Res/FPS/Data/WeaponData/AKM/AKM-WeaponInfo.asset
+  mainPropertyData: {fileID: -2366123728439323481}
+  tpAnimOverrideClips:
+    StandIdle: {fileID: 0}
+    WalkFwd: {fileID: 0}
+    WalkBwd: {fileID: 0}
+    StrafeRight: {fileID: 0}
+    WalkFwdRight: {fileID: 0}
+    WalkFwdLeft: {fileID: 0}
+    WalkBwdRight: {fileID: 0}
+    WalkBwdLeft: {fileID: 0}
+    Sprint: {fileID: 0}
+    CrouchIdle: {fileID: 0}
+    CrouchWalkFwd: {fileID: 0}
+    CrouchWalkBwd: {fileID: 0}
+    CrouchStrafeRight: {fileID: 0}
+    CrouchStrafeLeft: {fileID: 0}
+    CrouchWalkFwdRight: {fileID: 0}
+    CrouchWalkFwdLeft: {fileID: 0}
+    CrouchWalkBwdRight: {fileID: 0}
+    CrouchWalkBwdLeft: {fileID: 0}
+    JumpStart: {fileID: 0}
+    JumpLoop: {fileID: 0}
+    JumpEnd: {fileID: 0}
+    SlideStart: {fileID: 0}
+    SlideLoop: {fileID: 0}
+    SlideEnd: {fileID: 0}
+    BodyIdle: {fileID: 0}
+    BodyFire: {fileID: 0}
+    BodyReload: {fileID: 0}
+    BodyEmptyReload: {fileID: 0}
+    BodyWield: {fileID: 0}
+    GrenadeThrow: {fileID: 0}
+  tpSlotConfig:
+    forwardAxis: 0
+    rightHandTargetOffset: {x: 0, y: 0, z: 0}
+    rightHandTargetEuler: {x: 0, y: 0, z: 0}
+    rightElbowHintOffset: {x: 0, y: 0, z: 0}
+    leftHandTargetOffset: {x: 0, y: 0, z: 0}
+    leftHandTargetEuler: {x: 0, y: 0, z: 0}
+    leftElbowHintOffset: {x: 0, y: 0, z: 0}
+    weaponPositionOffset: {x: 0.1097298, y: -0.03162619, z: 0.02014462}
+    muzzleFlashPath: FFPoint
+    fireEffectPath: FireEffect
+    shellEjectPath: ShellEject
+  fpCrossHairData: {fileID: 8279546552748042252}
+  fpRecoilData: {fileID: 3937249911499521392}
+  fpMiscData: {fileID: 2469417611828774015}
+--- !u!114 &2469417611828774015
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1725313798, guid: 0512a3c011ce1c84db3d9ccc1f4d6d2e, type: 3}
+  m_Name: AKM-FPWeaponMiscData
+  m_EditorClassIdentifier: 
+  comment: 
+  ReloadSoundEvent:
+    Guid:
+      Data1: -896347724
+      Data2: 1132745351
+      Data3: 106230694
+      Data4: -1034607893
+    Path: event:/army/weapon/akm/akm_reload
+  EmptyReloadSoundEvent:
+    Guid:
+      Data1: -896347724
+      Data2: 1132745351
+      Data3: 106230694
+      Data4: -1034607893
+    Path: event:/army/weapon/akm/akm_reload
+  ReloadStartEvent:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  ReloadEndEvent:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  FireEvent:
+    Guid:
+      Data1: 1649439254
+      Data2: 1075717016
+      Data3: -162516059
+      Data4: -2090824244
+    Path: event:/army/weapon/akm/akm_fire
+  FireP3Event:
+    Guid:
+      Data1: 1813190059
+      Data2: 1231088293
+      Data3: -351166282
+      Data4: 276838938
+    Path: event:/army/weapon/akm/akm_fire_ai
+  ReloadLoopCamForces:
+  - delay: 0.1
+    Force:
+      Force: {x: 0.5, y: 0, z: 0.75}
+      Distribution: 7
+  - delay: 0.6
+    Force:
+      Force: {x: 0.5, y: -0.35, z: -0.75}
+      Distribution: 7
+  - delay: 1
+    Force:
+      Force: {x: 0.6, y: 0, z: -0.5}
+      Distribution: 7
+  - delay: 1.6
+    Force:
+      Force: {x: -0.2, y: 0.2, z: 1}
+      Distribution: 7
+  - delay: 2.1
+    Force:
+      Force: {x: 0.6, y: 0, z: -0.5}
+      Distribution: 7
+  ReloadStartCamForces: []
+  ReloadEndCamForces: []
+  EmptyReloadLoopCamForces:
+  - delay: 0.1
+    Force:
+      Force: {x: 0.5, y: 0, z: 0.75}
+      Distribution: 7
+  - delay: 0.6
+    Force:
+      Force: {x: 0.5, y: -0.35, z: -0.75}
+      Distribution: 7
+  - delay: 1
+    Force:
+      Force: {x: 0.6, y: 0, z: -0.5}
+      Distribution: 7
+  - delay: 1.6
+    Force:
+      Force: {x: -0.2, y: 0.2, z: 1}
+      Distribution: 7
+  - delay: 2.1
+    Force:
+      Force: {x: 0.6, y: 0, z: -0.5}
+      Distribution: 7
+  - delay: 2.2
+    Force:
+      Force: {x: -0.5, y: 0.3, z: 0.8}
+      Distribution: 7
+  - delay: 2.3
+    Force:
+      Force: {x: 1.35, y: -0.3, z: -0.8}
+      Distribution: 7
+  HandlingCamForces: []
+  MuzzleFlashVFX:
+    vfxName: FPS_Muzzle_Rifle
+  MuzzleFlashOffset: {x: -0.599, y: 0.003, z: 0.019}
+--- !u!114 &3937249911499521392
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 289569920, guid: 0512a3c011ce1c84db3d9ccc1f4d6d2e, type: 3}
+  m_Name: AKM-FPWeaponRecoilData
+  m_EditorClassIdentifier: 
+  comment: 
+  fpCameraRecoil:
+    AimMultiplier: 0.9
+    RecoilPatternMultiplier: 1.3
+    RecoilPattern:
+    - {x: -4.5, y: 1}
+    - {x: -4.5, y: 0}
+    - {x: -7.5, y: 1}
+    - {x: -6, y: 0}
+    - {x: -7, y: -1}
+    - {x: -6, y: 1}
+    - {x: -7, y: 4}
+    - {x: -4.5, y: -2}
+    - {x: -5, y: -3}
+    - {x: -4.5, y: 5}
+    - {x: -3, y: 2}
+    - {x: -2, y: 1.5}
+    - {x: -1, y: 4}
+    - {x: 2, y: 1}
+    - {x: 3, y: 2}
+    - {x: 4, y: 5}
+    - {x: -2.5, y: -1}
+    - {x: -4, y: -2}
+    - {x: -6, y: -4}
+    - {x: -3, y: 0}
+    - {x: -3, y: 0}
+    - {x: -4, y: -2}
+    - {x: -2, y: -3}
+    - {x: 2, y: 2}
+    - {x: -1, y: 3}
+    - {x: -5, y: 2}
+    - {x: -6, y: 1}
+    - {x: -6, y: 3}
+    - {x: -5, y: 1}
+    - {x: -2, y: 0}
+    RecoilControlEasing: 30
+    RecoilControlDelay: 0.1
+    RecoilControlDuration: 2
+    SpringData:
+      Stiffness: {x: 0.1, y: 0.1, z: 0.1}
+      Damping: {x: 0.4, y: 0.3, z: 0.3}
+    ShootForce:
+      RotForce: {x: -0.7, y: 0, z: -0.25}
+      PosForce: {x: 0, y: 0, z: -1}
+      Distribution: 2
+      JitterForce:
+        xJitter: 0.3
+        yJitter: 0.3
+        zJitter: 0.2
+    ShootShake:
+      PositionAmplitude: {x: 0, y: 0, z: 0}
+      RotationAmplitude: {x: 0, y: 0, z: 0}
+      Decay:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+          time: 0
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        - serializedVersion: 3
+          time: 1
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      Duration: 2
+      Speed: 1
+  fpWeaponModelRecoil:
+    RecoilOverTime:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0.00527966
+        value: 0.09973171
+        inSlope: 1.5422992
+        outSlope: 1.5422992
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0.175
+      - serializedVersion: 3
+        time: 0.9772186
+        value: 0.89678574
+        inSlope: 0.034449577
+        outSlope: 0.034449577
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0.2500099
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    ShootForce:
+      RotForce: {x: -0.25, y: -0.1, z: -0.125}
+      PosForce: {x: 0, y: -0.1, z: -0.5}
+      Distribution: 3
+      JitterForce:
+        xJitter: 0.25
+        yJitter: 0.35
+        zJitter: 0.25
+    AimShootForce:
+      RotForce: {x: 0, y: -0.02, z: 0}
+      PosForce: {x: 0.02, y: 0, z: -0.5}
+      Distribution: 3
+      JitterForce:
+        xJitter: 0.2
+        yJitter: 1
+        zJitter: 0.2
+    DryFireForce:
+      RotForce: {x: 0.12, y: 0, z: -0.1}
+      PosForce: {x: 0, y: 0, z: 0}
+      Distribution: 5
+      JitterForce:
+        xJitter: 0
+        yJitter: 0
+        zJitter: 0
+    ChangeFireModeForce:
+      RotForce: {x: -0.15, y: 0.15, z: 0.4}
+      PosForce: {x: -0.04, y: -0.08, z: -0.1}
+      Distribution: 8
+      JitterForce:
+        xJitter: 0.2
+        yJitter: 0.2
+        zJitter: 0.2
+--- !u!114 &8279546552748042252
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -201026791, guid: 0512a3c011ce1c84db3d9ccc1f4d6d2e, type: 3}
+  m_Name: AKM-FPWeaponCrosshairData
+  m_EditorClassIdentifier: 
+  comment: 
+  NormalColor: {r: 1, g: 1, b: 1, a: 1}
+  OnEntityColor: {r: 1, g: 0, b: 0, a: 1}
+  crossHairType: 1
+  StaticCrosshair:
+    overrideSprite: {fileID: 0}
+    size: {x: 64, y: 64}
+  DynamicCrosshair:
+    isShowUp: 1
+    overrideUpSprite: {fileID: 0}
+    isShowDown: 1
+    overrideDownSprite: {fileID: 0}
+    isShowRight: 1
+    overrideRightSprite: {fileID: 0}
+    isShowLeft: 1
+    overrideLeftSprite: {fileID: 0}
+  PunchSize: 2
+  MoveSpeed: 3
+  ShowWhenAiming: 0
+  aimCrosshairType: 0
+  AimNormalColor: {r: 1, g: 1, b: 1, a: 1}
+  AimStaticCrosshair:
+    overrideSprite: {fileID: 0}
+    size: {x: 64, y: 64}
+  AimDynamicCrosshair:
+    isShowUp: 0
+    overrideUpSprite: {fileID: 0}
+    isShowDown: 0
+    overrideDownSprite: {fileID: 0}
+    isShowRight: 0
+    overrideRightSprite: {fileID: 0}
+    isShowLeft: 0
+    overrideLeftSprite: {fileID: 0}
+  AimPunchSize: 1.5
+  AimMoveSpeed: 5

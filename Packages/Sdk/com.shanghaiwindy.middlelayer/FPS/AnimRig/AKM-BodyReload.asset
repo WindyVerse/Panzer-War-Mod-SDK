@@ -1,0 +1,1335 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -495537380, guid: 0512a3c011ce1c84db3d9ccc1f4d6d2e, type: 3}
+  m_Name: AKM-BodyReload
+  m_EditorClassIdentifier: 
+  outputName: AKMBodyReload
+  category: WeaponSet/AKM
+  sourceClip: {fileID: 7400000, guid: 7a1b2c3d4e5f6071829300000000c001, type: 2}
+  sourceSampleMode: 0
+  staticFrame: 0
+  sampleRate: 30
+  isLooping: 0
+  durationOverride: 0
+  rigTargets:
+  - bone: 0
+    type: 2
+    weight: 1
+  - bone: 17
+    type: 0
+    weight: 1
+  - bone: 18
+    type: 0
+    weight: 1
+  rigKeyframes:
+  - time: 0
+    ease: 0
+    targets:
+    - bone: 0
+      type: 2
+      targetPosition: {x: 0.00976, y: 0.90378, z: 0.01464}
+      targetRotation: {x: -0.09001, y: 0.354344, z: 0.025155, w: 0.930433}
+      hintPosition: {x: 0, y: 0, z: 0}
+      weight: 1
+    - bone: 17
+      type: 0
+      targetPosition: {x: 0.0871418, y: 1.25008, z: 0.386045}
+      targetRotation: {x: -0.349357, y: 0.0501463, z: 0.931215, w: 0.0909635}
+      hintPosition: {x: -1.88663, y: 1.21514, z: -0.300265}
+      weight: 1
+    - bone: 18
+      type: 0
+      targetPosition: {x: 0.164998, y: 1.23, z: 0.190005}
+      targetRotation: {x: -0.5, y: -0.5, z: -0.5, w: 0.5}
+      hintPosition: {x: 0.3, y: 1, z: 0.06}
+      weight: 1
+  - time: 0.04
+    ease: 0
+    targets:
+    - bone: 0
+      type: 2
+      targetPosition: {x: 0.00976, y: 0.90378, z: 0.01464}
+      targetRotation: {x: -0.09001, y: 0.354344, z: 0.025155, w: 0.930433}
+      hintPosition: {x: 0, y: 0, z: 0}
+      weight: 1
+    - bone: 17
+      type: 0
+      targetPosition: {x: 0.0845328, y: 1.24294, z: 0.386479}
+      targetRotation: {x: -0.31764, y: 0.046858, z: 0.944202, w: 0.0734241}
+      hintPosition: {x: -1.9297, y: 1.14045, z: -0.161596}
+      weight: 1
+    - bone: 18
+      type: 0
+      targetPosition: {x: 0.149261, y: 1.22548, z: 0.185477}
+      targetRotation: {x: -0.508181, y: -0.490601, z: -0.473999, w: 0.525725}
+      hintPosition: {x: 0.260857, y: 1.03728, z: 0.0359356}
+      weight: 1
+  - time: 0.08
+    ease: 0
+    targets:
+    - bone: 0
+      type: 2
+      targetPosition: {x: 0.00976, y: 0.90378, z: 0.01464}
+      targetRotation: {x: -0.09001, y: 0.354344, z: 0.025155, w: 0.930433}
+      hintPosition: {x: 0, y: 0, z: 0}
+      weight: 1
+    - bone: 17
+      type: 0
+      targetPosition: {x: 0.0987472, y: 1.2294, z: 0.375001}
+      targetRotation: {x: -0.23594, y: 0.0400208, z: 0.970133, w: 0.039652}
+      hintPosition: {x: -1.96917, y: 0.997353, z: 0.180388}
+      weight: 1
+    - bone: 18
+      type: 0
+      targetPosition: {x: 0.128837, y: 1.21621, z: 0.165675}
+      targetRotation: {x: -0.529682, y: -0.45799, z: -0.412589, w: 0.582626}
+      hintPosition: {x: 0.187807, y: 1.10608, z: -0.022}
+      weight: 1
+  - time: 0.12
+    ease: 0
+    targets:
+    - bone: 0
+      type: 2
+      targetPosition: {x: 0.00976, y: 0.90378, z: 0.01464}
+      targetRotation: {x: -0.09001, y: 0.354344, z: 0.025155, w: 0.930433}
+      hintPosition: {x: 0, y: 0, z: 0}
+      weight: 1
+    - bone: 17
+      type: 0
+      targetPosition: {x: 0.122962, y: 1.22101, z: 0.359405}
+      targetRotation: {x: -0.169629, y: 0.0342183, z: 0.98471, w: 0.020047}
+      hintPosition: {x: -1.94248, y: 0.913537, z: 0.44563}
+      weight: 1
+    - bone: 18
+      type: 0
+      targetPosition: {x: 0.12466, y: 1.21018, z: 0.1478}
+      targetRotation: {x: -0.545697, y: -0.424992, z: -0.366624, w: 0.622242}
+      hintPosition: {x: 0.1463, y: 1.14311, z: -0.0618}
+      weight: 1
+  - time: 0.16
+    ease: 0
+    targets:
+    - bone: 0
+      type: 2
+      targetPosition: {x: 0.00976, y: 0.90378, z: 0.01464}
+      targetRotation: {x: -0.09001, y: 0.354344, z: 0.025155, w: 0.930433}
+      hintPosition: {x: 0, y: 0, z: 0}
+      weight: 1
+    - bone: 17
+      type: 0
+      targetPosition: {x: 0.14461, y: 1.20687, z: 0.335486}
+      targetRotation: {x: -0.234712, y: 0.16678, z: 0.954884, w: 0.0727424}
+      hintPosition: {x: -1.59093, y: 0.952577, z: 0.443015}
+      weight: 1
+    - bone: 18
+      type: 0
+      targetPosition: {x: 0.13129, y: 1.20959, z: 0.14674}
+      targetRotation: {x: -0.549024, y: -0.414872, z: -0.358794, w: 0.630652}
+      hintPosition: {x: 0.1466, y: 1.14377, z: -0.06381}
+      weight: 1
+  - time: 0.2
+    ease: 0
+    targets:
+    - bone: 0
+      type: 2
+      targetPosition: {x: 0.00976, y: 0.90378, z: 0.01464}
+      targetRotation: {x: -0.09001, y: 0.354344, z: 0.025155, w: 0.930433}
+      hintPosition: {x: 0, y: 0, z: 0}
+      weight: 1
+    - bone: 17
+      type: 0
+      targetPosition: {x: 0.142188, y: 1.12023, z: 0.292585}
+      targetRotation: {x: -0.308509, y: 0.451264, z: 0.804394, w: 0.232667}
+      hintPosition: {x: -0.880774, y: 1.02418, z: 0.312048}
+      weight: 1
+    - bone: 18
+      type: 0
+      targetPosition: {x: 0.13699, y: 1.21198, z: 0.15194}
+      targetRotation: {x: -0.548781, y: -0.412366, z: -0.355491, w: 0.634366}
+      hintPosition: {x: 0.15054, y: 1.14695, z: -0.05898}
+      weight: 1
+  - time: 0.24
+    ease: 0
+    targets:
+    - bone: 0
+      type: 2
+      targetPosition: {x: 0.00976, y: 0.90378, z: 0.01464}
+      targetRotation: {x: -0.09001, y: 0.354344, z: 0.025155, w: 0.930433}
+      hintPosition: {x: 0, y: 0, z: 0}
+      weight: 1
+    - bone: 17
+      type: 0
+      targetPosition: {x: 0.012366, y: 0.925069, z: 0.219139}
+      targetRotation: {x: -0.138188, y: 0.6436, z: 0.60345, w: 0.450035}
+      hintPosition: {x: -0.307232, y: 1.0379, z: 0.156462}
+      weight: 1
+    - bone: 18
+      type: 0
+      targetPosition: {x: 0.14454, y: 1.21515, z: 0.15952}
+      targetRotation: {x: -0.548018, y: -0.41121, z: -0.354269, w: 0.636456}
+      hintPosition: {x: 0.15741, y: 1.1508, z: -0.05165}
+      weight: 1
+  - time: 0.28
+    ease: 0
+    targets:
+    - bone: 0
+      type: 2
+      targetPosition: {x: 0.00976, y: 0.90378, z: 0.01464}
+      targetRotation: {x: -0.09001, y: 0.354344, z: 0.025155, w: 0.930433}
+      hintPosition: {x: 0, y: 0, z: 0}
+      weight: 1
+    - bone: 17
+      type: 0
+      targetPosition: {x: -0.16436, y: 0.82819, z: 0.125}
+      targetRotation: {x: 0.088597, y: 0.598716, z: 0.564405, w: 0.561371}
+      hintPosition: {x: -0.21727, y: 1.03406, z: 0.06401}
+      weight: 1
+    - bone: 18
+      type: 0
+      targetPosition: {x: 0.14879, y: 1.21722, z: 0.16704}
+      targetRotation: {x: -0.547136, y: -0.413696, z: -0.355556, w: 0.634885}
+      hintPosition: {x: 0.16307, y: 1.15261, z: -0.04396}
+      weight: 1
+  - time: 0.32
+    ease: 0
+    targets:
+    - bone: 0
+      type: 2
+      targetPosition: {x: 0.00976, y: 0.90378, z: 0.01464}
+      targetRotation: {x: -0.09001, y: 0.354344, z: 0.025155, w: 0.930433}
+      hintPosition: {x: 0, y: 0, z: 0}
+      weight: 1
+    - bone: 17
+      type: 0
+      targetPosition: {x: -0.24053, y: 0.83474, z: 0.06822}
+      targetRotation: {x: 0.189214, y: 0.523216, z: 0.601481, w: 0.573293}
+      hintPosition: {x: -0.26729, y: 1.04992, z: 0.02488}
+      weight: 1
+    - bone: 18
+      type: 0
+      targetPosition: {x: 0.14537, y: 1.21856, z: 0.17331}
+      targetRotation: {x: -0.543804, y: -0.422608, z: -0.362754, w: 0.627766}
+      hintPosition: {x: 0.16532, y: 1.15309, z: -0.03696}
+      weight: 1
+  - time: 0.36
+    ease: 0
+    targets:
+    - bone: 0
+      type: 2
+      targetPosition: {x: 0.00976, y: 0.90378, z: 0.01464}
+      targetRotation: {x: -0.09001, y: 0.354344, z: 0.025155, w: 0.930433}
+      hintPosition: {x: 0, y: 0, z: 0}
+      weight: 1
+    - bone: 17
+      type: 0
+      targetPosition: {x: -0.11432, y: 0.87654, z: 0.15441}
+      targetRotation: {x: 0.042667, y: 0.655234, z: 0.583101, w: 0.478374}
+      hintPosition: {x: -0.22131, y: 1.0447, z: 0.05862}
+      weight: 1
+    - bone: 18
+      type: 0
+      targetPosition: {x: 0.12799, y: 1.21988, z: 0.17938}
+      targetRotation: {x: -0.534086, y: -0.442922, z: -0.380052, w: 0.611665}
+      hintPosition: {x: 0.16134, y: 1.15319, z: -0.0288}
+      weight: 1
+  - time: 0.4
+    ease: 0
+    targets:
+    - bone: 0
+      type: 2
+      targetPosition: {x: 0.00976, y: 0.90378, z: 0.01464}
+      targetRotation: {x: -0.09001, y: 0.354344, z: 0.025155, w: 0.930433}
+      hintPosition: {x: 0, y: 0, z: 0}
+      weight: 1
+    - bone: 17
+      type: 0
+      targetPosition: {x: 0.03433, y: 1.02655, z: 0.26834}
+      targetRotation: {x: -0.242302, y: 0.777254, z: 0.457909, w: 0.35705}
+      hintPosition: {x: -0.1384, y: 1.0616, z: 0.13479}
+      weight: 1
+    - bone: 18
+      type: 0
+      targetPosition: {x: 0.10795, y: 1.21862, z: 0.18263}
+      targetRotation: {x: -0.524235, y: -0.462882, z: -0.398076, w: 0.593679}
+      hintPosition: {x: 0.15479, y: 1.15038, z: -0.02244}
+      weight: 1
+  - time: 0.44
+    ease: 0
+    targets:
+    - bone: 0
+      type: 2
+      targetPosition: {x: 0.00976, y: 0.90378, z: 0.01464}
+      targetRotation: {x: -0.09001, y: 0.354344, z: 0.025155, w: 0.930433}
+      hintPosition: {x: 0, y: 0, z: 0}
+      weight: 1
+    - bone: 17
+      type: 0
+      targetPosition: {x: 0.10981, y: 1.08569, z: 0.26466}
+      targetRotation: {x: -0.397587, y: 0.709679, z: 0.485834, w: 0.319759}
+      hintPosition: {x: -0.08653, y: 1.0909, z: 0.16305}
+      weight: 1
+    - bone: 18
+      type: 0
+      targetPosition: {x: 0.10522, y: 1.21691, z: 0.17498}
+      targetRotation: {x: -0.52704, y: -0.460649, z: -0.397938, w: 0.593024}
+      hintPosition: {x: 0.15079, y: 1.14794, z: -0.03012}
+      weight: 1
+  - time: 0.48
+    ease: 0
+    targets:
+    - bone: 0
+      type: 2
+      targetPosition: {x: 0.00976, y: 0.90378, z: 0.01464}
+      targetRotation: {x: -0.09001, y: 0.354344, z: 0.025155, w: 0.930433}
+      hintPosition: {x: 0, y: 0, z: 0}
+      weight: 1
+    - bone: 17
+      type: 0
+      targetPosition: {x: 0.14526, y: 1.11685, z: 0.23529}
+      targetRotation: {x: -0.495111, y: 0.618921, z: 0.533177, w: 0.295845}
+      hintPosition: {x: -0.06562, y: 1.11343, z: 0.16884}
+      weight: 1
+    - bone: 18
+      type: 0
+      targetPosition: {x: 0.10579, y: 1.21519, z: 0.16376}
+      targetRotation: {x: -0.533636, y: -0.453622, z: -0.393805, w: 0.595297}
+      hintPosition: {x: 0.14677, y: 1.14518, z: -0.04196}
+      weight: 1
+  - time: 0.52
+    ease: 0
+    targets:
+    - bone: 0
+      type: 2
+      targetPosition: {x: 0.00976, y: 0.90378, z: 0.01464}
+      targetRotation: {x: -0.09001, y: 0.354344, z: 0.025155, w: 0.930433}
+      hintPosition: {x: 0, y: 0, z: 0}
+      weight: 1
+    - bone: 17
+      type: 0
+      targetPosition: {x: 0.1417, y: 1.14604, z: 0.23318}
+      targetRotation: {x: -0.489127, y: 0.630386, z: 0.542761, w: 0.262259}
+      hintPosition: {x: -0.07295, y: 1.12975, z: 0.18258}
+      weight: 1
+    - bone: 18
+      type: 0
+      targetPosition: {x: 0.10323, y: 1.215, z: 0.15813}
+      targetRotation: {x: -0.536255, y: -0.453858, z: -0.393823, w: 0.592746}
+      hintPosition: {x: 0.14403, y: 1.14359, z: -0.04715}
+      weight: 1
+  - time: 0.56
+    ease: 0
+    targets:
+    - bone: 0
+      type: 2
+      targetPosition: {x: 0.00976, y: 0.90378, z: 0.01464}
+      targetRotation: {x: -0.09001, y: 0.354344, z: 0.025155, w: 0.930433}
+      hintPosition: {x: 0, y: 0, z: 0}
+      weight: 1
+    - bone: 17
+      type: 0
+      targetPosition: {x: 0.15025, y: 1.15232, z: 0.24682}
+      targetRotation: {x: -0.498854, y: 0.648789, z: 0.530257, w: 0.221465}
+      hintPosition: {x: -0.06349, y: 1.14243, z: 0.19099}
+      weight: 1
+    - bone: 18
+      type: 0
+      targetPosition: {x: 0.11002, y: 1.2161, z: 0.16144}
+      targetRotation: {x: -0.535773, y: -0.448757, z: -0.386828, w: 0.601605}
+      hintPosition: {x: 0.14717, y: 1.14669, z: -0.04521}
+      weight: 1
+  - time: 0.6
+    ease: 0
+    targets:
+    - bone: 0
+      type: 2
+      targetPosition: {x: 0.00976, y: 0.90378, z: 0.01464}
+      targetRotation: {x: -0.09001, y: 0.354344, z: 0.025155, w: 0.930433}
+      hintPosition: {x: 0, y: 0, z: 0}
+      weight: 1
+    - bone: 17
+      type: 0
+      targetPosition: {x: 0.09664, y: 1.1513, z: 0.27433}
+      targetRotation: {x: -0.237407, y: 0.505385, z: 0.793901, w: 0.240719}
+      hintPosition: {x: -0.11876, y: 1.16405, z: 0.22593}
+      weight: 1
+    - bone: 18
+      type: 0
+      targetPosition: {x: 0.11507, y: 1.21735, z: 0.1642}
+      targetRotation: {x: -0.535789, y: -0.446995, z: -0.383165, w: 0.605237}
+      hintPosition: {x: 0.15067, y: 1.14853, z: -0.04292}
+      weight: 1
+  - time: 0.64
+    ease: 0
+    targets:
+    - bone: 0
+      type: 2
+      targetPosition: {x: 0.00976, y: 0.90378, z: 0.01464}
+      targetRotation: {x: -0.09001, y: 0.354344, z: 0.025155, w: 0.930433}
+      hintPosition: {x: 0, y: 0, z: 0}
+      weight: 1
+    - bone: 17
+      type: 0
+      targetPosition: {x: 0.11693, y: 1.18087, z: 0.31208}
+      targetRotation: {x: -0.252232, y: 0.257835, z: 0.91309, w: 0.190178}
+      hintPosition: {x: -0.08697, y: 1.18822, z: 0.22682}
+      weight: 1
+    - bone: 18
+      type: 0
+      targetPosition: {x: 0.11435, y: 1.21763, z: 0.16353}
+      targetRotation: {x: -0.53645, y: -0.446856, z: -0.382043, w: 0.605462}
+      hintPosition: {x: 0.14957, y: 1.14854, z: -0.04356}
+      weight: 1
+  - time: 0.68
+    ease: 0
+    targets:
+    - bone: 0
+      type: 2
+      targetPosition: {x: 0.00976, y: 0.90378, z: 0.01464}
+      targetRotation: {x: -0.09001, y: 0.354344, z: 0.025155, w: 0.930433}
+      hintPosition: {x: 0, y: 0, z: 0}
+      weight: 1
+    - bone: 17
+      type: 0
+      targetPosition: {x: 0.118133, y: 1.20296, z: 0.341799}
+      targetRotation: {x: -0.277886, y: 0.18264, z: 0.933339, w: 0.135279}
+      hintPosition: {x: -0.266746, y: 1.16485, z: 0.231036}
+      weight: 1
+    - bone: 18
+      type: 0
+      targetPosition: {x: 0.10811, y: 1.2162, z: 0.16617}
+      targetRotation: {x: -0.532307, y: -0.45193, z: -0.388833, w: 0.601015}
+      hintPosition: {x: 0.14741, y: 1.14752, z: -0.04032}
+      weight: 1
+  - time: 0.72
+    ease: 0
+    targets:
+    - bone: 0
+      type: 2
+      targetPosition: {x: 0.00976, y: 0.90378, z: 0.01464}
+      targetRotation: {x: -0.09001, y: 0.354344, z: 0.025155, w: 0.930433}
+      hintPosition: {x: 0, y: 0, z: 0}
+      weight: 1
+    - bone: 17
+      type: 0
+      targetPosition: {x: 0.0994824, y: 1.21435, z: 0.366857}
+      targetRotation: {x: -0.287976, y: 0.111674, z: 0.947945, w: 0.0774522}
+      hintPosition: {x: -0.923162, y: 1.07142, z: 0.213681}
+      weight: 1
+    - bone: 18
+      type: 0
+      targetPosition: {x: 0.09708, y: 1.21492, z: 0.1723}
+      targetRotation: {x: -0.524855, y: -0.462831, z: -0.400787, w: 0.591342}
+      hintPosition: {x: 0.14444, y: 1.14629, z: -0.03251}
+      weight: 1
+  - time: 0.76
+    ease: 0
+    targets:
+    - bone: 0
+      type: 2
+      targetPosition: {x: 0.00976, y: 0.90378, z: 0.01464}
+      targetRotation: {x: -0.09001, y: 0.354344, z: 0.025155, w: 0.930433}
+      hintPosition: {x: 0, y: 0, z: 0}
+      weight: 1
+    - bone: 17
+      type: 0
+      targetPosition: {x: 0.0705881, y: 1.22491, z: 0.381465}
+      targetRotation: {x: -0.262162, y: 0.054665, z: 0.962458, w: 0.0442456}
+      hintPosition: {x: -1.65427, y: 0.977426, z: 0.172756}
+      weight: 1
+    - bone: 18
+      type: 0
+      targetPosition: {x: 0.09101, y: 1.21408, z: 0.17637}
+      targetRotation: {x: -0.520499, y: -0.470322, z: -0.406731, w: 0.585191}
+      hintPosition: {x: 0.14332, y: 1.14507, z: -0.02711}
+      weight: 1
+  - time: 0.8
+    ease: 0
+    targets:
+    - bone: 0
+      type: 2
+      targetPosition: {x: 0.00976, y: 0.90378, z: 0.01464}
+      targetRotation: {x: -0.09001, y: 0.354344, z: 0.025155, w: 0.930433}
+      hintPosition: {x: 0, y: 0, z: 0}
+      weight: 1
+    - bone: 17
+      type: 0
+      targetPosition: {x: 0.0556969, y: 1.22414, z: 0.387756}
+      targetRotation: {x: -0.248675, y: 0.0368396, z: 0.967577, w: 0.0244591}
+      hintPosition: {x: -1.9983, y: 0.926071, z: 0.142293}
+      weight: 1
+    - bone: 18
+      type: 0
+      targetPosition: {x: 0.09141, y: 1.21154, z: 0.17928}
+      targetRotation: {x: -0.517789, y: -0.474042, z: -0.409344, w: 0.582766}
+      hintPosition: {x: 0.14617, y: 1.14262, z: -0.02358}
+      weight: 1
+  - time: 0.84
+    ease: 0
+    targets:
+    - bone: 0
+      type: 2
+      targetPosition: {x: 0.00976, y: 0.90378, z: 0.01464}
+      targetRotation: {x: -0.09001, y: 0.354344, z: 0.025155, w: 0.930433}
+      hintPosition: {x: 0, y: 0, z: 0}
+      weight: 1
+    - bone: 17
+      type: 0
+      targetPosition: {x: 0.0558119, y: 1.22347, z: 0.390673}
+      targetRotation: {x: -0.252374, y: 0.0380146, z: 0.966596, w: 0.0235499}
+      hintPosition: {x: -1.99587, y: 0.921774, z: 0.130664}
+      weight: 1
+    - bone: 18
+      type: 0
+      targetPosition: {x: 0.09311, y: 1.2103, z: 0.18251}
+      targetRotation: {x: -0.516782, y: -0.477202, z: -0.410174, w: 0.580494}
+      hintPosition: {x: 0.14949, y: 1.14086, z: -0.01973}
+      weight: 1
+  - time: 0.88
+    ease: 0
+    targets:
+    - bone: 0
+      type: 2
+      targetPosition: {x: 0.00976, y: 0.90378, z: 0.01464}
+      targetRotation: {x: -0.09001, y: 0.354344, z: 0.025155, w: 0.930433}
+      hintPosition: {x: 0, y: 0, z: 0}
+      weight: 1
+    - bone: 17
+      type: 0
+      targetPosition: {x: 0.0569804, y: 1.2271, z: 0.392627}
+      targetRotation: {x: -0.265369, y: 0.0405712, z: 0.962787, w: 0.0312093}
+      hintPosition: {x: -1.99116, y: 0.956177, z: 0.076792}
+      weight: 1
+    - bone: 18
+      type: 0
+      targetPosition: {x: 0.09978, y: 1.2129, z: 0.185592}
+      targetRotation: {x: -0.515298, y: -0.481581, z: -0.421196, w: 0.570212}
+      hintPosition: {x: 0.165349, y: 1.1262, z: -0.00865152}
+      weight: 1
+  - time: 0.92
+    ease: 0
+    targets:
+    - bone: 0
+      type: 2
+      targetPosition: {x: 0.00976, y: 0.90378, z: 0.01464}
+      targetRotation: {x: -0.09001, y: 0.354344, z: 0.025155, w: 0.930433}
+      hintPosition: {x: 0, y: 0, z: 0}
+      weight: 1
+    - bone: 17
+      type: 0
+      targetPosition: {x: 0.0677749, y: 1.2357, z: 0.391573}
+      targetRotation: {x: -0.298756, y: 0.0441042, z: 0.951758, w: 0.0543707}
+      hintPosition: {x: -1.96239, y: 1.05649, z: -0.0713744}
+      weight: 1
+    - bone: 18
+      type: 0
+      targetPosition: {x: 0.124657, y: 1.2198, z: 0.188083}
+      targetRotation: {x: -0.509705, y: -0.48964, z: -0.452598, w: 0.543699}
+      hintPosition: {x: 0.21728, y: 1.07784, z: 0.0186896}
+      weight: 1
+  - time: 0.96
+    ease: 0
+    targets:
+    - bone: 0
+      type: 2
+      targetPosition: {x: 0.00976, y: 0.90378, z: 0.01464}
+      targetRotation: {x: -0.09001, y: 0.354344, z: 0.025155, w: 0.930433}
+      hintPosition: {x: 0, y: 0, z: 0}
+      weight: 1
+    - bone: 17
+      type: 0
+      targetPosition: {x: 0.0809425, y: 1.24543, z: 0.388249}
+      targetRotation: {x: -0.333192, y: 0.0481672, z: 0.938279, w: 0.0793387}
+      hintPosition: {x: -1.91485, y: 1.16492, z: -0.226849}
+      weight: 1
+    - bone: 18
+      type: 0
+      targetPosition: {x: 0.15216, y: 1.22688, z: 0.189552}
+      targetRotation: {x: -0.503372, y: -0.496796, z: -0.485054, w: 0.514327}
+      hintPosition: {x: 0.273568, y: 1.025, z: 0.0469497}
+      weight: 1
+  - time: 1
+    ease: 0
+    targets:
+    - bone: 0
+      type: 2
+      targetPosition: {x: 0.00976, y: 0.90378, z: 0.01464}
+      targetRotation: {x: -0.09001, y: 0.354344, z: 0.025155, w: 0.930433}
+      hintPosition: {x: 0, y: 0, z: 0}
+      weight: 1
+    - bone: 17
+      type: 0
+      targetPosition: {x: 0.0871418, y: 1.25008, z: 0.386045}
+      targetRotation: {x: -0.349357, y: 0.0501463, z: 0.931215, w: 0.0909635}
+      hintPosition: {x: -1.88663, y: 1.21514, z: -0.300265}
+      weight: 1
+    - bone: 18
+      type: 0
+      targetPosition: {x: 0.164998, y: 1.23, z: 0.190005}
+      targetRotation: {x: -0.5, y: -0.5, z: -0.5, w: 0.5}
+      hintPosition: {x: 0.3, y: 1, z: 0.06}
+      weight: 1
+  muscleKeyframes:
+  - time: 0
+    ease: 0
+    values:
+    - muscle: Spine Twist Left-Right
+      value: -0.3971
+    - muscle: Chest Twist Left-Right
+      value: -0.4018
+    - muscle: UpperChest Twist Left-Right
+      value: -0.5002
+    - muscle: Spine Front-Back
+      value: -0.1974
+    - muscle: Chest Front-Back
+      value: -0.4111
+    - muscle: UpperChest Front-Back
+      value: -0.8215
+    - muscle: Neck Turn Left-Right
+      value: 0
+    - muscle: Neck Tilt Left-Right
+      value: 0
+    - muscle: Neck Nod Down-Up
+      value: 0
+    - muscle: Head Turn Left-Right
+      value: 0
+    - muscle: Head Tilt Left-Right
+      value: 0
+    - muscle: Head Nod Down-Up
+      value: 0
+    - muscle: Left Shoulder Front-Back
+      value: -0.8
+  - time: 0.04
+    ease: 0
+    values:
+    - muscle: Spine Twist Left-Right
+      value: -0.3973
+    - muscle: Chest Twist Left-Right
+      value: -0.399
+    - muscle: UpperChest Twist Left-Right
+      value: -0.4976
+    - muscle: Spine Front-Back
+      value: -0.1789
+    - muscle: Chest Front-Back
+      value: -0.4004
+    - muscle: UpperChest Front-Back
+      value: -0.7881
+    - muscle: Neck Turn Left-Right
+      value: 0
+    - muscle: Neck Tilt Left-Right
+      value: 0
+    - muscle: Neck Nod Down-Up
+      value: 0
+    - muscle: Head Turn Left-Right
+      value: 0
+    - muscle: Head Tilt Left-Right
+      value: 0
+    - muscle: Head Nod Down-Up
+      value: 0
+    - muscle: Left Shoulder Front-Back
+      value: -0.8
+  - time: 0.08
+    ease: 0
+    values:
+    - muscle: Spine Twist Left-Right
+      value: -0.3974
+    - muscle: Chest Twist Left-Right
+      value: -0.3967
+    - muscle: UpperChest Twist Left-Right
+      value: -0.496
+    - muscle: Spine Front-Back
+      value: -0.1623
+    - muscle: Chest Front-Back
+      value: -0.3909
+    - muscle: UpperChest Front-Back
+      value: -0.7578
+    - muscle: Neck Turn Left-Right
+      value: 0
+    - muscle: Neck Tilt Left-Right
+      value: 0
+    - muscle: Neck Nod Down-Up
+      value: 0
+    - muscle: Head Turn Left-Right
+      value: 0
+    - muscle: Head Tilt Left-Right
+      value: 0
+    - muscle: Head Nod Down-Up
+      value: 0
+    - muscle: Left Shoulder Front-Back
+      value: -0.8
+  - time: 0.12
+    ease: 0
+    values:
+    - muscle: Spine Twist Left-Right
+      value: -0.3974
+    - muscle: Chest Twist Left-Right
+      value: -0.3995
+    - muscle: UpperChest Twist Left-Right
+      value: -0.501
+    - muscle: Spine Front-Back
+      value: -0.1522
+    - muscle: Chest Front-Back
+      value: -0.3903
+    - muscle: UpperChest Front-Back
+      value: -0.743
+    - muscle: Neck Turn Left-Right
+      value: 0
+    - muscle: Neck Tilt Left-Right
+      value: 0
+    - muscle: Neck Nod Down-Up
+      value: 0
+    - muscle: Head Turn Left-Right
+      value: 0
+    - muscle: Head Tilt Left-Right
+      value: 0
+    - muscle: Head Nod Down-Up
+      value: 0
+    - muscle: Left Shoulder Front-Back
+      value: -0.8
+  - time: 0.16
+    ease: 0
+    values:
+    - muscle: Spine Twist Left-Right
+      value: -0.3975
+    - muscle: Chest Twist Left-Right
+      value: -0.4119
+    - muscle: UpperChest Twist Left-Right
+      value: -0.5183
+    - muscle: Spine Front-Back
+      value: -0.1524
+    - muscle: Chest Front-Back
+      value: -0.4037
+    - muscle: UpperChest Front-Back
+      value: -0.7503
+    - muscle: Neck Turn Left-Right
+      value: 0
+    - muscle: Neck Tilt Left-Right
+      value: 0
+    - muscle: Neck Nod Down-Up
+      value: 0
+    - muscle: Head Turn Left-Right
+      value: 0
+    - muscle: Head Tilt Left-Right
+      value: 0
+    - muscle: Head Nod Down-Up
+      value: 0
+    - muscle: Left Shoulder Front-Back
+      value: -0.8
+  - time: 0.2
+    ease: 0
+    values:
+    - muscle: Spine Twist Left-Right
+      value: -0.3974
+    - muscle: Chest Twist Left-Right
+      value: -0.4297
+    - muscle: UpperChest Twist Left-Right
+      value: -0.5437
+    - muscle: Spine Front-Back
+      value: -0.1587
+    - muscle: Chest Front-Back
+      value: -0.4256
+    - muscle: UpperChest Front-Back
+      value: -0.7708
+    - muscle: Neck Turn Left-Right
+      value: 0
+    - muscle: Neck Tilt Left-Right
+      value: 0
+    - muscle: Neck Nod Down-Up
+      value: 0
+    - muscle: Head Turn Left-Right
+      value: 0
+    - muscle: Head Tilt Left-Right
+      value: 0
+    - muscle: Head Nod Down-Up
+      value: 0
+    - muscle: Left Shoulder Front-Back
+      value: -0.8
+  - time: 0.24
+    ease: 0
+    values:
+    - muscle: Spine Twist Left-Right
+      value: -0.3974
+    - muscle: Chest Twist Left-Right
+      value: -0.4455
+    - muscle: UpperChest Twist Left-Right
+      value: -0.5663
+    - muscle: Spine Front-Back
+      value: -0.1666
+    - muscle: Chest Front-Back
+      value: -0.4474
+    - muscle: UpperChest Front-Back
+      value: -0.7935
+    - muscle: Neck Turn Left-Right
+      value: 0
+    - muscle: Neck Tilt Left-Right
+      value: 0
+    - muscle: Neck Nod Down-Up
+      value: 0
+    - muscle: Head Turn Left-Right
+      value: 0
+    - muscle: Head Tilt Left-Right
+      value: 0
+    - muscle: Head Nod Down-Up
+      value: 0
+    - muscle: Left Shoulder Front-Back
+      value: -0.8
+  - time: 0.28
+    ease: 0
+    values:
+    - muscle: Spine Twist Left-Right
+      value: -0.3973
+    - muscle: Chest Twist Left-Right
+      value: -0.4523
+    - muscle: UpperChest Twist Left-Right
+      value: -0.575
+    - muscle: Spine Front-Back
+      value: -0.1725
+    - muscle: Chest Front-Back
+      value: -0.4607
+    - muscle: UpperChest Front-Back
+      value: -0.8079
+    - muscle: Neck Turn Left-Right
+      value: 0
+    - muscle: Neck Tilt Left-Right
+      value: 0
+    - muscle: Neck Nod Down-Up
+      value: 0
+    - muscle: Head Turn Left-Right
+      value: 0
+    - muscle: Head Tilt Left-Right
+      value: 0
+    - muscle: Head Nod Down-Up
+      value: 0
+    - muscle: Left Shoulder Front-Back
+      value: -0.8
+  - time: 0.32
+    ease: 0
+    values:
+    - muscle: Spine Twist Left-Right
+      value: -0.3973
+    - muscle: Chest Twist Left-Right
+      value: -0.4428
+    - muscle: UpperChest Twist Left-Right
+      value: -0.5598
+    - muscle: Spine Front-Back
+      value: -0.1732
+    - muscle: Chest Front-Back
+      value: -0.4603
+    - muscle: UpperChest Front-Back
+      value: -0.809
+    - muscle: Neck Turn Left-Right
+      value: 0
+    - muscle: Neck Tilt Left-Right
+      value: 0
+    - muscle: Neck Nod Down-Up
+      value: 0
+    - muscle: Head Turn Left-Right
+      value: 0
+    - muscle: Head Tilt Left-Right
+      value: 0
+    - muscle: Head Nod Down-Up
+      value: 0
+    - muscle: Left Shoulder Front-Back
+      value: -0.8
+  - time: 0.36
+    ease: 0
+    values:
+    - muscle: Spine Twist Left-Right
+      value: -0.3974
+    - muscle: Chest Twist Left-Right
+      value: -0.4214
+    - muscle: UpperChest Twist Left-Right
+      value: -0.5272
+    - muscle: Spine Front-Back
+      value: -0.1712
+    - muscle: Chest Front-Back
+      value: -0.4497
+    - muscle: UpperChest Front-Back
+      value: -0.7999
+    - muscle: Neck Turn Left-Right
+      value: 0
+    - muscle: Neck Tilt Left-Right
+      value: 0
+    - muscle: Neck Nod Down-Up
+      value: 0
+    - muscle: Head Turn Left-Right
+      value: 0
+    - muscle: Head Tilt Left-Right
+      value: 0
+    - muscle: Head Nod Down-Up
+      value: 0
+    - muscle: Left Shoulder Front-Back
+      value: -0.8
+  - time: 0.4
+    ease: 0
+    values:
+    - muscle: Spine Twist Left-Right
+      value: -0.3974
+    - muscle: Chest Twist Left-Right
+      value: -0.4018
+    - muscle: UpperChest Twist Left-Right
+      value: -0.499
+    - muscle: Spine Front-Back
+      value: -0.1673
+    - muscle: Chest Front-Back
+      value: -0.4336
+    - muscle: UpperChest Front-Back
+      value: -0.782
+    - muscle: Neck Turn Left-Right
+      value: 0
+    - muscle: Neck Tilt Left-Right
+      value: 0
+    - muscle: Neck Nod Down-Up
+      value: 0
+    - muscle: Head Turn Left-Right
+      value: 0
+    - muscle: Head Tilt Left-Right
+      value: 0
+    - muscle: Head Nod Down-Up
+      value: 0
+    - muscle: Left Shoulder Front-Back
+      value: -0.8
+  - time: 0.44
+    ease: 0
+    values:
+    - muscle: Spine Twist Left-Right
+      value: -0.3975
+    - muscle: Chest Twist Left-Right
+      value: -0.3855
+    - muscle: UpperChest Twist Left-Right
+      value: -0.48
+    - muscle: Spine Front-Back
+      value: -0.1619
+    - muscle: Chest Front-Back
+      value: -0.4066
+    - muscle: UpperChest Front-Back
+      value: -0.7457
+    - muscle: Neck Turn Left-Right
+      value: 0
+    - muscle: Neck Tilt Left-Right
+      value: 0
+    - muscle: Neck Nod Down-Up
+      value: 0
+    - muscle: Head Turn Left-Right
+      value: 0
+    - muscle: Head Tilt Left-Right
+      value: 0
+    - muscle: Head Nod Down-Up
+      value: 0
+    - muscle: Left Shoulder Front-Back
+      value: -0.8
+  - time: 0.48
+    ease: 0
+    values:
+    - muscle: Spine Twist Left-Right
+      value: -0.3976
+    - muscle: Chest Twist Left-Right
+      value: -0.3707
+    - muscle: UpperChest Twist Left-Right
+      value: -0.4648
+    - muscle: Spine Front-Back
+      value: -0.1553
+    - muscle: Chest Front-Back
+      value: -0.3735
+    - muscle: UpperChest Front-Back
+      value: -0.7
+    - muscle: Neck Turn Left-Right
+      value: 0
+    - muscle: Neck Tilt Left-Right
+      value: 0
+    - muscle: Neck Nod Down-Up
+      value: 0
+    - muscle: Head Turn Left-Right
+      value: 0
+    - muscle: Head Tilt Left-Right
+      value: 0
+    - muscle: Head Nod Down-Up
+      value: 0
+    - muscle: Left Shoulder Front-Back
+      value: -0.8
+  - time: 0.52
+    ease: 0
+    values:
+    - muscle: Spine Twist Left-Right
+      value: -0.3977
+    - muscle: Chest Twist Left-Right
+      value: -0.3644
+    - muscle: UpperChest Twist Left-Right
+      value: -0.4588
+    - muscle: Spine Front-Back
+      value: -0.147
+    - muscle: Chest Front-Back
+      value: -0.3579
+    - muscle: UpperChest Front-Back
+      value: -0.682
+    - muscle: Neck Turn Left-Right
+      value: 0
+    - muscle: Neck Tilt Left-Right
+      value: 0
+    - muscle: Neck Nod Down-Up
+      value: 0
+    - muscle: Head Turn Left-Right
+      value: 0
+    - muscle: Head Tilt Left-Right
+      value: 0
+    - muscle: Head Nod Down-Up
+      value: 0
+    - muscle: Left Shoulder Front-Back
+      value: -0.8
+  - time: 0.56
+    ease: 0
+    values:
+    - muscle: Spine Twist Left-Right
+      value: -0.3978
+    - muscle: Chest Twist Left-Right
+      value: -0.3896
+    - muscle: UpperChest Twist Left-Right
+      value: -0.4869
+    - muscle: Spine Front-Back
+      value: -0.131
+    - muscle: Chest Front-Back
+      value: -0.4174
+    - muscle: UpperChest Front-Back
+      value: -0.7644
+    - muscle: Neck Turn Left-Right
+      value: 0
+    - muscle: Neck Tilt Left-Right
+      value: 0
+    - muscle: Neck Nod Down-Up
+      value: 0
+    - muscle: Head Turn Left-Right
+      value: 0
+    - muscle: Head Tilt Left-Right
+      value: 0
+    - muscle: Head Nod Down-Up
+      value: 0
+    - muscle: Left Shoulder Front-Back
+      value: -0.8
+  - time: 0.6
+    ease: 0
+    values:
+    - muscle: Spine Twist Left-Right
+      value: -0.3977
+    - muscle: Chest Twist Left-Right
+      value: -0.4048
+    - muscle: UpperChest Twist Left-Right
+      value: -0.5039
+    - muscle: Spine Front-Back
+      value: -0.1382
+    - muscle: Chest Front-Back
+      value: -0.4185
+    - muscle: UpperChest Front-Back
+      value: -0.8506
+    - muscle: Neck Turn Left-Right
+      value: 0
+    - muscle: Neck Tilt Left-Right
+      value: 0
+    - muscle: Neck Nod Down-Up
+      value: 0
+    - muscle: Head Turn Left-Right
+      value: 0
+    - muscle: Head Tilt Left-Right
+      value: 0
+    - muscle: Head Nod Down-Up
+      value: 0
+    - muscle: Left Shoulder Front-Back
+      value: -0.8
+  - time: 0.64
+    ease: 0
+    values:
+    - muscle: Spine Twist Left-Right
+      value: -0.3974
+    - muscle: Chest Twist Left-Right
+      value: -0.403
+    - muscle: UpperChest Twist Left-Right
+      value: -0.501
+    - muscle: Spine Front-Back
+      value: -0.1716
+    - muscle: Chest Front-Back
+      value: -0.3493
+    - muscle: UpperChest Front-Back
+      value: -0.9163
+    - muscle: Neck Turn Left-Right
+      value: 0
+    - muscle: Neck Tilt Left-Right
+      value: 0
+    - muscle: Neck Nod Down-Up
+      value: 0
+    - muscle: Head Turn Left-Right
+      value: 0
+    - muscle: Head Tilt Left-Right
+      value: 0
+    - muscle: Head Nod Down-Up
+      value: 0
+    - muscle: Left Shoulder Front-Back
+      value: -0.8
+  - time: 0.68
+    ease: 0
+    values:
+    - muscle: Spine Twist Left-Right
+      value: -0.3972
+    - muscle: Chest Twist Left-Right
+      value: -0.4019
+    - muscle: UpperChest Twist Left-Right
+      value: -0.4995
+    - muscle: Spine Front-Back
+      value: -0.1924
+    - muscle: Chest Front-Back
+      value: -0.3291
+    - muscle: UpperChest Front-Back
+      value: -0.8623
+    - muscle: Neck Turn Left-Right
+      value: 0
+    - muscle: Neck Tilt Left-Right
+      value: 0
+    - muscle: Neck Nod Down-Up
+      value: 0
+    - muscle: Head Turn Left-Right
+      value: 0
+    - muscle: Head Tilt Left-Right
+      value: 0
+    - muscle: Head Nod Down-Up
+      value: 0
+    - muscle: Left Shoulder Front-Back
+      value: -0.8
+  - time: 0.72
+    ease: 0
+    values:
+    - muscle: Spine Twist Left-Right
+      value: -0.3971
+    - muscle: Chest Twist Left-Right
+      value: -0.4021
+    - muscle: UpperChest Twist Left-Right
+      value: -0.5006
+    - muscle: Spine Front-Back
+      value: -0.1989
+    - muscle: Chest Front-Back
+      value: -0.3498
+    - muscle: UpperChest Front-Back
+      value: -0.6969
+    - muscle: Neck Turn Left-Right
+      value: 0
+    - muscle: Neck Tilt Left-Right
+      value: 0
+    - muscle: Neck Nod Down-Up
+      value: 0
+    - muscle: Head Turn Left-Right
+      value: 0
+    - muscle: Head Tilt Left-Right
+      value: 0
+    - muscle: Head Nod Down-Up
+      value: 0
+    - muscle: Left Shoulder Front-Back
+      value: -0.8
+  - time: 0.76
+    ease: 0
+    values:
+    - muscle: Spine Twist Left-Right
+      value: -0.3971
+    - muscle: Chest Twist Left-Right
+      value: -0.4017
+    - muscle: UpperChest Twist Left-Right
+      value: -0.5015
+    - muscle: Spine Front-Back
+      value: -0.1969
+    - muscle: Chest Front-Back
+      value: -0.3804
+    - muscle: UpperChest Front-Back
+      value: -0.5866
+    - muscle: Neck Turn Left-Right
+      value: 0
+    - muscle: Neck Tilt Left-Right
+      value: 0
+    - muscle: Neck Nod Down-Up
+      value: 0
+    - muscle: Head Turn Left-Right
+      value: 0
+    - muscle: Head Tilt Left-Right
+      value: 0
+    - muscle: Head Nod Down-Up
+      value: 0
+    - muscle: Left Shoulder Front-Back
+      value: -0.8
+  - time: 0.8
+    ease: 0
+    values:
+    - muscle: Spine Twist Left-Right
+      value: -0.3973
+    - muscle: Chest Twist Left-Right
+      value: -0.4006
+    - muscle: UpperChest Twist Left-Right
+      value: -0.5012
+    - muscle: Spine Front-Back
+      value: -0.1786
+    - muscle: Chest Front-Back
+      value: -0.4214
+    - muscle: UpperChest Front-Back
+      value: -0.6842
+    - muscle: Neck Turn Left-Right
+      value: 0
+    - muscle: Neck Tilt Left-Right
+      value: 0
+    - muscle: Neck Nod Down-Up
+      value: 0
+    - muscle: Head Turn Left-Right
+      value: 0
+    - muscle: Head Tilt Left-Right
+      value: 0
+    - muscle: Head Nod Down-Up
+      value: 0
+    - muscle: Left Shoulder Front-Back
+      value: -0.8
+  - time: 0.84
+    ease: 0
+    values:
+    - muscle: Spine Twist Left-Right
+      value: -0.3974
+    - muscle: Chest Twist Left-Right
+      value: -0.3997
+    - muscle: UpperChest Twist Left-Right
+      value: -0.5005
+    - muscle: Spine Front-Back
+      value: -0.1606
+    - muscle: Chest Front-Back
+      value: -0.4515
+    - muscle: UpperChest Front-Back
+      value: -0.8124
+    - muscle: Neck Turn Left-Right
+      value: 0
+    - muscle: Neck Tilt Left-Right
+      value: 0
+    - muscle: Neck Nod Down-Up
+      value: 0
+    - muscle: Head Turn Left-Right
+      value: 0
+    - muscle: Head Tilt Left-Right
+      value: 0
+    - muscle: Head Nod Down-Up
+      value: 0
+    - muscle: Left Shoulder Front-Back
+      value: -0.8
+  - time: 0.88
+    ease: 0
+    values:
+    - muscle: Spine Twist Left-Right
+      value: -0.3974
+    - muscle: Chest Twist Left-Right
+      value: -0.3997
+    - muscle: UpperChest Twist Left-Right
+      value: -0.5001
+    - muscle: Spine Front-Back
+      value: -0.1636
+    - muscle: Chest Front-Back
+      value: -0.4503
+    - muscle: UpperChest Front-Back
+      value: -0.8356
+    - muscle: Neck Turn Left-Right
+      value: 0
+    - muscle: Neck Tilt Left-Right
+      value: 0
+    - muscle: Neck Nod Down-Up
+      value: 0
+    - muscle: Head Turn Left-Right
+      value: 0
+    - muscle: Head Tilt Left-Right
+      value: 0
+    - muscle: Head Nod Down-Up
+      value: 0
+    - muscle: Left Shoulder Front-Back
+      value: -0.8
+  - time: 0.92
+    ease: 0
+    values:
+    - muscle: Spine Twist Left-Right
+      value: -0.3973
+    - muscle: Chest Twist Left-Right
+      value: -0.4002
+    - muscle: UpperChest Twist Left-Right
+      value: -0.5001
+    - muscle: Spine Front-Back
+      value: -0.1744
+    - muscle: Chest Front-Back
+      value: -0.4396
+    - muscle: UpperChest Front-Back
+      value: -0.8354
+    - muscle: Neck Turn Left-Right
+      value: 0
+    - muscle: Neck Tilt Left-Right
+      value: 0
+    - muscle: Neck Nod Down-Up
+      value: 0
+    - muscle: Head Turn Left-Right
+      value: 0
+    - muscle: Head Tilt Left-Right
+      value: 0
+    - muscle: Head Nod Down-Up
+      value: 0
+    - muscle: Left Shoulder Front-Back
+      value: -0.8
+  - time: 0.96
+    ease: 0
+    values:
+    - muscle: Spine Twist Left-Right
+      value: -0.3972
+    - muscle: Chest Twist Left-Right
+      value: -0.401
+    - muscle: UpperChest Twist Left-Right
+      value: -0.5001
+    - muscle: Spine Front-Back
+      value: -0.1862
+    - muscle: Chest Front-Back
+      value: -0.425
+    - muscle: UpperChest Front-Back
+      value: -0.826
+    - muscle: Neck Turn Left-Right
+      value: 0
+    - muscle: Neck Tilt Left-Right
+      value: 0
+    - muscle: Neck Nod Down-Up
+      value: 0
+    - muscle: Head Turn Left-Right
+      value: 0
+    - muscle: Head Tilt Left-Right
+      value: 0
+    - muscle: Head Nod Down-Up
+      value: 0
+    - muscle: Left Shoulder Front-Back
+      value: -0.8
+  - time: 1
+    ease: 0
+    values:
+    - muscle: Spine Twist Left-Right
+      value: -0.3971
+    - muscle: Chest Twist Left-Right
+      value: -0.4018
+    - muscle: UpperChest Twist Left-Right
+      value: -0.5002
+    - muscle: Spine Front-Back
+      value: -0.1974
+    - muscle: Chest Front-Back
+      value: -0.4111
+    - muscle: UpperChest Front-Back
+      value: -0.8215
+    - muscle: Neck Turn Left-Right
+      value: 0
+    - muscle: Neck Tilt Left-Right
+      value: 0
+    - muscle: Neck Nod Down-Up
+      value: 0
+    - muscle: Head Turn Left-Right
+      value: 0
+    - muscle: Head Tilt Left-Right
+      value: 0
+    - muscle: Head Nod Down-Up
+      value: 0
+    - muscle: Left Shoulder Front-Back
+      value: -0.8
+  events: []

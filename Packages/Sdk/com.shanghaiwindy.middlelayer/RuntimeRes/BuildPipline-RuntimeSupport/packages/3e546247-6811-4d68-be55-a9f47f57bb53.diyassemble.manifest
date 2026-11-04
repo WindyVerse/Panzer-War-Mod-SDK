@@ -1,0 +1,63 @@
+ManifestFileVersion: 0
+CRC: 1122506893
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 384fc7c04266318631e4aab8857ee46f
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 44df72c5a2c8bf47e6583a56240d7a2e
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 384fc7c04266318631e4aab8857ee46f
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 16a45a77973f5ef46b5f9b2653fcab7e, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 25ca7ea5ebba5b441a337e1a602df483, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 57c1a9c479f4d6f44a6202d3c8ed5e51, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 126ce9f14475202418aad1fb128e1cab, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 0411a514c4d909741951f37133f1c174, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: f636d5a5fa708834199635cd2877cddf, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 1ef8ec0addc4ecf41af9c5991e52c7d6, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers:
+- AssemblyName: Core
+  ClassName: ShanghaiWindy.Core.APSProfile
+- AssemblyName: Core
+  ClassName: ShanghaiWindy.Core.APSVisualProfile
+- AssemblyName: Core
+  ClassName: ShanghaiWindy.Core.Data.DIYApsPresetProfile
+- AssemblyName: Core
+  ClassName: ShanghaiWindy.Core.Data.DIYRadarPresetProfile
+- AssemblyName: Core
+  ClassName: ShanghaiWindy.Core.Data.DIYSlotInfo
+- AssemblyName: Core
+  ClassName: ShanghaiWindy.Core.GroundAARadarData
+- AssemblyName: Core
+  ClassName: ShanghaiWindy.Core.LocalizedName
+- AssemblyName: Core
+  ClassName: ShanghaiWindy.Core.TurretParameter
+- AssemblyName: Core
+  ClassName: ShanghaiWindy.Core.TurretParameter/ModuleData
+- AssemblyName: Core
+  ClassName: ShanghaiWindy.Core.WaveInteractParameter
+- AssemblyName: GameFramework.Runtime
+  ClassName: ShanghaiWindy.Core.Data.AssetProp
+- AssemblyName: GameFramework.Runtime
+  ClassName: ShanghaiWindy.Core.ItemLocalizedName
+Assets:
+- Packages/com.shanghaiwindy.coreresources/DIY/BuiltInDIYDataBuildAssemble.asset
+Dependencies:
+- C:/github/workspace/Projects/DE/Build/Mod-BuildPipline/StandaloneWindows64/BuildPipline-RuntimeSupport/packages/fd510-c6efe4078c19b9f41aa1c8e6010c76c9.unity3d

@@ -1,0 +1,20 @@
+ManifestFileVersion: 0
+CRC: 334079205
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: acc864bcc1e804a5c9f1e3e8b3d0e37e
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 2612ac43db082a73502ee80f2eceb73f
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: acc864bcc1e804a5c9f1e3e8b3d0e37e
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Packages/com.shanghaiwindy.coreresources/VFX/_Shared/Textures/Model/shell_case_basemap.png
+Dependencies: []

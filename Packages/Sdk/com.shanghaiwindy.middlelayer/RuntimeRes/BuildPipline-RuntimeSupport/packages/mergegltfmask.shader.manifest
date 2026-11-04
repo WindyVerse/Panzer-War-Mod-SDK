@@ -1,0 +1,20 @@
+ManifestFileVersion: 0
+CRC: 758700842
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 8dbc30883a9aff531d5e745088798a0c
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 0df1dec30b5d061d422d3e6493d27647
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 8dbc30883a9aff531d5e745088798a0c
+HashAppended: 0
+ClassTypes:
+- Class: 48
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Packages/com.shanghaiwindy.gameframework/Core/Main/DIY/Runtime/GltfMaterial/MergeGltfMask.shader
+Dependencies: []

@@ -1,0 +1,32 @@
+ManifestFileVersion: 0
+CRC: 757783472
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: beb9604b9fe1ef2dafcfc808be0e3d8d
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 74b954c68c47de27978fce51a6d4cbdd
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: beb9604b9fe1ef2dafcfc808be0e3d8d
+HashAppended: 0
+ClassTypes:
+- Class: 114
+  Script: {fileID: 11500000, guid: a518d9b5c8228a1499ebff9334c7a298, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers:
+- AssemblyName: Core
+  ClassName: ShanghaiWindy.Core.FPS.ArmyFirstPersonSettings
+- AssemblyName: Core
+  ClassName: ShanghaiWindy.Core.FPS.ArmyMovementConfig/JumpConfig
+- AssemblyName: Core
+  ClassName: ShanghaiWindy.Core.FPS.ArmyMovementConfig/LocomotionConfig
+- AssemblyName: Core
+  ClassName: ShanghaiWindy.Core.FPS.ArmyMovementConfig/SlideConfig
+- AssemblyName: Core
+  ClassName: ShanghaiWindy.Core.FPS.ArmyMovementConfig/SwimConfig
+Assets:
+- Packages/com.shanghaiwindy.coreresources/FPS/Prefab/ArmyMovementConfig.asset
+Dependencies: []

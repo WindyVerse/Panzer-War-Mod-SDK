@@ -1,0 +1,26 @@
+ManifestFileVersion: 0
+CRC: 1339071902
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: fb5bf4d4125330865d9bfbb63e9b9466
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 8901f15449c98752889553ced731fcd6
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: fb5bf4d4125330865d9bfbb63e9b9466
+HashAppended: 0
+ClassTypes:
+- Class: 114
+  Script: {fileID: 11500000, guid: b3bdd31e60d7c2f42acb6d6b4e7ee9c7, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers:
+- AssemblyName: FMODUnity
+  ClassName: FMOD.GUID
+- AssemblyName: FMODUnity
+  ClassName: FMODUnity.EventReference
+Assets:
+- Packages/com.windyverse.client.shared/OfficialSoundBank/SoundBank/tanks_crew_uk.asset
+Dependencies: []

@@ -1,0 +1,20 @@
+ManifestFileVersion: 0
+CRC: 1210136790
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: d0dc05c51d5f65c27d3e6154c324d67a
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 2612ac43db082a73502ee80f2eceb73f
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: d0dc05c51d5f65c27d3e6154c324d67a
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Packages/com.shanghaiwindy.coreresources/Decals/signs/sign_projection_decal_04.png
+Dependencies: []

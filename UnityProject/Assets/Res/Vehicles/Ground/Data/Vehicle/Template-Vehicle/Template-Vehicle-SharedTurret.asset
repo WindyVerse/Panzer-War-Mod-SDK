@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1854807163, guid: 0512a3c011ce1c84db3d9ccc1f4d6d2e, type: 3}
+  m_Name: Template-Vehicle-SharedTurret
+  m_EditorClassIdentifier: 
+  comment: 
+  turretParameter:
+    isNonSymmetricTurret: 1
+    maxTurretAngle: 180
+    maxTurretPositiveAngle: 70
+    maxTurretNegativeAngle: -120
+    ffPointAlignType: 0
+    UpMaxDegree: 17.4
+    DownMaxDegree: 5
+    turretDegreesPerSecond: 35
+    gunDegreesPerSecond: 4
+    offset: 0
+    isVerticalStabilizer: 1
+    verticalStabilizerSpeed: 120
+    verticalStabilizerElevationAngle: 2
+    verticalStabilizerDepressionAngle: 2
+    isHorizontalStabilizer: 1
+    horizontalStabilizerSpeed: 120
+    horizontalStabilizerAngle: 40
+    actionData: {fileID: 0}
+    isEnableTurretSound: 0
+    overrideTurretSound: {fileID: 0}
+    isNonSymmetricOverrideRanges: 1
+    overrideRanges:
+    - rangeBegin: 0
+      rangeEnd: 26.3
+      elevateDegree: 55
+      depressDegree: -10
+    nonSymmetricOverrideRanges:
+    - rangeBegin: -34.8
+      rangeEnd: 0
+      elevateDegree: 0
+      depressDegree: 0
+    - rangeBegin: 0
+      rangeEnd: 36.5
+      elevateDegree: 81.8
+      depressDegree: 76.6
+    moduleData:
+      hasOverride: 0
+      turretDegreesPerSecond: 0
+      gunDegreesPerSecond: 0
+    vehicleLuaBehaviors: []

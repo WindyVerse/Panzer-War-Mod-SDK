@@ -1,0 +1,52 @@
+ManifestFileVersion: 0
+CRC: 1695199172
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 868645ba6865781863f3591e918ccc33
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: efba5b5dd4edb4a7f13f72018a435004
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 868645ba6865781863f3591e918ccc33
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: f07351aa301f6014fb81671dbd4f07d7, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 57c1a9c479f4d6f44a6202d3c8ed5e51, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 94172f207a7349741b3f81ece3755515, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 8b978ad018be71e42916b3e4d727f949, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers:
+- AssemblyName: Core
+  ClassName: ShanghaiWindy.Core.CountermeasureData
+- AssemblyName: Core
+  ClassName: ShanghaiWindy.Core.FlightCausalData
+- AssemblyName: Core
+  ClassName: ShanghaiWindy.Core.FlightFireData
+- AssemblyName: Core
+  ClassName: ShanghaiWindy.Core.FlightModuleGuid
+- AssemblyName: Core
+  ClassName: ShanghaiWindy.Core.FlightRadarData
+- AssemblyName: Core
+  ClassName: ShanghaiWindy.Core.InternalModuleBulletData
+- AssemblyName: Core
+  ClassName: ShanghaiWindy.Core.SemiRealisticData
+- AssemblyName: Core
+  ClassName: ShanghaiWindy.Core.ThermalVisionProfile
+- AssemblyName: Core
+  ClassName: ShanghaiWindy.Core.VehicleModuleGuid
+- AssemblyName: Core
+  ClassName: ShanghaiWindy.Core.WaveInteractParameter
+Assets:
+- Packages/com.shanghaiwindy.coreresources/BuiltInVehicles/QuadBomber/BuiltIn-Quad-Bomber_FlightTextData.asset
+Dependencies: []

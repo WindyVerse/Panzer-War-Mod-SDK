@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: vehicleDependecy
+  m_EditorClassIdentifier: 
+  m_GroupName: vehicleDependecy
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 1710b1dca4fdec249abd6ef60180b3cf
+  m_SerializeEntries:
+  - m_GUID: b3b1aad36fa9505489b3a1596c61b4e3
+    m_Address: b3b1aad36fa9505489b3a1596c61b4e3
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: ef4f70d00e3c7db4ca8111c93f78c1ac
+    m_Address: ef4f70d00e3c7db4ca8111c93f78c1ac
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 3c1d8a02546bff9428eba854fab2188d
+    m_Address: 3c1d8a02546bff9428eba854fab2188d
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 529e050ab27b3a14aa5f01a5296798f6
+    m_Address: 529e050ab27b3a14aa5f01a5296798f6
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 4e8973119c6eef74298b06cc026ebb71
+    m_Address: 4e8973119c6eef74298b06cc026ebb71
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 165fb43a48239ed4ca82d269d4c87ec5
+    m_Address: 165fb43a48239ed4ca82d269d4c87ec5
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 24806be6af8082640b9a28f8e7c5ee35, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 193c4a6db6d55254c8d097abf30c10d2, type: 2}
+    - {fileID: 11400000, guid: 3a985a36e6ac12b42b8eab075d7ceb03, type: 2}

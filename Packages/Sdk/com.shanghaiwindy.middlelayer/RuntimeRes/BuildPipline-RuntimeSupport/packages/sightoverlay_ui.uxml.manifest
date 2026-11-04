@@ -1,0 +1,36 @@
+ManifestFileVersion: 0
+CRC: 323875284
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: d3ff6a1e8fba5ead31fd836947374072
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 010fcbe6e36ce85bb12454b05034123b
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: d3ff6a1e8fba5ead31fd836947374072
+HashAppended: 0
+ClassTypes:
+- Class: 114
+  Script: {fileID: 11995, guid: 0000000000000000e000000000000000, type: 0}
+- Class: 114
+  Script: {fileID: 11998, guid: 0000000000000000e000000000000000, type: 0}
+- Class: 115
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers:
+- AssemblyName: UnityEngine.UIElementsModule
+  ClassName: UnityEngine.UIElements.StyleProperty
+- AssemblyName: UnityEngine.UIElementsModule
+  ClassName: UnityEngine.UIElements.StyleRule
+- AssemblyName: UnityEngine.UIElementsModule
+  ClassName: UnityEngine.UIElements.StyleValueHandle
+- AssemblyName: UnityEngine.UIElementsModule
+  ClassName: UnityEngine.UIElements.UxmlRootElementFactory
+- AssemblyName: UnityEngine.UIElementsModule
+  ClassName: UnityEngine.UIElements.VisualElement/UxmlFactory
+- AssemblyName: UnityEngine.UIElementsModule
+  ClassName: UnityEngine.UIElements.VisualElementAsset
+Assets:
+- Packages/com.shanghaiwindy.coreresources/GUI/Common/Prefab/Uxml/SightOverlay/SightOverlay.uxml
+Dependencies: []

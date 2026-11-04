@@ -1,0 +1,76 @@
+ManifestFileVersion: 0
+CRC: 1526072023
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 0964e00668b01c7a7e4e77efe2746a4b
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: dc7a3cf2f8ff9ead299e38345a03ce1e
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 0964e00668b01c7a7e4e77efe2746a4b
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 34d6e281874c61b4599024dcd49c3e2e, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 0d0714fe90395ee4cb330a2862689552, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 89e9ea64bf9c8254d9844adadde27b8e, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: ca7e7767cca2b6940b59ea0e88e8f0e7, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 31829bec55f164345b28e01d08d3beb9, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 198
+  Script: {instanceID: 0}
+- Class: 199
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers:
+- AssemblyName: Core
+  ClassName: ShanghaiWindy.Core.FmodPlayComponent/PlayParm
+- AssemblyName: Core
+  ClassName: ShanghaiWindy.Core.LocalizedName
+- AssemblyName: Core
+  ClassName: ShanghaiWindy.Core.SpawnRes
+- AssemblyName: FMODUnity
+  ClassName: FMOD.GUID
+- AssemblyName: FMODUnity
+  ClassName: FMODUnity.EventReference
+- AssemblyName: GameFramework.Runtime
+  ClassName: ShanghaiWindy.Core.ItemLocalizedName
+Assets:
+- Packages/com.shanghaiwindy.coreresources/Pool/PoolResource/PoolResource-VFXSpeed.asset
+Dependencies:
+- C:/github/workspace/Projects/DE/Build/Mod-BuildPipline/StandaloneWindows64/BuildPipline-RuntimeSupport/packages/fd510-05c82fd2e05e161469f959b0c0e91bf9.unity3d
+- C:/github/workspace/Projects/DE/Build/Mod-BuildPipline/StandaloneWindows64/BuildPipline-RuntimeSupport/packages/fd510-1555e5885569e264b939e4ab2386465f.unity3d
+- C:/github/workspace/Projects/DE/Build/Mod-BuildPipline/StandaloneWindows64/BuildPipline-RuntimeSupport/packages/fd510-2687a30d68920d9418667b64d76a5fab.unity3d
+- C:/github/workspace/Projects/DE/Build/Mod-BuildPipline/StandaloneWindows64/BuildPipline-RuntimeSupport/packages/fd510-30d9914542985c54785d8a2fa7d393fe.unity3d
+- C:/github/workspace/Projects/DE/Build/Mod-BuildPipline/StandaloneWindows64/BuildPipline-RuntimeSupport/packages/fd510-31321ba15b8f8eb4c954353edc038b1d.unity3d
+- C:/github/workspace/Projects/DE/Build/Mod-BuildPipline/StandaloneWindows64/BuildPipline-RuntimeSupport/packages/fd510-39720adc1cc2953429e43e2f1bd0e535.unity3d
+- C:/github/workspace/Projects/DE/Build/Mod-BuildPipline/StandaloneWindows64/BuildPipline-RuntimeSupport/packages/fd510-3df200f895c86064c87495d08670f39b.unity3d
+- C:/github/workspace/Projects/DE/Build/Mod-BuildPipline/StandaloneWindows64/BuildPipline-RuntimeSupport/packages/fd510-653116d6cc705b247a43759a53862ed0.unity3d
+- C:/github/workspace/Projects/DE/Build/Mod-BuildPipline/StandaloneWindows64/BuildPipline-RuntimeSupport/packages/fd510-727566376f2e810468a3dd14c04d4122.unity3d
+- C:/github/workspace/Projects/DE/Build/Mod-BuildPipline/StandaloneWindows64/BuildPipline-RuntimeSupport/packages/fd510-76dbde0fa1de938428a3d058ec2bbf03.unity3d
+- C:/github/workspace/Projects/DE/Build/Mod-BuildPipline/StandaloneWindows64/BuildPipline-RuntimeSupport/packages/fd510-92aad68401df88843ac213f177ccd314.unity3d
+- C:/github/workspace/Projects/DE/Build/Mod-BuildPipline/StandaloneWindows64/BuildPipline-RuntimeSupport/packages/fd510-97c3c6d647ee33c40ad30d7e71a8a564.unity3d
+- C:/github/workspace/Projects/DE/Build/Mod-BuildPipline/StandaloneWindows64/BuildPipline-RuntimeSupport/packages/fd510-994574fd773a62e479e680fc7ae228b7.unity3d
+- C:/github/workspace/Projects/DE/Build/Mod-BuildPipline/StandaloneWindows64/BuildPipline-RuntimeSupport/packages/fd510-c7ad72b3ba495d640bb1aeff33d212d5.unity3d
+- C:/github/workspace/Projects/DE/Build/Mod-BuildPipline/StandaloneWindows64/BuildPipline-RuntimeSupport/packages/fd510-ceafcc72ac6ad374ba3d57fadfe2c345.unity3d
+- C:/github/workspace/Projects/DE/Build/Mod-BuildPipline/StandaloneWindows64/BuildPipline-RuntimeSupport/packages/fd510-f860ce22a4f9dab49898188384c446f1.unity3d

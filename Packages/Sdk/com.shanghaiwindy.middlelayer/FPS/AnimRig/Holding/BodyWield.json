@@ -1,0 +1,90 @@
+{
+  "extends": "../HoldingLook.json",
+  "version": 1,
+  "name": "BodyWield",
+  "category": "P3CommonAnimation/Clips",
+  "duration": 0.4667,
+  "loop": false,
+  "sampleRate": 30,
+  "base": {
+    "clip": "BodyIdle",
+    "mode": "staticFrame",
+    "frame": 0
+  },
+  "tracks": {
+    "leftHand": {
+      "keys": [
+        {
+          "at": 0,
+          "posOffset": [
+            0,
+            -0.1,
+            -0.04
+          ],
+          "ease": "easeInOut"
+        },
+        {
+          "at": 0.12,
+          "posOffset": [
+            0,
+            -0.075,
+            -0.03
+          ],
+          "ease": "easeInOut"
+        },
+        {
+          "at": 0.32,
+          "posOffset": [
+            0,
+            -0.015,
+            -0.006
+          ],
+          "ease": "easeInOut"
+        },
+        {
+          "at": 0.4667,
+          "keepBase": true,
+          "weight": 0,
+          "ease": "easeInOut"
+        }
+      ]
+    },
+    "rightHand": {
+      "keys": [
+        {
+          "at": 0,
+          "posOffset": [
+            0,
+            -0.1,
+            -0.04
+          ],
+          "ease": "easeInOut"
+        },
+        {
+          "at": 0.12,
+          "posOffset": [
+            0,
+            -0.075,
+            -0.03
+          ],
+          "ease": "easeInOut"
+        },
+        {
+          "at": 0.32,
+          "posOffset": [
+            0,
+            -0.015,
+            -0.006
+          ],
+          "ease": "easeInOut"
+        },
+        {
+          "at": 0.4667,
+          "keepBase": true,
+          "weight": 0,
+          "ease": "easeInOut"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,20 @@
+ManifestFileVersion: 0
+CRC: 3918226685
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: cdaea64b1d2d27fcf9ed6afc5992cd28
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 2612ac43db082a73502ee80f2eceb73f
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: cdaea64b1d2d27fcf9ed6afc5992cd28
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Packages/com.shanghaiwindy.coreresources/Vrm/AvatarCharacter/RussianSoldier/RussianSoldierAvatar.png
+Dependencies: []

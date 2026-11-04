@@ -1,0 +1,88 @@
+{
+  "extends": "../HoldingLook.json",
+  "version": 1,
+  "name": "BodyHolster",
+  "category": "P3CommonAnimation/Clips",
+  "duration": 0.4667,
+  "loop": false,
+  "sampleRate": 30,
+  "base": {
+    "clip": "BodyIdle",
+    "mode": "staticFrame",
+    "frame": 0
+  },
+  "tracks": {
+    "leftHand": {
+      "keys": [
+        {
+          "at": 0,
+          "keepBase": true,
+          "weight": 0
+        },
+        {
+          "at": 0.1467,
+          "posOffset": [
+            0,
+            -0.015,
+            -0.006
+          ],
+          "ease": "easeInOut"
+        },
+        {
+          "at": 0.3467,
+          "posOffset": [
+            0,
+            -0.075,
+            -0.03
+          ],
+          "ease": "easeInOut"
+        },
+        {
+          "at": 0.4667,
+          "posOffset": [
+            0,
+            -0.1,
+            -0.04
+          ],
+          "ease": "easeInOut"
+        }
+      ]
+    },
+    "rightHand": {
+      "keys": [
+        {
+          "at": 0,
+          "keepBase": true,
+          "weight": 0
+        },
+        {
+          "at": 0.1467,
+          "posOffset": [
+            0,
+            -0.015,
+            -0.006
+          ],
+          "ease": "easeInOut"
+        },
+        {
+          "at": 0.3467,
+          "posOffset": [
+            0,
+            -0.075,
+            -0.03
+          ],
+          "ease": "easeInOut"
+        },
+        {
+          "at": 0.4667,
+          "posOffset": [
+            0,
+            -0.1,
+            -0.04
+          ],
+          "ease": "easeInOut"
+        }
+      ]
+    }
+  }
+}

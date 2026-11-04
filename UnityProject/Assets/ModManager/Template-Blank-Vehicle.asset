@@ -1,0 +1,101 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 935110173, guid: 0512a3c011ce1c84db3d9ccc1f4d6d2e, type: 3}
+  m_Name: Template-Blank-Vehicle
+  m_EditorClassIdentifier: 
+  localizedModName:
+    isLocalizeTable: 0
+    defaultName: 
+    items: []
+    localizeTableKey: 
+  localizedDescription:
+    isLocalizeTable: 0
+    defaultName: 
+    items: []
+    localizeTableKey: 
+  author: Doreamonsky
+  supportURL: https://vk.com/doreamonsky
+  modVersion: 1
+  socialLinks: []
+  buildTarget: StandaloneWindows64
+  shipTypes: 1
+  isEncryptPackageInfo: 0
+  isAuthorizeOwnerShip: 0
+  packUuid: 
+  guid: 46668de6-ea69-4dbb-85ea-a6d380c42161
+  dependencyGuids: []
+  buildCaches:
+  - targetPlatform: Android
+    relatedAssets:
+    - Build/Mod-BuildPipline/Android/BuildPipline-Template-Vehicle/packages/3c2cf65d-b78f-4ef9-b864-7668b0bd2c70.csd
+    - Build/Mod-BuildPipline/Android/BuildPipline-Template-Vehicle/packages/3c2cf65d-b78f-4ef9-b864-7668b0bd2c70.csd.manifest
+    - Build/Mod-BuildPipline/Android/BuildPipline-Template-Vehicle/packages/3c2cf65d-b78f-4ef9-b864-7668b0bd2c70_mat.mat
+    - Build/Mod-BuildPipline/Android/BuildPipline-Template-Vehicle/packages/3c2cf65d-b78f-4ef9-b864-7668b0bd2c70_mat.mat.manifest
+    - Build/Mod-BuildPipline/Android/BuildPipline-Template-Vehicle/packages/da1633b5-7cf9-4c73-bc9d-6f998e9a811f.data
+    - Build/Mod-BuildPipline/Android/BuildPipline-Template-Vehicle/packages/da1633b5-7cf9-4c73-bc9d-6f998e9a811f.data.manifest
+    - Build/Mod-BuildPipline/Android/BuildPipline-Template-Vehicle/packages/da1633b5-7cf9-4c73-bc9d-6f998e9a811f_pre.clientextramesh
+    - Build/Mod-BuildPipline/Android/BuildPipline-Template-Vehicle/packages/da1633b5-7cf9-4c73-bc9d-6f998e9a811f_pre.clientextramesh.manifest
+    - Build/Mod-BuildPipline/Android/BuildPipline-Template-Vehicle/packages/da1633b5-7cf9-4c73-bc9d-6f998e9a811f_thumbnail.sprite
+    - Build/Mod-BuildPipline/Android/BuildPipline-Template-Vehicle/packages/da1633b5-7cf9-4c73-bc9d-6f998e9a811f_thumbnail.sprite.manifest
+    - Build/Mod-BuildPipline/Android/BuildPipline-Template-Vehicle/packages/da1633b5-7cf9-4c73-bc9d-6f998e9a811f_vehicleinfo.vehicleinfo
+    - Build/Mod-BuildPipline/Android/BuildPipline-Template-Vehicle/packages/da1633b5-7cf9-4c73-bc9d-6f998e9a811f_vehicleinfo.vehicleinfo.manifest
+    - Build/Mod-BuildPipline/Android/BuildPipline-Template-Vehicle/packages/manifest.mark
+    - Build/Mod-BuildPipline/Android/BuildPipline-Template-Vehicle/packages/packages
+    - Build/Mod-BuildPipline/Android/BuildPipline-Template-Vehicle/packages/packages.manifest
+  - targetPlatform: StandaloneWindows64
+    relatedAssets:
+    - Build/Mod-BuildPipline/StandaloneWindows64/BuildPipline-Template-Vehicle/packages/3c2cf65d-b78f-4ef9-b864-7668b0bd2c70.csd
+    - Build/Mod-BuildPipline/StandaloneWindows64/BuildPipline-Template-Vehicle/packages/3c2cf65d-b78f-4ef9-b864-7668b0bd2c70.csd.manifest
+    - Build/Mod-BuildPipline/StandaloneWindows64/BuildPipline-Template-Vehicle/packages/3c2cf65d-b78f-4ef9-b864-7668b0bd2c70_mat.mat
+    - Build/Mod-BuildPipline/StandaloneWindows64/BuildPipline-Template-Vehicle/packages/3c2cf65d-b78f-4ef9-b864-7668b0bd2c70_mat.mat.manifest
+    - Build/Mod-BuildPipline/StandaloneWindows64/BuildPipline-Template-Vehicle/packages/46668de6-ea69-4dbb-85ea-a6d380c42161-svc.shader
+    - Build/Mod-BuildPipline/StandaloneWindows64/BuildPipline-Template-Vehicle/packages/46668de6-ea69-4dbb-85ea-a6d380c42161-svc.shader.manifest
+    - Build/Mod-BuildPipline/StandaloneWindows64/BuildPipline-Template-Vehicle/packages/da1633b5-7cf9-4c73-bc9d-6f998e9a811f.data
+    - Build/Mod-BuildPipline/StandaloneWindows64/BuildPipline-Template-Vehicle/packages/da1633b5-7cf9-4c73-bc9d-6f998e9a811f.data.manifest
+    - Build/Mod-BuildPipline/StandaloneWindows64/BuildPipline-Template-Vehicle/packages/da1633b5-7cf9-4c73-bc9d-6f998e9a811f_pre.clientextramesh
+    - Build/Mod-BuildPipline/StandaloneWindows64/BuildPipline-Template-Vehicle/packages/da1633b5-7cf9-4c73-bc9d-6f998e9a811f_pre.clientextramesh.manifest
+    - Build/Mod-BuildPipline/StandaloneWindows64/BuildPipline-Template-Vehicle/packages/da1633b5-7cf9-4c73-bc9d-6f998e9a811f_thumbnail.sprite
+    - Build/Mod-BuildPipline/StandaloneWindows64/BuildPipline-Template-Vehicle/packages/da1633b5-7cf9-4c73-bc9d-6f998e9a811f_thumbnail.sprite.manifest
+    - Build/Mod-BuildPipline/StandaloneWindows64/BuildPipline-Template-Vehicle/packages/da1633b5-7cf9-4c73-bc9d-6f998e9a811f_vehicleinfo.xvehicleinfo
+    - Build/Mod-BuildPipline/StandaloneWindows64/BuildPipline-Template-Vehicle/packages/da1633b5-7cf9-4c73-bc9d-6f998e9a811f_vehicleinfo.xvehicleinfo.manifest
+    - Build/Mod-BuildPipline/StandaloneWindows64/BuildPipline-Template-Vehicle/packages/manifest.mark
+    - Build/Mod-BuildPipline/StandaloneWindows64/BuildPipline-Template-Vehicle/packages/packages
+    - Build/Mod-BuildPipline/StandaloneWindows64/BuildPipline-Template-Vehicle/packages/packages.manifest
+  modFileManifiests:
+  - n: 3c2cf65d-b78f-4ef9-b864-7668b0bd2c70.csd
+    h: 3e295a418e89ba30b9cf521b926b9956
+    d: []
+  - n: 3c2cf65d-b78f-4ef9-b864-7668b0bd2c70_mat.mat
+    h: ed792e8a44a97a3369d3a0552790e798
+    d: []
+  - n: 46668de6-ea69-4dbb-85ea-a6d380c42161-svc.shader
+    h: 365c81bb7bc269e28bd93f3cd34b3e51
+    d: []
+  - n: da1633b5-7cf9-4c73-bc9d-6f998e9a811f.data
+    h: b7224be13e9d98656611d65f3d457627
+    d:
+    - 46668de6-ea69-4dbb-85ea-a6d380c42161-svc.shader
+  - n: da1633b5-7cf9-4c73-bc9d-6f998e9a811f_pre.clientextramesh
+    h: f7c0311c6133df41b73c14db26c84d07
+    d: []
+  - n: da1633b5-7cf9-4c73-bc9d-6f998e9a811f_thumbnail.sprite
+    h: a0a06a88bca6afb1789de9c7c0dea578
+    d: []
+  - n: da1633b5-7cf9-4c73-bc9d-6f998e9a811f_vehicleinfo.xvehicleinfo
+    h: fedb5da692c2e6a08b21733271fb07a5
+    d: []
+  isLoadManifest: 1
+  createdTime: 134382393753393244
+  shipIsHidden: 0
+  shipClientVersion: 0
+  shipRenderPipline: 0
+  imgUrls: []

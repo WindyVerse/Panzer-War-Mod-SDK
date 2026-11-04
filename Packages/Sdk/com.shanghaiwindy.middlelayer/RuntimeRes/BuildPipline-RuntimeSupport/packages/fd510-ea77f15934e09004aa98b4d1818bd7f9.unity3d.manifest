@@ -1,0 +1,22 @@
+ManifestFileVersion: 0
+CRC: 4093239198
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: f6e229467323040634f065cd9c9d5f73
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 923768aebf385ad86f7762daa8034951
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: f6e229467323040634f065cd9c9d5f73
+HashAppended: 0
+ClassTypes:
+- Class: 213
+  Script: {instanceID: 0}
+- Class: 687078895
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Packages/com.shanghaiwindy.coreresources/GUI/Common/Prefab/Icons/PlayerUI/ActionButton.png
+Dependencies: []

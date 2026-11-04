@@ -1,0 +1,124 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -340947966, guid: 0512a3c011ce1c84db3d9ccc1f4d6d2e, type: 3}
+  m_Name: BF-110-C_FlightTextData
+  m_EditorClassIdentifier: 
+  assetName: BF-110-C
+  editorAssetGuid: 38417ba8dbc884f4dbeaccc8c0ae41bd
+  causalData:
+    flightCausualType: 0
+    aggressiveTurnAngle: 15
+    aimSensitive: 5
+    landingDuration: 10
+    flapDrag: 0.75
+    landingGearExtraRadius: 0.75
+    semiRealisticData:
+      wingArea: 35
+      liftCoefficient: 8
+      stallAngle: 18
+      stallSharpness: 2
+      cd0: 0.02
+      inducedDragK: 0.04
+      stabilityFactor: 0.8
+      tailArm: 7
+      controlAuthority: 16
+      aileronEffectiveness: 12
+      wingSpan: 11
+      stallWarningRatio: 0.85
+      bodySideLift: 0.9
+      groundEffectLiftBoost: 0.4
+      velocityAlignment: 3
+  mass: 4800
+  drag: 0.0125
+  angularDrag: 0.8
+  maxKnot: 360
+  combatFlap: 0.4
+  landingFlap: 1
+  takeOffFlap: 1
+  flapMoveSpeed: 0.5
+  flightFireDatas:
+  - weaponName: '2 x 20 mm MG FF/M cannon '
+    isFireTurns: 0
+    firePoints:
+    - Cannon_L
+    - Cannon_R
+    keyType: 1
+    bulletAssemble: {fileID: 11400000, guid: 9afdc4072858c8a4dac51619b76128af, type: 2}
+    capacity: 180
+    fireRate: 0.1
+    fireEndureTime: 3
+    dispersion: 0.1
+    fmodBulletSound: {fileID: 0}
+    hasFireCircle: 0
+    isInRangeFire: 0
+    inRangeFireDegree: 5
+    vehicleLuaBehaviors: []
+  - weaponName: '2 x 500 kg SC500K bombs '
+    isFireTurns: 0
+    firePoints:
+    - Bomb
+    keyType: 2
+    bulletAssemble: {fileID: 11400000, guid: 98f3305372e59e343897dbeff29b08c1, type: 2}
+    capacity: 2
+    fireRate: 0.1
+    fireEndureTime: 0
+    dispersion: 0
+    fmodBulletSound: {fileID: 0}
+    hasFireCircle: 0
+    isInRangeFire: 0
+    inRangeFireDegree: 5
+    vehicleLuaBehaviors: []
+  flightTurretDatas: []
+  weaponCrossingDistance: 800
+  rocketCricleDistance: 200
+  requireRocketCircle: 0
+  HP: 320
+  defaultHeight: 300
+  defaultAirSpeed: 120
+  flyingAnimationName: Flying
+  maxCameraDistance: 15
+  climbRateLimit: -1
+  nationType: 3
+  hasThermalVision: 0
+  thermalVisionProfile:
+    isCustomize: 0
+    resolution: 0.4
+    color: {r: 0.8, g: 0.8, b: 0.8, a: 1}
+    noiseIntensity: 1
+  flightModuleGuid:
+    gunGuids:
+    - guid: 7bbf7e25-69ea-4e74-b5d3-c3dcb2784ff7
+    - guid: 6b653fbc-8728-45ee-860d-d9bd51ace421
+    - guid: ec1c8438-1124-4c85-a07a-fb7e3fd7e25c
+    turretGuids: []
+  vehicleLuaBehaviors: []
+  radarData:
+    hasRadar: 0
+    radarType: 0
+    maxDetectionRange: 80000
+    searchAzimuthHalfAngle: 60
+    searchElevationHalfAngle: 5
+    scanRate: 80
+    scanBarCount: 4
+    acmScanHalfAngle: 15
+    acmMaxRange: 10000
+    trackConeHalfAngle: 30
+    twsMaxTracks: 8
+    pdMinDetectableSpeed: 60
+    lookDownPenalty: 0.8
+    hasIRST: 0
+    irstDetectionRange: 20000
+    chaffCount: 30
+    chaffDuration: 8
+    chaffDeployCooldown: 0.5
+  isOverrideModuleOrthographicSize: 0
+  overrideModuleOrthographicSize: 5

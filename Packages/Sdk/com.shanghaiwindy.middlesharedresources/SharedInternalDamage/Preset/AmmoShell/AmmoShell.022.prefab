@@ -1,0 +1,141 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &1785548649077602116
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 2be6ea4c631f01947a627afa6205cc86,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2be6ea4c631f01947a627afa6205cc86,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2be6ea4c631f01947a627afa6205cc86,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2be6ea4c631f01947a627afa6205cc86,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2be6ea4c631f01947a627afa6205cc86,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2be6ea4c631f01947a627afa6205cc86,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2be6ea4c631f01947a627afa6205cc86,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2be6ea4c631f01947a627afa6205cc86,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2be6ea4c631f01947a627afa6205cc86,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2be6ea4c631f01947a627afa6205cc86,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2be6ea4c631f01947a627afa6205cc86,
+        type: 3}
+      propertyPath: m_Name
+      value: AmmoShell.022
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 2be6ea4c631f01947a627afa6205cc86,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2970163755671604276}
+  m_SourcePrefab: {fileID: 100100000, guid: 2be6ea4c631f01947a627afa6205cc86, type: 3}
+--- !u!1 &1443090151608666645 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 2be6ea4c631f01947a627afa6205cc86,
+    type: 3}
+  m_PrefabInstance: {fileID: 1785548649077602116}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2970163755671604276
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1443090151608666645}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 129009765, guid: 0512a3c011ce1c84db3d9ccc1f4d6d2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fragType: 0
+  actAsPenetratedType: 0
+  moduleType: 9
+  internalArmor: 10
+  CrewWearType: 0
+  HitPoint: 120
+  isCommander: 0
+  isDriver: 0
+  isGunner: 0
+  isRadioer: 0
+  isReloader: 0
+  isOverrideParent: 0
+  parentPath: 
+  connectedModuleGuid: 
+  moduleAttachType: 0
+  bounds:
+  - m_Center: {x: 0.0000001527369, y: 0.00453306, z: 0.000000007450581}
+    m_Extent: {x: 0.17944819, y: 0.2979598, z: 0.17944816}
+  isLocalBounds: 1
+  separateMeshCache:
+  - verts:
+    - {x: 0.07944834, y: -0.19342674, z: 0.025814265}
+    - {x: 0.074431896, y: 0.18256505, z: -0.03792487}
+    - {x: 0.07944834, y: 0.18256505, z: 0.025814265}
+    - {x: 0.074431896, y: -0.19342674, z: -0.03792487}
+    - {x: 0.025814354, y: 0.18256505, z: -0.07944815}
+    - {x: 0.025814354, y: -0.19342674, z: -0.07944815}
+    - {x: -0.037924767, y: 0.18256505, z: -0.07443176}
+    - {x: -0.037924767, y: -0.19342674, z: -0.07443176}
+    - {x: -0.07944804, y: 0.18256505, z: -0.025814248}
+    - {x: -0.07944804, y: -0.19342674, z: -0.025814248}
+    - {x: -0.07443166, y: 0.18256505, z: 0.037924886}
+    - {x: -0.07443166, y: -0.19342674, z: 0.037924886}
+    - {x: -0.025814116, y: 0.18256505, z: 0.07944816}
+    - {x: -0.025814116, y: -0.19342674, z: 0.07944816}
+    - {x: 0.037925005, y: 0.18256505, z: 0.07443178}
+    - {x: 0.037925005, y: -0.19342674, z: 0.07443178}
+    - {x: 0.06106609, y: 0.20249286, z: -0.03111465}
+    - {x: 0.021178842, y: 0.20249286, z: -0.06518151}
+    - {x: -0.031114519, y: 0.20249286, z: -0.061065923}
+    - {x: -0.065181434, y: 0.20249286, z: -0.02117875}
+    - {x: 0.06518167, y: 0.20249286, z: 0.02117875}
+    - {x: -0.061065853, y: 0.20249286, z: 0.031114668}
+    - {x: 0.031114757, y: 0.20249286, z: 0.06106594}
+    - {x: -0.021178603, y: 0.20249286, z: 0.06518152}
+    triangles: 000000000100000002000000000000000300000001000000030000000400000001000000030000000500000004000000050000000600000004000000050000000700000006000000070000000800000006000000070000000900000008000000090000000a00000008000000090000000b0000000a0000000b0000000c0000000a0000000b0000000d0000000c0000000d0000000e0000000c0000000d0000000f0000000e0000000f000000020000000e0000000f0000000000000002000000070000000500000003000000030000000900000007000000030000000000000009000000000000000b00000009000000000000000f0000000b0000000f0000000d0000000b0000001000000011000000120000001200000013000000100000001300000014000000100000001300000015000000140000001500000016000000140000001500000017000000160000000800000012000000060000000800000013000000120000000600000012000000110000000a00000013000000080000000600000011000000040000000a00000015000000130000000400000011000000100000000c000000150000000a0000000400000010000000010000000c00000017000000150000000100000010000000140000000e000000170000000c0000000100000014000000020000000e000000160000001700000002000000140000001600000002000000160000000e000000
+    delta: {x: 0, y: 0, z: 0}
+  isOilCatchFire: 1
+  isOverpressureDamageable: 0

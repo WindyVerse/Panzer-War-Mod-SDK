@@ -1,0 +1,30 @@
+ManifestFileVersion: 0
+CRC: 468778616
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 1bf6c4961e8ab4b1ca840375f24d9602
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 6c40c281c3b423b17909eb42ca7be570
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 1bf6c4961e8ab4b1ca840375f24d9602
+HashAppended: 0
+ClassTypes:
+- Class: 114
+  Script: {fileID: 11500000, guid: 30e1dfd3c6ab19b43b1cc4a3400d8a38, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers:
+- AssemblyName: Core
+  ClassName: ShanghaiWindy.Core.LocalizedName
+- AssemblyName: Core
+  ClassName: ShanghaiWindy.Core.MapData/BuildInfo
+- AssemblyName: GameFramework.Runtime
+  ClassName: ShanghaiWindy.Core.Data.AssetProp
+- AssemblyName: GameFramework.Runtime
+  ClassName: ShanghaiWindy.Core.ItemLocalizedName
+Assets:
+- Packages/com.shanghaiwindy.urpresources/Main/Maps/Garage/Garage.asset
+Dependencies: []

@@ -1,0 +1,66 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -235337512, guid: 0512a3c011ce1c84db3d9ccc1f4d6d2e, type: 3}
+  m_Name: car
+  m_EditorClassIdentifier: 
+  comment: 
+  engineType: 0
+  engineRunDelay: 4
+  engineStartEvent:
+    Guid:
+      Data1: -607846628
+      Data2: 1115773097
+      Data3: -808158793
+      Data4: 1022640248
+    Path: event:/ground/engines/car/engine_start
+  engineRunningEvent:
+    Guid:
+      Data1: 934792257
+      Data2: 1216127399
+      Data3: -1333932363
+      Data4: -484708165
+    Path: event:/ground/engines/car/engine
+  engineRunningInteriorEvent:
+    Guid:
+      Data1: 616892821
+      Data2: 1153174550
+      Data3: -1551392109
+      Data4: -1011608972
+    Path: event:/ground/engines/car/engine_interior
+  engineRunningAIEvent:
+    Guid:
+      Data1: -1794985409
+      Data2: 1097227767
+      Data3: 1636883082
+      Data4: -867061798
+    Path: event:/ground/engines/car/engine_ai
+  surfaceEvent:
+    Guid:
+      Data1: 1166572927
+      Data2: 1306526460
+      Data3: 874237825
+      Data4: 1006935740
+    Path: event:/ground/engines/surface_wheels
+  trackEvent:
+    Guid:
+      Data1: 1599863963
+      Data2: 1107242291
+      Data3: -604865630
+      Data4: 484219554
+    Path: event:/ground/engines/tracks_wheels
+  trackAIEvent:
+    Guid:
+      Data1: -1316005301
+      Data2: 1320779802
+      Data3: 1001580446
+      Data4: 168965679
+    Path: event:/ground/engines/tracks_ai_middle

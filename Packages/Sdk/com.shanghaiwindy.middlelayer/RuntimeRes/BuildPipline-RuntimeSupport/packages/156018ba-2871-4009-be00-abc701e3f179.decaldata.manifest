@@ -1,0 +1,28 @@
+ManifestFileVersion: 0
+CRC: 3006392694
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 31a1961cb7d84f887150b4b60a6c3ab4
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 8947b60bcd0a26a886b3c7b742aba15c
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 31a1961cb7d84f887150b4b60a6c3ab4
+HashAppended: 0
+ClassTypes:
+- Class: 114
+  Script: {fileID: 11500000, guid: 633b800ba581ca041a198d78d0323dbc, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers:
+- AssemblyName: Core
+  ClassName: ShanghaiWindy.Core.DecalTextureInfo
+- AssemblyName: Core
+  ClassName: ShanghaiWindy.Core.LocalizedName
+- AssemblyName: GameFramework.Runtime
+  ClassName: ShanghaiWindy.Core.Data.AssetProp
+Assets:
+- Packages/com.shanghaiwindy.coreresources/Decals/geo/geo.asset
+Dependencies: []

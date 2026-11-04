@@ -1,0 +1,22 @@
+ManifestFileVersion: 0
+CRC: 339981765
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: a8f15ba9f72a7f507e5831e7569688dd
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 923768aebf385ad86f7762daa8034951
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: a8f15ba9f72a7f507e5831e7569688dd
+HashAppended: 0
+ClassTypes:
+- Class: 213
+  Script: {instanceID: 0}
+- Class: 687078895
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Packages/com.shanghaiwindy.coreresources/GUI/Common/Prefab/Icons/Aero/airspeed-bg.png
+Dependencies: []

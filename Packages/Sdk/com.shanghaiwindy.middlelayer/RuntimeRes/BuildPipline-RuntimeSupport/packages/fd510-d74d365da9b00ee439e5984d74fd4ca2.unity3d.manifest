@@ -1,0 +1,22 @@
+ManifestFileVersion: 0
+CRC: 1381355767
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: fb9a7c40530b3cd427a4ff7911802956
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 923768aebf385ad86f7762daa8034951
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: fb9a7c40530b3cd427a4ff7911802956
+HashAppended: 0
+ClassTypes:
+- Class: 213
+  Script: {instanceID: 0}
+- Class: 687078895
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Packages/com.shanghaiwindy.coreresources/GUI/Common/Prefab/Icons/Menu.png
+Dependencies: []

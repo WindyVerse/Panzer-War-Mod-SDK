@@ -1,0 +1,20 @@
+ManifestFileVersion: 0
+CRC: 4098878955
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 2d23f2c2d59c5ea30a5358e051c77c74
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 2612ac43db082a73502ee80f2eceb73f
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 2d23f2c2d59c5ea30a5358e051c77c74
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Packages/com.shanghaiwindy.coreresources/VFX/_Shared/Textures/Glow/glow_round_soft.png
+Dependencies: []

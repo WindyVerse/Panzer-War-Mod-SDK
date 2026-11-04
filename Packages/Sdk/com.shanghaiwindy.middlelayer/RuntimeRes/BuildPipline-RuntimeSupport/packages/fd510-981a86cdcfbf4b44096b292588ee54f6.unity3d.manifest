@@ -1,0 +1,22 @@
+ManifestFileVersion: 0
+CRC: 2185952616
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 5a45d4b55c8fae5e558b94034c33d2e9
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 2d8df09e698f722ada1caa03d3413830
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 5a45d4b55c8fae5e558b94034c33d2e9
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Packages/com.shanghaiwindy.coreresources/GUI/Common/Classic-Tex/PlayerUISystem/NewCrosshair.png
+Dependencies: []

@@ -1,0 +1,1105 @@
+/* ════════════════════════════════════════════
+   Global Design Tokens — Cool Neutral + Warm Accent
+   Change colors here to reskin the entire UI.
+   ════════════════════════════════════════════ */
+:root {
+    /* ── Backgrounds ── */
+    --g-bg-deep:          rgb(20, 22, 26);
+    --g-bg-panel:         rgb(30, 32, 36);
+    --g-bg-surface:       rgb(42, 44, 50);
+    --g-bg-input:         rgb(48, 50, 56);
+
+    /* ── Text ── */
+    --g-text-primary:     rgb(200, 196, 188);
+    --g-text-secondary:   rgb(148, 145, 138);
+    --g-text-tertiary:    rgb(100, 98, 92);
+    --g-text-on-light:    rgb(42, 44, 50);
+
+    /* ── Borders ── */
+    --g-border:           rgb(74, 78, 84);
+    --g-border-strong:    rgb(128, 132, 138);
+    --g-divider:          rgb(48, 50, 56);
+
+    /* ── Accents ── */
+    --g-accent-gold:      rgb(202, 170, 87);
+    --g-accent-parchment: rgb(230, 226, 216);
+    --g-accent-red:       rgb(196, 62, 46);
+
+    /* ── Semi-transparent layers ── */
+    --g-overlay:          rgba(0, 0, 0, 0.82);       /* modal/loading/login mask    */
+    --g-scrim:            rgba(20, 22, 26, 0.6);    /* light overlay / vignette   */
+    --g-panel-bg:         rgba(30, 32, 36, 0.92);   /* panels over 3D scene       */
+    --g-surface-glass:    rgba(42, 44, 50, 0.75);   /* floating cards over scene  */
+
+    /* ── Semi-transparent fills (for layered UI on translucent panels) ── */
+    --g-fill-faint:       rgba(0, 0, 0, 0.15);      /* very subtle bg tint        */
+    --g-fill-light:       rgba(0, 0, 0, 0.25);      /* card / field bg on panel   */
+    --g-fill-medium:      rgba(0, 0, 0, 0.35);      /* input field bg             */
+    --g-fill-strong:      rgba(0, 0, 0, 0.55);      /* strong overlay bg          */
+
+    /* ── Semi-transparent borders ── */
+    --g-border-faint:     rgba(128, 132, 138, 0.06); /* barely visible borders     */
+    --g-border-subtle:    rgba(128, 132, 138, 0.12); /* soft panel/card borders    */
+    --g-border-medium:    rgba(128, 132, 138, 0.2);  /* hover borders              */
+
+    /* ── Gold accents at various strengths ── */
+    --g-gold-dim:         rgba(202, 170, 87, 0.15);  /* faint gold tint / hover bg */
+    --g-selection:        rgba(202, 170, 87, 0.25);  /* text selection, subtle gold*/
+    --g-focus-ring:       rgba(202, 170, 87, 0.5);   /* input focus, medium gold   */
+}
+
+.g-thin-scroll .unity-scroller--vertical {
+    width: 8px;
+    min-width: 8px;
+    background-color: transparent;
+    border-width: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.g-thin-scroll .unity-scroller--vertical #unity-slider {
+    width: 8px;
+    min-width: 8px;
+    background-color: transparent;
+    border-width: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.g-thin-scroll .unity-scroller--vertical .unity-base-slider__input {
+    width: 8px;
+    min-width: 8px;
+    background-color: transparent;
+    border-width: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.g-thin-scroll .unity-scroller--vertical .unity-base-slider__dragger {
+    --bg: rgba(74, 78, 84, 0.3);
+    --hover-bg: rgba(128, 132, 138, 0.5);
+    background-color: var(--bg);
+    border-radius: 4px;
+    border-width: 0;
+    width: 8px;
+    min-width: 8px;
+}
+
+.g-thin-scroll .unity-scroller--vertical .unity-base-slider__dragger:hover {
+    background-color: var(--hover-bg);
+}
+
+.g-thin-scroll .unity-scroller--vertical .unity-base-slider__tracker {
+    background-color: transparent;
+    border-width: 0;
+}
+
+.g-thin-scroll .unity-scroller--vertical .unity-repeat-button {
+    display: none;
+}
+
+.g-thin-scroll .unity-scroller--horizontal {
+    height: 8px;
+    min-height: 8px;
+    background-color: transparent;
+    border-width: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.g-thin-scroll .unity-scroller--horizontal #unity-slider {
+    height: 8px;
+    min-height: 8px;
+    background-color: transparent;
+    border-width: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.g-thin-scroll .unity-scroller--horizontal .unity-base-slider__input {
+    height: 8px;
+    min-height: 8px;
+    background-color: transparent;
+    border-width: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.g-thin-scroll .unity-scroller--horizontal .unity-base-slider__dragger {
+    --bg: rgba(74, 78, 84, 0.3);
+    --hover-bg: rgba(128, 132, 138, 0.5);
+    background-color: var(--bg);
+    border-radius: 4px;
+    border-width: 0;
+    height: 8px;
+    min-height: 8px;
+}
+
+.g-thin-scroll .unity-scroller--horizontal .unity-base-slider__dragger:hover {
+    background-color: var(--hover-bg);
+}
+
+.g-thin-scroll .unity-scroller--horizontal .unity-base-slider__tracker {
+    background-color: transparent;
+    border-width: 0;
+}
+
+.g-thin-scroll .unity-scroller--horizontal .unity-repeat-button {
+    display: none;
+}
+
+.g-panel {
+    width: 85%;
+    height: 85%;
+    background-color: var(--g-panel-bg);
+    border-radius: 4px;
+    border-width: 1px;
+    border-color: rgba(74, 78, 84, 0.35);
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.g-panel-overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--g-overlay);
+    align-items: center;
+    justify-content: center;
+}
+
+.g-btn-gold {
+    --bg: var(--g-bg-surface);
+    --hover-bg: var(--g-bg-input);
+    --border: var(--g-border-medium);
+    --hover-border: var(--g-accent-gold);
+    background-color: var(--bg);
+    border-width: 1px;
+    border-color: var(--border);
+    border-radius: 3px;
+    color: var(--g-accent-gold);
+    -unity-font-style: normal;
+}
+
+.g-btn-gold:hover {
+    background-color: var(--hover-bg);
+    border-color: var(--hover-border);
+}
+
+.g-btn-gold:active {
+    background-color: var(--g-bg-panel);
+}
+
+.g-btn-gold:disabled {
+    background-color: var(--g-fill-strong);
+    border-color: var(--g-border-faint);
+    color: var(--g-text-tertiary);
+}
+
+.g-btn-ghost {
+    --bg: rgba(48, 50, 56, 0.4);
+    --hover-bg: rgba(74, 78, 84, 0.45);
+    --border: rgba(74, 78, 84, 0.3);
+    --hover-border: rgba(128, 132, 138, 0.4);
+    --border-top: rgba(128, 132, 138, 0.18);
+    --hover-border-top: rgba(128, 132, 138, 0.3);
+    --color: rgba(200, 196, 188, 0.85);
+    --hover-color: var(--g-accent-parchment);
+    background-color: var(--bg);
+    border-width: 1px;
+    border-color: var(--border);
+    border-top-color: var(--border-top);
+    border-bottom-color: rgba(0, 0, 0, 0.3);
+    border-radius: 3px;
+    color: var(--color);
+}
+
+.g-btn-ghost:hover {
+    background-color: var(--hover-bg);
+    border-color: var(--hover-border);
+    border-top-color: var(--hover-border-top);
+    color: var(--hover-color);
+}
+
+.g-btn-ghost:active {
+    background-color: rgba(30, 32, 36, 0.6);
+    border-top-color: rgba(0, 0, 0, 0.2);
+    border-bottom-color: rgba(128, 132, 138, 0.1);
+}
+
+.g-btn-outline {
+    --bg: rgba(20, 22, 26, 0.65);
+    --hover-bg: rgba(229, 160, 13, 0.1);
+    --border: rgba(229, 160, 13, 0.45);
+    --hover-border: rgba(229, 160, 13, 0.7);
+    --color: rgba(200, 196, 188, 0.9);
+    --hover-color: var(--g-accent-parchment);
+    background-color: var(--bg);
+    border-width: 1px;
+    border-color: var(--border);
+    border-radius: 3px;
+    color: var(--color);
+    -unity-font-style: normal;
+}
+
+.g-btn-outline:hover {
+    background-color: var(--hover-bg);
+    border-color: var(--hover-border);
+    color: var(--hover-color);
+}
+
+.g-btn-outline:active {
+    background-color: rgba(229, 160, 13, 0.18);
+    border-color: var(--g-accent-gold);
+}
+
+.g-danger-hover:hover {
+    background-color: rgba(180, 50, 40, 0.2);
+    border-top-color: rgba(200, 70, 60, 0.3);
+    color: rgb(220, 100, 85);
+}
+
+.g-danger-hover:active {
+    background-color: rgba(180, 50, 40, 0.3);
+}
+
+.g-btn-close {
+    width: 72px;
+    height: 72px;
+    background-color: rgba(48, 50, 56, 0.5);
+    border-width: 1px;
+    border-color: rgba(74, 78, 84, 0.3);
+    border-top-color: rgba(128, 132, 138, 0.18);
+    border-bottom-color: rgba(0, 0, 0, 0.3);
+    border-radius: 3px;
+    color: rgba(148, 145, 138, 0.7);
+    font-size: 24px;
+}
+
+.g-btn-close-round {
+    width: 48px;
+    height: 48px;
+    border-radius: 24px;
+    background-color: rgba(30, 32, 36, 0.9);
+    border-width: 1px;
+    border-color: rgba(74, 78, 84, 0.25);
+    color: rgba(200, 196, 188, 0.8);
+    font-size: 26px;
+    -unity-text-align: middle-center;
+    padding: 0;
+    margin: 0;
+    transition-property: background-color;
+    transition-duration: 0.1s;
+}
+
+.g-btn-close-round:hover {
+    background-color: rgba(200, 65, 55, 0.8);
+    color: rgb(255, 255, 255);
+    border-color: rgba(200, 65, 55, 0.6);
+}
+
+.g-btn-close-round:active {
+    background-color: rgba(160, 50, 45, 0.9);
+}
+
+.mobile-platform .g-btn-close-round:hover {
+    background-color: rgba(30, 32, 36, 0.9);
+    color: rgba(200, 196, 188, 0.8);
+    border-color: rgba(74, 78, 84, 0.25);
+}
+
+.g-textfield .unity-base-field__input {
+    background-color: var(--g-fill-medium);
+    border-width: 0;
+    border-bottom-width: 1px;
+    border-bottom-color: var(--g-border-subtle);
+    border-radius: 2px;
+    padding: 6px 14px;
+    font-size: 24px;
+    color: var(--g-text-primary);
+    --unity-cursor-color: var(--g-text-secondary);
+    --unity-selection-color: var(--g-selection);
+}
+
+.g-textfield .unity-base-field__input:focus {
+    border-bottom-color: var(--g-focus-ring);
+}
+
+.g-textfield .unity-label {
+    display: none;
+}
+
+/* ---------- Global FloatField ---------- */
+.g-floatfield .unity-base-field__input {
+    background-color: var(--g-fill-medium);
+    border-width: 0;
+    border-bottom-width: 1px;
+    border-bottom-color: var(--g-border-subtle);
+    border-radius: 2px;
+    padding: 4px 8px;
+    color: var(--g-text-primary);
+    --unity-cursor-color: var(--g-text-secondary);
+    --unity-selection-color: var(--g-selection);
+}
+
+.g-floatfield .unity-base-field__input:focus {
+    border-bottom-color: var(--g-focus-ring);
+}
+
+.g-floatfield .unity-label {
+    display: none;
+}
+
+/* ---------- Global Dropdown ---------- */
+.g-dropdown .unity-label {
+    display: none;
+}
+
+.g-dropdown .unity-base-popup-field__input {
+    --bg: var(--g-fill-medium);
+    --hover-bg: var(--g-fill-strong);
+    --border-top: var(--g-border-subtle);
+    --hover-border-top: var(--g-border-medium);
+    background-color: var(--bg);
+    border-width: 0;
+    border-bottom-width: 1px;
+    border-bottom-color: var(--border-top);
+    border-radius: 2px;
+    padding: 4px 10px;
+    color: var(--g-text-primary);
+    font-size: 20px;
+}
+
+.g-dropdown .unity-base-popup-field__input:hover {
+    background-color: var(--hover-bg);
+    border-bottom-color: var(--hover-border-top);
+}
+
+.g-dropdown .unity-base-popup-field__input:focus {
+    border-bottom-color: var(--g-focus-ring);
+}
+
+.g-dropdown .unity-base-popup-field__arrow {
+    -unity-background-image-tint-color: var(--g-text-secondary);
+}
+
+.mobile-platform .g-dropdown .unity-base-popup-field__input {
+    --hover-bg: var(--bg);
+    --hover-border-top: var(--border-top);
+}
+
+.st-placeholder {
+    position: absolute;
+    left: 14px;
+    top: 0;
+    bottom: 0;
+    color: rgba(100, 98, 92, 0.5);
+    font-size: 22px;
+    -unity-font-style: italic;
+    -unity-text-align: middle-left;
+}
+
+.g-text-ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.unity-base-dropdown {
+    background-color: var(--g-bg-panel);
+    border-width: 1px;
+    border-color: var(--g-border-medium);
+    border-top-color: var(--g-border-strong);
+    border-radius: 4px;
+    max-height: 480px;
+    overflow: hidden;
+}
+
+.unity-base-dropdown__container-outer {
+    background-color: var(--g-bg-panel);
+}
+
+.unity-base-dropdown__container-inner {
+    background-color: transparent;
+}
+
+.unity-base-dropdown__item {
+    --bg: transparent;
+    --hover-bg: var(--g-fill-light);
+    min-height: 44px;
+    padding: 0 16px;
+    background-color: var(--bg);
+    flex-direction: row;
+    align-items: center;
+    border-bottom-width: 1px;
+    border-bottom-color: var(--g-border-faint);
+}
+
+.unity-base-dropdown__item:hover {
+    background-color: var(--hover-bg);
+}
+
+.unity-base-dropdown__item:checked {
+    background-color: var(--g-gold-dim);
+}
+
+.unity-base-dropdown__checkmark {
+    -unity-background-image-tint-color: var(--g-accent-parchment);
+    width: 14px;
+    height: 14px;
+}
+
+.unity-base-dropdown__label {
+    --color: var(--g-text-primary);
+    --hover-color: var(--g-accent-parchment);
+    font-size: 18px;
+    color: var(--color);
+}
+
+.unity-base-dropdown__item:hover .unity-base-dropdown__label {
+    color: var(--hover-color);
+}
+
+.unity-base-dropdown__item:checked .unity-base-dropdown__label {
+    color: var(--g-accent-parchment);
+}
+
+/* ═══════ Picker (arrow left/right + dots) ═══════ */
+
+.g-picker-wrap {
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.g-picker-top {
+    flex-direction: row;
+    align-items: center;
+    background-color: var(--g-fill-light);
+    border-radius: 4px;
+    border-width: 1px;
+    border-color: var(--g-border-faint);
+    overflow: hidden;
+}
+
+.g-picker-arrow {
+    --bg: var(--g-fill-medium);
+    --hover-bg: var(--g-fill-strong);
+    width: 48px;
+    height: 48px;
+    background-color: var(--bg);
+    border-width: 0;
+    color: var(--g-text-secondary);
+    font-size: 22px;
+    -unity-text-align: middle-center;
+    padding: 0;
+}
+
+.g-picker-arrow:hover {
+    background-color: var(--hover-bg);
+    color: var(--g-text-primary);
+}
+
+.g-picker-value {
+    flex-grow: 1;
+    font-size: 20px;
+    color: var(--g-text-primary);
+    -unity-text-align: middle-center;
+    padding: 0 8px;
+}
+
+.g-picker-dots {
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 6px;
+}
+
+.g-picker-dot {
+    width: 8px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--g-border);
+    margin: 0 2px;
+}
+
+.g-picker-dot-active {
+    background-color: var(--g-accent-parchment);
+    width: 16px;
+}
+
+.mobile-platform .g-picker-arrow {
+    --hover-bg: var(--bg);
+}
+
+.g-pill-toggle .unity-toggle__input {
+    width: 64px;
+    height: 36px;
+    border-radius: 18px;
+    background-color: rgba(48, 50, 56, 0.4);
+    border-width: 1px;
+    border-color: rgba(74, 78, 84, 0.25);
+    padding: 4px;
+    justify-content: flex-start;
+    transition-property: background-color, border-color;
+    transition-duration: 0.15s;
+}
+
+.g-pill-toggle .unity-toggle__checkmark {
+    width: 28px;
+    height: 28px;
+    border-radius: 14px;
+    background-color: rgba(200, 196, 188, 0.7);
+    border-width: 0;
+    background-image: none;
+    transition-property: translate, background-color;
+    transition-duration: 0.15s;
+}
+
+.g-pill-toggle:checked .unity-toggle__input {
+    background-color: rgba(200, 196, 188, 0.25);
+    border-color: rgba(200, 196, 188, 0.35);
+}
+
+.g-pill-toggle:checked .unity-toggle__checkmark {
+    translate: 26px 0;
+    background-color: var(--g-accent-gold);
+}
+
+.g-pill-toggle .unity-label {
+    display: none;
+}
+
+.g-dialog-overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--g-overlay);
+    align-items: center;
+    justify-content: center;
+}
+
+.g-dialog {
+    width: 420px;
+    background-color: var(--g-bg-panel);
+    border-radius: 4px;
+    border-width: 1px;
+    border-color: rgba(74, 78, 84, 0.4);
+    padding: 40px;
+}
+
+.g-dialog-title {
+    font-size: 28px;
+    color: var(--g-text-primary);
+    -unity-font-style: bold;
+    letter-spacing: 2px;
+    margin-bottom: 16px;
+}
+
+.g-list-hover .unity-list-view__item {
+    --bg: transparent;
+    --hover-bg: rgba(255, 255, 255, 0.03);
+}
+
+.g-list-hover .unity-collection-view__item {
+    --bg: transparent;
+    --hover-bg: rgba(255, 255, 255, 0.03);
+}
+
+.g-list-hover .unity-list-view__item:hover {
+    background-color: var(--hover-bg);
+}
+
+.g-list-hover .unity-collection-view__item:hover {
+    background-color: var(--hover-bg);
+}
+
+.g-vehicle-card-hover {
+    --hover-border: rgba(200, 195, 175, 0.3);
+    --hover-border-top: rgba(255, 245, 220, 0.4);
+}
+
+.g-vehicle-card-hover:hover {
+    border-color: var(--hover-border);
+    border-top-color: var(--hover-border-top);
+}
+
+.g-vcard-sm-thumb {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 20px;
+    -unity-background-scale-mode: scale-to-fit;
+}
+
+.g-vcard-sm-info {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 20px;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 6px;
+    background-color: var(--g-overlay);
+    border-top-width: 1px;
+    border-top-color: rgba(128, 132, 138, 0.08);
+}
+
+.g-vcard-sm-rank {
+    font-size: 14px;
+    color: rgba(200, 196, 188, 0.9);
+    -unity-font-style: normal;
+    -unity-text-align: middle-center;
+    margin-right: 4px;
+    flex-shrink: 0;
+}
+
+.g-vcard-sm-name {
+    font-size: 14px;
+    color: rgba(200, 196, 188, 0.8);
+    -unity-text-align: middle-left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    flex-grow: 1;
+}
+
+.g-vcard-sm-nation {
+    width: 24px;
+    height: 18px;
+    flex-shrink: 0;
+    margin-right: 6px;
+    -unity-background-scale-mode: scale-to-fit;
+}
+
+.g-locked-overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(20, 22, 26, 0.75);
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 6px;
+    border-width: 1px;
+    border-color: rgba(255, 64, 47, 0.3);
+}
+
+.g-locked-label {
+    font-size: 24px;
+    color: rgb(255, 64, 47);
+    -unity-font-style: italic;
+    -unity-text-align: upper-center;
+    margin-bottom: 12px;
+}
+
+.g-paid-feature-label {
+    font-size: 16px;
+    color: rgba(148, 145, 138, 0.7);
+    -unity-text-align: upper-center;
+    white-space: normal;
+    margin-bottom: 16px;
+}
+
+.g-learn-paid-btn {
+    height: 40px;
+    padding: 0 28px;
+    font-size: 16px;
+    margin-bottom: 16px;
+}
+
+/* Vehicle card mode badge (e.g. HealthBased / ModuleMode) */
+.g-card-mode-badge {
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.85);
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 3px;
+    padding: 1px 6px;
+}
+
+.mobile-platform .g-thin-scroll .unity-scroller--vertical .unity-base-slider__dragger {
+    --hover-bg: var(--bg);
+}
+
+.mobile-platform .g-thin-scroll .unity-scroller--horizontal .unity-base-slider__dragger {
+    --hover-bg: var(--bg);
+}
+
+.mobile-platform .g-btn-gold {
+    --hover-bg: var(--bg);
+    --hover-border-top: var(--border-top);
+}
+
+.mobile-platform .g-btn-ghost {
+    --hover-bg: var(--bg);
+    --hover-border: var(--border);
+    --hover-border-top: var(--border-top);
+    --hover-color: var(--color);
+}
+
+.mobile-platform .g-btn-outline {
+    --hover-bg: var(--bg);
+    --hover-border: var(--border);
+    --hover-color: var(--color);
+}
+
+.mobile-platform .unity-base-dropdown__item {
+    --hover-bg: var(--bg);
+}
+
+.mobile-platform .unity-base-dropdown__label {
+    --hover-color: var(--color);
+}
+
+.mobile-platform .g-list-hover .unity-list-view__item {
+    --hover-bg: var(--bg);
+}
+
+.mobile-platform .g-list-hover .unity-collection-view__item {
+    --hover-bg: var(--bg);
+}
+
+.mobile-platform .g-vehicle-card-hover {
+    --hover-border: var(--border, rgba(128, 132, 138, 0.12));
+    --hover-border-top: var(--border-top, rgba(200, 196, 188, 0.18));
+}
+
+.g-legend {
+    background-color: rgba(30, 32, 36, 0.9);
+    border-radius: 4px;
+    border-width: 1px;
+    border-color: rgba(200, 196, 188, 0.3);
+    padding: 12px 16px;
+    flex-direction: column;
+}
+
+.g-legend-title {
+    font-size: 18px;
+    color: rgba(200, 196, 188, 0.85);
+    margin-bottom: 8px;
+    -unity-font-style: bold;
+}
+
+.g-legend-item {
+    flex-direction: row;
+    align-items: center;
+    margin-top: 6px;
+}
+
+.g-legend-swatch {
+    width: 24px;
+    height: 10px;
+    border-radius: 2px;
+    flex-shrink: 0;
+    margin-right: 8px;
+}
+
+.g-legend-label {
+    font-size: 16px;
+    color: rgba(148, 145, 138, 0.7);
+}
+
+.g-swatch-gradient {
+    flex-direction: row;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.g-swatch-half {
+    flex: 1;
+    height: 10px;
+}
+
+.g-swatch-half-start {
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+}
+
+.g-swatch-half-end {
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+
+.g-swatch-tnt-start {
+    background-color: rgb(255, 250, 0);
+}
+
+.g-swatch-tnt-end {
+    background-color: rgb(255, 0, 45);
+}
+
+.g-swatch-kinetic-start {
+    background-color: rgb(0, 255, 237);
+}
+
+.g-swatch-kinetic-end {
+    background-color: rgb(0, 149, 255);
+}
+
+.g-swatch-metal-jet-start {
+    background-color: rgb(0, 0, 255);
+}
+
+.g-swatch-metal-jet-end {
+    background-color: rgb(255, 0, 163);
+}
+
+.g-swatch-overpressure-start {
+    background-color: rgb(255, 255, 255);
+}
+
+.g-swatch-overpressure-end {
+    background-color: rgb(161, 255, 0);
+}
+
+.mobile-platform .g-legend {
+    padding: 8px 12px;
+}
+
+.mobile-platform .g-legend-title {
+    font-size: 16px;
+}
+
+.mobile-platform .g-legend-label {
+    font-size: 14px;
+}
+
+/* ── Shared Chart Labels ── */
+.g-chart-xaxis-lbl {
+    font-size: 18px;
+    color: rgba(170, 170, 170, 0.7);
+    picking-mode: ignore;
+}
+
+.g-chart-yaxis-lbl {
+    font-size: 18px;
+    color: rgba(170, 170, 170, 0.7);
+    picking-mode: ignore;
+}
+
+.g-chart-axis-title {
+    font-size: 18px;
+    color: rgba(140, 140, 140, 0.5);
+    letter-spacing: 0.5px;
+    picking-mode: ignore;
+}
+
+.g-chart-info-lbl {
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.22);
+    picking-mode: ignore;
+}
+
+.g-chart-endpoint-lbl {
+    font-size: 18px;
+    color: rgba(220, 80, 80, 0.85);
+    picking-mode: ignore;
+}
+
+.g-shatter-tier-badge {
+    font-size: 14px;
+    color: white;
+    -unity-font-style: bold;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 8px;
+    padding: 1px 5px;
+    picking-mode: ignore;
+}
+
+/* ── Shared Panel Utilities ──
+   Add these classes to UXML elements alongside panel-specific classes
+   to reduce duplication across garage sub-panels.
+   ────────────────────────────────────────── */
+
+/* Absolute-fill utility (replaces 5 lines of inline style) */
+.g-fill-parent {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+/* Gold slider — gold circle handle + subtle track */
+
+.g-slider-gold .unity-label {
+    display: none;
+}
+
+.g-slider-gold .unity-base-slider__dragger {
+    --bg: var(--g-accent-parchment);
+    --hover-bg: rgb(255, 255, 255);
+    width: 20px;
+    height: 12px;
+    border-radius: 3px;
+    background-color: var(--bg);
+    border-width: 0;
+    margin-top: -6px;
+}
+
+.g-slider-gold .unity-base-slider__dragger:hover {
+    background-color: var(--hover-bg);
+}
+
+.g-slider-gold .unity-base-slider__tracker {
+    height: 3px;
+    border-radius: 1px;
+    background-color: rgba(140, 140, 150, 0.15);
+    border-width: 0;
+}
+
+.g-slider-gold .unity-base-slider__drag-container {
+    min-height: 14px;
+}
+
+.mobile-platform .g-slider-gold .unity-base-slider__dragger {
+    --hover-bg: var(--bg);
+}
+
+/* Section title with gold left accent (used across all side panels) */
+.g-section-title {
+    font-size: 22px;
+    color: rgba(200, 196, 188, 0.6);
+    letter-spacing: 2px;
+    -unity-font-style: normal;
+    margin-bottom: 8px;
+    border-left-width: 3px;
+    border-left-color: rgba(200, 196, 188, 0.4);
+    padding-left: 8px;
+}
+
+/* Side panel base (right-positioned, used by Armor/Camo/Decal/GunMark) */
+.g-side-panel {
+    position: absolute;
+    right: 0;
+    top: 100px;
+    bottom: 0;
+    width: 380px;
+    background-color: rgba(30, 32, 36, 0.92);
+    border-left-width: 1px;
+    border-left-color: rgba(74, 78, 84, 0.12);
+    flex-direction: column;
+}
+
+/* Side panel header (gold bottom border, flex-row) */
+.g-side-panel-header {
+    flex-direction: row;
+    align-items: center;
+    padding: 8px 12px;
+    border-bottom-width: 1px;
+    border-bottom-color: rgba(200, 196, 188, 0.2);
+    flex-shrink: 0;
+}
+
+/* Side panel header title */
+.g-side-panel-title {
+    font-size: 24px;
+    color: var(--g-text-primary);
+    -unity-font-style: bold;
+    letter-spacing: 3px;
+}
+
+/* Section divider (bottom border between sections) */
+.g-section {
+    padding: 10px 14px;
+    border-bottom-width: 1px;
+    border-bottom-color: rgba(74, 78, 84, 0.08);
+}
+
+/* Interactive card base (hover border/bg transition) */
+.g-card-interactive {
+    --bg: rgba(255, 255, 255, 0.03);
+    --hover-bg: rgba(255, 255, 255, 0.06);
+    --border: rgba(74, 78, 84, 0.12);
+    --hover-border: rgba(229, 160, 13, 0.6);
+    border-radius: 4px;
+    border-width: 1px;
+    border-color: var(--border);
+    background-color: var(--bg);
+    overflow: hidden;
+    cursor: link;
+    flex-shrink: 0;
+    transition: border-color 0.12s, background-color 0.12s;
+}
+
+.g-card-interactive:hover {
+    border-color: var(--hover-border);
+    background-color: var(--hover-bg);
+}
+
+.mobile-platform .g-card-interactive {
+    --hover-bg: var(--bg);
+    --hover-border: var(--border);
+}
+
+/* ── Floating Panel Titlebar ──
+   Shared titlebar for draggable floating panels (minimap, playfield, etc.)
+   Usage: g-float-titlebar on the bar, g-float-drag-handle on the drag area,
+          g-float-collapse-btn on the collapse button.
+   ────────────────────────────────────────── */
+.g-float-titlebar {
+    flex-direction: row;
+    align-items: center;
+    height: 40px;
+    padding: 0 6px 0 0;
+    background-color: rgba(200, 196, 188, 0.08);
+    border-bottom-width: 1px;
+    border-bottom-color: rgba(74, 78, 84, 0.1);
+    border-radius: 6px 6px 0 0;
+}
+
+.g-float-drag-handle {
+    flex-grow: 1;
+    flex-shrink: 1;
+    align-self: stretch;
+    align-items: center;
+    flex-direction: row;
+    padding-left: 12px;
+    cursor: move-arrow;
+}
+
+.g-float-title {
+    font-size: 11px;
+    -unity-font-style: bold;
+    color: rgba(200, 196, 188, 0.7);
+    letter-spacing: 2px;
+}
+
+.g-float-collapse-btn {
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
+    font-size: 14px;
+    -unity-text-align: middle-center;
+    padding: 0;
+    background-color: transparent;
+    border-width: 1px;
+    border-color: rgba(74, 78, 84, 0.15);
+    border-radius: 3px;
+    color: rgba(128, 132, 138, 0.5);
+    transition-property: background-color, color;
+    transition-duration: 0.15s;
+}
+
+.g-float-collapse-btn:hover {
+    background-color: rgba(74, 78, 84, 0.2);
+    color: rgba(200, 196, 188, 0.8);
+}
+
+.mobile-platform .g-float-titlebar {
+    height: 52px;
+}
+
+.mobile-platform .g-float-collapse-btn {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+}

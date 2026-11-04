@@ -1,0 +1,24 @@
+ManifestFileVersion: 0
+CRC: 3669483818
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: d78c86bfe7699d32b67ffc075aeca1bb
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 030829eceb7707db1f0ac94cd50170f9
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: d78c86bfe7699d32b67ffc075aeca1bb
+HashAppended: 0
+ClassTypes:
+- Class: 114
+  Script: {fileID: 11500000, guid: d10e293c459791b4cb53bc72cfb8088d, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers:
+- AssemblyName: GameFramework.Runtime
+  ClassName: ShanghaiWindy.Core.Data.AssetProp
+Assets:
+- Packages/com.shanghaiwindy.coreresources/Vrm/AvatarCharacter/JapaneseSoldier/JapaneseSoldier.asset
+Dependencies: []

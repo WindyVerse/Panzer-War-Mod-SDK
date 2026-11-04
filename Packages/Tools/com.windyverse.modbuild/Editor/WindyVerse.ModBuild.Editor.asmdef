@@ -1,0 +1,14 @@
+{
+    "name": "WindyVerse.ModBuild.Editor",
+    "rootNamespace": "WindyVerse.ModBuild",
+    "references": [],
+    "includePlatforms": ["Editor"],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": false,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

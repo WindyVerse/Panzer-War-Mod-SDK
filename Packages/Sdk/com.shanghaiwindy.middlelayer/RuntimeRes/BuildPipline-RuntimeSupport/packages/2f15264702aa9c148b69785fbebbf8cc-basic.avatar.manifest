@@ -1,0 +1,22 @@
+ManifestFileVersion: 0
+CRC: 3685732420
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: f73eb78f74f14111598ae46edcf11cc7
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 2d8df09e698f722ada1caa03d3413830
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: f73eb78f74f14111598ae46edcf11cc7
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Packages/com.shanghaiwindy.coreresources/Crew/ErinBlake/Dating-Avatar.png
+Dependencies: []

@@ -1,0 +1,24 @@
+ManifestFileVersion: 0
+CRC: 1770140038
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 06c10cefa5249dcd3a8abf86a4f73a10
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 8b75d4550595fef5a93b5ca712ce822a
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 06c10cefa5249dcd3a8abf86a4f73a10
+HashAppended: 0
+ClassTypes:
+- Class: 74
+  Script: {instanceID: 0}
+- Class: 91
+  Script: {instanceID: 0}
+- Class: 319
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Packages/com.shanghaiwindy.coreresources/FPS/Prefab/P3Anim.controller
+Dependencies: []

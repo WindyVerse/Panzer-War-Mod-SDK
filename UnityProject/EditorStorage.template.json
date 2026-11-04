@@ -1,0 +1,20 @@
+{
+  "luaProjectFolder": "",
+  "copyModPackageToDstWinFolders": [],
+  "copyModPackageToDstAndroidFolders": [],
+  "copyModPackageToDstIosFolders": [],
+  "showAtStartup": false,
+  "showHomePageAtStartup": false,
+  "configPaths": ["Assets/Configs"],
+  "accountInfo": [],
+  "proxyInfo": {"localProxy": "", "enableProxy": false},
+  "stringPairList": [],
+  "lodGenPath": "Assets/Res/Cooked/SimplifiedMeshGroup",
+  "buildOnSaveConfig": true,
+  "useSimplygon": false,
+  "isDevMode": false,
+  "dataSafetyChecker": true,
+  "isAutoSave": true,
+  "exportDllPaths": [],
+  "modulePresetFolders": []
+}

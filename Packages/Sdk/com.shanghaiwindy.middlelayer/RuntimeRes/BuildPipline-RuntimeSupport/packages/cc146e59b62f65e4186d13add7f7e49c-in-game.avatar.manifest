@@ -1,0 +1,22 @@
+ManifestFileVersion: 0
+CRC: 2657738661
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 82500f8a2d6a0ba37c6616d323c496f1
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 2d8df09e698f722ada1caa03d3413830
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 82500f8a2d6a0ba37c6616d323c496f1
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Packages/com.shanghaiwindy.coreresources/Crew/YuukiChiho/YuukiChiho-In-Game-Avatar.png
+Dependencies: []

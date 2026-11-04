@@ -1,0 +1,22 @@
+ManifestFileVersion: 0
+CRC: 3428004392
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: c275d72eb870ac5dc9106a77251de8d1
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 2d8df09e698f722ada1caa03d3413830
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: c275d72eb870ac5dc9106a77251de8d1
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Packages/com.shanghaiwindy.coreresources/GUI/Common/Classic-Tex/PlayerUISystem/Joystick/Triangle.png
+Dependencies: []

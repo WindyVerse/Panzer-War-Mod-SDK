@@ -1,0 +1,221 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-7812180236452655300
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -2110409414, guid: 0512a3c011ce1c84db3d9ccc1f4d6d2e, type: 3}
+  m_Name: O-365K
+  m_EditorClassIdentifier: 
+  comment: 
+  bulletVFX: {fileID: 11400000, guid: c65b6a353c7152c439ce780e94d74bc4, type: 2}
+  damage: 260
+  velocity: 792
+  gravityDamper: 9.8
+  parabolaType: 0
+  fireRecoil: 120
+  caliber: 85
+  isOverrideLifeTime: 0
+  overrideLifetime: 10
+  maxCapability: 0
+  penetration: 11
+  warHeadMaterial: {fileID: 0}
+  warheadSlope: {fileID: 0}
+  moduleData:
+    explosiveMassEqualTNT: 660
+    mass: 9.85
+    fuseDelay: 0.1
+    fuseSensitivity: 10
+  secondaryShatterMaterial: {fileID: 0}
+  canOverpressure: 1
+  overpressurePower: 1
+  velocityDeclineScalingType: 0
+  customVelocityDeclineScaling: 1
+  ExplosionRange: 1.2
+  maxDamagePershell: 50
+  forceModuleDestroyedRange: 0
+  explosionWarhead: 3001
+--- !u!114 &-2527398236707976142
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1355950744, guid: 0512a3c011ce1c84db3d9ccc1f4d6d2e, type: 3}
+  m_Name: BR-365K
+  m_EditorClassIdentifier: 
+  comment: 
+  bulletVFX: {fileID: 11400000, guid: 1f43bc75465ab554da410a1c67167a6f, type: 2}
+  damage: 160
+  velocity: 792
+  gravityDamper: 9.8
+  parabolaType: 0
+  fireRecoil: 120
+  caliber: 85
+  isOverrideLifeTime: 0
+  overrideLifetime: 10
+  maxCapability: 0
+  penetration: 148
+  warHeadMaterial: {fileID: 0}
+  warheadSlope: {fileID: 0}
+  moduleData:
+    explosiveMassEqualTNT: 73.92
+    mass: 9.2
+    fuseDelay: 1.2
+    fuseSensitivity: 10
+  secondaryShatterMaterial: {fileID: 0}
+  canOverpressure: 1
+  overpressurePower: 1
+  velocityDeclineScalingType: 0
+  customVelocityDeclineScaling: 1
+  isDeclineByDistance: 1
+  warhead: 4
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 359232964, guid: 0512a3c011ce1c84db3d9ccc1f4d6d2e, type: 3}
+  m_Name: 85mm-ZIS-S-53
+  m_EditorClassIdentifier: 
+  comment: "t-34-85 \u4E3B\u70AE"
+  tankFireParameter:
+    crosshairPreferType: 0
+    fireState: 0
+    ReloadTime: 8.52
+    isEnableSimpleReloadSound: 1
+    overrideSimpleReloadSound:
+      rid: -2
+    AmmoCount: 60
+    hasSlot: 0
+    slotCount: 0
+    slotDuration: 0
+    canFireUnderWater: 0
+    advanceFireClass:
+      SmallReloadTime: 0
+      LargeReloadTime: 0
+      MaxSmallAmmo: 0
+      disableMegaIcon: 0
+      isEnableSmallReloadSound: 0
+      overrideSmallReloadSound:
+        rid: -2
+      isEnableLargeReloadSound: 0
+      overrideLargeReloadSound:
+        rid: -2
+    drumFire:
+      fireDuration: 0
+      reloadTime: []
+      isEnableDrumReloadSound: 0
+      overrideDrumReloadSound:
+        rid: -2
+      disableMegaIcon: 0
+    energyVFX: {fileID: 0}
+    energyFire:
+      perShotEnergy: 0
+      totalEnergy: 0
+      perShotInterval: 0
+      vfxDuration: 0
+      isEnableEnergyReloadSound: 0
+      overrideEnergyReloadSound:
+        rid: -2
+    dispersion: 0
+    fireSpread:
+      dispersion: 0.57
+      aimTime: 2.9
+      moveSpreadCoff: 0.22
+      traverseSpreadCoff: 0.22
+      gunSpreadCoff: 0.14
+      afterFiredCoff: 4
+      damagedCoff: 2
+    fmodBulletSound: {fileID: 11400000, guid: 82bc9ff67dce78849840f9be74db868e, type: 2}
+    bulletData:
+    - {fileID: -2527398236707976142}
+    - {fileID: 3465188646917032746}
+    - {fileID: -7812180236452655300}
+    muzzleFire: 1
+    overrideMuzzleFires: []
+    waveInteractType: 0
+    customWaveInteract:
+      respondTime: 0
+      radius: 0
+      weight: 0
+    fireDymScale: 1
+    fireCycleTime: 0
+    isFireDymIfExtraTurret: 0
+    disableGunAnimation: 0
+    isInRangeFire: 0
+    IsOverrideRangeFireAngle: 0
+    rangeFireAngle: 0
+    isEnableFireGroup: 0
+    fireGroupParm:
+      groupID: 0
+      priority: 0
+      fireMinDelay: 0
+    canBrakeSubFireLoop: 0
+    canFireIfMainClick: 0
+    canFireIfSubClick: 0
+    isEnableSeparateFireButton: 0
+    separateFireType: 0
+    separateFireShortKeyType: 0
+    zoomProfileData: {fileID: 0}
+    fireActionData: {fileID: 0}
+    customSightData: {fileID: 0}
+    reloadStatePreferType: 0
+    vehicleLuaBehaviors: []
+    buffRefs: []
+    buffs: []
+  references:
+    version: 2
+    RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }
+--- !u!114 &3465188646917032746
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1355950744, guid: 0512a3c011ce1c84db3d9ccc1f4d6d2e, type: 3}
+  m_Name: BR-365P
+  m_EditorClassIdentifier: 
+  comment: 
+  bulletVFX: {fileID: 11400000, guid: 1f43bc75465ab554da410a1c67167a6f, type: 2}
+  damage: 140
+  velocity: 1050
+  gravityDamper: 9.8
+  parabolaType: 0
+  fireRecoil: 120
+  caliber: 85
+  isOverrideLifeTime: 0
+  overrideLifetime: 10
+  maxCapability: 0
+  penetration: 195
+  warHeadMaterial: {fileID: 0}
+  warheadSlope: {fileID: 0}
+  moduleData:
+    explosiveMassEqualTNT: 0
+    mass: 5
+    fuseDelay: 0
+    fuseSensitivity: 10
+  secondaryShatterMaterial: {fileID: 0}
+  canOverpressure: 1
+  overpressurePower: 1
+  velocityDeclineScalingType: 0
+  customVelocityDeclineScaling: 1
+  isDeclineByDistance: 1
+  warhead: 6

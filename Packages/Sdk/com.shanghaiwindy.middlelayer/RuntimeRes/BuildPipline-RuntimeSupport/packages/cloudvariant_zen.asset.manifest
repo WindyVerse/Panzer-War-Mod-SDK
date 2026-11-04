@@ -1,0 +1,28 @@
+ManifestFileVersion: 0
+CRC: 3508790253
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: d9147b72c95462b01a033e23967636ba
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: a2082efdfa14a30afd54d743ce7c788a
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: d9147b72c95462b01a033e23967636ba
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 3c1f0a7e5b2d4e8f9a6b7c8d9e0f1a2b, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers:
+- AssemblyName: Core
+  ClassName: ShanghaiWindy.Core.CloudNoiseSpec
+- AssemblyName: GameFramework.Runtime
+  ClassName: ShanghaiWindy.Core.Data.AssetProp
+Assets:
+- Packages/com.shanghaiwindy.coreresources/Weather/CloudVariants/Cirrus/Zen.asset
+Dependencies: []

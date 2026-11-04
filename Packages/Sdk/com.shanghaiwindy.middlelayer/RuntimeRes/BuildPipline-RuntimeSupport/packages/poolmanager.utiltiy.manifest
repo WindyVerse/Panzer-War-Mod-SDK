@@ -1,0 +1,61 @@
+ManifestFileVersion: 0
+CRC: 506773699
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 12cfe0f7eb95db0edd45b33112478ae6
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: a1c163afe9db1d775ecc45a583f2322c
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 12cfe0f7eb95db0edd45b33112478ae6
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 64
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 5eed748b605b4aa18e5ab976f8c8906c, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 3bc480efcb9153c4fb8cca943cd1d0f6, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: ca7e7767cca2b6940b59ea0e88e8f0e7, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: fbac8eca922d46de9cdf318ed4aaf644, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 31829bec55f164345b28e01d08d3beb9, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 0b684d9dddff7f14792ae41e33ef34a7, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 198
+  Script: {instanceID: 0}
+- Class: 199
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers:
+- AssemblyName: Core
+  ClassName: ShanghaiWindy.Core.SpawnRes
+Assets:
+- Packages/com.shanghaiwindy.coreresources/Pool/PoolManager.prefab
+Dependencies:
+- C:/github/workspace/Projects/DE/Build/Mod-BuildPipline/StandaloneWindows64/BuildPipline-RuntimeSupport/packages/fd510-4af4061aa19a9a747ae01a2d2a9a964a.unity3d
+- C:/github/workspace/Projects/DE/Build/Mod-BuildPipline/StandaloneWindows64/BuildPipline-RuntimeSupport/packages/fd510-7605196420d204945843c4c794c58361.unity3d
+- C:/github/workspace/Projects/DE/Build/Mod-BuildPipline/StandaloneWindows64/BuildPipline-RuntimeSupport/packages/fd510-c8ada4fdced7c07409542d983b96835e.unity3d
+- C:/github/workspace/Projects/DE/Build/Mod-BuildPipline/StandaloneWindows64/BuildPipline-RuntimeSupport/packages/fd510-cde77eded015460488e06664ef8c5023.unity3d
+- C:/github/workspace/Projects/DE/Build/Mod-BuildPipline/StandaloneWindows64/BuildPipline-RuntimeSupport/packages/fd510d96-3761-4c83-940e-67083716ae45-svc.shader

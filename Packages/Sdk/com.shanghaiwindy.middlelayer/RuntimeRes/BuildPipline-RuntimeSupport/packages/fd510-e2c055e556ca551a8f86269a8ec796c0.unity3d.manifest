@@ -1,0 +1,22 @@
+ManifestFileVersion: 0
+CRC: 1126056271
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: d0041e5b6289f0e8bbf9956d3daf00de
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 923768aebf385ad86f7762daa8034951
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: d0041e5b6289f0e8bbf9956d3daf00de
+HashAppended: 0
+ClassTypes:
+- Class: 213
+  Script: {instanceID: 0}
+- Class: 687078895
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Packages/com.shanghaiwindy.coreresources/GUI/Common/Prefab/Icons/CombatControls/Common/Hawkeye.png
+Dependencies: []

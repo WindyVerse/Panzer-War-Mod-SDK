@@ -1,0 +1,20 @@
+ManifestFileVersion: 0
+CRC: 1338003097
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 20fb030e76180417c9092bede8b717fe
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 2612ac43db082a73502ee80f2eceb73f
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 20fb030e76180417c9092bede8b717fe
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Packages/com.shanghaiwindy.coreresources/VFX/SpecialWeapon/Textures/energy_ring_halo.tga
+Dependencies: []

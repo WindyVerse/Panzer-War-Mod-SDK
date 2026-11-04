@@ -1,0 +1,22 @@
+ManifestFileVersion: 0
+CRC: 2365605764
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 791ee0b248bd0b956952a26420fb4466
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 923768aebf385ad86f7762daa8034951
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 791ee0b248bd0b956952a26420fb4466
+HashAppended: 0
+ClassTypes:
+- Class: 213
+  Script: {instanceID: 0}
+- Class: 687078895
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Packages/com.shanghaiwindy.coreresources/Flags/Countries/ye.png
+Dependencies: []

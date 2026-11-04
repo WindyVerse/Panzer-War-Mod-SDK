@@ -1,0 +1,33 @@
+ManifestFileVersion: 0
+CRC: 677842064
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: f151b9d67341305a7d24b4adfd4756be
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 01e4f57b2f021214c8770db40667e5ef
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: f151b9d67341305a7d24b4adfd4756be
+HashAppended: 0
+ClassTypes:
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: cedc943c6c4540aca65ada07601f5878, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 3381ec9b82ea45e2b03ea2ddb7b414dc, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 117
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Packages/com.shanghaiwindy.coreresources/Water/Profiles/WaterCatalog.asset
+Dependencies:
+- C:/github/workspace/Projects/DE/Build/Mod-BuildPipline/StandaloneWindows64/BuildPipline-RuntimeSupport/packages/fd510d96-3761-4c83-940e-67083716ae45-svc.shader

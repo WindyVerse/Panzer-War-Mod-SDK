@@ -1,0 +1,20 @@
+ManifestFileVersion: 0
+CRC: 2773471798
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: c16d8f4f20d1ec2412bbdb45bac06126
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 2612ac43db082a73502ee80f2eceb73f
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: c16d8f4f20d1ec2412bbdb45bac06126
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Packages/com.shanghaiwindy.coreresources/Vrm/AvatarCharacter/GermanSoldier/GermanSoldierAvatar.png
+Dependencies: []

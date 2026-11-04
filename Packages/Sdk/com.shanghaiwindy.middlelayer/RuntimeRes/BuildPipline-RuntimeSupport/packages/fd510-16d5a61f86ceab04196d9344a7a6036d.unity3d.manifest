@@ -1,0 +1,22 @@
+ManifestFileVersion: 0
+CRC: 164667549
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: e568bac766f6d62ff9e838036de8df62
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 923768aebf385ad86f7762daa8034951
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: e568bac766f6d62ff9e838036de8df62
+HashAppended: 0
+ClassTypes:
+- Class: 213
+  Script: {instanceID: 0}
+- Class: 687078895
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Packages/com.shanghaiwindy.coreresources/BulletIcon/MG.png
+Dependencies: []

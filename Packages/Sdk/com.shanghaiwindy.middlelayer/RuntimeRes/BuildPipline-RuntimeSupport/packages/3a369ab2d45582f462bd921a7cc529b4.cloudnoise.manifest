@@ -1,0 +1,20 @@
+ManifestFileVersion: 0
+CRC: 308231154
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 7126d4426ab8c1abb69f1ad5fb1f292b
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: e4eae1b20857bcc286a48eae81f3ecb5
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 7126d4426ab8c1abb69f1ad5fb1f292b
+HashAppended: 0
+ClassTypes:
+- Class: 117
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Packages/com.shanghaiwindy.coreresources/Weather/CloudVariants/Noise/Curl_8x8_o3_s2_m0p3_3d_vec.png
+Dependencies: []

@@ -1,0 +1,228 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-7816718599361557890
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -2110409414, guid: 0512a3c011ce1c84db3d9ccc1f4d6d2e, type: 3}
+  m_Name: PB-35
+  m_EditorClassIdentifier: 
+  comment: 
+  bulletVFX: {fileID: 11400000, guid: 70b9006b21a04224a8c3dc4248692c6c, type: 2}
+  damage: 750
+  velocity: 436
+  gravityDamper: 9.8
+  parabolaType: 0
+  fireRecoil: 120
+  caliber: 152
+  isOverrideLifeTime: 0
+  overrideLifetime: 10
+  maxCapability: 0
+  penetration: 86
+  warHeadMaterial: {fileID: 0}
+  warheadSlope: {fileID: 0}
+  moduleData:
+    explosiveMassEqualTNT: 4850
+    mass: 51.06
+    fuseDelay: 1.2
+    fuseSensitivity: 10
+  secondaryShatterMaterial: {fileID: 0}
+  canOverpressure: 1
+  overpressurePower: 1
+  velocityDeclineScalingType: 0
+  customVelocityDeclineScaling: 1
+  ExplosionRange: 3
+  maxDamagePershell: 50
+  forceModuleDestroyedRange: 0
+  explosionWarhead: 3001
+--- !u!114 &-7057367934094725964
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -2110409414, guid: 0512a3c011ce1c84db3d9ccc1f4d6d2e, type: 3}
+  m_Name: OF-530
+  m_EditorClassIdentifier: 
+  comment: 
+  bulletVFX: {fileID: 11400000, guid: 76bbdef1a5106fc478031aea3d87bbf5, type: 2}
+  damage: 930
+  velocity: 530
+  gravityDamper: 9.8
+  parabolaType: 0
+  fireRecoil: 155
+  caliber: 152
+  isOverrideLifeTime: 0
+  overrideLifetime: 10
+  maxCapability: 0
+  penetration: 48
+  warHeadMaterial: {fileID: 0}
+  warheadSlope: {fileID: 0}
+  moduleData:
+    explosiveMassEqualTNT: 5830
+    mass: 40
+    fuseDelay: 0
+    fuseSensitivity: 10
+  secondaryShatterMaterial: {fileID: 0}
+  canOverpressure: 1
+  overpressurePower: 1
+  velocityDeclineScalingType: 0
+  customVelocityDeclineScaling: 1
+  ExplosionRange: 3.7
+  maxDamagePershell: 180
+  forceModuleDestroyedRange: 0
+  explosionWarhead: 3001
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 359232964, guid: 0512a3c011ce1c84db3d9ccc1f4d6d2e, type: 3}
+  m_Name: 152mm-M-10T
+  m_EditorClassIdentifier: 
+  comment: "KV-2 \u4E3B\u70AE 152"
+  tankFireParameter:
+    crosshairPreferType: 0
+    fireState: 0
+    ReloadTime: 33.3
+    isEnableSimpleReloadSound: 1
+    overrideSimpleReloadSound:
+      rid: 2421261407908790281
+    AmmoCount: 36
+    hasSlot: 0
+    slotCount: 0
+    slotDuration: 0
+    canFireUnderWater: 0
+    advanceFireClass:
+      SmallReloadTime: 0
+      LargeReloadTime: 0
+      MaxSmallAmmo: 0
+      disableMegaIcon: 0
+      isEnableSmallReloadSound: 0
+      overrideSmallReloadSound:
+        rid: -2
+      isEnableLargeReloadSound: 0
+      overrideLargeReloadSound:
+        rid: -2
+    drumFire:
+      fireDuration: 0
+      reloadTime: []
+      isEnableDrumReloadSound: 0
+      overrideDrumReloadSound:
+        rid: -2
+      disableMegaIcon: 0
+    energyVFX: {fileID: 0}
+    energyFire:
+      perShotEnergy: 0
+      totalEnergy: 0
+      perShotInterval: 0
+      vfxDuration: 0
+      isEnableEnergyReloadSound: 0
+      overrideEnergyReloadSound:
+        rid: -2
+    dispersion: 0.1
+    fireSpread:
+      dispersion: 0.45
+      aimTime: 3.4
+      moveSpreadCoff: 0.26
+      traverseSpreadCoff: 0.26
+      gunSpreadCoff: 0.15
+      afterFiredCoff: 4
+      damagedCoff: 2
+    fmodBulletSound: {fileID: 11400000, guid: d5b760bad4f51134db83df4e9a387a31, type: 2}
+    bulletData:
+    - {fileID: -7057367934094725964}
+    - {fileID: 3238849722887577565}
+    - {fileID: -7816718599361557890}
+    muzzleFire: 2
+    overrideMuzzleFires: []
+    waveInteractType: 0
+    customWaveInteract:
+      respondTime: 0
+      radius: 0
+      weight: 0
+    fireDymScale: 1
+    fireCycleTime: 0
+    isFireDymIfExtraTurret: 0
+    disableGunAnimation: 0
+    isInRangeFire: 0
+    IsOverrideRangeFireAngle: 0
+    rangeFireAngle: 0
+    isEnableFireGroup: 0
+    fireGroupParm:
+      groupID: 0
+      priority: 0
+      fireMinDelay: 0
+    canBrakeSubFireLoop: 0
+    canFireIfMainClick: 0
+    canFireIfSubClick: 0
+    isEnableSeparateFireButton: 0
+    separateFireType: 0
+    separateFireShortKeyType: 0
+    zoomProfileData: {fileID: 0}
+    fireActionData: {fileID: 0}
+    customSightData: {fileID: 11400000, guid: 50dd6f6d36801ce49976a287263138b7, type: 2}
+    reloadStatePreferType: 0
+    vehicleLuaBehaviors: []
+    buffRefs: []
+    buffs: []
+  references:
+    version: 2
+    RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }
+    - rid: 2421261407908790281
+      type: {class: ReloadFmodSoundParameter, ns: ShanghaiWindy.Core, asm: Core}
+      data:
+        advancePlayTime: 5
+        soundData: {fileID: 11400000, guid: 6ec37af4edde61e4290d23c7734bb82d, type: 2}
+--- !u!114 &3238849722887577565
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1355950744, guid: 0512a3c011ce1c84db3d9ccc1f4d6d2e, type: 3}
+  m_Name: G-530
+  m_EditorClassIdentifier: 
+  comment: 
+  bulletVFX: {fileID: 11400000, guid: 70b9006b21a04224a8c3dc4248692c6c, type: 2}
+  damage: 750
+  velocity: 530
+  gravityDamper: 9.8
+  parabolaType: 0
+  fireRecoil: 155
+  caliber: 152
+  isOverrideLifeTime: 0
+  overrideLifetime: 10
+  maxCapability: 0
+  penetration: 69
+  warHeadMaterial: {fileID: 0}
+  warheadSlope: {fileID: 0}
+  moduleData:
+    explosiveMassEqualTNT: 5100
+    mass: 40
+    fuseDelay: 1.2
+    fuseSensitivity: 10
+  secondaryShatterMaterial: {fileID: 0}
+  canOverpressure: 1
+  overpressurePower: 1
+  velocityDeclineScalingType: 0
+  customVelocityDeclineScaling: 1
+  isDeclineByDistance: 1
+  warhead: 11

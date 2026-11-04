@@ -1,0 +1,40 @@
+ManifestFileVersion: 0
+CRC: 3348579226
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: c7583144edcd2b8e0ce8107652c935e3
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 2b82b7eb7c571a325db3228764d1554a
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: c7583144edcd2b8e0ce8107652c935e3
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 7908087194e525b4e85972f76ac771d0, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers:
+- AssemblyName: Core
+  ClassName: ShanghaiWindy.Core.RotationIndicatorReference/IndicatorRefer
+Assets:
+- Assets/UniCore/Addressables/RotationIndicator.prefab
+Dependencies: []

@@ -1,0 +1,22 @@
+ManifestFileVersion: 0
+CRC: 2478212055
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: c1838934e8685bb027199f75cac18c46
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 923768aebf385ad86f7762daa8034951
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: c1838934e8685bb027199f75cac18c46
+HashAppended: 0
+ClassTypes:
+- Class: 213
+  Script: {instanceID: 0}
+- Class: 687078895
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Packages/com.shanghaiwindy.coreresources/GUI/Common/Prefab/Icons/Social/Intimacy/intimacy-heart-sent.png
+Dependencies: []

@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../LuaProject"
+		}
+	],
+	"settings": {
+		"files.exclude": {
+			"**/*.meta": true,
+			"**/*.asset": true,
+		},
+		"emmylua.java.home": ""
+	}
+}

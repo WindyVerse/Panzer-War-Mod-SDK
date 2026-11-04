@@ -1,0 +1,22 @@
+ManifestFileVersion: 0
+CRC: 1339369335
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 7238096603c7d15ccd4aba45f31a1b2b
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 923768aebf385ad86f7762daa8034951
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 7238096603c7d15ccd4aba45f31a1b2b
+HashAppended: 0
+ClassTypes:
+- Class: 213
+  Script: {instanceID: 0}
+- Class: 687078895
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Packages/com.shanghaiwindy.coreresources/GUI/Common/Prefab/Icons/PlayerUI/Modules/Traversing.png
+Dependencies: []

@@ -1,0 +1,23 @@
+ManifestFileVersion: 0
+CRC: 2959316616
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: bbca13054b180b8ae64b5322d563be83
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 5e762ccb57c4caaabbb5a4199ac82c23
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: bbca13054b180b8ae64b5322d563be83
+HashAppended: 0
+ClassTypes:
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Packages/com.shanghaiwindy.coreresources/Shader/DamageReplay/TopArmorOutlineMat.mat
+Dependencies:
+- D:/Projects/Panzer-War-URP/Build/Mod-BuildPipline/StandaloneWindows64/BuildPipline-RuntimeSupport/packages/fd510d96-3761-4c83-940e-67083716ae45-svc.shader

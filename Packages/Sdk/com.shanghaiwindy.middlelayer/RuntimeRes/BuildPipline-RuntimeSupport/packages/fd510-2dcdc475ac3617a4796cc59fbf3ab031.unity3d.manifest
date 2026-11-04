@@ -1,0 +1,22 @@
+ManifestFileVersion: 0
+CRC: 3909328218
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 689c94073f38923fecb2455a2e16e071
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 923768aebf385ad86f7762daa8034951
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 689c94073f38923fecb2455a2e16e071
+HashAppended: 0
+ClassTypes:
+- Class: 213
+  Script: {instanceID: 0}
+- Class: 687078895
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Packages/com.shanghaiwindy.coreresources/GUI/Common/Prefab/Icons/Aero/altimeter-center-knob.png
+Dependencies: []

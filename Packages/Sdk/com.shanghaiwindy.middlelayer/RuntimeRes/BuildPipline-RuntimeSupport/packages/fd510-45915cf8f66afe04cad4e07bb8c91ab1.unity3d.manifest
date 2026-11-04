@@ -1,0 +1,22 @@
+ManifestFileVersion: 0
+CRC: 3923651043
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 47b535c5c462e5798b1c25b214d6b7d9
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 923768aebf385ad86f7762daa8034951
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 47b535c5c462e5798b1c25b214d6b7d9
+HashAppended: 0
+ClassTypes:
+- Class: 213
+  Script: {instanceID: 0}
+- Class: 687078895
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Packages/com.shanghaiwindy.coreresources/Flags/Countries/sk.png
+Dependencies: []

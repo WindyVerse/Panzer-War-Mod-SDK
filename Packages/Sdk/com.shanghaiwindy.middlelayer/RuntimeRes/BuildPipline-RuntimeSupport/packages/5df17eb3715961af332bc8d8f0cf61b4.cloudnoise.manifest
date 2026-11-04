@@ -1,0 +1,20 @@
+ManifestFileVersion: 0
+CRC: 3334667365
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 1d15e4c66f8627fc2551eba891ae9844
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 2612ac43db082a73502ee80f2eceb73f
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 1d15e4c66f8627fc2551eba891ae9844
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Packages/com.shanghaiwindy.coreresources/Weather/CloudVariants/Noise/InverseWorley_16x17_o4_s2_m0p5_2d.png
+Dependencies: []

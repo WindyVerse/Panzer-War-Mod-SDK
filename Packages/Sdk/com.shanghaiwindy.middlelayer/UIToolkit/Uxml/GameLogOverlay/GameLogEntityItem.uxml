@@ -1,0 +1,9 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" editor-extension-mode="False">
+    <Style src="GameLogOverlay.uss" />
+    <Style src="../GameTheme.uss" />
+    <ui:VisualElement class="gl-entity-item">
+        <ui:Label class="gl-entity-item-id" />
+        <ui:Label class="gl-entity-item-name" />
+        <ui:Label class="gl-entity-item-count" />
+    </ui:VisualElement>
+</ui:UXML>

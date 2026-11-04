@@ -1,0 +1,190 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-7252722382737098499
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 54737625, guid: 0512a3c011ce1c84db3d9ccc1f4d6d2e, type: 3}
+  m_Name: defaultBulletName
+  m_EditorClassIdentifier: 
+  comment: 
+  bulletVFX: {fileID: 11400000, guid: c65b6a353c7152c439ce780e94d74bc4, type: 2}
+  damage: 10
+  velocity: 30
+  gravityDamper: 0
+  parabolaType: 0
+  fireRecoil: 120
+  caliber: 20
+  isOverrideLifeTime: 1
+  overrideLifetime: 3
+  maxCapability: 0
+  penetration: 0
+  warHeadMaterial: {fileID: 0}
+  warheadSlope: {fileID: 0}
+  moduleData:
+    explosiveMassEqualTNT: 0
+    mass: 0
+    fuseDelay: 0
+    fuseSensitivity: 10
+  secondaryShatterMaterial: {fileID: 0}
+  canOverpressure: 1
+  overpressurePower: 1
+  velocityDeclineScalingType: 0
+  customVelocityDeclineScaling: 1
+  ExplosionRange: 0
+  maxDamagePershell: 50
+  forceModuleDestroyedRange: 0
+  smokeProfile:
+    duration: 15
+    radius: 25
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 359232964, guid: 0512a3c011ce1c84db3d9ccc1f4d6d2e, type: 3}
+  m_Name: Template-Vehicle-SharedGun
+  m_EditorClassIdentifier: 
+  comment: 
+  tankFireParameter:
+    crosshairPreferType: 0
+    fireState: 0
+    ReloadTime: 4.8
+    isEnableSimpleReloadSound: 0
+    overrideSimpleReloadSound:
+      rid: -2
+    AmmoCount: 66
+    hasSlot: 0
+    slotCount: 0
+    slotDuration: 0
+    canFireUnderWater: 0
+    advanceFireClass:
+      SmallReloadTime: 0
+      LargeReloadTime: 0
+      MaxSmallAmmo: 0
+      disableMegaIcon: 0
+      isEnableSmallReloadSound: 0
+      overrideSmallReloadSound:
+        rid: -2
+      isEnableLargeReloadSound: 0
+      overrideLargeReloadSound:
+        rid: -2
+    drumFire:
+      fireDuration: 0
+      reloadTime: []
+      isEnableDrumReloadSound: 0
+      overrideDrumReloadSound:
+        rid: -2
+      disableMegaIcon: 0
+    energyVFX: {fileID: 0}
+    energyFire:
+      perShotEnergy: 0
+      totalEnergy: 0
+      perShotInterval: 0
+      vfxDuration: 0
+      isEnableEnergyReloadSound: 0
+      overrideEnergyReloadSound:
+        rid: -2
+    dispersion: 0
+    fireSpread:
+      dispersion: 0.3
+      aimTime: 2.7
+      moveSpreadCoff: 0.2
+      traverseSpreadCoff: 0.2
+      gunSpreadCoff: 0.2
+      afterFiredCoff: 1
+      damagedCoff: 2
+    fmodBulletSound: {fileID: 11400000, guid: e36affa73be1b404286fa8e2a8769f08, type: 2}
+    bulletData:
+    - {fileID: 3957054737420944067}
+    - {fileID: -7252722382737098499}
+    muzzleFire: 0
+    overrideMuzzleFires: []
+    waveInteractType: 0
+    customWaveInteract:
+      respondTime: 0
+      radius: 0
+      weight: 0
+    fireDymScale: 0
+    fireCycleTime: 0
+    isFireDymIfExtraTurret: 0
+    disableGunAnimation: 0
+    isInRangeFire: 0
+    IsOverrideRangeFireAngle: 0
+    rangeFireAngle: 0
+    isEnableFireGroup: 0
+    fireGroupParm:
+      groupID: 0
+      priority: 0
+      fireMinDelay: 0
+    canBrakeSubFireLoop: 0
+    canFireIfMainClick: 0
+    canFireIfSubClick: 0
+    isEnableSeparateFireButton: 0
+    separateFireType: 0
+    separateFireShortKeyType: 0
+    zoomProfileData: {fileID: 0}
+    fireActionData: {fileID: 0}
+    customSightData: {fileID: 11400000, guid: 2ca2d5731a8975449978a4f42a3b1f6a, type: 2}
+    reloadStatePreferType: 0
+    vehicleLuaBehaviors: []
+    buffRefs:
+    - safeRefAssetProvider:
+        assets: []
+      fullName: ShanghaiWindy.Core.TankFireSpecificAngleReloadBuff
+      className: ShanghaiWindy.Core.TankFireSpecificAngleReloadBuff, Core, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      json: '{"isMultipleCoff":true,"buffValue":0.0,"hasDelay":true,"delay":0.20000000298023225,"isTraverseLocked":false,"hasSpecificTraverseAngle":false,"specificTraverseAngle":0.0,"hasSpecificElevationAngle":true,"specificElevationAngle":5.0,"isOverrideTraverseSpeed":false,"overrideTraverseSpeedCoff":0.0,"isOverrideElevationSpeed":false,"overrideElevationSpeedCoff":0.0}'
+    buffs: []
+  references:
+    version: 2
+    RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }
+--- !u!114 &3957054737420944067
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1355950744, guid: 0512a3c011ce1c84db3d9ccc1f4d6d2e, type: 3}
+  m_Name: 125 MM AP
+  m_EditorClassIdentifier: 
+  comment: 
+  bulletVFX: {fileID: 11400000, guid: 94ccdc310b70bb3459dde4b590026c58, type: 2}
+  damage: 420
+  velocity: 960
+  gravityDamper: 9.8
+  parabolaType: 0
+  fireRecoil: 240
+  caliber: 125
+  isOverrideLifeTime: 0
+  overrideLifetime: 10
+  maxCapability: 0
+  penetration: 263
+  warHeadMaterial: {fileID: 0}
+  warheadSlope: {fileID: 0}
+  moduleData:
+    explosiveMassEqualTNT: 0
+    mass: 6.5
+    fuseDelay: 0.1
+    fuseSensitivity: 10
+  secondaryShatterMaterial: {fileID: 0}
+  canOverpressure: 1
+  overpressurePower: 1
+  velocityDeclineScalingType: 0
+  customVelocityDeclineScaling: 1
+  isDeclineByDistance: 1
+  warhead: 1

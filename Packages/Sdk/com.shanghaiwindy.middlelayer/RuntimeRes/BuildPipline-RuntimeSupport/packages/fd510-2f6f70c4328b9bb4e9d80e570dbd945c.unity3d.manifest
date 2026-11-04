@@ -1,0 +1,20 @@
+ManifestFileVersion: 0
+CRC: 2494969917
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 91d240327a23e22d5705feb40998b4a1
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 2612ac43db082a73502ee80f2eceb73f
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 91d240327a23e22d5705feb40998b4a1
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Packages/com.shanghaiwindy.coreresources/Skill/Altius-U/mat_Altius_Hull_Normal.png
+Dependencies: []

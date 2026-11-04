@@ -1,0 +1,22 @@
+ManifestFileVersion: 0
+CRC: 3978502963
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 1cd0b934f1ba6c17aa4746dea2550027
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 923768aebf385ad86f7762daa8034951
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 1cd0b934f1ba6c17aa4746dea2550027
+HashAppended: 0
+ClassTypes:
+- Class: 213
+  Script: {instanceID: 0}
+- Class: 687078895
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Packages/com.shanghaiwindy.coreresources/GUI/Common/Prefab/Icons/Setting/Mapping.png
+Dependencies: []

@@ -1,0 +1,51 @@
+ManifestFileVersion: 0
+CRC: 420220998
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 6db779e080056829394ea06443c2a85e
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: a17a91acf05a8cc062c197111b0c31d8
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 6db779e080056829394ea06443c2a85e
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 64edabcd02edd1148b3e9b9d7ffbda1a, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 98589f945248fe34096004ac1994dfb1, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 5b5b2419fda0e47618d50b41ff7d32a7, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+- Class: 222
+  Script: {instanceID: 0}
+- Class: 223
+  Script: {instanceID: 0}
+- Class: 224
+  Script: {instanceID: 0}
+- Class: 225
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers:
+- AssemblyName: UnityEngine.CoreModule
+  ClassName: UnityEngine.Events.PersistentCallGroup
+- AssemblyName: UnityEngine.UI
+  ClassName: UnityEngine.UI.MaskableGraphic/CullStateChangedEvent
+Assets:
+- Packages/com.shanghaiwindy.coreresources/GUI/Common/Prefab/RuntimePlayerPrefab/AeroUIPanel.prefab
+Dependencies:
+- C:/github/workspace/Projects/DE/Build/Mod-BuildPipline/StandaloneWindows64/BuildPipline-RuntimeSupport/packages/fd510-2dcdc475ac3617a4796cc59fbf3ab031.unity3d
+- C:/github/workspace/Projects/DE/Build/Mod-BuildPipline/StandaloneWindows64/BuildPipline-RuntimeSupport/packages/fd510-be33113e2e0df4b40bca03717696e267.unity3d
+- C:/github/workspace/Projects/DE/Build/Mod-BuildPipline/StandaloneWindows64/BuildPipline-RuntimeSupport/packages/fd510-cc23edddd2870f74f80f861179cbc801.unity3d

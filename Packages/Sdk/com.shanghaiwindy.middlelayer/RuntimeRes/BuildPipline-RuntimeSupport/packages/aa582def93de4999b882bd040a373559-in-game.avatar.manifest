@@ -1,0 +1,22 @@
+ManifestFileVersion: 0
+CRC: 835982245
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: af4c3134a63b64ada4fe6aae80c078b2
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 2d8df09e698f722ada1caa03d3413830
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: af4c3134a63b64ada4fe6aae80c078b2
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Packages/com.shanghaiwindy.coreresources/Crew/CamilaDuarte/Default-In-Game-Avatar.png
+Dependencies: []

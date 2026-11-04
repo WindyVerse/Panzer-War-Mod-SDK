@@ -1,0 +1,26 @@
+ManifestFileVersion: 0
+CRC: 3338760794
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: c61bf0b1758242ab383882be08cde064
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: af767228f9605c4c6e66910a5e291908
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: c61bf0b1758242ab383882be08cde064
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 0e861286a514472187ed098d5148df1e, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Packages/com.shanghaiwindy.coreresources/Water/Prefabs/WaterRig.prefab
+Dependencies: []

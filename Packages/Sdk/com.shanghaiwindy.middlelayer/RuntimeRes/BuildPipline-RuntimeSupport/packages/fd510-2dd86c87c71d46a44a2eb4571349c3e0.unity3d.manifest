@@ -1,0 +1,22 @@
+ManifestFileVersion: 0
+CRC: 4246765179
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: e0b1670bc2fbcb8f49a4c5938035421d
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 923768aebf385ad86f7762daa8034951
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: e0b1670bc2fbcb8f49a4c5938035421d
+HashAppended: 0
+ClassTypes:
+- Class: 213
+  Script: {instanceID: 0}
+- Class: 687078895
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Packages/com.shanghaiwindy.coreresources/Flags/Countries/na.png
+Dependencies: []

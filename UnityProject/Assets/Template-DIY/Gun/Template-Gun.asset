@@ -1,0 +1,137 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -715765724, guid: 0512a3c011ce1c84db3d9ccc1f4d6d2e, type: 3}
+  m_Name: Template-Gun
+  m_EditorClassIdentifier: 
+  itemGUID: 6ce18d37-0275-4e1e-a4d0-d1866e2177f6
+  editorAssetGuid: 
+  displayName:
+    isLocalizeTable: 0
+    defaultName: Template Gun
+    items: []
+    localizeTableKey: 
+  description:
+    isLocalizeTable: 0
+    defaultName: Template Gun
+    items: []
+    localizeTableKey: 
+  tag:
+    isLocalizeTable: 0
+    defaultName: 
+    items: []
+    localizeTableKey: 
+  icon: {fileID: 21300000, guid: 751ba562cef953348b7079bf14093c25, type: 3}
+  is3DIcon: 0
+  rank: 8
+  hp: 300
+  isModuleReady: 1
+  isOverrideSlotParent: 0
+  overrideSlotParentPath: 
+  slotInfos: []
+  diyLuaBehaviors: []
+  isGenLOD: 1
+  visualModelFileProp:
+    assetGUID: f0be281e40fb5084bb87f31943d21ff6
+    extra: Assets/Template-DIY/Gun/Template-Gun.prefab
+  visualModelFilePath: Assets/Template-DIY/Gun/Template-Gun.prefab
+  hitBoxFileProp:
+    assetGUID: 684f6b0905fe3bb4f92bb401706f6034
+    extra: Assets/Template-DIY/Gun/Template-Gun-HitBox.asset
+  hitBoxFilePath: Assets/Template-DIY/Gun/Template-Gun-HitBox.asset
+  prefabFileProp:
+    assetGUID: 4b6db169e86edf44a9bb81c2bc364a72
+    extra: Assets/Template-DIY/Gun/6ce18d3702754e1ea4d0d1866e2177f6_pre.prefab
+  prefabFilePath: Assets\Template-DIY\Gun/6ce18d3702754e1ea4d0d1866e2177f6_pre.prefab
+  firePoints:
+  - ffPointPath: FFPoint
+    fireEffectPointPath: FireEffect
+    fireDymPath: 
+  FireForceFeedbackPoint:
+    localPosition: {x: 0, y: 0, z: -1.31}
+    localEulerAngle: {x: 0, y: 0, z: 0}
+  sharedGunData: {fileID: 0}
+  TFParameter:
+    fireState: 0
+    ReloadTime: 4.8
+    isEnableSimpleReloadSound: 0
+    overrideSimpleReloadSound:
+      rid: -2
+    AmmoCount: 66
+    hasSlot: 0
+    slotCount: 0
+    slotDuration: 0
+    advanceFireClass:
+      SmallReloadTime: 0
+      LargeReloadTime: 0
+      MaxSmallAmmo: 0
+      disableMegaIcon: 0
+      isEnableSmallReloadSound: 0
+      overrideSmallReloadSound:
+        rid: -2
+      isEnableLargeReloadSound: 0
+      overrideLargeReloadSound:
+        rid: -2
+    drumFire:
+      fireDuration: 0
+      reloadTime: []
+      isEnableDrumReloadSound: 0
+      overrideDrumReloadSound:
+        rid: -2
+      disableMegaIcon: 0
+    energyVFX: {fileID: 0}
+    energyFire:
+      perShotEnergy: 0
+      totalEnergy: 0
+      perShotInterval: 0
+      vfxDuration: 0
+      isEnableEnergyReloadSound: 0
+      overrideEnergyReloadSound:
+        rid: -2
+    dispersion: 0
+    fireSpread:
+      dispersion: 0
+      aimTime: 0
+      moveSpreadCoff: 0
+      traverseSpreadCoff: 0
+      gunSpreadCoff: 0
+      afterFiredCoff: 0
+      damagedCoff: 0
+    fmodBulletSound: {fileID: 0}
+    bulletData:
+    - {fileID: 11400000, guid: 0a6b78f31fd50a24bb1687c383de23c5, type: 2}
+    muzzleFire: 0
+    overrideMuzzleFires: []
+    fireDymScale: 0
+    fireCycleTime: 0
+    isFireDymIfExtraTurret: 0
+    disableGunAnimation: 0
+    disableGunSmoke: 0
+    isInRangeFire: 0
+    fireActionData: {fileID: 0}
+    customSightData: {fileID: 0}
+    canBrakeSubFireLoop: 0
+    canFireIfMainClick: 0
+    canFireIfSubClick: 0
+    isEnableFireGroup: 0
+    fireGroupParm:
+      groupID: 0
+      priority: 0
+      fireMinDelay: 0
+    zoomProfileData: {fileID: 0}
+    isOverrideGunMark: 0
+    gunMarkLerp: 0
+    vehicleLuaBehaviors: []
+  references:
+    version: 2
+    RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }

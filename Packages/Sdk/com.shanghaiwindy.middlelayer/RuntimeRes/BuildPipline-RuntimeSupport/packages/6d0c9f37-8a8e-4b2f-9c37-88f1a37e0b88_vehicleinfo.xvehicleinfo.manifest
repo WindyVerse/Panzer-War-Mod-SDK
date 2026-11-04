@@ -1,0 +1,30 @@
+ManifestFileVersion: 0
+CRC: 2963823269
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 1d68f1c6aef132996fa206f6c5a0e5fd
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 0badc3b75d0c5dcac94dce220824197c
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 1d68f1c6aef132996fa206f6c5a0e5fd
+HashAppended: 0
+ClassTypes:
+- Class: 114
+  Script: {fileID: 11500000, guid: 46cf7a348efd2fd4a91a7f77a837be6d, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers:
+- AssemblyName: Core
+  ClassName: ShanghaiWindy.Core.LocalizedName
+- AssemblyName: Core
+  ClassName: ShanghaiWindy.Core.VehicleInfo/ModelStats
+- AssemblyName: GameFramework.Runtime
+  ClassName: ShanghaiWindy.Core.Data.AssetProp
+- AssemblyName: GameFramework.Runtime
+  ClassName: ShanghaiWindy.Core.ItemLocalizedName
+Assets:
+- Packages/com.shanghaiwindy.coreresources/BuiltInVehicles/Flak37-Emplacement/BuiltIn-Flak37-Emplacement.asset
+Dependencies: []

@@ -1,0 +1,20 @@
+ManifestFileVersion: 0
+CRC: 848798929
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: a0d22edb23acf90a7d0dc9902f1686ed
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 2612ac43db082a73502ee80f2eceb73f
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: a0d22edb23acf90a7d0dc9902f1686ed
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Packages/com.shanghaiwindy.coreresources/VFX/Impact/Armor/Textures/debris_woodchip_4x2.png
+Dependencies: []

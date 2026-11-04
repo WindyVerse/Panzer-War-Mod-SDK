@@ -1,0 +1,83 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 935110173, guid: 0512a3c011ce1c84db3d9ccc1f4d6d2e, type: 3}
+  m_Name: Paid-Template-Vehicle
+  m_EditorClassIdentifier: 
+  modName: Default Mod
+  localizedModName:
+    isLocalizeTable: 0
+    defaultName: 
+    items: []
+    localizeTableKey: 
+  description: The Description of the mod
+  localizedDescription:
+    isLocalizeTable: 0
+    defaultName: 
+    items: []
+    localizeTableKey: 
+  author: Your Name
+  supportURL: https://yourWebSite.com
+  modVersion: 1
+  testedGameVersion: 2024.r1f1
+  buildTarget: StandaloneWindows64
+  shipTypes: 1
+  isEncryptPackageInfo: 1
+  isAuthorizeOwnerShip: 1
+  packUuid: 7ef314b9-3d42-4d09-996b-830bdadc2e2a
+  guid: 8269cdeb-11d6-488a-bc29-2778d5936f69
+  dependencyGuids: []
+  buildCaches:
+  - targetPlatform: Android
+    relatedAssets:
+    - Build/Mod-BuildPipline/Android/BuildPipline-Paid-Template-Vehicle/packages/Encryption/da1633b5-7cf9-4c73-bc9d-6f998e9a811f.data
+    - Build/Mod-BuildPipline/Android/BuildPipline-Paid-Template-Vehicle/packages/Encryption/da1633b5-7cf9-4c73-bc9d-6f998e9a811f.data.manifest
+    - Build/Mod-BuildPipline/Android/BuildPipline-Paid-Template-Vehicle/packages/Encryption/da1633b5-7cf9-4c73-bc9d-6f998e9a811f_pre.clientextramesh
+    - Build/Mod-BuildPipline/Android/BuildPipline-Paid-Template-Vehicle/packages/Encryption/da1633b5-7cf9-4c73-bc9d-6f998e9a811f_pre.clientextramesh.manifest
+    - Build/Mod-BuildPipline/Android/BuildPipline-Paid-Template-Vehicle/packages/Encryption/da1633b5-7cf9-4c73-bc9d-6f998e9a811f_pre.masterextramesh
+    - Build/Mod-BuildPipline/Android/BuildPipline-Paid-Template-Vehicle/packages/Encryption/da1633b5-7cf9-4c73-bc9d-6f998e9a811f_pre.masterextramesh.manifest
+    - Build/Mod-BuildPipline/Android/BuildPipline-Paid-Template-Vehicle/packages/Encryption/da1633b5-7cf9-4c73-bc9d-6f998e9a811f_vehicleinfo.vehicleinfo
+    - Build/Mod-BuildPipline/Android/BuildPipline-Paid-Template-Vehicle/packages/Encryption/da1633b5-7cf9-4c73-bc9d-6f998e9a811f_vehicleinfo.vehicleinfo.manifest
+    - Build/Mod-BuildPipline/Android/BuildPipline-Paid-Template-Vehicle/packages/Encryption/manifest.mark
+    - Build/Mod-BuildPipline/Android/BuildPipline-Paid-Template-Vehicle/packages/Encryption/packages
+    - Build/Mod-BuildPipline/Android/BuildPipline-Paid-Template-Vehicle/packages/Encryption/packages.manifest
+  - targetPlatform: StandaloneWindows64
+    relatedAssets:
+    - Build/Mod-BuildPipline/StandaloneWindows64/BuildPipline-Paid-Template-Vehicle/packages/Encryption/da1633b5-7cf9-4c73-bc9d-6f998e9a811f.data
+    - Build/Mod-BuildPipline/StandaloneWindows64/BuildPipline-Paid-Template-Vehicle/packages/Encryption/da1633b5-7cf9-4c73-bc9d-6f998e9a811f.data.manifest
+    - Build/Mod-BuildPipline/StandaloneWindows64/BuildPipline-Paid-Template-Vehicle/packages/Encryption/da1633b5-7cf9-4c73-bc9d-6f998e9a811f_pre.clientextramesh
+    - Build/Mod-BuildPipline/StandaloneWindows64/BuildPipline-Paid-Template-Vehicle/packages/Encryption/da1633b5-7cf9-4c73-bc9d-6f998e9a811f_pre.clientextramesh.manifest
+    - Build/Mod-BuildPipline/StandaloneWindows64/BuildPipline-Paid-Template-Vehicle/packages/Encryption/da1633b5-7cf9-4c73-bc9d-6f998e9a811f_thumbnail.sprite
+    - Build/Mod-BuildPipline/StandaloneWindows64/BuildPipline-Paid-Template-Vehicle/packages/Encryption/da1633b5-7cf9-4c73-bc9d-6f998e9a811f_thumbnail.sprite.manifest
+    - Build/Mod-BuildPipline/StandaloneWindows64/BuildPipline-Paid-Template-Vehicle/packages/Encryption/da1633b5-7cf9-4c73-bc9d-6f998e9a811f_vehicleinfo.vehicleinfo
+    - Build/Mod-BuildPipline/StandaloneWindows64/BuildPipline-Paid-Template-Vehicle/packages/Encryption/da1633b5-7cf9-4c73-bc9d-6f998e9a811f_vehicleinfo.vehicleinfo.manifest
+    - Build/Mod-BuildPipline/StandaloneWindows64/BuildPipline-Paid-Template-Vehicle/packages/Encryption/manifest.mark
+    - Build/Mod-BuildPipline/StandaloneWindows64/BuildPipline-Paid-Template-Vehicle/packages/Encryption/packages
+    - Build/Mod-BuildPipline/StandaloneWindows64/BuildPipline-Paid-Template-Vehicle/packages/Encryption/packages.manifest
+  modFileManifiests:
+  - n: da1633b5-7cf9-4c73-bc9d-6f998e9a811f.data
+    h: 7cc03cf0c5c227ca3c9834eaaf3e4557
+    d: []
+  - n: da1633b5-7cf9-4c73-bc9d-6f998e9a811f_pre.clientextramesh
+    h: 06402361ff6a6498c9730d55a7551e91
+    d: []
+  - n: da1633b5-7cf9-4c73-bc9d-6f998e9a811f_thumbnail.sprite
+    h: aef5f19e8c8f11bf3978b443388e5391
+    d: []
+  - n: da1633b5-7cf9-4c73-bc9d-6f998e9a811f_vehicleinfo.vehicleinfo
+    h: c61ae754cbe58d7fde83e779da4beb98
+    d: []
+  isLoadManifest: 1
+  createdTime: 133923510593068068
+  shipIsHidden: 0
+  shipClientVersion: 0
+  shipRenderPipline: 0
+  imgUrls: []

@@ -1,0 +1,30 @@
+ManifestFileVersion: 0
+CRC: 265849894
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: dbe6795c64fc2a4faa73f680261c792d
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: a8309e7bc5b8b7442866aae32b2c73b0
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: dbe6795c64fc2a4faa73f680261c792d
+HashAppended: 0
+ClassTypes:
+- Class: 114
+  Script: {fileID: 11500000, guid: 07a259e254ba46fc9bd74c682430a1d1, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers:
+- AssemblyName: Core
+  ClassName: ShanghaiWindy.Core.LocalizedName
+- AssemblyName: FMODUnity
+  ClassName: FMOD.GUID
+- AssemblyName: FMODUnity
+  ClassName: FMODUnity.EventReference
+- AssemblyName: GameFramework.Runtime
+  ClassName: ShanghaiWindy.Core.ItemLocalizedName
+Assets:
+- Packages/com.windyverse.client.shared/OfficialSoundBank/Bgm/Epic-Bgm.asset
+Dependencies: []

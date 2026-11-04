@@ -1,0 +1,22 @@
+ManifestFileVersion: 0
+CRC: 4165610735
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: a1be24c9545c884fd37f8ec641a0b815
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 923768aebf385ad86f7762daa8034951
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: a1be24c9545c884fd37f8ec641a0b815
+HashAppended: 0
+ClassTypes:
+- Class: 213
+  Script: {instanceID: 0}
+- Class: 687078895
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Packages/com.shanghaiwindy.coreresources/GUI/Common/Prefab/Icons/CombatControls/Common/SightDistance.png
+Dependencies: []

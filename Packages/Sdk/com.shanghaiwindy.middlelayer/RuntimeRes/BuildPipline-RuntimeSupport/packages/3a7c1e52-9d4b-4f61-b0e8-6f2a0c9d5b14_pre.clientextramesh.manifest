@@ -1,0 +1,71 @@
+ManifestFileVersion: 0
+CRC: 1999533422
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: c548bd88368c97c8b9cb734e8707bf2f
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 2c4faadfaf4a46aec8b4918a3b38a795
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: c548bd88368c97c8b9cb734e8707bf2f
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 54
+  Script: {instanceID: 0}
+- Class: 64
+  Script: {instanceID: 0}
+- Class: 65
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 95865853bbfd1a846839fd379353a1cc, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: d0d3b844f9319444587ff9ada0bbe5a3, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: de42fa4661a5ffd47ad8238094e91902, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: ca1c23e6443768a4a85aa01441f758bb, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: bf1fae656e6401b418d2260d5195f206, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 6ec7b4f46f01eea4fa8d8db04abeba55, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 06df19510c5342a4a008d2d3ca29da3c, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 42a614c53cf67f4459d724e09315cbb9, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: e8e46bc8ecdfc6b49bdb09b9bafb5bde, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers:
+- AssemblyName: Core
+  ClassName: ShanghaiWindy.Core.FlightFireRefer
+- AssemblyName: Core
+  ClassName: ShanghaiWindy.Core.HitBox/EHitBoxType
+- AssemblyName: Core
+  ClassName: ShanghaiWindy.Core.InputController
+- AssemblyName: Core
+  ClassName: ShanghaiWindy.Core.TextureRef
+- AssemblyName: Core
+  ClassName: ShanghaiWindy.Core.TextureRef/Ref
+Assets:
+- Packages/com.shanghaiwindy.coreresources/BuiltInVehicles/QuadBomber/3a7c1e52-9d4b-4f61-b0e8-6f2a0c9d5b14_pre.prefab
+Dependencies:
+- C:/github/workspace/Projects/DE/Build/Mod-BuildPipline/StandaloneWindows64/BuildPipline-RuntimeSupport/packages/vehicleplaceholder.shader

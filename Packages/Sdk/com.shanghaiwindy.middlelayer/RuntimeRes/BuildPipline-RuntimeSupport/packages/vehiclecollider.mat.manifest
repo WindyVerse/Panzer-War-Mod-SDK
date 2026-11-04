@@ -1,0 +1,20 @@
+ManifestFileVersion: 0
+CRC: 3592093009
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 9e7c048d2cfa02d773f8e7cd34c54c4c
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: f4d58da2e394c3ac790f4c422276af4f
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 9e7c048d2cfa02d773f8e7cd34c54c4c
+HashAppended: 0
+ClassTypes:
+- Class: 134
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Packages/com.shanghaiwindy.coreresources/VehicleCollider.physicMaterial
+Dependencies: []

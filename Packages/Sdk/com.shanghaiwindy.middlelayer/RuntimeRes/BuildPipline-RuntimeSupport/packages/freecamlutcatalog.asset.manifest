@@ -1,0 +1,26 @@
+ManifestFileVersion: 0
+CRC: 726935778
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: da9a92fa055befa5741e12b7e66aab5b
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 3d07d7c376354e79acbbaf1b9e31de91
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: da9a92fa055befa5741e12b7e66aab5b
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 6367c52b649849d2ab4d0480ef17bdf2, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers:
+- AssemblyName: Core
+  ClassName: ShanghaiWindy.Core.FreeCameraLutCatalog/Entry
+Assets:
+- Packages/com.shanghaiwindy.coreresources/Luts/FreeCameraLutCatalog.asset
+Dependencies: []

@@ -1,0 +1,26 @@
+ManifestFileVersion: 0
+CRC: 872032228
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 566f681c78007bd1ba8fdf8afffa8daa
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: b7a30c036ad3aa5b4af551f33838071a
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 566f681c78007bd1ba8fdf8afffa8daa
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 3a106e33d9a64c8886e24af7f92f3604, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 117
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Packages/com.shanghaiwindy.coreresources/Weather/Textures/CloudBuiltinNoise.asset
+Dependencies: []

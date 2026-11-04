@@ -1,0 +1,22 @@
+ManifestFileVersion: 0
+CRC: 442945233
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: f025cdc1657aba7ae6bba8e07bbd501b
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 2d8df09e698f722ada1caa03d3413830
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: f025cdc1657aba7ae6bba8e07bbd501b
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Packages/com.shanghaiwindy.coreresources/GUI/Common/Classic-Tex/PlayerUISystem/Ground/Arrow.png
+Dependencies: []

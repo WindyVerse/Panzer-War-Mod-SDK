@@ -1,0 +1,20 @@
+ManifestFileVersion: 0
+CRC: 2355452114
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 8dc8e44e9b84c0654673d42458534281
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 2612ac43db082a73502ee80f2eceb73f
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 8dc8e44e9b84c0654673d42458534281
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Packages/com.shanghaiwindy.coreresources/VFX/Projectile/Shell/Textures/trail_tracer_glow.tga
+Dependencies: []

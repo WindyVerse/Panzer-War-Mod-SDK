@@ -1,0 +1,22 @@
+ManifestFileVersion: 0
+CRC: 1752227407
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: cb6ca0fe42bb7e614f225eb5eb6afc51
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 923768aebf385ad86f7762daa8034951
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: cb6ca0fe42bb7e614f225eb5eb6afc51
+HashAppended: 0
+ClassTypes:
+- Class: 213
+  Script: {instanceID: 0}
+- Class: 687078895
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Packages/com.shanghaiwindy.coreresources/GUI/Common/Prefab/Icons/Aero/airspeed-pointer.png
+Dependencies: []

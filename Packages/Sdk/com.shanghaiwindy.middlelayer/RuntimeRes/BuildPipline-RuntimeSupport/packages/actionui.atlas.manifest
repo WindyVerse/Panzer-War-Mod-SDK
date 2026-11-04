@@ -1,0 +1,28 @@
+ManifestFileVersion: 0
+CRC: 1789662855
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 14642b32910205ebc51d980a0bd43473
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 033fafe2c9f6c610c3a734393882fd4c
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 14642b32910205ebc51d980a0bd43473
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+- Class: 687078895
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Packages/com.shanghaiwindy.coreresources/GUI/DE-Only/AtlasV2/ActionUI.spriteatlasv2
+Dependencies:
+- C:/github/workspace/Projects/DE/Build/Mod-BuildPipline/StandaloneWindows64/BuildPipline-RuntimeSupport/packages/fd510-5ebb415f380e1fd4bb84aa5dbb55fe76.unity3d
+- C:/github/workspace/Projects/DE/Build/Mod-BuildPipline/StandaloneWindows64/BuildPipline-RuntimeSupport/packages/fd510-be93be46f9cf8504c8ed70951a0bb333.unity3d
+- C:/github/workspace/Projects/DE/Build/Mod-BuildPipline/StandaloneWindows64/BuildPipline-RuntimeSupport/packages/fd510-c8d940be89d58a448a4d20bffbd1edde.unity3d
+- C:/github/workspace/Projects/DE/Build/Mod-BuildPipline/StandaloneWindows64/BuildPipline-RuntimeSupport/packages/fd510-dce33530c3a53a749825b7162466038e.unity3d

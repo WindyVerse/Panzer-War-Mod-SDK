@@ -1,0 +1,22 @@
+ManifestFileVersion: 0
+CRC: 3065858957
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: cebc9d376a3a43116e8c2f277b67f28d
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 923768aebf385ad86f7762daa8034951
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: cebc9d376a3a43116e8c2f277b67f28d
+HashAppended: 0
+ClassTypes:
+- Class: 213
+  Script: {instanceID: 0}
+- Class: 687078895
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Packages/com.shanghaiwindy.coreresources/GUI/Common/Prefab/Icons/CombatControls/Aircraft/Calibrate.png
+Dependencies: []

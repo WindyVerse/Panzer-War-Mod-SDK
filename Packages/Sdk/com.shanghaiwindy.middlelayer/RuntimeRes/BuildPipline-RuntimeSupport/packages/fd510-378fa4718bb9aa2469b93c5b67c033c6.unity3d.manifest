@@ -1,0 +1,22 @@
+ManifestFileVersion: 0
+CRC: 523948707
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 7a1e2da884d6665c975665364532f17b
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 923768aebf385ad86f7762daa8034951
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 7a1e2da884d6665c975665364532f17b
+HashAppended: 0
+ClassTypes:
+- Class: 213
+  Script: {instanceID: 0}
+- Class: 687078895
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Packages/com.shanghaiwindy.coreresources/GUI/Common/Prefab/Icons/Crew.png
+Dependencies: []

@@ -1,0 +1,20 @@
+ManifestFileVersion: 0
+CRC: 1045953600
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: d5ee60a972fef51df599e9fdbc8a9a5c
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 2612ac43db082a73502ee80f2eceb73f
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: d5ee60a972fef51df599e9fdbc8a9a5c
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Packages/com.shanghaiwindy.coreresources/VFX/_Shared/Textures/Spark/spark_shard_b_8x1.png
+Dependencies: []

@@ -1,0 +1,22 @@
+ManifestFileVersion: 0
+CRC: 1097918793
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 357df26ed2df85029e5f8a1ddf05f36d
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 923768aebf385ad86f7762daa8034951
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 357df26ed2df85029e5f8a1ddf05f36d
+HashAppended: 0
+ClassTypes:
+- Class: 213
+  Script: {instanceID: 0}
+- Class: 687078895
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Packages/com.shanghaiwindy.coreresources/GUI/Common/Prefab/Icons/Garage/Ammo.png
+Dependencies: []

@@ -1,0 +1,20 @@
+{
+    "name": "SimplygonImplement.Editor",
+    "rootNamespace": "",
+    "references": [
+        "GUID:0831fddb33fc34a409b588957c85dadb",
+        "GUID:bfe1257503292b14c9b6e5a6e623e3c7",
+        "GUID:8fa54f6cc0e63f24cb9c1153fbc940c4"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

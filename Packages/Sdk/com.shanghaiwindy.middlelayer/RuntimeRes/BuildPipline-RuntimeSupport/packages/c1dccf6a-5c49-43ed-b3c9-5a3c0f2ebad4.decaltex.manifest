@@ -1,0 +1,20 @@
+ManifestFileVersion: 0
+CRC: 4239697284
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 9147a461203d2aa97b5c7714b6423df6
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 2612ac43db082a73502ee80f2eceb73f
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 9147a461203d2aa97b5c7714b6423df6
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Packages/com.shanghaiwindy.coreresources/Decals/nation/decal-usa.png
+Dependencies: []

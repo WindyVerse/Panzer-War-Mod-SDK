@@ -1,0 +1,22 @@
+ManifestFileVersion: 0
+CRC: 884810523
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: fca80d486985b8a651664c2c33d51cfc
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 923768aebf385ad86f7762daa8034951
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: fca80d486985b8a651664c2c33d51cfc
+HashAppended: 0
+ClassTypes:
+- Class: 213
+  Script: {instanceID: 0}
+- Class: 687078895
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Packages/com.shanghaiwindy.coreresources/Flags/Countries/mz.png
+Dependencies: []

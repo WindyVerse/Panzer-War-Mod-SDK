@@ -1,0 +1,22 @@
+ManifestFileVersion: 0
+CRC: 4108859544
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: c7522eb38bbc8537ecb70638f8860b1c
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 5e762ccb57c4caaabbb5a4199ac82c23
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: c7522eb38bbc8537ecb70638f8860b1c
+HashAppended: 0
+ClassTypes:
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Packages/com.shanghaiwindy.coreresources/Shader/DamageReplay/ReplayRevealMat.mat
+Dependencies: []

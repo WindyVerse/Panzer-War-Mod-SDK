@@ -1,0 +1,50 @@
+ManifestFileVersion: 0
+CRC: 2562397911
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 557abf5d0a3d18309231e560197a5ce5
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 92eeba082e96ff1c449f09eb17fd4089
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 557abf5d0a3d18309231e560197a5ce5
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: e7a7ddd86d54499a9db0d59b71e467be, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: d0d3b844f9319444587ff9ada0bbe5a3, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 88aaf7439d5f485a9cdf6eeef2642b23, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 135
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers:
+- AssemblyName: Core
+  ClassName: ShanghaiWindy.Core.HitBox/EHitBoxType
+Assets:
+- Packages/com.shanghaiwindy.coreresources/Skill/EnergyShield/Prefabs/SphereEnergyShield.prefab
+Dependencies:
+- C:/github/workspace/Projects/DE/Build/Mod-BuildPipline/StandaloneWindows64/BuildPipline-RuntimeSupport/packages/fd510-31321ba15b8f8eb4c954353edc038b1d.unity3d
+- C:/github/workspace/Projects/DE/Build/Mod-BuildPipline/StandaloneWindows64/BuildPipline-RuntimeSupport/packages/fd510-3d5c3b6e09eebb04798ef3144ee13a57.unity3d
+- C:/github/workspace/Projects/DE/Build/Mod-BuildPipline/StandaloneWindows64/BuildPipline-RuntimeSupport/packages/fd510-531071fafbd39884da42c03d2ca75b32.unity3d
+- C:/github/workspace/Projects/DE/Build/Mod-BuildPipline/StandaloneWindows64/BuildPipline-RuntimeSupport/packages/fd510d96-3761-4c83-940e-67083716ae45-svc.shader

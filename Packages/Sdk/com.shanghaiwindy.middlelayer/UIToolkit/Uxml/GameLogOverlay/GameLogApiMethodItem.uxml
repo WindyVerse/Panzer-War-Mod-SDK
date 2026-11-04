@@ -1,0 +1,9 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" editor-extension-mode="False">
+    <Style src="GameLogOverlay.uss" />
+    <Style src="../GameTheme.uss" />
+    <ui:VisualElement class="gl-api-method">
+        <ui:Label class="gl-api-method-signature" />
+        <ui:Label class="gl-api-method-desc" />
+        <ui:VisualElement class="gl-api-param-table" />
+    </ui:VisualElement>
+</ui:UXML>

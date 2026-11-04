@@ -1,0 +1,447 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -495537380, guid: 0512a3c011ce1c84db3d9ccc1f4d6d2e, type: 3}
+  m_Name: BodyWield
+  m_EditorClassIdentifier: 
+  outputName: BodyWield
+  category: P3CommonAnimation/Clips
+  sourceClip: {fileID: 7400000, guid: 2f00fa51ec9116546aa771377c31c648, type: 2}
+  sourceSampleMode: 1
+  staticFrame: 0
+  sampleRate: 30
+  isLooping: 0
+  durationOverride: 0.4667
+  weaponPose:
+    weapon: {fileID: 0}
+    action: 0
+    loadingCycles: 0
+  rigTargets:
+  - bone: 9
+    type: 1
+    weight: 1
+  - bone: 10
+    type: 1
+    weight: 1
+  - bone: 17
+    type: 0
+    weight: 1
+  - bone: 18
+    type: 0
+    weight: 1
+  rigKeyframes:
+  - time: 0
+    ease: 0
+    targets:
+    - bone: 9
+      type: 1
+      targetPosition: {x: 0, y: 1.36596, z: 9.756857}
+      targetRotation: {x: 0.15466131, y: 0.08835222, z: -0.10909565, w: 0.97794294}
+      hintPosition: {x: 0, y: 0, z: 0}
+      weight: 0.5
+    - bone: 10
+      type: 1
+      targetPosition: {x: 0, y: 1.4147444, z: 9.756857}
+      targetRotation: {x: 0.00052824616, y: -0.0010969937, z: -0.13370538, w: 0.9910206}
+      hintPosition: {x: 0, y: 0, z: 0}
+      weight: 1
+    - bone: 17
+      type: 0
+      targetPosition: {x: 0.09996997, y: 1.1420298, z: 0.34084487}
+      targetRotation: {x: -0.3515384, y: -0.117647834, z: 0.92679644, w: -0.0602413}
+      hintPosition: {x: -0.051545523, y: 1.1382191, z: 0.2547085}
+      weight: 1
+    - bone: 18
+      type: 0
+      targetPosition: {x: 0.16494733, y: 1.1320386, z: 0.1509192}
+      targetRotation: {x: -0.5000017, y: -0.49999845, z: -0.50000167, w: 0.4999988}
+      hintPosition: {x: 0.23905969, y: 1.1109971, z: 0.018658273}
+      weight: 1
+  - time: 0.071428575
+    ease: 0
+    targets:
+    - bone: 9
+      type: 1
+      targetPosition: {x: 0, y: 1.36596, z: 9.756857}
+      targetRotation: {x: 0.15466128, y: 0.088352196, z: -0.109095626, w: 0.9779427}
+      hintPosition: {x: 0, y: 0, z: 0}
+      weight: 0.5
+    - bone: 10
+      type: 1
+      targetPosition: {x: 0, y: 1.4147444, z: 9.756857}
+      targetRotation: {x: 0.00052824605, y: -0.0010969935, z: -0.13370535, w: 0.9910204}
+      hintPosition: {x: 0, y: 0, z: 0}
+      weight: 1
+    - bone: 17
+      type: 0
+      targetPosition: {x: 0.09996997, y: 1.1466311, z: 0.3426854}
+      targetRotation: {x: -0.35153827, y: -0.11764779, z: 0.9267961, w: -0.06024128}
+      hintPosition: {x: -0.051545523, y: 1.1382191, z: 0.2547085}
+      weight: 1
+    - bone: 18
+      type: 0
+      targetPosition: {x: 0.16494733, y: 1.13664, z: 0.15275972}
+      targetRotation: {x: -0.50000155, y: -0.49999827, z: -0.5000015, w: 0.49999863}
+      hintPosition: {x: 0.23905969, y: 1.1109971, z: 0.018658273}
+      weight: 1
+  - time: 0.14285715
+    ease: 0
+    targets:
+    - bone: 9
+      type: 1
+      targetPosition: {x: 0, y: 1.36596, z: 9.756857}
+      targetRotation: {x: 0.15466128, y: 0.088352196, z: -0.109095626, w: 0.9779427}
+      hintPosition: {x: 0, y: 0, z: 0}
+      weight: 0.5
+    - bone: 10
+      type: 1
+      targetPosition: {x: 0, y: 1.4147444, z: 9.756857}
+      targetRotation: {x: 0.00052824605, y: -0.0010969935, z: -0.13370535, w: 0.9910204}
+      hintPosition: {x: 0, y: 0, z: 0}
+      weight: 1
+    - bone: 17
+      type: 0
+      targetPosition: {x: 0.09996997, y: 1.1562517, z: 0.3465336}
+      targetRotation: {x: -0.35153827, y: -0.11764779, z: 0.9267961, w: -0.06024128}
+      hintPosition: {x: -0.051545523, y: 1.1382191, z: 0.2547085}
+      weight: 1
+    - bone: 18
+      type: 0
+      targetPosition: {x: 0.16494733, y: 1.1462605, z: 0.15660793}
+      targetRotation: {x: -0.50000155, y: -0.49999827, z: -0.5000015, w: 0.49999863}
+      hintPosition: {x: 0.23905969, y: 1.1109971, z: 0.018658273}
+      weight: 1
+  - time: 0.21428572
+    ease: 0
+    targets:
+    - bone: 9
+      type: 1
+      targetPosition: {x: 0, y: 1.36596, z: 9.756857}
+      targetRotation: {x: 0.15466128, y: 0.088352196, z: -0.109095626, w: 0.9779427}
+      hintPosition: {x: 0, y: 0, z: 0}
+      weight: 0.5
+    - bone: 10
+      type: 1
+      targetPosition: {x: 0, y: 1.4147444, z: 9.756857}
+      targetRotation: {x: 0.00052824605, y: -0.0010969935, z: -0.13370535, w: 0.9910204}
+      hintPosition: {x: 0, y: 0, z: 0}
+      weight: 1
+    - bone: 17
+      type: 0
+      targetPosition: {x: 0.09996997, y: 1.1646163, z: 0.34987947}
+      targetRotation: {x: -0.35153827, y: -0.11764779, z: 0.9267961, w: -0.06024128}
+      hintPosition: {x: -0.051545523, y: 1.1382191, z: 0.2547085}
+      weight: 1
+    - bone: 18
+      type: 0
+      targetPosition: {x: 0.16494733, y: 1.1546252, z: 0.1599538}
+      targetRotation: {x: -0.50000155, y: -0.49999827, z: -0.5000015, w: 0.49999863}
+      hintPosition: {x: 0.23905969, y: 1.1109971, z: 0.018658273}
+      weight: 1
+  - time: 0.2857143
+    ease: 0
+    targets:
+    - bone: 9
+      type: 1
+      targetPosition: {x: 0, y: 1.36596, z: 9.756857}
+      targetRotation: {x: 0.15466128, y: 0.088352196, z: -0.109095626, w: 0.9779427}
+      hintPosition: {x: 0, y: 0, z: 0}
+      weight: 0.5
+    - bone: 10
+      type: 1
+      targetPosition: {x: 0, y: 1.4147444, z: 9.756857}
+      targetRotation: {x: 0.00052824605, y: -0.0010969935, z: -0.13370535, w: 0.9910204}
+      hintPosition: {x: 0, y: 0, z: 0}
+      weight: 1
+    - bone: 17
+      type: 0
+      targetPosition: {x: 0.09996997, y: 1.1671689, z: 0.3509005}
+      targetRotation: {x: -0.35153827, y: -0.11764779, z: 0.9267961, w: -0.06024128}
+      hintPosition: {x: -0.051545523, y: 1.1382191, z: 0.2547085}
+      weight: 1
+    - bone: 18
+      type: 0
+      targetPosition: {x: 0.16494733, y: 1.1571777, z: 0.1609748}
+      targetRotation: {x: -0.50000155, y: -0.49999827, z: -0.5000015, w: 0.49999863}
+      hintPosition: {x: 0.23905969, y: 1.1109971, z: 0.018658273}
+      weight: 1
+  - time: 0.35714287
+    ease: 0
+    targets:
+    - bone: 9
+      type: 1
+      targetPosition: {x: 0, y: 1.36596, z: 9.756857}
+      targetRotation: {x: 0.15466128, y: 0.088352196, z: -0.109095626, w: 0.9779427}
+      hintPosition: {x: 0, y: 0, z: 0}
+      weight: 0.5
+    - bone: 10
+      type: 1
+      targetPosition: {x: 0, y: 1.4147444, z: 9.756857}
+      targetRotation: {x: 0.00052824605, y: -0.0010969935, z: -0.13370535, w: 0.9910204}
+      hintPosition: {x: 0, y: 0, z: 0}
+      weight: 1
+    - bone: 17
+      type: 0
+      targetPosition: {x: 0.09996997, y: 1.1745001, z: 0.35383296}
+      targetRotation: {x: -0.35153827, y: -0.11764779, z: 0.9267961, w: -0.06024128}
+      hintPosition: {x: -0.051545523, y: 1.1382191, z: 0.2547085}
+      weight: 1
+    - bone: 18
+      type: 0
+      targetPosition: {x: 0.16494733, y: 1.1645089, z: 0.16390727}
+      targetRotation: {x: -0.50000155, y: -0.49999827, z: -0.5000015, w: 0.49999863}
+      hintPosition: {x: 0.23905969, y: 1.1109971, z: 0.018658273}
+      weight: 1
+  - time: 0.42857143
+    ease: 0
+    targets:
+    - bone: 9
+      type: 1
+      targetPosition: {x: 0, y: 1.36596, z: 9.756857}
+      targetRotation: {x: 0.15466128, y: 0.088352196, z: -0.109095626, w: 0.9779427}
+      hintPosition: {x: 0, y: 0, z: 0}
+      weight: 0.5
+    - bone: 10
+      type: 1
+      targetPosition: {x: 0, y: 1.4147444, z: 9.756857}
+      targetRotation: {x: 0.00052824605, y: -0.0010969935, z: -0.13370535, w: 0.9910204}
+      hintPosition: {x: 0, y: 0, z: 0}
+      weight: 1
+    - bone: 17
+      type: 0
+      targetPosition: {x: 0.09996997, y: 1.1870345, z: 0.35884672}
+      targetRotation: {x: -0.35153827, y: -0.11764779, z: 0.9267961, w: -0.06024128}
+      hintPosition: {x: -0.051545523, y: 1.1382191, z: 0.2547085}
+      weight: 1
+    - bone: 18
+      type: 0
+      targetPosition: {x: 0.16494733, y: 1.1770433, z: 0.16892105}
+      targetRotation: {x: -0.50000155, y: -0.49999827, z: -0.5000015, w: 0.49999863}
+      hintPosition: {x: 0.23905969, y: 1.1109971, z: 0.018658273}
+      weight: 1
+  - time: 0.5
+    ease: 0
+    targets:
+    - bone: 9
+      type: 1
+      targetPosition: {x: 0, y: 1.36596, z: 9.756857}
+      targetRotation: {x: 0.15466128, y: 0.088352196, z: -0.109095626, w: 0.9779427}
+      hintPosition: {x: 0, y: 0, z: 0}
+      weight: 0.5
+    - bone: 10
+      type: 1
+      targetPosition: {x: 0, y: 1.4147444, z: 9.756857}
+      targetRotation: {x: 0.00052824605, y: -0.0010969935, z: -0.13370535, w: 0.9910204}
+      hintPosition: {x: 0, y: 0, z: 0}
+      weight: 1
+    - bone: 17
+      type: 0
+      targetPosition: {x: 0.09996997, y: 1.2015191, z: 0.3646406}
+      targetRotation: {x: -0.35153827, y: -0.11764779, z: 0.9267961, w: -0.06024128}
+      hintPosition: {x: -0.051545523, y: 1.1382191, z: 0.2547085}
+      weight: 1
+    - bone: 18
+      type: 0
+      targetPosition: {x: 0.16494733, y: 1.191528, z: 0.17471492}
+      targetRotation: {x: -0.50000155, y: -0.49999827, z: -0.5000015, w: 0.49999863}
+      hintPosition: {x: 0.23905969, y: 1.1109971, z: 0.018658273}
+      weight: 1
+  - time: 0.5714286
+    ease: 0
+    targets:
+    - bone: 9
+      type: 1
+      targetPosition: {x: 0, y: 1.36596, z: 9.756857}
+      targetRotation: {x: 0.15466128, y: 0.088352196, z: -0.109095626, w: 0.9779427}
+      hintPosition: {x: 0, y: 0, z: 0}
+      weight: 0.5
+    - bone: 10
+      type: 1
+      targetPosition: {x: 0, y: 1.4147444, z: 9.756857}
+      targetRotation: {x: 0.00052824605, y: -0.0010969935, z: -0.13370535, w: 0.9910204}
+      hintPosition: {x: 0, y: 0, z: 0}
+      weight: 1
+    - bone: 17
+      type: 0
+      targetPosition: {x: 0.09996997, y: 1.214701, z: 0.3699134}
+      targetRotation: {x: -0.35153827, y: -0.11764779, z: 0.9267961, w: -0.06024128}
+      hintPosition: {x: -0.051545523, y: 1.1382191, z: 0.2547085}
+      weight: 1
+    - bone: 18
+      type: 0
+      targetPosition: {x: 0.16494733, y: 1.2047099, z: 0.1799877}
+      targetRotation: {x: -0.50000155, y: -0.49999827, z: -0.5000015, w: 0.49999863}
+      hintPosition: {x: 0.23905969, y: 1.1109971, z: 0.018658273}
+      weight: 1
+  - time: 0.64285713
+    ease: 0
+    targets:
+    - bone: 9
+      type: 1
+      targetPosition: {x: 0, y: 1.36596, z: 9.756857}
+      targetRotation: {x: 0.15466128, y: 0.088352196, z: -0.109095626, w: 0.9779427}
+      hintPosition: {x: 0, y: 0, z: 0}
+      weight: 0.5
+    - bone: 10
+      type: 1
+      targetPosition: {x: 0, y: 1.4147444, z: 9.756857}
+      targetRotation: {x: 0.00052824605, y: -0.0010969935, z: -0.13370535, w: 0.9910204}
+      hintPosition: {x: 0, y: 0, z: 0}
+      weight: 1
+    - bone: 17
+      type: 0
+      targetPosition: {x: 0.09996997, y: 1.2233273, z: 0.37336388}
+      targetRotation: {x: -0.35153827, y: -0.11764779, z: 0.9267961, w: -0.06024128}
+      hintPosition: {x: -0.051545523, y: 1.1382191, z: 0.2547085}
+      weight: 1
+    - bone: 18
+      type: 0
+      targetPosition: {x: 0.16494733, y: 1.2133361, z: 0.1834382}
+      targetRotation: {x: -0.50000155, y: -0.49999827, z: -0.5000015, w: 0.49999863}
+      hintPosition: {x: 0.23905969, y: 1.1109971, z: 0.018658273}
+      weight: 1
+  - time: 0.71428573
+    ease: 0
+    targets:
+    - bone: 9
+      type: 1
+      targetPosition: {x: 0, y: 1.36596, z: 9.756857}
+      targetRotation: {x: 0.15466128, y: 0.088352196, z: -0.109095626, w: 0.9779427}
+      hintPosition: {x: 0, y: 0, z: 0}
+      weight: 0.5
+    - bone: 10
+      type: 1
+      targetPosition: {x: 0, y: 1.4147444, z: 9.756857}
+      targetRotation: {x: 0.00052824605, y: -0.0010969935, z: -0.13370535, w: 0.9910204}
+      hintPosition: {x: 0, y: 0, z: 0}
+      weight: 1
+    - bone: 17
+      type: 0
+      targetPosition: {x: 0.09996997, y: 1.225305, z: 0.37415496}
+      targetRotation: {x: -0.35153827, y: -0.11764779, z: 0.9267961, w: -0.06024128}
+      hintPosition: {x: -0.051545523, y: 1.1382191, z: 0.2547085}
+      weight: 0.9766389
+    - bone: 18
+      type: 0
+      targetPosition: {x: 0.16494733, y: 1.2153138, z: 0.18422927}
+      targetRotation: {x: -0.50000155, y: -0.49999827, z: -0.5000015, w: 0.49999863}
+      hintPosition: {x: 0.23905969, y: 1.1109971, z: 0.018658273}
+      weight: 0.9766389
+  - time: 0.78571427
+    ease: 0
+    targets:
+    - bone: 9
+      type: 1
+      targetPosition: {x: 0, y: 1.36596, z: 9.756857}
+      targetRotation: {x: 0.15466128, y: 0.088352196, z: -0.109095626, w: 0.9779427}
+      hintPosition: {x: 0, y: 0, z: 0}
+      weight: 0.5
+    - bone: 10
+      type: 1
+      targetPosition: {x: 0, y: 1.4147444, z: 9.756857}
+      targetRotation: {x: 0.00052824605, y: -0.0010969935, z: -0.13370535, w: 0.9910204}
+      hintPosition: {x: 0, y: 0, z: 0}
+      weight: 1
+    - bone: 17
+      type: 0
+      targetPosition: {x: 0.09996997, y: 1.2284672, z: 0.37541986}
+      targetRotation: {x: -0.35153827, y: -0.11764779, z: 0.9267961, w: -0.06024128}
+      hintPosition: {x: -0.051545523, y: 1.1382191, z: 0.2547085}
+      weight: 0.760568
+    - bone: 18
+      type: 0
+      targetPosition: {x: 0.16494733, y: 1.218476, z: 0.18549417}
+      targetRotation: {x: -0.50000155, y: -0.49999827, z: -0.5000015, w: 0.49999863}
+      hintPosition: {x: 0.23905969, y: 1.1109971, z: 0.018658273}
+      weight: 0.760568
+  - time: 0.85714287
+    ease: 0
+    targets:
+    - bone: 9
+      type: 1
+      targetPosition: {x: 0, y: 1.36596, z: 9.756857}
+      targetRotation: {x: 0.15466128, y: 0.088352196, z: -0.109095626, w: 0.9779427}
+      hintPosition: {x: 0, y: 0, z: 0}
+      weight: 0.5
+    - bone: 10
+      type: 1
+      targetPosition: {x: 0, y: 1.4147444, z: 9.756857}
+      targetRotation: {x: 0.00052824605, y: -0.0010969935, z: -0.13370535, w: 0.9910204}
+      hintPosition: {x: 0, y: 0, z: 0}
+      weight: 1
+    - bone: 17
+      type: 0
+      targetPosition: {x: 0.09996997, y: 1.2332774, z: 0.3773439}
+      targetRotation: {x: -0.35153827, y: -0.11764779, z: 0.9267961, w: -0.06024128}
+      hintPosition: {x: -0.051545523, y: 1.1382191, z: 0.2547085}
+      weight: 0.43190062
+    - bone: 18
+      type: 0
+      targetPosition: {x: 0.16494733, y: 1.2232863, z: 0.18741822}
+      targetRotation: {x: -0.50000155, y: -0.49999827, z: -0.5000015, w: 0.49999863}
+      hintPosition: {x: 0.23905969, y: 1.1109971, z: 0.018658273}
+      weight: 0.43190062
+  - time: 0.9285714
+    ease: 0
+    targets:
+    - bone: 9
+      type: 1
+      targetPosition: {x: 0, y: 1.36596, z: 9.756857}
+      targetRotation: {x: 0.15466128, y: 0.088352196, z: -0.109095626, w: 0.9779427}
+      hintPosition: {x: 0, y: 0, z: 0}
+      weight: 0.5
+    - bone: 10
+      type: 1
+      targetPosition: {x: 0, y: 1.4147444, z: 9.756857}
+      targetRotation: {x: 0.00052824605, y: -0.0010969935, z: -0.13370535, w: 0.9910204}
+      hintPosition: {x: 0, y: 0, z: 0}
+      weight: 1
+    - bone: 17
+      type: 0
+      targetPosition: {x: 0.09996997, y: 1.2376747, z: 0.37910283}
+      targetRotation: {x: -0.35153827, y: -0.11764779, z: 0.9267961, w: -0.06024128}
+      hintPosition: {x: -0.051545523, y: 1.1382191, z: 0.2547085}
+      weight: 0.13144284
+    - bone: 18
+      type: 0
+      targetPosition: {x: 0.16494733, y: 1.2276835, z: 0.18917714}
+      targetRotation: {x: -0.50000155, y: -0.49999827, z: -0.5000015, w: 0.49999863}
+      hintPosition: {x: 0.23905969, y: 1.1109971, z: 0.018658273}
+      weight: 0.13144284
+  - time: 1
+    ease: 0
+    targets:
+    - bone: 9
+      type: 1
+      targetPosition: {x: 0, y: 1.36596, z: 9.756857}
+      targetRotation: {x: 0.15466131, y: 0.08835222, z: -0.10909565, w: 0.97794294}
+      hintPosition: {x: 0, y: 0, z: 0}
+      weight: 0.5
+    - bone: 10
+      type: 1
+      targetPosition: {x: 0, y: 1.4147444, z: 9.756857}
+      targetRotation: {x: 0.00052824616, y: -0.0010969937, z: -0.13370538, w: 0.9910206}
+      hintPosition: {x: 0, y: 0, z: 0}
+      weight: 1
+    - bone: 17
+      type: 0
+      targetPosition: {x: 0.09996997, y: 1.2395984, z: 0.3798723}
+      targetRotation: {x: -0.3515384, y: -0.117647834, z: 0.92679644, w: -0.0602413}
+      hintPosition: {x: -0.051545523, y: 1.1382191, z: 0.2547085}
+      weight: 0
+    - bone: 18
+      type: 0
+      targetPosition: {x: 0.16494733, y: 1.2296072, z: 0.18994662}
+      targetRotation: {x: -0.5000017, y: -0.49999845, z: -0.50000167, w: 0.4999988}
+      hintPosition: {x: 0.23905969, y: 1.1109971, z: 0.018658273}
+      weight: 0
+  muscleKeyframes: []
+  events: []

@@ -1,0 +1,119 @@
+ManifestFileVersion: 0
+CRC: 1172552677
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 750aecb7b6b97f8c7e801556e383b3f8
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 9685d111e38e699446ed10fe8baa7f4d
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 750aecb7b6b97f8c7e801556e383b3f8
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 54
+  Script: {instanceID: 0}
+- Class: 65
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: dab5c7d4c32e743048dfca98e2d5914f, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: c8d02328a3acddf40846071709255796, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: b8d58f17780641c8b83fb3450b106e93, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 57c1a9c479f4d6f44a6202d3c8ed5e51, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 958e5e47585f4edd8d73ed37f6ce6ac0, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 136
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers:
+- AssemblyName: Core
+  ClassName: ShanghaiWindy.Core.FireSpreadParameter
+- AssemblyName: Core
+  ClassName: ShanghaiWindy.Core.IRSeekerData
+- AssemblyName: Core
+  ClassName: ShanghaiWindy.Core.InternalModuleBulletData
+- AssemblyName: Core
+  ClassName: ShanghaiWindy.Core.SimpleFireSystemTransform
+- AssemblyName: Core
+  ClassName: ShanghaiWindy.Core.SimpleFireSystemTransform/SimpleFirePointTransform
+- AssemblyName: Core
+  ClassName: ShanghaiWindy.Core.SimpleFireSystemTransform/SimpleTurretTransform
+- AssemblyName: Core
+  ClassName: ShanghaiWindy.Core.SimpleVehicleFireSystemParameter
+- AssemblyName: Core
+  ClassName: ShanghaiWindy.Core.SimpleVehicleFireSystemParameter/SimpleFirePoint
+- AssemblyName: Core
+  ClassName: ShanghaiWindy.Core.SimpleVehicleFireSystemParameter/SimpleTurret
+- AssemblyName: Core
+  ClassName: ShanghaiWindy.Core.TankFireFireGroupParameter
+- AssemblyName: Core
+  ClassName: ShanghaiWindy.Core.TankFireParameter
+- AssemblyName: Core
+  ClassName: ShanghaiWindy.Core.TankFireParameter/AdvanceFireClass
+- AssemblyName: Core
+  ClassName: ShanghaiWindy.Core.TankFireParameter/DrumFire
+- AssemblyName: Core
+  ClassName: ShanghaiWindy.Core.TankFireParameter/EnergyFire
+- AssemblyName: Core
+  ClassName: ShanghaiWindy.Core.TankFireTransform
+- AssemblyName: Core
+  ClassName: ShanghaiWindy.Core.TurretParameter
+- AssemblyName: Core
+  ClassName: ShanghaiWindy.Core.TurretParameter/ModuleData
+- AssemblyName: Core
+  ClassName: ShanghaiWindy.Core.VehicleModuleGuid
+- AssemblyName: Core
+  ClassName: ShanghaiWindy.Core.WaveInteractParameter
+- AssemblyName: Unity.Mathematics
+  ClassName: Unity.Mathematics.float3
+- AssemblyName: Unity.Mathematics
+  ClassName: Unity.Mathematics.float4
+- AssemblyName: Unity.Mathematics
+  ClassName: Unity.Mathematics.quaternion
+- AssemblyName: Unity.Splines
+  ClassName: UnityEngine.Splines.BezierKnot
+- AssemblyName: Unity.Splines
+  ClassName: UnityEngine.Splines.KnotLinkCollection
+- AssemblyName: Unity.Splines
+  ClassName: UnityEngine.Splines.Spline
+- AssemblyName: Unity.Splines
+  ClassName: UnityEngine.Splines.Spline/MetaData
+- AssemblyName: Unity.Splines
+  ClassName: UnityEngine.Splines.SplineDataDictionary`1[System.Int32]
+- AssemblyName: Unity.Splines
+  ClassName: UnityEngine.Splines.SplineDataDictionary`1[System.Single]
+- AssemblyName: Unity.Splines
+  ClassName: UnityEngine.Splines.SplineDataDictionary`1[Unity.Mathematics.float4]
+- AssemblyName: Unity.Splines
+  ClassName: UnityEngine.Splines.SplineDataDictionary`1[UnityEngine.Object]
+Assets:
+- Packages/com.shanghaiwindy.coreresources/Skill/Altius-U/Altius-U-Skill.prefab
+Dependencies:
+- C:/github/workspace/Projects/DE/Build/Mod-BuildPipline/StandaloneWindows64/BuildPipline-RuntimeSupport/packages/fd510-1ee6917b27dc807459dac1e64bf41f7a.unity3d
+- C:/github/workspace/Projects/DE/Build/Mod-BuildPipline/StandaloneWindows64/BuildPipline-RuntimeSupport/packages/fd510-2f6f70c4328b9bb4e9d80e570dbd945c.unity3d
+- C:/github/workspace/Projects/DE/Build/Mod-BuildPipline/StandaloneWindows64/BuildPipline-RuntimeSupport/packages/fd510-b317ca3f75daacd4f89522289c7c7ac9.unity3d
+- C:/github/workspace/Projects/DE/Build/Mod-BuildPipline/StandaloneWindows64/BuildPipline-RuntimeSupport/packages/fd510-c6efe4078c19b9f41aa1c8e6010c76c9.unity3d
+- C:/github/workspace/Projects/DE/Build/Mod-BuildPipline/StandaloneWindows64/BuildPipline-RuntimeSupport/packages/fd510d96-3761-4c83-940e-67083716ae45-svc.shader

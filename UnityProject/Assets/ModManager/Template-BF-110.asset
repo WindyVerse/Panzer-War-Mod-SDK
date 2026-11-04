@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 935110173, guid: 0512a3c011ce1c84db3d9ccc1f4d6d2e, type: 3}
+  m_Name: Template-BF-110
+  m_EditorClassIdentifier: 
+  modName: Default Mod
+  description: The Description of the mod
+  author: Your Name
+  supportURL: https://yourWebSite.com
+  modVersion: 1
+  testedGameVersion: 2022.r5f1
+  buildTarget: StandaloneWindows64
+  shipTypes: 1
+  isAuthorizeOwnerShip: 0
+  packUuid: 
+  guid: 9aa23534-4494-467d-bb13-9ec91627475f
+  dependencyGuids: []
+  buildCaches:
+  - targetPlatform: Android
+    relatedAssets:
+    - Build/Mod-BuildPipline/Android/BuildPipline-Template-BF-110/packages/bf-110-c.data
+    - Build/Mod-BuildPipline/Android/BuildPipline-Template-BF-110/packages/bf-110-c.data.manifest
+    - Build/Mod-BuildPipline/Android/BuildPipline-Template-BF-110/packages/bf-110-c.vehicleinfo
+    - Build/Mod-BuildPipline/Android/BuildPipline-Template-BF-110/packages/bf-110-c.vehicleinfo.manifest
+    - Build/Mod-BuildPipline/Android/BuildPipline-Template-BF-110/packages/bf-110-c_pre.clientextramesh
+    - Build/Mod-BuildPipline/Android/BuildPipline-Template-BF-110/packages/bf-110-c_pre.clientextramesh.manifest
+    - Build/Mod-BuildPipline/Android/BuildPipline-Template-BF-110/packages/bf-110-c_pre.masterextramesh
+    - Build/Mod-BuildPipline/Android/BuildPipline-Template-BF-110/packages/bf-110-c_pre.masterextramesh.manifest
+    - Build/Mod-BuildPipline/Android/BuildPipline-Template-BF-110/packages/packages
+    - Build/Mod-BuildPipline/Android/BuildPipline-Template-BF-110/packages/packages.manifest
+  - targetPlatform: StandaloneWindows64
+    relatedAssets:
+    - Build/Mod-BuildPipline/StandaloneWindows64/BuildPipline-Template-BF-110/packages/1273d9b1-deb7-46b9-99ca-edb956d3859b.data
+    - Build/Mod-BuildPipline/StandaloneWindows64/BuildPipline-Template-BF-110/packages/1273d9b1-deb7-46b9-99ca-edb956d3859b.data.manifest
+    - Build/Mod-BuildPipline/StandaloneWindows64/BuildPipline-Template-BF-110/packages/1273d9b1-deb7-46b9-99ca-edb956d3859b_pre.clientextramesh
+    - Build/Mod-BuildPipline/StandaloneWindows64/BuildPipline-Template-BF-110/packages/1273d9b1-deb7-46b9-99ca-edb956d3859b_pre.clientextramesh.manifest
+    - Build/Mod-BuildPipline/StandaloneWindows64/BuildPipline-Template-BF-110/packages/1273d9b1-deb7-46b9-99ca-edb956d3859b_vehicleinfo.vehicleinfo
+    - Build/Mod-BuildPipline/StandaloneWindows64/BuildPipline-Template-BF-110/packages/1273d9b1-deb7-46b9-99ca-edb956d3859b_vehicleinfo.vehicleinfo.manifest
+    - Build/Mod-BuildPipline/StandaloneWindows64/BuildPipline-Template-BF-110/packages/packages
+    - Build/Mod-BuildPipline/StandaloneWindows64/BuildPipline-Template-BF-110/packages/packages.manifest
+  modFileManifiests:
+  - n: 1273d9b1-deb7-46b9-99ca-edb956d3859b.data
+    h: 4e8157e02fe3ac8cf3ef67845cf047c0
+    d: []
+  - n: 1273d9b1-deb7-46b9-99ca-edb956d3859b_pre.clientextramesh
+    h: d6986374f434ee2f7b658d1c47eeed91
+    d: []
+  - n: 1273d9b1-deb7-46b9-99ca-edb956d3859b_vehicleinfo.vehicleinfo
+    h: 329f9e14b03c36ffeed97a522e07c741
+    d: []
+  isLoadManifest: 0
+  luaScripts: []

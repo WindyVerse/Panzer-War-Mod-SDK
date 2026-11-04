@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 19315670, guid: 0512a3c011ce1c84db3d9ccc1f4d6d2e, type: 3}
+  m_Name: AKM-WeaponInfo
+  m_EditorClassIdentifier: 
+  defaultName: 
+  localizedNames:
+  - lang: 0
+    localizedName: AKM
+  - lang: 1
+    localizedName: AKM
+  - lang: 2
+    localizedName: AKM
+  localizedDescription:
+    isLocalizeTable: 0
+    defaultName: 
+    items:
+    - lang: 0
+      localizedName: "AKM\u81EA\u52A8\u6B65\u67AA\u662F\u4E00\u6B3EAK\u6B65\u67AA\uFF0C\u4F7F\u7528
+        M43\u578B 7.62\xD739mm \u5B50\u5F39\uFF0C\u662F\u5361\u62C9\u4EC0\u5C3C\u79D1\u592B\u57281953\u5E74\u81F31954\u5E74\u671F\u95F4\u6539\u8FDBAK-47\uFF0C\u6700\u7EC8\u5B9A\u578B\u4E3AAKM\uFF0C\u5E76\u57281959\u5E74\u5F00\u59CB\u88AB\u82CF\u519B\u88C5\u5907\u3002"
+    localizeTableKey: 
+  safeName: 
+  rank: 1
+  isArtillery: 0
+  isAA: 0
+  isModuleReady: 0
+  isUnlock: 1
+  isInAppPurchase: 0
+  isBotDirveable: 1
+  vehicleProduceYear: -1
+  thumbnail: {fileID: 0}
+  streamingThumnail:
+    assetGUID: d4f3b3b1771495b4cbd5a3906c3aa68e
+    extra: Assets/Res/FPS/Data/WeaponData/AKM/f991b11d-52ed-4f72-b87d-8b500b45c067-Icon.png
+  nationType: 999
+  isOversea: 0
+  extraRepairCost: 0
+  vehicleName: AKM
+  type: 3
+  assetGuid: f991b11d-52ed-4f72-b87d-8b500b45c067
+  internalIdentifier: 0fbbb390-20ed-4783-b084-36a44ea0e62f
+  vehicleInfoVersion: 0
+  version: 0
+  preferSpawnPoint: 0
+  forbidCustomize: 0
+  weaponDataProp:
+    assetGUID: d32b26133294253418b2586eff4ced89
+    extra: Assets/Res/FPS/Data/WeaponData/AKM/AKM.asset
+  weaponType: 0
+  canBotUse: 1
+  canAttackArmy: 0
+  canAttackTank: 0
+  canAttackFlight: 0
+  canAttackBoat: 0
+  isThrowable: 0
+  supportRanks: {x: 1, y: 15}

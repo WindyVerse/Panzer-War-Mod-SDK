@@ -1,0 +1,209 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:Template name="tpl-log-entry" src="GameLogEntryItem.uxml" />
+    <ui:Template name="tpl-command-item" src="GameLogCommandItem.uxml" />
+    <ui:Template name="tpl-entity-item" src="GameLogEntityItem.uxml" />
+    <ui:Template name="tpl-comp-item" src="GameLogCompItem.uxml" />
+    <ui:Template name="tpl-breadcrumb-item" src="GameLogBreadcrumbItem.uxml" />
+    <ui:Template name="tpl-detail-row" src="GameLogDetailRow.uxml" />
+    <ui:Template name="tpl-detail-section" src="GameLogDetailSection.uxml" />
+    <ui:Template name="tpl-api-class-item" src="GameLogApiClassItem.uxml" />
+    <ui:Template name="tpl-api-method-item" src="GameLogApiMethodItem.uxml" />
+    <ui:Template name="tpl-asset-bundle-item" src="GameLogAssetBundleItem.uxml" />
+    <Style src="GameLogOverlay.uss" />
+    <Style src="../GameTheme.uss" />
+
+    <ui:VisualElement picking-mode="Ignore" class="gl-root">
+
+        <!-- Expanded Log Panel -->
+        <ui:VisualElement name="gen_PanelRoot" picking-mode="Ignore" class="gl-panel-root">
+
+            <!-- Header -->
+            <ui:VisualElement class="gl-header">
+                <ui:Label name="gen_TitleLabel" text="Game Log" class="gl-title" />
+                <ui:VisualElement class="gl-header-actions">
+                    <ui:Button name="gen_ClearButton" text="Clear" class="gl-header-btn g-btn-ghost" />
+                    <ui:Button name="gen_CloseButton" text="X" class="gl-header-btn g-btn-close-round" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+
+            <!-- Tab Bar -->
+            <ui:VisualElement class="gl-tab-bar">
+                <ui:Button name="gen_LogTabButton" text="Log" class="gl-tab-btn gl-tab-btn--active" />
+                <ui:Button name="gen_ConsoleTabButton" text="Console" class="gl-tab-btn" />
+                <ui:Button name="gen_EntityTabButton" text="Entity" class="gl-tab-btn" />
+                <ui:Button name="gen_LuaApiTabButton" text="Lua API" class="gl-tab-btn" />
+                <ui:Button name="gen_AssetsTabButton" text="Assets" class="gl-tab-btn" />
+            </ui:VisualElement>
+
+            <!-- Log Tab Content -->
+            <ui:VisualElement name="gen_LogTabContent" class="gl-tab-content">
+                <!-- Filter Bar -->
+                <ui:VisualElement class="gl-filter-bar">
+                    <ui:Button name="gen_FilterInfoButton" text="Info" class="gl-filter-btn gl-filter-btn--info" />
+                    <ui:Button name="gen_FilterErrorButton" text="Error" class="gl-filter-btn gl-filter-btn--error gl-filter-btn--active" />
+                    <ui:VisualElement class="gl-filter-separator" />
+                    <ui:DropdownField name="gen_ModuleDropdown" label="" class="g-dropdown gl-module-dropdown" />
+                </ui:VisualElement>
+
+                <!-- Log List -->
+                <ui:ListView name="gen_LogListView"
+                             virtualization-method="DynamicHeight"
+                             selection-type="None"
+                             horizontal-scrolling="false"
+                             show-add-remove-footer="false"
+                             show-border="false"
+                             show-foldout-header="false"
+                             class="gl-log-list g-thin-scroll" />
+            </ui:VisualElement>
+
+            <!-- Console Tab Content -->
+            <ui:VisualElement name="gen_ConsoleTabContent" class="gl-tab-content gl-console-container" style="display: none;">
+                <!-- Command List -->
+                <ui:ListView name="gen_CommandListView"
+                             virtualization-method="DynamicHeight"
+                             selection-type="None"
+                             horizontal-scrolling="false"
+                             show-add-remove-footer="false"
+                             show-border="false"
+                             show-foldout-header="false"
+                             class="gl-command-list g-thin-scroll" />
+
+                <!-- Command Input -->
+                <ui:VisualElement class="gl-command-input-bar">
+                    <ui:TextField name="gen_CommandInput" class="gl-command-input g-textfield" />
+                    <ui:Button name="gen_ExecuteButton" text="Run" class="gl-execute-btn g-btn-gold" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+
+            <!-- Entity Tab Content -->
+            <ui:VisualElement name="gen_EntityTabContent" class="gl-tab-content gl-entity-container" style="display: none;">
+                <ui:VisualElement class="gl-entity-split">
+                    <!-- Left: Entity List -->
+                    <ui:VisualElement class="gl-entity-left">
+                        <ui:TextField name="gen_EntitySearchField" class="gl-entity-search g-textfield" />
+                        <ui:ListView name="gen_EntityListView"
+                                     virtualization-method="DynamicHeight"
+                                     selection-type="None"
+                                     horizontal-scrolling="false"
+                                     show-add-remove-footer="false"
+                                     show-border="false"
+                                     show-foldout-header="false"
+                                     class="gl-entity-list g-thin-scroll" />
+                    </ui:VisualElement>
+                    <!-- Right: Component Tree + Detail -->
+                    <ui:VisualElement class="gl-entity-right">
+                        <ui:Label name="gen_EntityDetailHeader" text="" class="gl-entity-detail-header" />
+                        <ui:ListView name="gen_EntityComponentTree"
+                                     virtualization-method="DynamicHeight"
+                                     selection-type="None"
+                                     horizontal-scrolling="false"
+                                     show-add-remove-footer="false"
+                                     show-border="false"
+                                     show-foldout-header="false"
+                                     class="gl-entity-tree g-thin-scroll" />
+                        <ui:VisualElement name="gen_BreadcrumbBar" class="gl-breadcrumb-bar" style="display: none;" />
+                        <ui:ScrollView name="gen_EntityDetailContainer" class="gl-entity-detail g-thin-scroll" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+
+            <!-- Lua API Tab Content -->
+            <ui:VisualElement name="gen_LuaApiTabContent" class="gl-tab-content gl-api-container" style="display: none;">
+                <ui:VisualElement class="gl-entity-split">
+                    <!-- Left: Class List -->
+                    <ui:VisualElement class="gl-entity-left">
+                        <ui:TextField name="gen_ApiSearchField" class="gl-entity-search g-textfield" />
+                        <ui:ListView name="gen_ApiClassList"
+                                     virtualization-method="FixedHeight"
+                                     fixed-item-height="32"
+                                     selection-type="None"
+                                     horizontal-scrolling="false"
+                                     show-add-remove-footer="false"
+                                     show-border="false"
+                                     show-foldout-header="false"
+                                     class="gl-entity-list g-thin-scroll" />
+                    </ui:VisualElement>
+                    <!-- Right: Class Detail -->
+                    <ui:VisualElement class="gl-entity-right">
+                        <ui:Label name="gen_ApiDetailHeader" text="Select a class" class="gl-entity-detail-header" />
+                        <ui:Label name="gen_ApiDetailDesc" class="gl-api-detail-desc" />
+                        <ui:ScrollView name="gen_ApiDetailContainer" class="gl-entity-detail g-thin-scroll" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+
+            <!-- Assets Tab Content -->
+            <ui:VisualElement name="gen_AssetsTabContent" class="gl-tab-content gl-assets-container" style="display: none;">
+                <!-- Summary Bar -->
+                <ui:VisualElement class="gl-assets-summary">
+                    <ui:VisualElement class="gl-assets-summary-row">
+                        <ui:Label name="gen_AssetSummaryBundlesLabel" text="Bundles: -" class="gl-assets-summary-cell" />
+                        <ui:Label name="gen_AssetSummaryHandlesLabel" text="Handles: -" class="gl-assets-summary-cell" />
+                        <ui:Label name="gen_AssetSummaryInFlightLabel" text="InFlight: -" class="gl-assets-summary-cell" />
+                        <ui:Label name="gen_AssetSummaryQueuedLabel" text="Queued: -" class="gl-assets-summary-cell" />
+                        <ui:Label name="gen_AssetSummaryBytesLabel" text="Bytes: -" class="gl-assets-summary-cell" />
+                    </ui:VisualElement>
+                    <ui:VisualElement class="gl-assets-summary-row">
+                        <ui:Label name="gen_AssetLatencyLoadLabel" text="Load p50/p95/p99: -" class="gl-assets-summary-cell gl-assets-summary-cell--wide" />
+                        <ui:Label name="gen_AssetLatencyDecryptLabel" text="Decrypt p95: -" class="gl-assets-summary-cell" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+
+                <!-- Toolbar -->
+                <ui:VisualElement class="gl-assets-toolbar">
+                    <ui:TextField name="gen_AssetSearchField" class="gl-assets-search g-textfield" />
+                    <ui:DropdownField name="gen_AssetSortDropdown" label="" class="g-dropdown gl-assets-sort" />
+                    <ui:Button name="gen_AssetFlushButton" text="Flush Idle" class="g-btn-ghost gl-assets-action" />
+                </ui:VisualElement>
+
+                <!-- Column header -->
+                <ui:VisualElement class="gl-asset-row gl-asset-row--header">
+                    <ui:Label text="Bundle" class="gl-asset-name" />
+                    <ui:Label text="Pkg" class="gl-asset-pkg" />
+                    <ui:Label text="Refs" class="gl-asset-refs" />
+                    <ui:Label text="Bytes" class="gl-asset-bytes" />
+                    <ui:Label text="Age(s)" class="gl-asset-age" />
+                    <ui:Label text="Load(ms)" class="gl-asset-load" />
+                    <ui:Label text="Retention" class="gl-asset-retention" />
+                </ui:VisualElement>
+
+                <!-- Bundle list -->
+                <ui:ListView name="gen_AssetBundleListView"
+                             virtualization-method="FixedHeight"
+                             fixed-item-height="24"
+                             selection-type="None"
+                             horizontal-scrolling="false"
+                             show-add-remove-footer="false"
+                             show-border="false"
+                             show-foldout-header="false"
+                             class="gl-asset-list g-thin-scroll" />
+            </ui:VisualElement>
+
+            <!-- Status Bar -->
+            <ui:VisualElement class="gl-status-bar">
+                <ui:Label name="gen_StatusLabel" text="0 entries" class="gl-status-label" />
+                <ui:Toggle name="gen_AutoScrollToggle" label="Auto-scroll" value="true" class="gl-auto-scroll-toggle" />
+            </ui:VisualElement>
+
+        </ui:VisualElement>
+
+        <!-- Floating Button (draggable) — after panel so it draws on top -->
+        <ui:VisualElement name="gen_FloatingButton" class="gl-fab">
+            <ui:Label text="LOG" class="gl-fab-label" />
+            <ui:VisualElement name="gen_BadgeContainer" class="gl-badge">
+                <ui:Label name="gen_BadgeLabel" text="0" class="gl-badge-label" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+
+        <ui:Instance template="tpl-log-entry" name="tpl-log-entry" style="display: none;" />
+        <ui:Instance template="tpl-command-item" name="tpl-command-item" style="display: none;" />
+        <ui:Instance template="tpl-entity-item" name="tpl-entity-item" style="display: none;" />
+        <ui:Instance template="tpl-comp-item" name="tpl-comp-item" style="display: none;" />
+        <ui:Instance template="tpl-breadcrumb-item" name="tpl-breadcrumb-item" style="display: none;" />
+        <ui:Instance template="tpl-detail-row" name="tpl-detail-row" style="display: none;" />
+        <ui:Instance template="tpl-detail-section" name="tpl-detail-section" style="display: none;" />
+        <ui:Instance template="tpl-api-class-item" name="tpl-api-class-item" style="display: none;" />
+        <ui:Instance template="tpl-api-method-item" name="tpl-api-method-item" style="display: none;" />
+        <ui:Instance template="tpl-asset-bundle-item" name="tpl-asset-bundle-item" style="display: none;" />
+    </ui:VisualElement>
+</ui:UXML>

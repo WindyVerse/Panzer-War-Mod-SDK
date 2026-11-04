@@ -1,0 +1,22 @@
+ManifestFileVersion: 0
+CRC: 1316517768
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 8e156ec6d9e2af72fdf6fc5400102d88
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 923768aebf385ad86f7762daa8034951
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 8e156ec6d9e2af72fdf6fc5400102d88
+HashAppended: 0
+ClassTypes:
+- Class: 213
+  Script: {instanceID: 0}
+- Class: 687078895
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Packages/com.shanghaiwindy.coreresources/Flags/Countries/kz.png
+Dependencies: []

@@ -1,0 +1,20 @@
+ManifestFileVersion: 0
+CRC: 4212017019
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: ff3b3532162cbcff314649680ff0cc23
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 2612ac43db082a73502ee80f2eceb73f
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: ff3b3532162cbcff314649680ff0cc23
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Packages/com.shanghaiwindy.coreresources/VFX/_Shared/Textures/Spark/debris_stone_4x4.png
+Dependencies: []

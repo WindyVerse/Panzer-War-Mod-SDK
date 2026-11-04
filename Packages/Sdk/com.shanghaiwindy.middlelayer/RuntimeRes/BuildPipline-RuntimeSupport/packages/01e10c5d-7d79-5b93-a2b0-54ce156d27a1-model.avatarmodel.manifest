@@ -1,0 +1,37 @@
+ManifestFileVersion: 0
+CRC: 2787223193
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: a50cb54b2b2241ffddf2e9c16952e984
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: f6718c3d2064345c152313fc958ebad8
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: a50cb54b2b2241ffddf2e9c16952e984
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 90
+  Script: {instanceID: 0}
+- Class: 95
+  Script: {instanceID: 0}
+- Class: 137
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Packages/com.shanghaiwindy.coreresources/Vrm/AvatarCharacter/BritishSoldier/BritishSoldier.prefab
+Dependencies:
+- C:/github/workspace/Projects/DE/Build/Mod-BuildPipline/StandaloneWindows64/BuildPipline-RuntimeSupport/packages/vehicleplaceholder.shader

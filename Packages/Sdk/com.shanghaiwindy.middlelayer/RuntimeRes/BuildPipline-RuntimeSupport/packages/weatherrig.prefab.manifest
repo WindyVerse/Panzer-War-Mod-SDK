@@ -1,0 +1,30 @@
+ManifestFileVersion: 0
+CRC: 4269987872
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: e30491b9ff923c4e2049cab31f9a7e24
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 02c7dec5b476553922edf770f6d19094
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: e30491b9ff923c4e2049cab31f9a7e24
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 108
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 10f967843eaaf864688ca40bd8fbb101, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Packages/com.shanghaiwindy.coreresources/Weather/Prefabs/WeatherRig.prefab
+Dependencies: []

@@ -1,0 +1,24 @@
+ManifestFileVersion: 0
+CRC: 2010922860
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 598e013dac16f2999dede7ca8bdb55c1
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 344ae3af047a2137a92323b105875e8f
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 598e013dac16f2999dede7ca8bdb55c1
+HashAppended: 0
+ClassTypes:
+- Class: 114
+  Script: {fileID: 11500000, guid: 0ae7e9ab32334243b480b3dfef1a4654, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers:
+- AssemblyName: GameFramework.Runtime
+  ClassName: ShanghaiWindy.Core.Data.AssetProp
+Assets:
+- Packages/com.shanghaiwindy.coreresources/Vrm/VrmCharacter/Yadviga/YadvigaVrmCharacterData.asset
+Dependencies: []

@@ -1,0 +1,52 @@
+ManifestFileVersion: 0
+CRC: 575476655
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 641d91ee4f657cbf1a52a1ebe2544f5f
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: b56227253c2d4f69bece2b1cc3416762
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 641d91ee4f657cbf1a52a1ebe2544f5f
+HashAppended: 0
+ClassTypes:
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 200
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Packages/com.shanghaiwindy.coreresources/Shader/DamageReplay/ReplayXray.windyshader
+- Packages/com.shanghaiwindy.coreresources/Shader/VFX/VFXDistortion.windyshader
+- Packages/com.shanghaiwindy.coreresources/Shader/ArmorInspector/ProtectionOverlay.windyshader
+- Packages/com.shanghaiwindy.coreresources/Shader/Vehicle/Vehicle-Interior.windyshader
+- Packages/com.shanghaiwindy.coreresources/Shader/Decal/VehicleDecal.windyshader
+- Packages/com.shanghaiwindy.coreresources/Water/Shader/WindyWater.windyshader
+- Packages/com.shanghaiwindy.coreresources/Skill/EnergyShield/Shaders/EnergyShield.windyshader
+- Packages/com.shanghaiwindy.coreresources/Shader/Common/Transparent.windyshader
+- Packages/com.shanghaiwindy.coreresources/Shader/Vehicle/VehicleLight.windyshader
+- Packages/com.shanghaiwindy.coreresources/Shader/VFX/VFXLit.windyshader
+- Packages/com.shanghaiwindy.coreresources/Third/RealisticCarControllerV3/Shaders/RCC_Skidmarks.shader
+- Packages/com.shanghaiwindy.coreresources/Shader/DamageReplay/HoleEffect.windyshader
+- Packages/com.shanghaiwindy.renderpipline.publicshared/ShaderGraph/PointHightlight.shadergraph
+- Packages/com.shanghaiwindy.coreresources/Water/Shader/WindyWaterStamp.windyshader
+- Packages/com.shanghaiwindy.coreresources/Shader/VFX/VFXParticle.windyshader
+- Packages/com.shanghaiwindy.coreresources/Water/Shader/WindyWaterUnderwater.windyshader
+- Packages/com.shanghaiwindy.coreresources/Shader/DamageReplay/FragmentStreak.windyshader
+- Packages/com.shanghaiwindy.coreresources/Shader/VFX/SpgLine.windyshader
+- Packages/com.shanghaiwindy.coreresources/Shader/Vehicle/VehicleSimplePBR.windyshader
+- Assets/ModManager/BuildPipline-RuntimeSupport.shadervariants
+- Packages/com.shanghaiwindy.coreresources/Water/Shader/WindyWaterDynamic.windyshader
+- Packages/com.shanghaiwindy.coreresources/Weather/Shader/WindySky.windyshader
+- Packages/com.shanghaiwindy.coreresources/Shader/Vehicle/VehicleFullPBR.windyshader
+- Packages/com.unify.unified-universal-blur/UnifiedUniversalBlur/Shaders/UniversalBlurForUI.shader
+- Packages/com.shanghaiwindy.publicresources/Main/Shaders/AutoTerrainAdvance/Auto-Terrain-Cliff.shadergraph
+- Packages/com.shanghaiwindy.coreresources/Shader/DamageReplay/TopSchematic.windyshader
+- Packages/com.shanghaiwindy.coreresources/Shader/ArmorInspector/ArmorTint.windyshader
+- Packages/com.shanghaiwindy.coreresources/Water/Shader/WindyWaterSurfaceParticle.windyshader
+- Packages/com.shanghaiwindy.coreresources/Shader/Vehicle/VehicleUnlitFast.windyshader
+Dependencies: []

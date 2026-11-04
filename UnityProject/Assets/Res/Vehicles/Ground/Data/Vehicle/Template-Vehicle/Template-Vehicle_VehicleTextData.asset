@@ -1,0 +1,401 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -2112693636, guid: 0512a3c011ce1c84db3d9ccc1f4d6d2e, type: 3}
+  m_Name: Template-Vehicle_VehicleTextData
+  m_EditorClassIdentifier: 
+  AssetName: Template-Vehicle
+  editorAssetGuid: 4a4a03196af0cbe42a8bae0968437c39
+  PSParameter:
+    Health: 1200
+    isOverrideCameraDistance: 0
+    overrideCameraDistance: 0
+    overrideClassicCameraDistance: 0
+    isOverrideCameraHorizontalSmoothMoveMagnitude: 0
+    overrideCameraHorizontalSmoothMoveMagnitude: 0.5
+    isOverrideModuleOrthographicSize: 0
+    overrideModuleOrthographicSize: 5
+    moduleCameraFollowType: 0
+    customModuleCameraFollowPointPath: 
+    isCustomSightPoint: 0
+    customSightPointPath: 
+    isCustomBinocularPoint: 0
+    customBinocularPointPath: 
+    nationType: 43
+    vehicleType: 1
+    isOverrideBotVehicleTypeLogic: 0
+    overrideBotTypeLogic: 0
+    viewRange: 440
+    isCustomExplodeParticle: 0
+    customExplodeParticles: []
+    ammunitionSortNameReversing: 0
+    hasThermalVision: 1
+    thermalVisionProfile:
+      isCustomize: 1
+      resolution: 0.4
+      color: {r: 0.8584906, g: 0.8584906, b: 0.8584906, a: 1}
+      noiseIntensity: 1
+    binocularZoomProfileData: {fileID: 11400000, guid: f21368386eed80442a4ba8d86c64a98f,
+      type: 2}
+    binocularProfile:
+      binocularType: 1
+      isGunControllable: 1
+    overrideFireCrossData: {fileID: 0}
+    isOverrideSightDistanceType: 0
+    sightDistanceType: 1
+    customSightDistanceDuration: 2
+    isAutoGunElevation: 0
+    isEnableSmoke: 1
+    smokeProfile:
+      duration: 15
+      radius: 25
+    smokeEmitProfile:
+      size: 3
+      smokeInterval: 45
+  PTCParameter:
+    TankWheelCollider: {fileID: 9129519116861611582, guid: 50fb5c45a8510044b882765828f2827e,
+      type: 3}
+    Mass: 44000
+    animationScale: 1
+    trackDeltaMetreScale: 1
+    TrackData: {fileID: 11400000, guid: 112824190b93c64409f2d49d1271cebd, type: 2}
+    trackAxis: 0
+    isWheelVehicle: 0
+    steerableWheels: []
+    engineAction: {fileID: 0}
+    isSupportPhysicTrack: 0
+    sharedEngineData: {fileID: 11400000, guid: 3cc092bace0ea4243b5392a9a66db851, type: 2}
+    vehicleEngineFmodSoundData: {fileID: 0}
+    engineTorqueCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 1.5
+        inSlope: -0.1
+        outSlope: -0.1
+        tangentMode: 34
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 5
+        value: 1
+        inSlope: Infinity
+        outSlope: 0.0009124496
+        tangentMode: 1
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0.12988073
+      - serializedVersion: 3
+        time: 22
+        value: 0.8
+        inSlope: -0.030739471
+        outSlope: -0.030739471
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.11627568
+      - serializedVersion: 3
+        time: 36
+        value: 0
+        inSlope: -0.07568217
+        outSlope: -0.07568217
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0.09616846
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    engineTorque: 4200
+    reversingEngineTorque: 4100
+    brakeTorque: 42000
+    enableReverseEngineTorqueCurve: 0
+    reverseEngineTorqueCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 60
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    gearParameter:
+      enableGear: 0
+      gears: []
+      totalGears: 6
+      finalRatio: 3.23
+      gearShiftingDelay: 0.35
+      gearShiftingThreshold: 0.75
+      clutchInertia: 0.25
+      gearShiftUpRPM: 6500
+      gearShiftDownRPM: 3500
+      engineInertia: 0.15
+      minEngineRPM: 1000
+      maxEngineRPM: 5000
+    maxSpeed: 36
+    minSpeed: 22
+    steerTorque: 4
+    maxAngularVelocity: 36
+    angularVelocitySmoothTime: 1
+    transmissionFlowType: 0
+  MechParameter:
+    isMech: 0
+    timeToFullyTurn: 0.5
+    overridePlayWalkClip: 0
+    hasWalkSoundEvent: 0
+    hasWalkParticle: 0
+    walkParticleYOffset: 0
+    isOverrideWalkParticle: 0
+    overrideWalkParticles: []
+    isFlyable: 0
+    hasFlyAnimation: 0
+    flyVelocity: 5
+    modeToggleDuration: 1
+    flyUpwardVelocity: 5
+    flyDownwardVelocity: 5
+    maxFlyHeight: 15
+    flyDrag: 0.5
+    flyAngularVelocity: 135
+    fireBurstVFX: {fileID: 0}
+    fuelTime: 15
+    chargeCDTime: 5
+  CarControllerParameter:
+    isCar: 0
+    carControllerType: 0
+  LuaVehicleControllerParameter:
+    isLua: 0
+    isLuaControllerEnabled: 0
+    luaControllableVehicle: {fileID: 11400000, guid: 6af5f617ded76ad46888176d136292a7,
+      type: 2}
+  ShipControllerParameter:
+    isShip: 0
+    massInTon: 12
+    isOverrideDrag: 0
+    overrideDrag: 0.1
+    isOverrideAngularDrag: 0
+    overrideAngularDrag: 2.5
+    isShipControllerEnabled: 0
+    autoSwitchShipControllerType: 0
+    customAutoEnterShipControllerPointPaths: []
+    propellerPointPaths: []
+    sharedShipEngineData: {fileID: 0}
+    sharedShipBuoyancyData: {fileID: 0}
+  PassiveWaterInteractParameter:
+    isOverrideMaxDrownSurvivalTime: 0
+    overrideMaxDrownSurvivalTime: 5
+    drowningCheckPointType: 0
+    drowningCheckPointPaths: []
+    interactSpherePoints: []
+    drag: 0.75
+  zoomPointType: 0
+  customZoomPointPath: 
+  isZoomPointVerticalUnconnected: 0
+  subZoomPointParameters: []
+  zoomObjectVisibilityType: 0
+  sharedGunData: {fileID: 11400000, guid: 6b29954a2d8f40f4e85c637cbcdb0072, type: 2}
+  TFParameter:
+    crosshairPreferType: 0
+    fireState: 0
+    ReloadTime: 4.8
+    isEnableSimpleReloadSound: 0
+    overrideSimpleReloadSound:
+      rid: -2
+    AmmoCount: 66
+    hasSlot: 0
+    slotCount: 0
+    slotDuration: 0
+    canFireUnderWater: 0
+    advanceFireClass:
+      SmallReloadTime: 0
+      LargeReloadTime: 0
+      MaxSmallAmmo: 0
+      disableMegaIcon: 0
+      isEnableSmallReloadSound: 0
+      overrideSmallReloadSound:
+        rid: -2
+      isEnableLargeReloadSound: 0
+      overrideLargeReloadSound:
+        rid: -2
+    drumFire:
+      fireDuration: 0
+      reloadTime: []
+      isEnableDrumReloadSound: 0
+      overrideDrumReloadSound:
+        rid: -2
+      disableMegaIcon: 0
+    energyVFX: {fileID: 0}
+    energyFire:
+      perShotEnergy: 0
+      totalEnergy: 0
+      perShotInterval: 0
+      vfxDuration: 0
+      isEnableEnergyReloadSound: 0
+      overrideEnergyReloadSound:
+        rid: -2
+    dispersion: 0
+    fireSpread:
+      dispersion: 0.3
+      aimTime: 2.7
+      moveSpreadCoff: 0.2
+      traverseSpreadCoff: 0.2
+      gunSpreadCoff: 0.2
+      afterFiredCoff: 1
+      damagedCoff: 2
+    fmodBulletSound: {fileID: 11400000, guid: e36affa73be1b404286fa8e2a8769f08, type: 2}
+    bulletData:
+    - {fileID: 3957054737420944067, guid: 6b29954a2d8f40f4e85c637cbcdb0072, type: 2}
+    - {fileID: -7252722382737098499, guid: 6b29954a2d8f40f4e85c637cbcdb0072, type: 2}
+    muzzleFire: 0
+    overrideMuzzleFires: []
+    waveInteractType: 0
+    customWaveInteract:
+      radius: 0
+      weight: 0
+    fireDymScale: 0
+    fireCycleTime: 0
+    isFireDymIfExtraTurret: 0
+    disableGunAnimation: 0
+    isInRangeFire: 0
+    IsOverrideRangeFireAngle: 0
+    rangeFireAngle: 0
+    isEnableFireGroup: 0
+    fireGroupParm:
+      groupID: 0
+      priority: 0
+      fireMinDelay: 0
+    canBrakeSubFireLoop: 0
+    canFireIfMainClick: 0
+    canFireIfSubClick: 0
+    isEnableSeparateFireButton: 0
+    separateFireType: 0
+    separateFireShortKeyType: 0
+    zoomProfileData: {fileID: 0}
+    fireActionData: {fileID: 0}
+    customSightData: {fileID: 11400000, guid: 2ca2d5731a8975449978a4f42a3b1f6a, type: 2}
+    reloadStatePreferType: 0
+    vehicleLuaBehaviors: []
+    buffRefs: []
+    buffs: []
+  isTurretWrapper: 1
+  sharedTurretData: {fileID: 11400000, guid: 5dafd252df3127b4db1085778bde5bdd, type: 2}
+  MTParameter:
+    isNonSymmetricTurret: 0
+    maxTurretAngle: 180
+    maxTurretPositiveAngle: 0
+    maxTurretNegativeAngle: 0
+    ffPointAlignType: 0
+    UpMaxDegree: 26
+    DownMaxDegree: 5
+    turretDegreesPerSecond: 35
+    gunDegreesPerSecond: 20
+    offset: 0
+    isVerticalStabilizer: 0
+    verticalStabilizerSpeed: 0
+    verticalStabilizerElevationAngle: 0
+    verticalStabilizerDepressionAngle: 0
+    isHorizontalStabilizer: 0
+    horizontalStabilizerSpeed: 0
+    horizontalStabilizerAngle: 0
+    actionData: {fileID: 0}
+    isEnableTurretSound: 0
+    overrideTurretSound: {fileID: 0}
+    isNonSymmetricOverrideRanges: 0
+    overrideRanges: []
+    nonSymmetricOverrideRanges: []
+    moduleData:
+      hasOverride: 0
+      turretDegreesPerSecond: 0
+      gunDegreesPerSecond: 0
+    vehicleLuaBehaviors: []
+  MultiFireSystemData: []
+  simpleVehicleFireSystemParameters: []
+  tankFireTransformParameters: []
+  isEngineSmokeHidden: 0
+  engineSmokeParams: []
+  botPointParams:
+  - botPointPath: MainBody/BotPoint-1
+  - botPointPath: MainBody/BotPoint-2
+  vehicleLuaBehaviors:
+  - luaBehavior: {fileID: 1698442380299581340, guid: 059769c7fa0aa7448b60e849c2c58ea6,
+      type: 3}
+    instanceLuaProperty:
+      objectProperties: []
+      numberProperties: []
+      stringProperties: []
+      boolProperties: []
+  buffRefs:
+  - safeRefAssetProvider:
+      assets:
+      - loadName: 155-HE
+        instance: {fileID: 11400000, guid: f669b610fd5e5f849b52a483a97e493a, type: 2}
+    fullName: ShanghaiWindy.Core.CrewSkillBuff
+    className: ShanghaiWindy.Core.CrewSkillBuff, Core, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+    json: '{"isMultipleCoff":true,"buffValue":0.0,"title":{"isLocalizeTable":false,"defaultName":"","items":[],"localizeTableKey":""},"description":{"isLocalizeTable":false,"defaultName":"","items":[],"localizeTableKey":""},"crewSkill":{"rid":1000},"references":{"version":2,"RefIds":[{"rid":1000,"type":{"class":"ArtillerySkillConfig","ns":"ShanghaiWindy.Core","asm":"Core"},"data":{"version":3,"initialCdType":0,"customInitialCdRatio":0.0,"coolDownTime":15.0,"hasSkillReadyVoice":false,"skillReadyVoiceReference":{"Guid":{"Data1":0,"Data2":0,"Data3":0,"Data4":0},"Path":""},"hasSkillReleaseVoice":false,"skillReleaseVoiceReference":{"Guid":{"Data1":0,"Data2":0,"Data3":0,"Data4":0},"Path":""},"spawnInfos":[{"dispersion":0.5,"attackAngle":45.0,"count":{"x":6,"y":12},"timeDelay":{"x":0.6000000238418579,"y":1.5},"fromDistance":800.0,"artilleryBulletData":"155-HE"}]}}]}}'
+  - safeRefAssetProvider:
+      assets: []
+    fullName: ShanghaiWindy.Core.CrewSkillBuff
+    className: ShanghaiWindy.Core.CrewSkillBuff, Core, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+    json: '{"isMultipleCoff":true,"buffValue":0.0,"title":{"isLocalizeTable":false,"defaultName":"","items":[],"localizeTableKey":""},"description":{"isLocalizeTable":false,"defaultName":"","items":[],"localizeTableKey":""},"crewSkill":{"rid":1000},"references":{"version":2,"RefIds":[{"rid":1000,"type":{"class":"TakeControlVehicleSkillConfig","ns":"ShanghaiWindy.Core","asm":"Core"},"data":{"version":3,"initialCdType":0,"customInitialCdRatio":0.0,"coolDownTime":15.0,"hasSkillReadyVoice":false,"skillReadyVoiceReference":{"Guid":{"Data1":0,"Data2":0,"Data3":0,"Data4":0},"Path":""},"hasSkillReleaseVoice":false,"skillReleaseVoiceReference":{"Guid":{"Data1":0,"Data2":0,"Data3":0,"Data4":0},"Path":""},"rangeFromAimPoint":15.0}}]}}'
+  vehicleSelfExplosionParams: []
+  groundAARadarData:
+    hasRadar: 0
+    maxDetectionRange: 15000
+    searchAzimuthHalfAngle: 45
+    searchElevationHalfAngle: 30
+    scanRate: 60
+    acmScanHalfAngle: 15
+    acmMaxRange: 8000
+    trackConeHalfAngle: 30
+    twsMaxTracks: 4
+    pdMinDetectableSpeed: 30
+    hasIRST: 0
+    irstDetectionRange: 10000
+    chaffCount: 0
+    chaffDuration: 8
+    chaffDeployCooldown: 0.5
+    minElevationAngle: 2
+    isFullRotation: 0
+    turretSlaved: 1
+    fullRotationRate: 60
+  tanksGGName: 
+  tankModuleGuid:
+    mainFireGunGuid:
+      guid: 70b1edde-90e5-4e73-902e-a7a4e7c146d9
+    mainTurretGuid:
+      guid: 8b5e4ab5-4a1a-43d7-bf56-6d352c0a74f5
+    multiFireGunGuids: []
+    multiFireTurretGuids: []
+    simpleFireGunGuids: []
+    simpleFireTurretGuids: []
+  references:
+    version: 2
+    RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }

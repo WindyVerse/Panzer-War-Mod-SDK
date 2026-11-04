@@ -1,0 +1,22 @@
+ManifestFileVersion: 0
+CRC: 813238227
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: dd8bb6173395d505e4c308e592e525f7
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 923768aebf385ad86f7762daa8034951
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: dd8bb6173395d505e4c308e592e525f7
+HashAppended: 0
+ClassTypes:
+- Class: 213
+  Script: {instanceID: 0}
+- Class: 687078895
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Packages/com.shanghaiwindy.coreresources/Flags/Countries/yt.png
+Dependencies: []

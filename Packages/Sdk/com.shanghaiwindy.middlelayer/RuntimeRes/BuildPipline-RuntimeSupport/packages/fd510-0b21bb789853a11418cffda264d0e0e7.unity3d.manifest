@@ -1,0 +1,22 @@
+ManifestFileVersion: 0
+CRC: 1585638840
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 8d3c4b41950abbecc8d49665f2d4e659
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 923768aebf385ad86f7762daa8034951
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 8d3c4b41950abbecc8d49665f2d4e659
+HashAppended: 0
+ClassTypes:
+- Class: 213
+  Script: {instanceID: 0}
+- Class: 687078895
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Packages/com.shanghaiwindy.coreresources/Flags/Countries/tv.png
+Dependencies: []

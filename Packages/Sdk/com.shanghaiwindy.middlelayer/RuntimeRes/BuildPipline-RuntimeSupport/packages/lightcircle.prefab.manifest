@@ -1,0 +1,35 @@
+ManifestFileVersion: 0
+CRC: 3095992502
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 867f53946dc00d60e3ac67b1b00f9d24
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: e5ef8a51c32ef8136adc37f09de6b870
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 867f53946dc00d60e3ac67b1b00f9d24
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 505da8709516479587f4909ed070c337, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Packages/com.shanghaiwindy.coreresources/Light/Light-Cricle.prefab
+Dependencies:
+- C:/github/workspace/Projects/DE/Build/Mod-BuildPipline/StandaloneWindows64/BuildPipline-RuntimeSupport/packages/lightmaterial.prefab

@@ -1,0 +1,36 @@
+ManifestFileVersion: 0
+CRC: 3028628317
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 256a44548819d11097cdcd35bd1a75a6
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 290023341c96d59410b13851cf3a3116
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 256a44548819d11097cdcd35bd1a75a6
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: a3be57bd72fa3de4a8b5f8e76c42d912, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 988b4609116344b885187a6c01e3d2de, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 053d722afe7a4bdea5e2d2cb1c64821c, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers:
+- AssemblyName: Core
+  ClassName: ShanghaiWindy.Core.UniversalVehicleAttachmentSlot
+- AssemblyName: Core
+  ClassName: ShanghaiWindy.Core.VehicleHatchAttachment
+- AssemblyName: Core
+  ClassName: ShanghaiWindy.Core.VehicleHatchAttachmentSlot
+Assets:
+- Packages/com.shanghaiwindy.coreresources/DIY/Item/EmptyHatch/4a4070b74a8748c88965459a7917fa44_pre.prefab
+Dependencies: []

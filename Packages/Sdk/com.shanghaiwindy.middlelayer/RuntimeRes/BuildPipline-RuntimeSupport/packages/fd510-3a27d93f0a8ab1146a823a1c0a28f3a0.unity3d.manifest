@@ -1,0 +1,22 @@
+ManifestFileVersion: 0
+CRC: 3191537953
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: bba61aa0bd8a596c8586bd34740fabe1
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 2d8df09e698f722ada1caa03d3413830
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: bba61aa0bd8a596c8586bd34740fabe1
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Packages/com.shanghaiwindy.coreresources/GUI/Common/Classic-Tex/caret-right.png
+Dependencies: []

@@ -1,0 +1,22 @@
+ManifestFileVersion: 0
+CRC: 1117909443
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 4589cfe3d0059b6d81185871c1d1ddd8
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 147058da82bee871bbce28e472030442
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 4589cfe3d0059b6d81185871c1d1ddd8
+HashAppended: 0
+ClassTypes:
+- Class: 74
+  Script: {instanceID: 0}
+- Class: 91
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Packages/com.shanghaiwindy.coreresources/Vrm/VrmAnimation/Showcase/ShowcaseVrmController.controller
+Dependencies: []

@@ -1,0 +1,20 @@
+ManifestFileVersion: 0
+CRC: 3492329187
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: ce1b624f36a339d7f25402378aac0719
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 2612ac43db082a73502ee80f2eceb73f
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: ce1b624f36a339d7f25402378aac0719
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Packages/com.shanghaiwindy.coreresources/VFX/Impact/Armor/Textures/fireball_medium_radial_c_16x8.png
+Dependencies: []

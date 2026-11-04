@@ -1,0 +1,20 @@
+ManifestFileVersion: 0
+CRC: 321910491
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 66eeedf67b6a48d50f38ee75a3492bcd
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 2612ac43db082a73502ee80f2eceb73f
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 66eeedf67b6a48d50f38ee75a3492bcd
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Packages/com.shanghaiwindy.coreresources/VFX/SpecialWeapon/Textures/flash_star_burst.png
+Dependencies: []

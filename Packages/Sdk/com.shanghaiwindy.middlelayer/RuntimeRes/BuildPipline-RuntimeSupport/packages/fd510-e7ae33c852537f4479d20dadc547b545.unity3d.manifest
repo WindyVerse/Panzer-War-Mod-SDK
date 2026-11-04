@@ -1,0 +1,22 @@
+ManifestFileVersion: 0
+CRC: 3013302332
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: d62042e22e4e733710e6abf4003089fe
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 923768aebf385ad86f7762daa8034951
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: d62042e22e4e733710e6abf4003089fe
+HashAppended: 0
+ClassTypes:
+- Class: 213
+  Script: {instanceID: 0}
+- Class: 687078895
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Packages/com.shanghaiwindy.coreresources/Flags/Countries/tm.png
+Dependencies: []

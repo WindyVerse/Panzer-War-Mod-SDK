@@ -1,0 +1,34 @@
+ManifestFileVersion: 0
+CRC: 2208373085
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 864d9fdd76cdb4194e2e89af96cd028d
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 319a356bda55dc5ee5627d6214d01742
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 864d9fdd76cdb4194e2e89af96cd028d
+HashAppended: 0
+ClassTypes:
+- Class: 114
+  Script: {fileID: 11500000, guid: 89207b81a44d448681819cfee27ee6c5, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers:
+- AssemblyName: Core
+  ClassName: ShanghaiWindy.Core.LocalizedName
+- AssemblyName: Core
+  ClassName: ShanghaiWindy.Core.SerializableBuffCasterRef
+- AssemblyName: Core
+  ClassName: ShanghaiWindy.Core.SkinContent
+- AssemblyName: GameFramework.Runtime
+  ClassName: ShanghaiWindy.Core.Data.AssetProp
+- AssemblyName: GameFramework.Runtime
+  ClassName: ShanghaiWindy.Core.ItemLocalizedName
+- AssemblyName: GameFramework.Runtime
+  ClassName: ShanghaiWindy.Core.SafeRefAssetProvider
+Assets:
+- Packages/com.shanghaiwindy.coreresources/Crew/ReinhardtKruger/ReinhardtKruger.asset
+Dependencies: []

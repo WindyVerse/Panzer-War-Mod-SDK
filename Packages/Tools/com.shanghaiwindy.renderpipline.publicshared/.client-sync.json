@@ -1,0 +1,18 @@
+{
+ "source": "Panzer-War-Client/Packages/com.shanghaiwindy.renderpipline.publicshared",
+ "commit": "3b8692b94aca4a5299722fdc3176d555f2302111",
+ "files": {
+  "Material.meta": "3d100c480e9dcdcc845e0b91a22a276c38c4bd54d378c4eb0d4812b6b02efb28",
+  "Material/Boundary.mat": "42c38d921a18187e9d1653ce6e11a269ff680c71e6191dda6bb41446def97522",
+  "Material/Boundary.mat.meta": "bac33a447cf493a78fd7e9d04255376ac2ddbb4534fbd9013524488b7ff6a230",
+  "Material/Common-PointHighlight.mat": "1a92c7f0b864e125a19968ae958010a28e4c3ecaee712a74f63a84cab8e979e2",
+  "Material/Common-PointHighlight.mat.meta": "d59d83cb4c2cb39ecc68e14876880a46ca1cbed3190abfc3351b84361fe54495",
+  "Material/PointHighlight.mat": "2e68c81f86cdc83e12db811a9df3d2c0bdfd20f8b34170a41648b13a40179a52",
+  "Material/PointHighlight.mat.meta": "a7ac5dd86174fe689033fefc5e061cd226a29777a25da4f9faf359c1f24b98e4",
+  "ShaderGraph.meta": "8054ee981f394f69ef0b2f5f6a19680a30e446fd559f7231a424e206b2935b4f",
+  "ShaderGraph/PointHightlight.shadergraph": "570d004a48215ea93914a3ea5d3a8b4813b61d402894bda87c4e86ed836e55c5",
+  "ShaderGraph/PointHightlight.shadergraph.meta": "9f5dc1b63a54b7158a06cc881c141cf1bdcd29595b4db000acfdcd721413fe2d",
+  "package.json": "ee994df565163aaed6afe17689369436aecbdfb20247c6f58c96c33de46d7ead",
+  "package.json.meta": "2f127e845523f7947894401bf067283cc568428b54059ffbe95699681843f201"
+ }
+}

@@ -1,0 +1,23 @@
+ManifestFileVersion: 0
+CRC: 2235168883
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 3327f1a2b96b61d7b7a6a498459674bc
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 5e762ccb57c4caaabbb5a4199ac82c23
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 3327f1a2b96b61d7b7a6a498459674bc
+HashAppended: 0
+ClassTypes:
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Packages/com.shanghaiwindy.coreresources/Shader/DamageReplay/ReplayOutlineInternalModuleMat.mat
+Dependencies:
+- C:/github/workspace/Projects/DE/Build/Mod-BuildPipline/StandaloneWindows64/BuildPipline-RuntimeSupport/packages/fd510d96-3761-4c83-940e-67083716ae45-svc.shader

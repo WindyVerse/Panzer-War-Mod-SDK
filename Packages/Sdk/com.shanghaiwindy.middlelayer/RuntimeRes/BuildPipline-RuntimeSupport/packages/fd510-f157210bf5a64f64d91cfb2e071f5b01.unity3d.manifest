@@ -1,0 +1,20 @@
+ManifestFileVersion: 0
+CRC: 3286588690
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 18ff13b76770bec909f3e41edb2c1262
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 2612ac43db082a73502ee80f2eceb73f
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 18ff13b76770bec909f3e41edb2c1262
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Packages/com.shanghaiwindy.coreresources/VFX/SpecialWeapon/Textures/smoke_curl_2x2.tga
+Dependencies: []

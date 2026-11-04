@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 522437, guid: 0512a3c011ce1c84db3d9ccc1f4d6d2e, type: 3}
+  m_Name: Torpedo
+  m_EditorClassIdentifier: 
+  comment: 
+  shotDuration: 2.5
+  playFromStart: 1
+  exteriorFireEvent:
+    Guid:
+      Data1: 924535509
+      Data2: 1081556219
+      Data3: 776790923
+      Data4: 1266633153
+    Path: event:/naval/weapon/torpedo/torpedo_launch
+  aiFireEvent:
+    Guid:
+      Data1: 1076776426
+      Data2: 1116941373
+      Data3: 1216293310
+      Data4: -1565522485
+    Path: event:/naval/weapon/torpedo/torpedo_launch_ai
+  interiorFireEvent:
+    Guid:
+      Data1: -127436856
+      Data2: 1087903598
+      Data3: -1713531753
+      Data4: -133099931
+    Path: event:/naval/weapon/torpedo/torpedo_launch_interior

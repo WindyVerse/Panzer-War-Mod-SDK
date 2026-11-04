@@ -1,0 +1,22 @@
+ManifestFileVersion: 0
+CRC: 1477964076
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 8a4bf719098d081bc2e5bac986d13e3e
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 923768aebf385ad86f7762daa8034951
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 8a4bf719098d081bc2e5bac986d13e3e
+HashAppended: 0
+ClassTypes:
+- Class: 213
+  Script: {instanceID: 0}
+- Class: 687078895
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Packages/com.shanghaiwindy.coreresources/GUI/Common/Prefab/Icons/GarageV2/Ammunition.png
+Dependencies: []

@@ -1,0 +1,22 @@
+ManifestFileVersion: 0
+CRC: 3326479209
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 8ab24f849b7e53b17183923377eb462e
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 923768aebf385ad86f7762daa8034951
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 8ab24f849b7e53b17183923377eb462e
+HashAppended: 0
+ClassTypes:
+- Class: 213
+  Script: {instanceID: 0}
+- Class: 687078895
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Packages/com.shanghaiwindy.coreresources/GUI/Common/Prefab/Icons/CombatControls/Common/Extinguisher.png
+Dependencies: []

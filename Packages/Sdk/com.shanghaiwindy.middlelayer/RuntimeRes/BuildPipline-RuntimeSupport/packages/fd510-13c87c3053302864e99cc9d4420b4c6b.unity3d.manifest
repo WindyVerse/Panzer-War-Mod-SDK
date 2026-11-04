@@ -1,0 +1,22 @@
+ManifestFileVersion: 0
+CRC: 1012471817
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 57323e4d1540dcc40928d9529e1fbc13
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 923768aebf385ad86f7762daa8034951
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 57323e4d1540dcc40928d9529e1fbc13
+HashAppended: 0
+ClassTypes:
+- Class: 213
+  Script: {instanceID: 0}
+- Class: 687078895
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Packages/com.shanghaiwindy.coreresources/Flags/Countries/fk.png
+Dependencies: []

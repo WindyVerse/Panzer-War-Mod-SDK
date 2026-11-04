@@ -1,0 +1,22 @@
+ManifestFileVersion: 0
+CRC: 987518516
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 8e2c6bfd3a1acd9820172d1899bfd19a
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 923768aebf385ad86f7762daa8034951
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 8e2c6bfd3a1acd9820172d1899bfd19a
+HashAppended: 0
+ClassTypes:
+- Class: 213
+  Script: {instanceID: 0}
+- Class: 687078895
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Packages/com.shanghaiwindy.coreresources/GUI/Common/Prefab/Icons/Crew/exchange.png
+Dependencies: []

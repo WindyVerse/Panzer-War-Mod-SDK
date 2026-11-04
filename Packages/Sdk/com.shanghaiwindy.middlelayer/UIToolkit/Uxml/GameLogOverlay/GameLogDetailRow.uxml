@@ -1,0 +1,10 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" editor-extension-mode="False">
+    <Style src="GameLogOverlay.uss" />
+    <Style src="../GameTheme.uss" />
+    <ui:VisualElement class="gl-detail-row">
+        <ui:Label class="gl-detail-field-name" />
+        <ui:Label class="gl-detail-field-value" />
+        <ui:Label class="gl-detail-field-type" />
+        <ui:Label text="\u25B6" class="gl-detail-drill" />
+    </ui:VisualElement>
+</ui:UXML>

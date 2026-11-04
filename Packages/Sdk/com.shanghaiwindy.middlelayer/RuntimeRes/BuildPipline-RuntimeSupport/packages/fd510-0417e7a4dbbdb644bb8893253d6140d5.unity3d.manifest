@@ -1,0 +1,22 @@
+ManifestFileVersion: 0
+CRC: 3386077152
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 3a663bb60359d645d7db6222e7dec052
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 923768aebf385ad86f7762daa8034951
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 3a663bb60359d645d7db6222e7dec052
+HashAppended: 0
+ClassTypes:
+- Class: 213
+  Script: {instanceID: 0}
+- Class: 687078895
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Packages/com.shanghaiwindy.coreresources/GUI/Common/Prefab/Icons/Setting/Game.png
+Dependencies: []

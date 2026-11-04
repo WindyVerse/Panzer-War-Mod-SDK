@@ -1,0 +1,20 @@
+ManifestFileVersion: 0
+CRC: 1621640229
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: a77970296f54aee26b165c6c8d74484c
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: e4eae1b20857bcc286a48eae81f3ecb5
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: a77970296f54aee26b165c6c8d74484c
+HashAppended: 0
+ClassTypes:
+- Class: 117
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Packages/com.shanghaiwindy.coreresources/Weather/CloudVariants/Noise/Perlin_8x9_o6_s2_m0p6_3d.png
+Dependencies: []

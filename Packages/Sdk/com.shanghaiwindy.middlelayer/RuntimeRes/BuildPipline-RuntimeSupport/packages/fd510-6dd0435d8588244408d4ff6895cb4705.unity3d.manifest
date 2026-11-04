@@ -1,0 +1,22 @@
+ManifestFileVersion: 0
+CRC: 4020046558
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 84f5d00fd2b9f8d8e8ac5d54e4700448
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 923768aebf385ad86f7762daa8034951
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 84f5d00fd2b9f8d8e8ac5d54e4700448
+HashAppended: 0
+ClassTypes:
+- Class: 213
+  Script: {instanceID: 0}
+- Class: 687078895
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Packages/com.shanghaiwindy.coreresources/GUI/Common/Prefab/Icons/DIY/Move.png
+Dependencies: []

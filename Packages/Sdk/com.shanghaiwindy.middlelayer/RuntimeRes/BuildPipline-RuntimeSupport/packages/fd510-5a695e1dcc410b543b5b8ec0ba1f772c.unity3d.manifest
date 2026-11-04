@@ -1,0 +1,20 @@
+ManifestFileVersion: 0
+CRC: 1353841165
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: a87d1dbcf18d85aa810694f83c1a5308
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 2612ac43db082a73502ee80f2eceb73f
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: a87d1dbcf18d85aa810694f83c1a5308
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Packages/com.shanghaiwindy.coreresources/VFX/_Shared/Textures/Trail/trail_spark_b_4x16.png
+Dependencies: []
