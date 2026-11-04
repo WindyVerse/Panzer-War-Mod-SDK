@@ -194,6 +194,10 @@ def verify_modpacks(folder):
             manifests = [n for n in names if n == 'package.json' or n.endswith('/package.json')]
             if not manifests:
                 raise ValueError(f'Missing package.json: {path.name}')
+            if 'Template-Blank-Scene' in path.name:
+                for suffix in ('.mapdata', '.scene', '.sprite'):
+                    if not any(name.endswith(suffix) for name in names):
+                        raise ValueError(f'Map template is missing {suffix}: {path.name}')
             for name in manifests:
                 json.loads(archive.read(name))
         print(f'Verified {path.name}: {path.stat().st_size} bytes')

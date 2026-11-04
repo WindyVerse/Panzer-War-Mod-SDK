@@ -13,8 +13,7 @@ MonoBehaviour:
   m_Name: BuildPipline-Template-Blank
   m_EditorClassIdentifier: 
   linkedObjects:
-  - {fileID: 102900000, guid: 896a9a0d3f24d504f874db95f3fca9d8, type: 3}
-  - {fileID: 11400000, guid: 132b268c01e0e324aa1c546cc00f3b22, type: 2}
+  - {fileID: 11400000, guid: ee9a6f8a789b4d3194fc0fdb1d9a7d50, type: 2}
   isLoadManifest: 0
   shareDependenceMaterials: 0
   shareDependenceModels: 0

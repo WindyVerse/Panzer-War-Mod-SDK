@@ -13,6 +13,11 @@ MonoBehaviour:
   m_Name: Template-Blank
   m_EditorClassIdentifier: 
   mapName: Template-Blank
+  localizedMapName:
+    isLocalizeTable: 0
+    defaultName: Template Blank Map
+    items: []
+    localizeTableKey:
   sceneCameraPos: {x: -140.19147, y: 42.10562, z: 36.808075}
   sceneCameraRot: {x: -0.116971806, y: -0.47321936, z: 0.06351521, w: -0.87083113}
   mapSeason: 0
@@ -21,5 +26,11 @@ MonoBehaviour:
     isBuiltIn: 0
     isCooked: 0
     sceneName: Template-Blank
-    assetBundleName: template-blank.scene
+    assetBundleName: f70fb71d-e30c-4c05-bb1f-1d0f57485913.scene
+  renderPiplineType: 2
+  guid: f70fb71d-e30c-4c05-bb1f-1d0f57485913
+  version: 1
+  streamingThumbnail:
+    assetGUID: 9a6836731e2e428cae9c8e388ca54722
+    extra: Assets/Template-Scene/Template-Blank-Thumbnail.jpg
   rtsMapData: {fileID: 0}
