@@ -31,6 +31,86 @@
 
 私有工作流通过 `PUBLIC_MOD_SDK_DEPLOY_KEY` 写入本公开仓库，通过 `MODS_SDK_DEPLOY_KEY` 访问官方 SDK。Unity 授权与构建凭据只保存在私有客户端仓库的 Actions secrets 中，不写入公开文件。
 
+## 模组的多平台打包策略
+
+### 平台与版本
+
+同一模组使用同一份源资源、SDK 提交、模组 GUID 和 `modVersion`，分别为目标平台构建 AssetBundle 并生成 `.modpack`。同一版本的平台包属于同一个模组，不要为了区分平台更换 GUID，也不能通过修改文件名将一个平台的包变成另一个平台的包。
+
+| 游戏平台 | Unity BuildTarget / CI `platform` | Unity 命令行 `-buildTarget` | 产物前缀 |
+| --- | --- | --- | --- |
+| Windows 64 位 | `StandaloneWindows64` | `win64` | `StandaloneWindows64_` |
+| Android | `Android` | `android` | `Android_` |
+| iOS | `iOS` | `ios` | `iOS_` |
+
+面向 Windows、Android 玩家发布时，应分别提供这两个平台的包；需要支持 iOS 时再加入 iOS 构建。三个平台都固定使用 Unity **2022.3.62f1**，并安装对应 Build Support。Android 还需要 SDK、NDK 和 OpenJDK；自动构建环境的镜像与 Android SDK 配置以官方模组仓库的 `Tools/images.json`、`Tools/android_image.sh` 为准。
+
+这里构建的是供已有游戏加载的模组资源包。iOS `.modpack` 不经过游戏客户端 IPA 的 Xcode 导出、证书签名或 TestFlight 流程；官方模组 CI 使用带 iOS 模块的 Unity Linux 镜像生成该平台资源。
+
+### 本地工程、资源与缓存
+
+- 偶尔打包多个平台时，可以在同一个 `UnityProject` 中按平台顺序构建。每次先切换目标平台、等待导入完成，再构建资源和模组包；同一工程同一时间只运行一个 Unity 实例。
+- 频繁进行 Windows / Android 开发时，沿用[多平台打包（GameHub）教程](https://doc.game.windyverse.net/manual/mod/3e869c43f14fbf8c.html)：在 GameHub 添加工程、选择目标平台生成软链接工程，再把对应路径加入 Unity Hub，并选择匹配的 Current Platform。目的是同步源资源并保留各平台自己的导入缓存。
+- 创建平台工程后，必须检查 `Packages/manifest.json` 中的本地 `file:` 依赖。本仓库使用相邻的 `UnityProject` / `Packages` 布局；不能只复制 `UnityProject` 到其他位置而不处理依赖路径，也不要把不同平台的整个工程根目录都链接到同一个目录。
+- 每个平台分别保留工程配置与 `Library`、`Temp`、`Obj`、`Logs`、`Build`，不要跨平台共用这些可写目录。源资源和 `.meta` 保持同步；SDK 依赖保持相同提交。
+- **资源软链接不等于允许并行构建。** 构建会更新 cooked 资源、ModPackage 的 `buildCaches` 与清单等内容。共享这些可写资源的工程必须串行打包；需要并行时，为每个平台使用独立检出，并固定到相同提交。CI 也按独立 job 隔离工作目录。
+- AI 工具启动构建前，核对实际 Unity 路径、`projectPath`、目标平台、LFS 是否完整和工程是否已被编辑器占用。不要在构建期间同时修改被共享的源资源。
+
+### 每个平台的执行顺序
+
+1. 固定本次使用的资源提交、SDK 版本、模组 GUID 与 `modVersion`，准备相应平台的工作目录和 Unity 模块。
+2. 在启动 Unity 时指定目标平台，或在 Build Settings 中切换平台并等待导入、编译完成。
+3. 对该平台执行 BuildPipeline 的 **Build Linked Objects to AssetBundle**，再对关联的 ModPackage 执行 **Package Mod Now**。修改资源或切换平台后，都必须重新执行这两个步骤，不能直接复用其他平台的构建缓存。
+4. 保存 `<Unity平台>_<ModPackage名>.modpack`。通过批处理入口构建时，还会生成同名的 `.modpack.json` 工坊元数据文件，应与模组包一起保留。
+5. 核对包内平台、Unity 版本、资源清单与元数据，在对应平台的游戏中测试，再发布该平台产物。
+
+编辑器的默认构建目录已包含平台名：
+
+```text
+UnityProject/Build/Mod-BuildPipline/<Unity平台>/<BuildPipeline名>/packages/
+UnityProject/Build/Mod-Package/<Unity平台>/<ModPackage名>/
+```
+
+自动化工具统一使用本工程已有的 `WindyVerse.ModBuild.ModpackBuild.Build`。它一次处理一条 pipeline、一个活动平台，并依次构建资源和模组包，校验 SDK 报错，输出 `.modpack` 与 sidecar。成功退出码为 0，失败为 1；不要另造只改文件名或只压缩旧缓存的替代流程。
+
+下面是从仓库根目录执行 Windows 载具模板构建的 PowerShell 示例。按本机安装位置修改 `$unityEditor`，并先关闭占用同一工程的 Unity 编辑器：
+
+```powershell
+$sdkRoot = (Get-Location).Path
+$unityEditor = 'C:\Program Files\Unity\Hub\Editor\2022.3.62f1\Editor\Unity.exe'
+$sdkOutput = Join-Path $sdkRoot 'Artifacts/mods/StandaloneWindows64'
+New-Item -ItemType Directory -Path $sdkOutput -Force | Out-Null
+$sdkBuildArgs = @(
+    '-batchmode', '-nographics', '-buildTarget', 'win64',
+    '-projectPath', ('"{0}"' -f (Join-Path $sdkRoot 'UnityProject')),
+    '-executeMethod', 'WindyVerse.ModBuild.ModpackBuild.Build',
+    '-modPipeline', 'Assets/ModManager/BuildPipline-Template-Vehicle.asset',
+    '-modOutput', ('"{0}"' -f $sdkOutput),
+    '-logFile', ('"{0}"' -f (Join-Path $sdkOutput 'vehicle.log'))
+)
+$sdkBuild = Start-Process -FilePath $unityEditor -ArgumentList $sdkBuildArgs `
+    -WindowStyle Hidden -Wait -PassThru
+if ($sdkBuild.ExitCode -ne 0) { throw "Mod build failed: $($sdkBuild.ExitCode)" }
+```
+
+Android 和 iOS 分别把 `-buildTarget` 改为 `android`、`ios`，并把输出目录改为 `Artifacts/mods/Android`、`Artifacts/mods/iOS`。地图模板使用 `Assets/ModManager/BuildPipline-Template-Blank.asset`，日志另存为 `map.log`。脚本路径参数见 [Unity 2022.3 命令行文档](https://docs.unity3d.com/2022.3/Documentation/Manual/EditorCommandLineArguments.html)；批处理入口会自行退出 Unity。`-nographics` 适用于无图形设备的构建，地图需要的光照烘焙应提前完成。
+
+### 官方 CI 与复用规则
+
+- 官方模组仓库 `WindyVerse/Panzer-War-Mods` 的 **Build modpack** 接受 `platform=all`、`StandaloneWindows64`、`Android`、`iOS`。`all` 展开为“每条选中 BuildPipeline × 三个平台”的构建矩阵，各 job 使用独立检出与对应平台镜像，`fail-fast: false`。
+- 每个 job 只导入所选包及其声明的依赖闭包。Library 缓存按工程、平台、包和源内容 tree 隔离；不能把 Windows 的 Library 缓存恢复给 Android 或 iOS。
+- `modpack-store` 的成品复用 key 包含包、pipeline、平台、源资源与 SDK / 工具 tree、编辑器镜像等输入。只复用相同输入的同平台成品；构建逻辑变化而 key 输入未变化时，调整官方 `Tools/ci.py` 的 `KEY_VERSION`。
+- 部分平台失败时，可以保存已经成功的构建供重试复用，但不能宣称所有平台都已通过，也不能把未完成的一组产物作为完整多平台版本发布。官方工作流在构建失败时会阻止本次正式 Release / 工坊发布。
+- **当前用户工程的 Publish mod SDK project 只验证 `StandaloneWindows64` 的载具和地图模板。** 官方 **SDK smoke** 同样是 Windows 冒烟验证。工程 ZIP 本身是共用源码与依赖；发行成功不代表用户模板已经通过 Android / iOS 构建。需要这些平台的验证时，应实际运行对应构建并分别记录结果。
+
+### 产物检查与发布
+
+- `.modpack` 必须能完整解压。读取包内 `package.json`，核对 `buildTarget` 等于本次目标、`buildEngineVersion` 为 `2022.3.62f1`，并确认清单引用的文件都存在。
+- 核对 sidecar 的 `guid`、`version` 与包内 `guid`、`modVersion` 一致；sidecar 平台值分别是 Windows `1`、Android `2`、iOS `3`。同一组多平台发行的模组 GUID 和版本号应一致。
+- 本仓库的 `python Tools/project.py verify-modpacks <目录>` 用于检查载具与地图两个模板包的 ZIP / JSON 完整性及地图的 `.mapdata`、`.scene`、`.sprite`。每个平台使用独立目录，目录内恰好放这两个 `.modpack`；该命令不代替平台、Unity 版本或 sidecar 一致性检查，也不是通用的任意模组验证器。
+- 官方仓库的 `python Tools/ci.py verify <Unity平台> <modpack路径...>` 会检查平台、Unity 版本、资源清单与 sidecar。**该命令仅存在于官方模组仓库**，本公开用户工程没有 `Tools/ci.py`。
+- 更新已发布内容时先提高 `modVersion`，再构建并校验所有计划支持的平台。同平台、同版本、相同字节可跳过重复上传；同版本不同内容应作为错误处理，不能覆盖旧包。
+
 ## 校验命令
 
 从本仓库根目录运行：
