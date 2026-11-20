@@ -90,7 +90,12 @@ For an unresolved issue, include your SDK release version, Unity version, target
 
 ## Updating the SDK
 
-Back up your work, extract the new release into a **new folder**, and migrate your own assets together with their `.meta` files, mod packages and build pipelines. Preserve existing asset references and mod identifiers. Reapply your personal settings as needed, then rebuild and test your mods. Avoid copying the old SDK's `Packages` folder over the new one.
+Back up your work first. Your mods and settings live in `UnityProject`; the SDK itself is the `Packages` folder.
+
+1. Close Unity, delete the `Packages` folder of your SDK, and copy the `Packages` folder of the new release in its place. Do not extract the release over the old folder: files the new SDK removed would stay behind and can break compilation.
+2. Keep your `UnityProject`. If a release changes files in `UnityProject` (compare them with the same files in the release ZIP), merge those changes into yours.
+3. Git users: `git pull`, then `git lfs pull`.
+4. Open `UnityProject`, let it finish importing, then rebuild and test your mods. Asset references and mod identifiers stay the same.
 
 ## License
 
