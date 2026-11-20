@@ -131,13 +131,53 @@ function ReplayNetGameMode:GetPlayerPosition() end
 function ReplayNetGameMode:GetBattleMeta() end
 return ReplayNetGameMode
 
+---@class Frontend.Runtime.Impl.GameImpl.Battle.Mode.RtsNetGameMode
+local RtsNetGameMode = {}
+
+---@instance
+---@function [RtsNetGameMode:SendAllTextMessage]
+---@return System.Void
+---@param text System.String
+function RtsNetGameMode:SendAllTextMessage(text) end
+---@instance
+---@function [RtsNetGameMode:SendTeammateTextMessage]
+---@return System.Void
+---@param text System.String
+function RtsNetGameMode:SendTeammateTextMessage(text) end
+---@instance
+---@function [RtsNetGameMode:PickVehicle]
+---@return System.Void
+---@param vehicleGuid System.String
+function RtsNetGameMode:PickVehicle(vehicleGuid) end
+---@instance
+---@function [RtsNetGameMode:GetPing]
+---@return System.Int32
+function RtsNetGameMode:GetPing() end
+---@instance
+---@function [RtsNetGameMode:IsMainPlayerLoaded]
+---@return System.Boolean
+function RtsNetGameMode:IsMainPlayerLoaded() end
+---@instance
+---@function [RtsNetGameMode:GetPlayerPosition]
+---@return UnityEngine.Vector3
+function RtsNetGameMode:GetPlayerPosition() end
+---@instance
+---@function [RtsNetGameMode:GetBattleMeta]
+---@return System.String
+function RtsNetGameMode:GetBattleMeta() end
+return RtsNetGameMode
+
 ---@class Frontend.Runtime.Impl.GameImpl.Battle.Mode.StandardWarNetGameMode
 local StandardWarNetGameMode = {}
 
 ---@instance
 ---@function [StandardWarNetGameMode:GetPlayerVehicleQueue]
----@return System.Collections.Generic.List`1[[ShanghaiWindy.Core.VehicleInfo, Core, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]
+---@return ShanghaiWindy.Core.DriveableList
 function StandardWarNetGameMode:GetPlayerVehicleQueue() end
+---@instance
+---@function [StandardWarNetGameMode:GetAvailableVehicles]
+---@return ShanghaiWindy.Core.DriveableList
+function StandardWarNetGameMode:GetAvailableVehicles() end
 ---@instance
 ---@function [StandardWarNetGameMode:GetVehicleUsedNumber]
 ---@return System.Int32
@@ -212,6 +252,42 @@ function TotalWarNetGameMode:GetPlayerPosition() end
 function TotalWarNetGameMode:GetBattleMeta() end
 return TotalWarNetGameMode
 
+---@class Frontend.Runtime.Impl.GameImpl.Battle.Mode.WarZoneNetGameMode
+local WarZoneNetGameMode = {}
+
+---@instance
+---@function [WarZoneNetGameMode:SendAllTextMessage]
+---@return System.Void
+---@param text System.String
+function WarZoneNetGameMode:SendAllTextMessage(text) end
+---@instance
+---@function [WarZoneNetGameMode:SendTeammateTextMessage]
+---@return System.Void
+---@param text System.String
+function WarZoneNetGameMode:SendTeammateTextMessage(text) end
+---@instance
+---@function [WarZoneNetGameMode:PickVehicle]
+---@return System.Void
+---@param vehicleGuid System.String
+function WarZoneNetGameMode:PickVehicle(vehicleGuid) end
+---@instance
+---@function [WarZoneNetGameMode:GetPing]
+---@return System.Int32
+function WarZoneNetGameMode:GetPing() end
+---@instance
+---@function [WarZoneNetGameMode:IsMainPlayerLoaded]
+---@return System.Boolean
+function WarZoneNetGameMode:IsMainPlayerLoaded() end
+---@instance
+---@function [WarZoneNetGameMode:GetPlayerPosition]
+---@return UnityEngine.Vector3
+function WarZoneNetGameMode:GetPlayerPosition() end
+---@instance
+---@function [WarZoneNetGameMode:GetBattleMeta]
+---@return System.String
+function WarZoneNetGameMode:GetBattleMeta() end
+return WarZoneNetGameMode
+
 ---@class ShanghaiWindy.Data.ZoneChain
 ---@field fromZone System.String
 ---@field toZone System.String
@@ -260,12 +336,20 @@ local WarZoneCaptureZone = {}
 
 return WarZoneCaptureZone
 
+---The SP economy of a war zone, so offline and a multiplayer room play by the same numbers.
+---A room host cannot touch these; he only re-prices vehicles.
+---@class ShanghaiWindy.Data.WarZoneSPRule
+local WarZoneSPRule = {}
+
+return WarZoneSPRule
+
 ---@class ShanghaiWindy.Data.WarZoneModeConfig
 ---@field warZoneName System.String
 ---@field displayName ShanghaiWindy.Core.LocalizedName
 ---@field mapGuid System.String
 ---@field captureZones ShanghaiWindy.Data.WarZoneCaptureZone[]
 ---@field backgroundCameraTransformInfo ShanghaiWindy.Data.TransformInfo
+---@field spRule ShanghaiWindy.Data.WarZoneSPRule
 local WarZoneModeConfig = {}
 
 return WarZoneModeConfig
@@ -308,6 +392,20 @@ return WaveMissionConfig
 local MaterialConfig = {}
 
 return MaterialConfig
+
+---雷达工作模式：关机、搜索、单目标跟踪、格斗、边扫边跟。
+---Radar work mode: off, search, single-target track, dogfight (auto-lock), track while scan.
+---@class ShanghaiWindy.Core.ERadarWorkMode
+local ERadarWorkMode = {}
+
+return ERadarWorkMode
+
+---雷达告警（RWR）收到的威胁类型：被搜索扫到、被锁定跟踪、有导弹来袭。
+---Threat a radar warning receiver reports: painted by a search, locked by a track, a missile inbound.
+---@class ShanghaiWindy.Core.ERWRThreatType
+local ERWRThreatType = {}
+
+return ERWRThreatType
 
 ---@class ShanghaiWindy.Core.ObjectPoolComponent
 local ObjectPoolComponent = {}
@@ -447,7 +545,7 @@ return EIconPosition
 ---@field NickName System.String @昵称             Nick name
 ---@field AvatarInfo ShanghaiWindy.Core.ClientAvatarInfo @角色头像             Avatar
 ---@field VehicleInfo ShanghaiWindy.Core.VehicleInfo @载具信息             Vehicle Info
----@field Vehicle ShanghaiWindy.Core.BaseInitSystem @载具             Vehicle
+---@field Vehicle ShanghaiWindy.Core.BaseInitSystem @载具（主单位，只由带 Life 计分的单位写入）             Vehicle (the primary unit; only units scoring a Life write it)
 ---@field Info System.Object
 ---@field OnVehicleLoaded UnityEngine.Events.UnityEvent
 ---@field OnVehicleDestroyed UnityEngine.Events.UnityEvent
@@ -483,7 +581,8 @@ function AbstractBattlePlayer:GetTotalDestroyed() end
 ---@param vehicleInfo ShanghaiWindy.Core.VehicleInfo
 ---@param pos UnityEngine.Vector3
 ---@param rot UnityEngine.Quaternion
-function AbstractBattlePlayer:CreateVehicle(vehicleInfo, pos, rot) end
+---@param onPreBind System.Action`1[[ShanghaiWindy.Core.BaseInitSystem, Core, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]
+function AbstractBattlePlayer:CreateVehicle(vehicleInfo, pos, rot, onPreBind) end
 ---获得队伍
 ---Get Team
 ---@instance
@@ -558,7 +657,7 @@ return VehicleInitSystem
 ---@class ShanghaiWindy.Core.VehicleComponents
 ---@field multiInputWrapper ShanghaiWindy.Core.MultiInputWrapperManageComponent @多输入映射管理组件             Multi Input Mapping Manage Component
 ---@field trackController ShanghaiWindy.Core.TrackController @坦克履带控制器             Tank Track Controller
----@field playerCamera ShanghaiWindy.Core.VehicleCameraController @玩家相机控制器             Player Camera Controller
+---@field playerCamera ShanghaiWindy.Core.VehicleCameraPlugin @玩家相机控制器             Player Camera Controller
 ---@field mainCamera UnityEngine.Camera @主相机             Main Camera
 ---@field mainTankFireIndex ShanghaiWindy.Core.PropValue`1[System.Int32] @主坦克火力索引             Main Tank Fire Index
 ---@field tankfireList ShanghaiWindy.Core.ObservedList`1[ShanghaiWindy.Core.TankFire] @坦克火力列表             Tank Fire List
@@ -639,96 +738,6 @@ local ILuaBuffCaster = {}
 
 return ILuaBuffCaster
 
----Common() 定义下的类型接口。通用 Lua 模块接口，用于定义一组通用的游戏逻辑方法。
----Interrface for Common() define. Common Lua module interface, providing a set of general game logic methods.
----@class ShanghaiWindy.Core.Lua.ILuaCommon
-local ILuaCommon = {}
-
----当模块启动时调用。
----Called when the module is started.
----@instance
----@function [ILuaCommon:OnStarted]
-function ILuaCommon:OnStarted() end
----每帧更新时调用。
----Called on every frame update.
----@instance
----@function [ILuaCommon:OnUpdated]
-function ILuaCommon:OnUpdated() end
----固定更新时调用。
----Called on fixed update.
----@instance
----@function [ILuaCommon:OnFixedUpdated]
-function ILuaCommon:OnFixedUpdated() end
----当绘制图形用户界面时调用。
----Called when drawing the graphical user interface.
----@instance
----@function [ILuaCommon:OnGUI]
-function ILuaCommon:OnGUI() end
----在每帧的最后更新时调用。
----Called on the late update of each frame.
----@instance
----@function [ILuaCommon:OnLateUpdated]
-function ILuaCommon:OnLateUpdated() end
----当场景加载完成时调用。
----Called when a scene is loaded.
----@instance
----@function [ILuaCommon:OnSceneLoaded]
----@param levelName System.String
-function ILuaCommon:OnSceneLoaded(levelName) end
----Lua 环境释放
----@instance
----@function [ILuaCommon:OnDispose]
-function ILuaCommon:OnDispose() end
-return ILuaCommon
-
----GameMode() 定义下的类型接口。Lua 游戏模式模块接口，用于定义游戏模式的行为和逻辑。
----Interface for GameMode() define. Lua game mode module interface, providing game mode behaviors and logic.
----@class ShanghaiWindy.Core.Lua.ILuaGameMode
----@field luaClass XLua.LuaTable
-local ILuaGameMode = {}
-
----获取游戏模式的名称。
----Get the name of the game mode.
----@instance
----@function [ILuaGameMode:GetGameModeName]
----@return System.String 游戏模式名称 - Game mode name
----@param lang System.String
-function ILuaGameMode:GetGameModeName(lang) end
----当游戏模式开始时调用。
----Called when the game mode starts.
----@instance
----@function [ILuaGameMode:OnStartMode]
-function ILuaGameMode:OnStartMode() end
----每帧更新时调用。
----Called on every frame update.
----@instance
----@function [ILuaGameMode:OnUpdated]
-function ILuaGameMode:OnUpdated() end
----当退出游戏模式时调用。
----Called when exiting the game mode.
----@instance
----@function [ILuaGameMode:OnExitMode]
-function ILuaGameMode:OnExitMode() end
----是否启用占领点
----Is enable capture point
----@instance
----@function [ILuaGameMode:IsEnableCapturePoint]
----@return System.Boolean
-function ILuaGameMode:IsEnableCapturePoint() end
----获取地图模式
----Get map mode
----@instance
----@function [ILuaGameMode:GetMapMode]
----@return System.Int32
-function ILuaGameMode:GetMapMode() end
----是否显示小地图
----Is shown minimap
----@instance
----@function [ILuaGameMode:IsEnableMinimap]
----@return System.Boolean
-function ILuaGameMode:IsEnableMinimap() end
-return ILuaGameMode
-
 ---Vehicle() 定义下的类型接口。Lua 游戏载具模块接口，用于定义游戏载具的行为和逻辑。
 ---Interface for Vehicle() define. Lua vehicle module interface, providing vehicle behaviors and logic.
 ---@class ShanghaiWindy.Core.Lua.ILuaVehicleController
@@ -805,6 +814,76 @@ local OnKeyUnregistered = {}
 
 return OnKeyUnregistered
 
+---无参数的事件回调。
+---Event callback without arguments.
+---@class ShanghaiWindy.Core.Delegate.OnLuaEventDelegate
+local OnLuaEventDelegate = {}
+
+return OnLuaEventDelegate
+
+---带一辆载具的事件回调。
+---Event callback with a vehicle.
+---@class ShanghaiWindy.Core.Delegate.OnLuaVehicleEventDelegate
+local OnLuaVehicleEventDelegate = {}
+
+return OnLuaVehicleEventDelegate
+
+---带一个布尔值的事件回调。
+---Event callback with a boolean.
+---@class ShanghaiWindy.Core.Delegate.OnLuaBoolEventDelegate
+local OnLuaBoolEventDelegate = {}
+
+return OnLuaBoolEventDelegate
+
+---带一个整数的事件回调。
+---Event callback with an integer.
+---@class ShanghaiWindy.Core.Delegate.OnLuaIntEventDelegate
+local OnLuaIntEventDelegate = {}
+
+return OnLuaIntEventDelegate
+
+---带一个浮点数的事件回调。
+---Event callback with a number.
+---@class ShanghaiWindy.Core.Delegate.OnLuaFloatEventDelegate
+local OnLuaFloatEventDelegate = {}
+
+return OnLuaFloatEventDelegate
+
+---武器命中造成伤害时的回调。
+---Callback when a weapon's hit deals damage.
+---@class ShanghaiWindy.Core.Delegate.OnLuaHitEventDelegate
+local OnLuaHitEventDelegate = {}
+
+return OnLuaHitEventDelegate
+
+---内部模块状态变化的回调。
+---Callback when an internal module changes state.
+---@class ShanghaiWindy.Core.Delegate.OnLuaModuleStateEventDelegate
+local OnLuaModuleStateEventDelegate = {}
+
+return OnLuaModuleStateEventDelegate
+
+---雷达锁定变化的回调。
+---Callback when a radar lock changes.
+---@class ShanghaiWindy.Core.Delegate.OnLuaRadarLockEventDelegate
+local OnLuaRadarLockEventDelegate = {}
+
+return OnLuaRadarLockEventDelegate
+
+---雷达工作模式变化的回调。
+---Callback when a radar's work mode changes.
+---@class ShanghaiWindy.Core.Delegate.OnLuaRadarModeEventDelegate
+local OnLuaRadarModeEventDelegate = {}
+
+return OnLuaRadarModeEventDelegate
+
+---雷达告警（RWR）收到威胁时的回调。
+---Callback when the radar warning receiver gets a threat.
+---@class ShanghaiWindy.Core.Delegate.OnLuaRadarThreatEventDelegate
+local OnLuaRadarThreatEventDelegate = {}
+
+return OnLuaRadarThreatEventDelegate
+
 ---@class ShanghaiWindy.Core.Delegate.OnBattleSceneLoadedDelegate
 local OnBattleSceneLoadedDelegate = {}
 
@@ -874,10 +953,10 @@ local ArmyAPI = {}
 ---从陆军载具中获取所有武器控制器。
 ---Get all the weapon controllers from the army vehicle.
 ---@static
----@function [ArmyAPI.GetWeaponConrollerList]
----@return System.Collections.Generic.List`1[[ShanghaiWindy.Core.FPS.WeaponController, Core, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] 武器控制器列表 List of weapon controllers
+---@function [ArmyAPI.GetWeaponList]
+---@return System.Collections.Generic.List`1[[ShanghaiWindy.Core.FPS.ArmyWeapon, Core, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] 武器控制器列表 List of weapon controllers
 ---@param vehicle ShanghaiWindy.Core.FPS.ArmyInitSystem
-function ArmyAPI.GetWeaponConrollerList(vehicle) end
+function ArmyAPI.GetWeaponList(vehicle) end
 return ArmyAPI
 
 ---资源相关 API
@@ -912,11 +991,11 @@ function AssetAPI.ReleasePoolAsset(assetPoolRef) end
 ---@static
 ---@function [AssetAPI.ReloadConfig]
 function AssetAPI.ReloadConfig() end
----强制解析资源包
----Force resolve package
+---强制解析资源包，调用方需 await 等待资源注册全部完成
+---Force resolve package — caller must await for the registrar chain
 ---@static
----@function [AssetAPI.ForceResolvePackage]
-function AssetAPI.ForceResolvePackage() end
+---@function [AssetAPI.ForceResolvePackageAsync]
+function AssetAPI.ForceResolvePackageAsync() end
 return AssetAPI
 
 ---战斗玩家
@@ -947,6 +1026,15 @@ function BattlePlayerAPI.CreateOfflineMainPlayer(uid, info) end
 ---@function [BattlePlayerAPI.GetRandomBotName]
 ---@return System.String 随机名称 Random bot name
 function BattlePlayerAPI.GetRandomBotName() end
+---Create the free camera battle player: replay slot + registration + camera vehicle.
+---The uid must not collide with ones the mode already uses.
+---@static
+---@function [BattlePlayerAPI.CreateFreeCameraPlayer]
+---@param uid System.Int32
+---@param position UnityEngine.Vector3
+---@param rotation UnityEngine.Quaternion
+---@param onPreBind System.Action`1[[ShanghaiWindy.Core.FreeCameraInitSystem, Core, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]
+function BattlePlayerAPI.CreateFreeCameraPlayer(uid, position, rotation, onPreBind) end
 return BattlePlayerAPI
 
 ---Bot AI API
@@ -1006,6 +1094,18 @@ function BuffAPI.TryGetBuffReceiverAsFlight(buffReceiver, flightInitSystem) end
 ---@param buffReceiver ShanghaiWindy.Core.IBuffReceiver
 ---@param armyInitSystem ShanghaiWindy.Core.FPS.ArmyInitSystem&
 function BuffAPI.TryGetBuffReceiverAsArmy(buffReceiver, armyInitSystem) end
+---创建一个数值可变的 buff。用属性自带的 AddBuff 挂上一次（例如 weapon.DamageBuffedCoff:AddBuff(buff)），之后只调用
+---buff:SetValue(x)：属性原地刷新，不用反复移除再新建。不用时记得 RemoveBuff。
+---Create a buff whose value can change. Attach it once with the stat's own AddBuff (for example
+---weapon.DamageBuffedCoff:AddBuff(buff)), then only call buff:SetValue(x): the stat refreshes in place, with no removing and
+---re-creating. RemoveBuff it when done.
+---@static
+---@function [BuffAPI.CreateValueBuff]
+---@return ShanghaiWindy.Core.API.LuaValueBuff buff 对象 The buff
+---@param displayName System.String
+---@param isMultiplier System.Boolean
+---@param value System.Single
+function BuffAPI.CreateValueBuff(displayName, isMultiplier, value) end
 return BuffAPI
 
 ---摄像机 API
@@ -1065,6 +1165,24 @@ function CameraAPI.GetGameCamera() end
 ---@param worldPos UnityEngine.Vector3
 ---@param iconPosition ShanghaiWindy.Core.EIconPosition&
 function CameraAPI.GetScreenPosition(worldPos, iconPosition) end
+---当前玩家相机的模式（第三人称、瞄准镜、望远镜、车内……）。没有玩家相机时返回 Unknown。
+---The mode of the player's camera (third person, sight, binocular, interior …). Unknown when there is no player camera.
+---@static
+---@function [CameraAPI.GetCameraMode]
+---@return ShanghaiWindy.Core.EPlayerCameraMode 相机模式 Camera mode
+function CameraAPI.GetCameraMode() end
+---玩家是否开镜（地面载具的放大状态）。玩家不在地面载具上时返回 false。
+---Whether the player is zoomed in (a ground vehicle's zoom). False when the player is not in a ground vehicle.
+---@static
+---@function [CameraAPI.IsZoomed]
+---@return System.Boolean 是否开镜 Whether zoomed in
+function CameraAPI.IsZoomed() end
+---玩家相机当前锁定的载具（地面载具的瞄准锁定），没有锁定时返回 nil。
+---The vehicle the player's camera is locked on (a ground vehicle's aim lock), or nil when nothing is locked.
+---@static
+---@function [CameraAPI.GetLockTarget]
+---@return ShanghaiWindy.Core.BaseInitSystem 锁定的载具 Locked vehicle
+function CameraAPI.GetLockTarget() end
 return CameraAPI
 
 ---占领区 API
@@ -1122,6 +1240,20 @@ function CaptureZoneAPI.RemoveCaptureZone(id) end
 ---@function [CaptureZoneAPI.GetCaptureZoneInfos]
 ---@return ShanghaiWindy.Core.CaptureZoneInfo[] 占领区信息数组 Capture zone info array
 function CaptureZoneAPI.GetCaptureZoneInfos() end
+---在占领点脚下画一圈高亮环
+---Draw the highlight ring under a capture zone
+---@static
+---@function [CaptureZoneAPI.DrawZoneCircle]
+---@return UnityEngine.GameObject 环的 GameObject The ring's GameObject
+---@param center UnityEngine.Vector3
+---@param radius System.Single
+function CaptureZoneAPI.DrawZoneCircle(center, radius) end
+---给区域网格套上占领点高亮材质
+---Put the zone highlight material on every renderer under the mesh
+---@static
+---@function [CaptureZoneAPI.ApplyZoneMaterial]
+---@param instance UnityEngine.GameObject
+function CaptureZoneAPI.ApplyZoneMaterial(instance) end
 return CaptureZoneAPI
 
 ---颜色 API
@@ -1347,6 +1479,60 @@ local FlightAPI = {}
 ---@return System.Collections.Generic.List`1[[ShanghaiWindy.Core.FlightFireSystem, Core, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] 飞行火力系统列表 List of flight fire systems
 ---@param vehicle ShanghaiWindy.Core.FlightInitSystem
 function FlightAPI.GetFlightFireList(vehicle) end
+---飞机是否着地，与游戏自己的起降判定相同：任一机轮接地；起落架放下时机轮附近有地面或建筑也算。
+---起落架放下且离地时，每次调用会为每个机轮做一次物理重叠检测（不分配内存），不需要每帧调用时请降低调用频率。
+---Whether the aircraft is on the ground, the same test the game uses for take-off and landing: any wheel touching
+---down, or, with the gear down, ground or a building right at a wheel. With the gear down in the air each call runs
+---one physics overlap per wheel (no allocation); call it less often than every frame where you can.
+---@static
+---@function [FlightAPI.IsOnGround]
+---@return System.Boolean 是否着地；不是飞机时为 false Whether it is on the ground; false for a vehicle that is not an aircraft
+---@param vehicle ShanghaiWindy.Core.BaseInitSystem
+function FlightAPI.IsOnGround(vehicle) end
+---起落架是否放下。
+---Whether the landing gear is down.
+---@static
+---@function [FlightAPI.IsGearDown]
+---@return System.Boolean 起落架是否放下 Whether the gear is down
+---@param vehicle ShanghaiWindy.Core.BaseInitSystem
+function FlightAPI.IsGearDown(vehicle) end
+---获取空速（公里/小时），沿机头方向，与飞行界面显示的一致。
+---Get the airspeed in km/h along the nose, as the flight HUD shows it.
+---@static
+---@function [FlightAPI.GetAirspeedKmh]
+---@return System.Single 空速（公里/小时） Airspeed in km/h
+---@param vehicle ShanghaiWindy.Core.BaseInitSystem
+function FlightAPI.GetAirspeedKmh(vehicle) end
+---获取高度（米），即世界坐标的 Y 值，不是离地高度。
+---Get the altitude in metres: the world Y coordinate, not the height above the ground.
+---@static
+---@function [FlightAPI.GetAltitude]
+---@return System.Single 高度（米） Altitude in metres
+---@param vehicle ShanghaiWindy.Core.BaseInitSystem
+function FlightAPI.GetAltitude(vehicle) end
+---获取油门，0 到 120，超过 100 为加力。
+---Get the throttle, 0 to 120; above 100 is boost.
+---@static
+---@function [FlightAPI.GetThrottle]
+---@return System.Single 油门 Throttle
+---@param vehicle ShanghaiWindy.Core.BaseInitSystem
+function FlightAPI.GetThrottle(vehicle) end
+---发动机是否在运转。
+---Whether the engine is running.
+---@static
+---@function [FlightAPI.IsEngineRunning]
+---@return System.Boolean 发动机是否运转 Whether the engine runs
+---@param vehicle ShanghaiWindy.Core.BaseInitSystem
+function FlightAPI.IsEngineRunning(vehicle) end
+---订阅起落架收放，回调参数为起落架是否放下。
+---Subscribe to the landing gear going up or down; the callback gets whether it is down.
+---@static
+---@function [FlightAPI.OnGearChanged]
+---@return ShanghaiWindy.Core.API.LuaSubscription 订阅，失败时为 nil The subscription, nil on failure
+---@param owner ShanghaiWindy.Core.Lua.LuaBehaviorProxy
+---@param vehicle ShanghaiWindy.Core.BaseInitSystem
+---@param callback ShanghaiWindy.Core.Delegate.OnLuaBoolEventDelegate
+function FlightAPI.OnGearChanged(owner, vehicle, callback) end
 return FlightAPI
 
 ---字体 API
@@ -1403,6 +1589,12 @@ function GameAPI.RegisterVehicleGameObjectDestroyedEvent(gameVehicleGameObjectDe
 ---@function [GameAPI.UnRegisterVehicleGameObjectDestroyedEvent]
 ---@param gameVehicleGameObjectDestroyedDelegate ShanghaiWindy.Core.Delegate.OnGameVehicleGameObjectRemovedDelegate
 function GameAPI.UnRegisterVehicleGameObjectDestroyedEvent(gameVehicleGameObjectDestroyedDelegate) end
+---当前客户端提供的 Lua API 版本，与全局变量 GAME_API_VERSION 相同。没有这个函数的老客户端按版本 1 处理。
+---The Lua API version of this client, the same as the global GAME_API_VERSION. Treat an older client without it as version 1.
+---@static
+---@function [GameAPI.GetApiVersion]
+---@return System.Int32 API 版本 API version
+function GameAPI.GetApiVersion() end
 return GameAPI
 
 ---游戏对象 API
@@ -1580,18 +1772,21 @@ return InputAPI
 ---@class ShanghaiWindy.Core.API.InternalModuleAPI
 local InternalModuleAPI = {}
 
----从 GameObject 获取内部模块组件。
----Get InternalModuleComponent from a GameObject.
+---从模块所在的 GameObject 获取内部模块组件（不是 InternalModule 脚本本身），挂在模块物体上的脚本传 self.gameObject 即可。
+---模块组件在载具装配时创建：在 OnVehicleReady 里或之后调用；装配前、物体上没有模块时返回 nil。
+---Get the InternalModuleComponent (not the InternalModule script itself) from the module's GameObject; a script on
+---the module object passes self.gameObject. The component is created when the vehicle is assembled: call this in
+---OnVehicleReady or later. nil before that, or when the object has no module.
 ---@static
 ---@function [InternalModuleAPI.GetInternalModule]
----@return ShanghaiWindy.Core.InternalModuleComponent InternalModuleComponent，不存在则返回 null
+---@return ShanghaiWindy.Core.InternalModuleComponent InternalModuleComponent，不存在则返回 nil InternalModuleComponent, nil when there is none
 ---@param gameObject UnityEngine.GameObject
 function InternalModuleAPI.GetInternalModule(gameObject) end
 ---从 Collider 获取内部模块组件。
 ---Get InternalModuleComponent from a Collider.
 ---@static
 ---@function [InternalModuleAPI.GetInternalModuleFromCollider]
----@return ShanghaiWindy.Core.InternalModuleComponent InternalModuleComponent，不存在则返回 null
+---@return ShanghaiWindy.Core.InternalModuleComponent InternalModuleComponent，不存在则返回 nil InternalModuleComponent, nil when there is none
 ---@param collider UnityEngine.Collider
 function InternalModuleAPI.GetInternalModuleFromCollider(collider) end
 ---获取模块类型。
@@ -1622,6 +1817,20 @@ function InternalModuleAPI.GetCurrentHitPoint(module) end
 ---@return System.Int32 最大血量 Max HP
 ---@param module ShanghaiWindy.Core.InternalModuleComponent
 function InternalModuleAPI.GetMaxHitPoint(module) end
+---获取当前血量占最大血量的比例，0 到 1。
+---Get the current hit points as a share of the maximum, 0 to 1.
+---@static
+---@function [InternalModuleAPI.GetHitPointRatio]
+---@return System.Single 血量比例 Hit point ratio
+---@param module ShanghaiWindy.Core.InternalModuleComponent
+function InternalModuleAPI.GetHitPointRatio(module) end
+---模块是否已被摧毁。
+---Whether the module is destroyed.
+---@static
+---@function [InternalModuleAPI.IsDestroyed]
+---@return System.Boolean 是否已摧毁 Whether it is destroyed
+---@param module ShanghaiWindy.Core.InternalModuleComponent
+function InternalModuleAPI.IsDestroyed(module) end
 ---获取模块所属载具。
 ---Get the vehicle that owns this module.
 ---@static
@@ -1629,14 +1838,98 @@ function InternalModuleAPI.GetMaxHitPoint(module) end
 ---@return ShanghaiWindy.Core.BaseInitSystem 所属载具 Owner vehicle
 ---@param module ShanghaiWindy.Core.InternalModuleComponent
 function InternalModuleAPI.GetOwner(module) end
----获取载具上所有内部模块组件。
----Get all InternalModuleComponents on a vehicle.
+---获取载具上所有内部模块组件。每次调用都会新建列表，只在初始化时调用。
+---Get all InternalModuleComponents on a vehicle. Each call builds a new list; call it once at set-up.
 ---@static
 ---@function [InternalModuleAPI.GetAllInternalModules]
 ---@return System.Collections.Generic.List`1[[ShanghaiWindy.Core.InternalModuleComponent, Core, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] 模块列表 List of InternalModuleComponent
 ---@param vehicle ShanghaiWindy.Core.BaseInitSystem
 function InternalModuleAPI.GetAllInternalModules(vehicle) end
+---订阅模块状态变化（Good / Slight / Middle / Critical / Serious / Destroyed 之间切换），回调参数为旧状态和新状态。
+---Subscribe to the module changing state (Good / Slight / Middle / Critical / Serious / Destroyed); the callback gets
+---the old and the new state.
+---@static
+---@function [InternalModuleAPI.OnStateChanged]
+---@return ShanghaiWindy.Core.API.LuaSubscription 订阅，失败时为 nil The subscription, nil on failure
+---@param owner ShanghaiWindy.Core.Lua.LuaBehaviorProxy
+---@param module ShanghaiWindy.Core.InternalModuleComponent
+---@param callback ShanghaiWindy.Core.Delegate.OnLuaModuleStateEventDelegate
+function InternalModuleAPI.OnStateChanged(owner, module, callback) end
+---订阅模块受到伤害，回调参数为这次扣除的血量（回放中为 0）。模块已毁、伤害转给替补模块时由替补模块发出。
+---Subscribe to the module taking damage; the callback gets the hit points this hit took (0 in a replay). Once the
+---module is destroyed and a substitute takes the damage, the substitute raises it.
+---@static
+---@function [InternalModuleAPI.OnDamaged]
+---@return ShanghaiWindy.Core.API.LuaSubscription 订阅，失败时为 nil The subscription, nil on failure
+---@param owner ShanghaiWindy.Core.Lua.LuaBehaviorProxy
+---@param module ShanghaiWindy.Core.InternalModuleComponent
+---@param callback ShanghaiWindy.Core.Delegate.OnLuaFloatEventDelegate
+function InternalModuleAPI.OnDamaged(owner, module, callback) end
+---订阅模块被修复（自动修复、手动修复或维修点）。
+---Subscribe to the module being repaired (auto repair, manual repair or a repair point).
+---@static
+---@function [InternalModuleAPI.OnRepaired]
+---@return ShanghaiWindy.Core.API.LuaSubscription 订阅，失败时为 nil The subscription, nil on failure
+---@param owner ShanghaiWindy.Core.Lua.LuaBehaviorProxy
+---@param module ShanghaiWindy.Core.InternalModuleComponent
+---@param callback ShanghaiWindy.Core.Delegate.OnLuaEventDelegate
+function InternalModuleAPI.OnRepaired(owner, module, callback) end
 return InternalModuleAPI
+
+---载具实例所处的场合。
+---Where a vehicle instance lives.
+---@class ShanghaiWindy.Core.API.VehicleContext
+local VehicleContext = {}
+
+return VehicleContext
+
+---载具大类，用于查询过滤。
+---Vehicle kind, used to filter queries.
+---@class ShanghaiWindy.Core.API.VehicleKind
+local VehicleKind = {}
+
+return VehicleKind
+
+---相对于某辆载具的敌友关系，用于查询过滤。
+---Relation to a vehicle, used to filter queries.
+---@class ShanghaiWindy.Core.API.VehicleRelation
+local VehicleRelation = {}
+
+return VehicleRelation
+
+---一次事件订阅。订阅时传入 owner（self.script）的，行为销毁时自动退订；目标载具被移除时也自动退订。也可以随时调用 Dispose 提前退订。
+---One event subscription. With an owner (self.script) it ends when the behaviour is destroyed; it also ends when the target vehicle
+---is removed. Call Dispose to end it earlier.
+---@class ShanghaiWindy.Core.API.LuaSubscription
+---@field IsActive System.Boolean
+local LuaSubscription = {}
+
+---退订。重复调用无效果。
+---End the subscription. Calling it again does nothing.
+---@instance
+---@function [LuaSubscription:Dispose]
+function LuaSubscription:Dispose() end
+return LuaSubscription
+
+---数值可变的 buff，由 BuffAPI.CreateValueBuff 创建。挂到属性上之后调用 SetValue，属性会原地刷新。
+---A buff whose value can change, made by BuffAPI.CreateValueBuff. Once it is on a stat, SetValue refreshes that stat in place.
+---@class ShanghaiWindy.Core.API.LuaValueBuff
+local LuaValueBuff = {}
+
+---当前系数。
+---The current coefficient.
+---@instance
+---@function [LuaValueBuff:GetValue]
+---@return System.Single 系数 Coefficient
+function LuaValueBuff:GetValue() end
+---修改系数；挂着它的属性会立即刷新。数值没变时什么也不做，所以可以每帧调用。
+---Change the coefficient; every stat it is attached to refreshes at once. Does nothing when the value is unchanged, so it is fine
+---to call every frame.
+---@instance
+---@function [LuaValueBuff:SetValue]
+---@param value System.Single
+function LuaValueBuff:SetValue(value) end
+return LuaValueBuff
 
 ---地图 API
 ---Map API
@@ -1733,7 +2026,7 @@ function ModeAPI.ShowPickVehicleUI(isForcePick) end
 ---@static
 ---@function [ModeAPI.ShowPickVehicleUIWithList]
 ---@param isForcePick System.Boolean
----@param vehicleList System.Collections.Generic.List`1[[ShanghaiWindy.Core.VehicleInfo, Core, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]
+---@param vehicleList ShanghaiWindy.Core.DriveableList
 function ModeAPI.ShowPickVehicleUIWithList(isForcePick, vehicleList) end
 ---@static
 ---@function [ModeAPI.ShowPickVehicleListUI]
@@ -1849,12 +2142,6 @@ function ModeAPI.ToggleVehicleLockState(isLock, vehicle) end
 ---@param countDownDescription System.String
 ---@param callback System.Action
 function ModeAPI.EnableCountDown(countDown, countDownTitle, countDownDescription, callback) end
----获取模式 lua class 的实例
----Get mode instance of lua class
----@static
----@function [ModeAPI.GetModeInstance]
----@return XLua.LuaTable Lua 模式实例 Lua mode instance
-function ModeAPI.GetModeInstance() end
 ---获取 c# 游戏模式实例
 ---Get the native game mode in c#
 ---@static
@@ -1926,6 +2213,159 @@ function PointAPI.GetPatrolPoints() end
 ---@param state System.Boolean
 function PointAPI.ToggleMapBoundary(state) end
 return PointAPI
+
+---雷达 API：读取载具雷达（地面防空雷达或机载雷达）的状态、目标与告警，并控制本地玩家自己的雷达。雷达参数在载具数据的 groundAARadarData（飞机为 radarData）里配置。联机远程副本的雷达不在本机扫描：没有目标，扫描方位不动，锁定目标与工作模式来自网络，锁定 / 模式事件不触发。
+---Radar API: read a vehicle's radar (ground air-defence or airborne): status, contacts and warnings, and control the local player's own radar. Radar parameters are set in the vehicle data's groundAARadarData (radarData for aircraft). A remote copy's radar does not scan on this client: no contacts, a still scan azimuth, lock target and work mode from the network, and no lock / mode events.
+---@class ShanghaiWindy.Core.API.RadarAPI
+local RadarAPI = {}
+
+---@static
+---@function [RadarAPI.TryGetRadar]
+---@return System.Boolean
+---@param vehicle ShanghaiWindy.Core.BaseInitSystem
+---@param radar ShanghaiWindy.Core.BaseRadarSystem&
+function RadarAPI.TryGetRadar(vehicle, radar) end
+---雷达是否开机。
+---Whether the radar is on.
+---@static
+---@function [RadarAPI.IsActive]
+---@return System.Boolean 是否开机 Is on
+---@param radar ShanghaiWindy.Core.BaseRadarSystem
+function RadarAPI.IsActive(radar) end
+---获取雷达工作模式。
+---Get the radar's work mode.
+---@static
+---@function [RadarAPI.GetWorkMode]
+---@return ShanghaiWindy.Core.ERadarWorkMode 工作模式；无效时为 Off Work mode; Off when invalid
+---@param radar ShanghaiWindy.Core.BaseRadarSystem
+function RadarAPI.GetWorkMode(radar) end
+---获取天线当前方位角（度，-180~180，0 为正前方，向右为正）。正前方指雷达安装处的朝向：地面防空雷达是炮塔，机载雷达是机头（水平稳定的雷达取机头在水平面上的朝向）。扇扫雷达在 ±扇区半角之间往返，全向旋转雷达一圈圈转，跟踪（TRK）时指向锁定目标。把它作为天线模型相对安装处的偏航角即可让模型跟着转。
+---Get the antenna's current azimuth in degrees, -180 to 180, 0 straight ahead, positive to the right. Ahead is where the radar is mounted: the turret for ground air defence, the nose for aircraft (a horizon-stabilized radar uses the nose heading in the horizontal plane). A sector radar sweeps back and forth within its half-angle, a full-rotation radar spins, and in TRK it points at the locked target. Use it as your antenna model's yaw relative to its mount to turn the model with it.
+---@static
+---@function [RadarAPI.GetScanAzimuth]
+---@return System.Single 方位角（度）；无效时为 0 Azimuth in degrees; 0 when invalid
+---@param radar ShanghaiWindy.Core.BaseRadarSystem
+function RadarAPI.GetScanAzimuth(radar) end
+---获取雷达安装处朝向的世界航向（度，-180~180，从世界 +Z 顺时针）。航向 + 方位角 = 世界方位，用来画正北朝上的 PPI。
+---Get the world heading of the radar's mount in degrees, -180 to 180, clockwise from world +Z. Heading + azimuth = world bearing, for a north-up PPI.
+---@static
+---@function [RadarAPI.GetWorldHeading]
+---@return System.Single 航向（度）；无效时为 0 Heading in degrees; 0 when invalid
+---@param radar ShanghaiWindy.Core.BaseRadarSystem
+function RadarAPI.GetWorldHeading(radar) end
+---获取当前信号模式下的最大探测距离（米），以 5 平方米雷达截面的目标为准；截面更大的目标看得更远（按截面的四次方根），IRST 用自己的距离。
+---Get the maximum detection range in metres in the current signal mode, for a target of 5 m² radar cross-section; larger targets are seen farther (by the fourth root of the cross-section), IRST uses its own range.
+---@static
+---@function [RadarAPI.GetMaxRange]
+---@return System.Single 距离（米）；无效时为 0 Range in metres; 0 when invalid
+---@param radar ShanghaiWindy.Core.BaseRadarSystem
+function RadarAPI.GetMaxRange(radar) end
+---获取雷达所属载具。
+---Get the vehicle the radar belongs to.
+---@static
+---@function [RadarAPI.GetOwner]
+---@return ShanghaiWindy.Core.BaseInitSystem 载具；已移除时为 nil Vehicle; nil once removed
+---@param radar ShanghaiWindy.Core.BaseRadarSystem
+function RadarAPI.GetOwner(radar) end
+---获取雷达画面上的目标数量（含箔条假回波）。远程副本为 0；联机时敌方的雷达为 0。
+---Get the number of contacts on the radar picture (chaff false echoes included). 0 for a remote copy, and online 0 for an enemy's radar.
+---@static
+---@function [RadarAPI.GetContactCount]
+---@return System.Int32 目标数量 Number of contacts
+---@param radar ShanghaiWindy.Core.BaseRadarSystem
+function RadarAPI.GetContactCount(radar) end
+---@static
+---@function [RadarAPI.GetContact]
+---@return System.Boolean
+---@param radar ShanghaiWindy.Core.BaseRadarSystem
+---@param index System.Int32
+---@param target ShanghaiWindy.Core.BaseInitSystem&
+---@param distance System.Single&
+---@param azimuth System.Single&
+---@param elevation System.Single&
+---@param altitude System.Single&
+---@param radialSpeed System.Single&
+---@param isFriendly System.Boolean&
+function RadarAPI.GetContact(radar, index, target, distance, azimuth, elevation, altitude, radialSpeed, isFriendly) end
+---获取第 index 个目标的世界方位（度，-180~180，从世界 +Z 顺时针），为波束扫过时的快照，画正北朝上的 PPI 用。
+---Get the world bearing of contact number index in degrees, -180 to 180, clockwise from world +Z, as of the beam's sweep; for a north-up PPI.
+---@static
+---@function [RadarAPI.GetContactWorldAzimuth]
+---@return System.Single 世界方位（度）；越界时为 0 World bearing in degrees; 0 when out of range
+---@param radar ShanghaiWindy.Core.BaseRadarSystem
+---@param index System.Int32
+function RadarAPI.GetContactWorldAzimuth(radar, index) end
+---获取当前锁定（TRK）的目标。远程副本为网络同步的锁定目标。
+---Get the target locked in TRK. For a remote copy, the lock target synced over the network.
+---@static
+---@function [RadarAPI.GetLockedTarget]
+---@return ShanghaiWindy.Core.BaseInitSystem 锁定的载具；未锁定时为 nil Locked vehicle; nil when nothing is locked
+---@param radar ShanghaiWindy.Core.BaseRadarSystem
+function RadarAPI.GetLockedTarget(radar) end
+---锁定是否处于丢失信号的重捕宽限中（游戏界面上锁定框会闪烁）。
+---Whether the lock is in its reacquire grace after losing the signal (the game's lock box blinks).
+---@static
+---@function [RadarAPI.IsLockDegraded]
+---@return System.Boolean 是否信号不稳 Is degraded
+---@param radar ShanghaiWindy.Core.BaseRadarSystem
+function RadarAPI.IsLockDegraded(radar) end
+---锁定雷达画面上的一个目标，与玩家在雷达列表里选中锁定相同：要先经过锁定捕获时间，锁上后触发 OnLockChanged；跟踪中会直接换锁。只对本地玩家正在控制的载具的雷达有效。
+---Lock a target on the radar picture, the same as the player locking it from the radar list: it goes through the lock acquisition time and OnLockChanged fires once locked; while tracking, the lock switches at once. Only works on the radar of the vehicle the local player controls.
+---@static
+---@function [RadarAPI.TryLock]
+---@return System.Boolean 已锁定或正在锁定时为 true；不允许、雷达关机或目标不在画面上时为 false True when locked or locking; false when not allowed, the radar is off, or the target is not on the picture
+---@param radar ShanghaiWindy.Core.BaseRadarSystem
+---@param target ShanghaiWindy.Core.BaseInitSystem
+function RadarAPI.TryLock(radar, target) end
+---解除锁定或取消正在进行的锁定，雷达回到搜索模式。只对本地玩家正在控制的载具的雷达有效。
+---Release the lock, or cancel a lock in progress; the radar returns to search. Only works on the radar of the vehicle the local player controls.
+---@static
+---@function [RadarAPI.Unlock]
+---@return System.Boolean 是否有锁定被解除 Whether a lock was released
+---@param radar ShanghaiWindy.Core.BaseRadarSystem
+function RadarAPI.Unlock(radar) end
+---切换目标，与玩家的选择键相同：搜索时依次指定下一个目标（最后一次清除指定），跟踪时直接换锁下一个。只对本地玩家正在控制的载具的雷达有效。
+---Cycle targets, like the player's select key: in search it designates the next target (the last press clears it), in TRK it locks the next one at once. Only works on the radar of the vehicle the local player controls.
+---@static
+---@function [RadarAPI.CycleTarget]
+---@return System.Boolean 是否执行 Whether it ran
+---@param radar ShanghaiWindy.Core.BaseRadarSystem
+function RadarAPI.CycleTarget(radar) end
+---切换工作模式，与玩家的模式键相同：关机时开机，搜索（SRC）与边扫边跟（TWS）之间切换（雷达支持 TWS 时），跟踪或格斗时回到搜索。只对本地玩家正在控制的载具的雷达有效。
+---Switch the work mode, like the player's mode key: turns the radar on when off, toggles search (SRC) and track-while-scan (TWS) when the radar has TWS, and returns to search from TRK or ACM. Only works on the radar of the vehicle the local player controls.
+---@static
+---@function [RadarAPI.SwitchMode]
+---@return System.Boolean 是否执行 Whether it ran
+---@param radar ShanghaiWindy.Core.BaseRadarSystem
+function RadarAPI.SwitchMode(radar) end
+---订阅锁定变化（锁上、换锁、解锁或丢失）。远程副本不触发。
+---Subscribe to lock changes (locked, switched, released or lost). Does not fire for a remote copy.
+---@static
+---@function [RadarAPI.OnLockChanged]
+---@return ShanghaiWindy.Core.API.LuaSubscription 订阅；参数无效时为 nil Subscription; nil for invalid arguments
+---@param owner ShanghaiWindy.Core.Lua.LuaBehaviorProxy
+---@param radar ShanghaiWindy.Core.BaseRadarSystem
+---@param callback ShanghaiWindy.Core.Delegate.OnLuaRadarLockEventDelegate
+function RadarAPI.OnLockChanged(owner, radar, callback) end
+---订阅工作模式变化（只在模式真的变了时触发，切换信号模式不触发）。远程副本不触发。
+---Subscribe to work mode changes (fires only when the mode really changes; a signal mode switch does not count). Does not fire for a remote copy.
+---@static
+---@function [RadarAPI.OnModeChanged]
+---@return ShanghaiWindy.Core.API.LuaSubscription 订阅；参数无效时为 nil Subscription; nil for invalid arguments
+---@param owner ShanghaiWindy.Core.Lua.LuaBehaviorProxy
+---@param radar ShanghaiWindy.Core.BaseRadarSystem
+---@param callback ShanghaiWindy.Core.Delegate.OnLuaRadarModeEventDelegate
+function RadarAPI.OnModeChanged(owner, radar, callback) end
+---订阅雷达告警（RWR）：出现新威胁时触发（同一来源、同一类型的威胁还在告警列表里时，约 5 秒内，再次出现只刷新、不再触发）。联机时本队看不到的来源传 nil。
+---Subscribe to the radar warning receiver: fires when a new threat appears (the same source and type again while it is still listed, about 5 s, only refreshes it). Online, a source your team cannot see is passed as nil.
+---@static
+---@function [RadarAPI.OnThreat]
+---@return ShanghaiWindy.Core.API.LuaSubscription 订阅；参数无效时为 nil Subscription; nil for invalid arguments
+---@param owner ShanghaiWindy.Core.Lua.LuaBehaviorProxy
+---@param radar ShanghaiWindy.Core.BaseRadarSystem
+---@param callback ShanghaiWindy.Core.Delegate.OnLuaRadarThreatEventDelegate
+function RadarAPI.OnThreat(owner, radar, callback) end
+return RadarAPI
 
 ---随机 API
 ---Random API
@@ -2123,6 +2563,39 @@ local TankAPI = {}
 ---@return System.Collections.Generic.List`1[[ShanghaiWindy.Core.TankFire, Core, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] 坦克火力系统列表 List of tank fire systems
 ---@param vehicle ShanghaiWindy.Core.VehicleInitSystem
 function TankAPI.GetTankFireList(vehicle) end
+---获取炮塔数量（主炮塔和附加炮塔）。不是地面载具时为 0。
+---Get how many turrets the vehicle has (main and extra turrets). 0 for a vehicle that is not a ground vehicle.
+---@static
+---@function [TankAPI.GetTurretCount]
+---@return System.Int32 炮塔数量 Turret count
+---@param vehicle ShanghaiWindy.Core.BaseInitSystem
+function TankAPI.GetTurretCount(vehicle) end
+---获取炮塔的水平旋转节点。序号从 0 开始，0 是主炮塔。
+---Get a turret's traverse transform. Index from 0; 0 is the main turret.
+---@static
+---@function [TankAPI.GetTurretTransform]
+---@return UnityEngine.Transform 炮塔节点，没有时为 nil Turret transform, nil when there is none
+---@param vehicle ShanghaiWindy.Core.BaseInitSystem
+---@param index System.Int32
+function TankAPI.GetTurretTransform(vehicle, index) end
+---获取炮塔的俯仰（炮管）节点。序号从 0 开始，0 是主炮塔。
+---Get a turret's elevation (gun) transform. Index from 0; 0 is the main turret.
+---@static
+---@function [TankAPI.GetGunTransform]
+---@return UnityEngine.Transform 炮管节点，没有时为 nil Gun transform, nil when there is none
+---@param vehicle ShanghaiWindy.Core.BaseInitSystem
+---@param index System.Int32
+function TankAPI.GetGunTransform(vehicle, index) end
+---@static
+---@function [TankAPI.GetEngineState]
+---@return System.Boolean
+---@param vehicle ShanghaiWindy.Core.BaseInitSystem
+---@param rpm System.Single&
+---@param rpmPercent System.Single&
+---@param gear System.Int32&
+---@param speedKmh System.Single&
+---@param reversing System.Boolean&
+function TankAPI.GetEngineState(vehicle, rpm, rpmPercent, gear, speedKmh, reversing) end
 return TankAPI
 
 ---团队接口
@@ -2236,6 +2709,12 @@ function TimeAPI.GetFixedDeltaTime() end
 ---@function [TimeAPI.GetTime]
 ---@return System.Single 游戏时间 Time in seconds
 function TimeAPI.GetTime() end
+---游戏是否处于暂停（时间缩放为 0）。慢动作不算暂停。
+---Whether the game is paused (time scale is 0). Slow motion does not count.
+---@static
+---@function [TimeAPI.IsPaused]
+---@return System.Boolean 是否暂停 Whether the game is paused
+function TimeAPI.IsPaused() end
 return TimeAPI
 
 ---Transform 操作 API
@@ -2265,6 +2744,27 @@ function TransformAPI.Find(trans, path) end
 ---@return UnityEngine.Transform 新建的 Transform New transform
 ---@param transformName System.String
 function TransformAPI.CreateTransform(transformName) end
+---在所有层级的子物体里按名字查找（含未激活物体，不含 root 自身），没有时返回 nil。在 C# 里一次完成，不产生垃圾；
+---每一层先找直接子物体，再往下找。请在 OnVehicleReady 里查一次并缓存，返回 nil 就说明模型上没有这个节点，不要每帧重试。
+---Find a descendant by exact name at any depth (inactive ones included, root excluded); nil when there is none. Done in one
+---C# call without garbage; each level checks its direct children before going deeper. Look it up once in OnVehicleReady and
+---cache it: nil means the model has no such node, so do not retry every frame.
+---@static
+---@function [TransformAPI.FindDeep]
+---@return UnityEngine.Transform 找到的 Transform，没有时为 nil The transform found, or nil
+---@param root UnityEngine.Transform
+---@param name System.String
+function TransformAPI.FindDeep(root, name) end
+---找出所有名字包含某段文字的子物体（任意层级，含未激活物体，不含 root 自身），按层级顺序返回数组，没有时返回空数组。
+---会分配一个数组：只在初始化时调用一次。
+---Find every descendant whose name contains the given text (any depth, inactive ones included, root excluded), in hierarchy
+---order; an empty array when there are none. Allocates an array: call it once while initialising.
+---@static
+---@function [TransformAPI.FindAllDeep]
+---@return UnityEngine.Transform[] 找到的 Transform 数组 Array of the transforms found
+---@param root UnityEngine.Transform
+---@param namePart System.String
+function TransformAPI.FindAllDeep(root, namePart) end
 return TransformAPI
 
 ---模式 UI API
@@ -2320,6 +2820,120 @@ return UIAPI
 ---@class ShanghaiWindy.Core.API.VehicleAPI
 local VehicleAPI = {}
 
+---载具实例所处的场合：车库、本地玩家正在控制、本地 AI、联机远程副本、结算展示。每辆载具只得到一个结果；本地玩家拥有但此刻没在驾驶的单位（召唤、编组里的其他车）算 Bot。
+---Where a vehicle instance lives: garage, controlled by the local player, local AI, a remote copy online, or a reward showcase. Each vehicle gets exactly one answer; a unit the local player owns but is not driving right now (a summon, another vehicle of a group) is Bot.
+---@static
+---@function [VehicleAPI.GetContext]
+---@return ShanghaiWindy.Core.API.VehicleContext 场合；nil 或已销毁时为 None Context; None for nil or a destroyed vehicle
+---@param vehicle ShanghaiWindy.Core.BaseInitSystem
+function VehicleAPI.GetContext(vehicle) end
+---是否为车库里的展示载具。
+---Whether the vehicle is shown in the garage.
+---@static
+---@function [VehicleAPI.IsGarage]
+---@return System.Boolean GetContext 为 Garage 时为 true True when GetContext is Garage
+---@param vehicle ShanghaiWindy.Core.BaseInitSystem
+function VehicleAPI.IsGarage(vehicle) end
+---是否为本地玩家此刻正在控制的载具（包括玩家接管的 AI 载具）。
+---Whether the local player controls the vehicle right now (a bot vehicle the player took over included).
+---@static
+---@function [VehicleAPI.IsLocalPlayer]
+---@return System.Boolean GetContext 为 LocalPlayer 时为 true True when GetContext is LocalPlayer
+---@param vehicle ShanghaiWindy.Core.BaseInitSystem
+function VehicleAPI.IsLocalPlayer(vehicle) end
+---是否由本机 AI 驾驶。
+---Whether AI on this client drives the vehicle.
+---@static
+---@function [VehicleAPI.IsBot]
+---@return System.Boolean GetContext 为 Bot 时为 true True when GetContext is Bot
+---@param vehicle ShanghaiWindy.Core.BaseInitSystem
+function VehicleAPI.IsBot(vehicle) end
+---是否为联机中由其他客户端或服务器驱动的副本。副本不在本机跑模拟（例如雷达不扫描），状态来自网络。
+---Whether the vehicle is a copy driven by another client or the server online. A copy runs no local simulation (its radar does not scan, for example); its state comes from the network.
+---@static
+---@function [VehicleAPI.IsRemote]
+---@return System.Boolean GetContext 为 Remote 时为 true True when GetContext is Remote
+---@param vehicle ShanghaiWindy.Core.BaseInitSystem
+function VehicleAPI.IsRemote(vehicle) end
+---载具是否已加载完毕且未被击毁。
+---Whether the vehicle has finished loading and is not destroyed.
+---@static
+---@function [VehicleAPI.IsAlive]
+---@return System.Boolean 是否存活 Is alive
+---@param vehicle ShanghaiWindy.Core.BaseInitSystem
+function VehicleAPI.IsAlive(vehicle) end
+---获取载具所属队伍。
+---Get the vehicle's team.
+---@static
+---@function [VehicleAPI.GetTeam]
+---@return ShanghaiWindy.Core.TeamManager+Team 队伍；nil 时为 none Team; none for nil
+---@param vehicle ShanghaiWindy.Core.BaseInitSystem
+function VehicleAPI.GetTeam(vehicle) end
+---两辆载具是否互为敌方。没有队伍（none）的载具与谁都不是敌方。
+---Whether two vehicles are enemies. A vehicle without a team (none) is nobody's enemy.
+---@static
+---@function [VehicleAPI.IsEnemy]
+---@return System.Boolean 是否敌对 Are enemies
+---@param a ShanghaiWindy.Core.BaseInitSystem
+---@param b ShanghaiWindy.Core.BaseInitSystem
+function VehicleAPI.IsEnemy(a, b) end
+---获取游戏里显示给玩家的载具名称（按当前语言）。
+---Get the vehicle name the game shows players, in the current language.
+---@static
+---@function [VehicleAPI.GetDisplayName]
+---@return System.String 显示名；未知时为空字符串 Display name; an empty string when unknown
+---@param vehicle ShanghaiWindy.Core.BaseInitSystem
+function VehicleAPI.GetDisplayName(vehicle) end
+---获取载具资源 GUID，与模组包里该载具的 GUID 相同，可用来认出自己的配套载具。
+---Get the vehicle's asset GUID, the same as the vehicle's GUID in its mod package; use it to recognise your own companion vehicles.
+---@static
+---@function [VehicleAPI.GetGuid]
+---@return System.String GUID；未知时为空字符串 GUID; an empty string when unknown
+---@param vehicle ShanghaiWindy.Core.BaseInitSystem
+function VehicleAPI.GetGuid(vehicle) end
+---获取载具的世界速度（米/秒）。步兵也有效。
+---Get the vehicle's world velocity in metres per second. Works for infantry too.
+---@static
+---@function [VehicleAPI.GetVelocity]
+---@return UnityEngine.Vector3 速度；nil 时为零向量 Velocity; zero for nil
+---@param vehicle ShanghaiWindy.Core.BaseInitSystem
+function VehicleAPI.GetVelocity(vehicle) end
+---获取载具速度（千米/小时）。
+---Get the vehicle's speed in km/h.
+---@static
+---@function [VehicleAPI.GetSpeedKmh]
+---@return System.Single 速度；nil 时为 0 Speed; 0 for nil
+---@param vehicle ShanghaiWindy.Core.BaseInitSystem
+function VehicleAPI.GetSpeedKmh(vehicle) end
+---获取 AI 瞄准这辆载具时用的点（世界坐标）。未加载完时为载具位置。
+---Get the point AI aims at on this vehicle, in world space. The vehicle's position while it is still loading.
+---@static
+---@function [VehicleAPI.GetAimPoint]
+---@return UnityEngine.Vector3 瞄准点；nil 时为零向量 Aim point; zero for nil
+---@param vehicle ShanghaiWindy.Core.BaseInitSystem
+function VehicleAPI.GetAimPoint(vehicle) end
+---创建一个战场载具查询。建一次，之后反复调用 Run：查询本身不再分配内存。
+---Create a battlefield vehicle query. Create it once and call Run again and again: the query allocates nothing after that.
+---@static
+---@function [VehicleAPI.CreateQuery]
+---@return ShanghaiWindy.Core.API.VehicleQuery 新查询 New query
+function VehicleAPI.CreateQuery() end
+---订阅全场载具加载完毕事件（任意载具，含车库里的）。联机时本队看不到的敌方不会通知。
+---Subscribe to any vehicle in the battle finishing loading (garage vehicles included). Online, an enemy your team cannot see is not reported.
+---@static
+---@function [VehicleAPI.OnVehicleSpawned]
+---@return ShanghaiWindy.Core.API.LuaSubscription 订阅；参数无效时为 nil Subscription; nil for invalid arguments
+---@param owner ShanghaiWindy.Core.Lua.LuaBehaviorProxy
+---@param callback ShanghaiWindy.Core.Delegate.OnLuaVehicleEventDelegate
+function VehicleAPI.OnVehicleSpawned(owner, callback) end
+---订阅全场载具被击毁事件。联机时本队看不到的敌方不会通知。
+---Subscribe to any vehicle in the battle being destroyed. Online, an enemy your team cannot see is not reported.
+---@static
+---@function [VehicleAPI.OnVehicleKilled]
+---@return ShanghaiWindy.Core.API.LuaSubscription 订阅；参数无效时为 nil Subscription; nil for invalid arguments
+---@param owner ShanghaiWindy.Core.Lua.LuaBehaviorProxy
+---@param callback ShanghaiWindy.Core.Delegate.OnLuaVehicleEventDelegate
+function VehicleAPI.OnVehicleKilled(owner, callback) end
 ---注册载具加载事件。
 ---Register an event dispatched when vehicle loaded.
 ---@static
@@ -2451,14 +3065,14 @@ function VehicleAPI.GetVehicleInfoByGuid(guid) end
 ---Get All Driveable Vehicle List
 ---@static
 ---@function [VehicleAPI.GetAllDriveableVehicleList]
----@return System.Collections.Generic.List`1[[ShanghaiWindy.Core.VehicleInfo, Core, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] 可驾驶载具列表 Driveable Vehicle List
+---@return ShanghaiWindy.Core.DriveableList 可驾驶载具列表 Driveable Vehicle List
 ---@param ignoreModule System.Boolean
 function VehicleAPI.GetAllDriveableVehicleList(ignoreModule) end
 ---过滤载具
 ---Filter Vehicle
 ---@static
 ---@function [VehicleAPI.GetFilteredVehicles]
----@return System.Collections.Generic.List`1[[ShanghaiWindy.Core.VehicleInfo, Core, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] 载具列表 Vehicle List
+---@return ShanghaiWindy.Core.DriveableList 载具列表 Vehicle List
 ---@param minRank System.Int32
 ---@param maxRank System.Int32
 function VehicleAPI.GetFilteredVehicles(minRank, maxRank) end
@@ -2483,6 +3097,221 @@ function VehicleAPI.RandomPickVehicleFromList(vehicleList, maxVehicles) end
 ---@param callback ShanghaiWindy.Core.Delegate.OnVehicleThumbnailLoadedDelegate
 function VehicleAPI.LoadVehicleThumbnail(vehicleInfo, callback) end
 return VehicleAPI
+
+---战场载具查询：按类型、敌友、距离筛选场上存活的载具（含联机远程玩家、召唤和部署的单位），可按距离排序并限量。用 VehicleAPI.CreateQuery 建一次，反复 Run；Run 之后用 Count / Get / GetDistance 读结果。联机时只返回本队当前看得到的敌方。
+---Battlefield vehicle query: filters the live vehicles in the battle (remote players online, summoned and deployed units included) by kind, relation and distance, optionally sorted by distance and capped. Create it once with VehicleAPI.CreateQuery and Run it again and again; read the results with Count / Get / GetDistance after Run. Online it only returns enemies your team can currently see.
+---@class ShanghaiWindy.Core.API.VehicleQuery
+---@field Kind ShanghaiWindy.Core.API.VehicleKind
+---@field Relation ShanghaiWindy.Core.API.VehicleRelation
+---@field MaxDistance System.Single
+---@field MaxCount System.Int32
+---@field SortByDistance System.Boolean
+---@field Count System.Int32
+local VehicleQuery = {}
+
+---以某辆载具为中心查询：距离从它的位置量起，敌友相对它的队伍，不含它自己。
+---Query around a vehicle: distances from its position, relation relative to its team, the vehicle itself left out.
+---@instance
+---@function [VehicleQuery:Run]
+---@return System.Int32 结果数量；nil、不在战斗中时为 0 Number of results; 0 for nil or outside a battle
+---@param self ShanghaiWindy.Core.BaseInitSystem
+function VehicleQuery:Run(self) end
+---@instance
+---@function [VehicleQuery:RunAt]
+---@return System.Int32
+---@param position UnityEngine.Vector3
+---@param team ShanghaiWindy.Core.TeamManager+Team
+function VehicleQuery:RunAt(position, team) end
+---获取第 index 个结果（从 0 开始）。结果是 Run 那一刻的；之后被移除的载具返回 nil。
+---Get result number index (0-based). Results are as of the Run; a vehicle removed since returns nil.
+---@instance
+---@function [VehicleQuery:Get]
+---@return ShanghaiWindy.Core.BaseInitSystem 载具；越界时为 nil Vehicle; nil when out of range
+---@param index System.Int32
+function VehicleQuery:Get(index) end
+---获取第 index 个结果在 Run 那一刻与中心的距离（米）。
+---Get the distance in metres of result number index from the centre, as of the Run.
+---@instance
+---@function [VehicleQuery:GetDistance]
+---@return System.Single 距离；越界时为 0 Distance; 0 when out of range
+---@param index System.Int32
+function VehicleQuery:GetDistance(index) end
+return VehicleQuery
+
+---武器 API。坦克、飞机和步兵的武器通用。
+---Weapon API, shared by tank, aircraft and infantry weapons.
+---@class ShanghaiWindy.Core.API.WeaponAPI
+local WeaponAPI = {}
+
+---获取载具的武器数量。
+---Get how many weapons a vehicle has.
+---@static
+---@function [WeaponAPI.GetWeaponCount]
+---@return System.Int32 武器数量，载具无效时为 0 Weapon count, 0 for an invalid vehicle
+---@param vehicle ShanghaiWindy.Core.BaseInitSystem
+function WeaponAPI.GetWeaponCount(vehicle) end
+---按序号获取载具的武器，序号从 0 开始，与 VehicleAPI.GetFireList 的顺序一致。
+---Get a vehicle's weapon by index, from 0, in the order of VehicleAPI.GetFireList.
+---@static
+---@function [WeaponAPI.GetWeapon]
+---@return ShanghaiWindy.Core.IBaseFireSystem 武器，没有时为 nil The weapon, nil when there is none
+---@param vehicle ShanghaiWindy.Core.BaseInitSystem
+---@param index System.Int32
+function WeaponAPI.GetWeapon(vehicle, index) end
+---获取武器的弹种数量。
+---Get how many shell types a weapon carries.
+---@static
+---@function [WeaponAPI.GetAmmoTypeCount]
+---@return System.Int32 弹种数量 Shell type count
+---@param weapon ShanghaiWindy.Core.IBaseFireSystem
+function WeaponAPI.GetAmmoTypeCount(weapon) end
+---获取某一弹种的剩余弹量。
+---Get the rounds left of one shell type.
+---@static
+---@function [WeaponAPI.GetAmmo]
+---@return System.Int32 剩余弹量 Rounds left
+---@param weapon ShanghaiWindy.Core.IBaseFireSystem
+---@param typeIndex System.Int32
+function WeaponAPI.GetAmmo(weapon, typeIndex) end
+---获取所有弹种的剩余弹量之和。
+---Get the rounds left over all shell types.
+---@static
+---@function [WeaponAPI.GetTotalAmmo]
+---@return System.Int32 剩余弹量 Rounds left
+---@param weapon ShanghaiWindy.Core.IBaseFireSystem
+function WeaponAPI.GetTotalAmmo(weapon) end
+---获取当前选用的弹种序号。
+---Get the index of the selected shell type.
+---@static
+---@function [WeaponAPI.GetSelectedAmmoType]
+---@return System.Int32 弹种序号 Shell type index
+---@param weapon ShanghaiWindy.Core.IBaseFireSystem
+function WeaponAPI.GetSelectedAmmoType(weapon) end
+---某一弹种是否已经打光。序号超出范围时视为打光。
+---Whether a shell type is used up. An index out of range counts as used up.
+---@static
+---@function [WeaponAPI.IsOutOfAmmo]
+---@return System.Boolean 是否打光；武器无效时为 false Whether it is used up; false for an invalid weapon
+---@param weapon ShanghaiWindy.Core.IBaseFireSystem
+---@param typeIndex System.Int32
+function WeaponAPI.IsOutOfAmmo(weapon, typeIndex) end
+---武器是否装填完毕、可以开火（当前弹种还有弹）。
+---Whether the weapon is loaded and ready to fire (the selected shell type has rounds left).
+---@static
+---@function [WeaponAPI.IsReloaded]
+---@return System.Boolean 是否装填完毕 Whether it is loaded
+---@param weapon ShanghaiWindy.Core.IBaseFireSystem
+function WeaponAPI.IsReloaded(weapon) end
+---获取当前这一段装填的进度，0 到 1，装填完毕为 1。弹匣 / 弹鼓武器是正在进行的那一段（换弹匣或两发之间）。
+---Get the progress of the reload step in progress, 0 to 1, 1 when loaded. For magazine and drum weapons this is the
+---step under way (a new magazine, or the gap between two rounds).
+---@static
+---@function [WeaponAPI.GetReloadProgress]
+---@return System.Single 装填进度 Reload progress
+---@param weapon ShanghaiWindy.Core.IBaseFireSystem
+function WeaponAPI.GetReloadProgress(weapon) end
+---获取当前这一段装填的总时长（秒），已计入装填 buff，与游戏装填界面显示的一致；装填完毕时是开火后下一段的时长。
+---装填手受伤等造成的减速不计入（游戏界面另行显示）。步兵武器为 0。
+---Get the length in seconds of the reload step in progress, reload buffs included, as the game's reload HUD shows it;
+---when loaded, of the step the next shot starts. Slowdowns such as an injured loader are not included (the HUD
+---shows them apart). 0 for infantry weapons.
+---@static
+---@function [WeaponAPI.GetReloadTime]
+---@return System.Single 装填时长（秒） Reload time in seconds
+---@param weapon ShanghaiWindy.Core.IBaseFireSystem
+function WeaponAPI.GetReloadTime(weapon) end
+---获取炮口节点（炮弹生成点）。多管武器为下一发使用的炮管。
+---Get the muzzle (where shells spawn). For a multi-barrel weapon, the barrel the next shot leaves from.
+---@static
+---@function [WeaponAPI.GetMuzzle]
+---@return UnityEngine.Transform 炮口节点 Muzzle transform
+---@param weapon ShanghaiWindy.Core.IBaseFireSystem
+function WeaponAPI.GetMuzzle(weapon) end
+---获取当前弹种的初速（米/秒），即游戏发射时使用的速度。火箭和导弹是加速后的速度。
+---Get the muzzle velocity of the selected shell in m/s, the speed the game fires it at. For rockets and missiles,
+---the speed they accelerate to.
+---@static
+---@function [WeaponAPI.GetShellSpeed]
+---@return System.Single 初速（米/秒） Muzzle velocity in m/s
+---@param weapon ShanghaiWindy.Core.IBaseFireSystem
+function WeaponAPI.GetShellSpeed(weapon) end
+---@static
+---@function [WeaponAPI.PredictLead]
+---@return System.Boolean
+---@param shooter ShanghaiWindy.Core.BaseInitSystem
+---@param target ShanghaiWindy.Core.BaseInitSystem
+---@param point UnityEngine.Vector3&
+function WeaponAPI.PredictLead(shooter, target, point) end
+---订阅开火（多发齐射在整组打完后发出一次）。
+---Subscribe to the weapon firing (a salvo raises it once, after its last round).
+---@static
+---@function [WeaponAPI.OnFired]
+---@return ShanghaiWindy.Core.API.LuaSubscription 订阅，失败时为 nil The subscription, nil on failure
+---@param owner ShanghaiWindy.Core.Lua.LuaBehaviorProxy
+---@param weapon ShanghaiWindy.Core.IBaseFireSystem
+---@param callback ShanghaiWindy.Core.Delegate.OnLuaEventDelegate
+function WeaponAPI.OnFired(owner, weapon, callback) end
+---订阅弹量变化：开火消耗、飞机挂架重新装弹、补给、联机同步都会发出。回调里用 GetAmmo / GetTotalAmmo 读取新弹量。
+---Subscribe to round count changes: a shot, an aircraft rack rearming, a resupply and an online sync all raise it.
+---Read the new counts with GetAmmo / GetTotalAmmo in the callback.
+---@static
+---@function [WeaponAPI.OnAmmoChanged]
+---@return ShanghaiWindy.Core.API.LuaSubscription 订阅，失败时为 nil The subscription, nil on failure
+---@param owner ShanghaiWindy.Core.Lua.LuaBehaviorProxy
+---@param weapon ShanghaiWindy.Core.IBaseFireSystem
+---@param callback ShanghaiWindy.Core.Delegate.OnLuaEventDelegate
+function WeaponAPI.OnAmmoChanged(owner, weapon, callback) end
+---订阅装填完成：武器从未就绪变为可以开火时发出（弹匣 / 弹鼓武器每一发就绪都会发出；打光的弹种补给后也会发出）。
+---只在有订阅时检测，没有订阅时没有开销。步兵武器不发出。
+---Subscribe to reload completion: raised when the weapon goes from not ready to ready to fire (for magazine and drum
+---weapons, each round that becomes ready; also after a used-up shell is resupplied). Checked only while subscribed.
+---Infantry weapons never raise it.
+---@static
+---@function [WeaponAPI.OnReloaded]
+---@return ShanghaiWindy.Core.API.LuaSubscription 订阅，失败时为 nil The subscription, nil on failure
+---@param owner ShanghaiWindy.Core.Lua.LuaBehaviorProxy
+---@param weapon ShanghaiWindy.Core.IBaseFireSystem
+---@param callback ShanghaiWindy.Core.Delegate.OnLuaEventDelegate
+function WeaponAPI.OnReloaded(owner, weapon, callback) end
+---订阅命中造成伤害。point 在单机血量模式下是被击中载具的位置，纯模块伤害模式下为 (0,0,0)，联机时为服务器给出的命中点。
+---Subscribe to this weapon's hits dealing damage. point is the hit vehicle's position in offline health-based damage,
+---(0,0,0) in pure module damage, and the server's hit point online.
+---@static
+---@function [WeaponAPI.OnHit]
+---@return ShanghaiWindy.Core.API.LuaSubscription 订阅，失败时为 nil The subscription, nil on failure
+---@param owner ShanghaiWindy.Core.Lua.LuaBehaviorProxy
+---@param weapon ShanghaiWindy.Core.IBaseFireSystem
+---@param callback ShanghaiWindy.Core.Delegate.OnLuaHitEventDelegate
+function WeaponAPI.OnHit(owner, weapon, callback) end
+---订阅击毁：回调参数是被这件武器击毁的载具。不计击杀的目标（如拖车）不会发出。
+---Subscribe to kills: the callback gets the vehicle this weapon destroyed. Targets that grant no kill (a trailer) do
+---not raise it.
+---@static
+---@function [WeaponAPI.OnKill]
+---@return ShanghaiWindy.Core.API.LuaSubscription 订阅，失败时为 nil The subscription, nil on failure
+---@param owner ShanghaiWindy.Core.Lua.LuaBehaviorProxy
+---@param weapon ShanghaiWindy.Core.IBaseFireSystem
+---@param callback ShanghaiWindy.Core.Delegate.OnLuaVehicleEventDelegate
+function WeaponAPI.OnKill(owner, weapon, callback) end
+---订阅未击穿：回调参数是命中处的装甲值。
+---Subscribe to shots that do not penetrate: the callback gets the armor value at the hit.
+---@static
+---@function [WeaponAPI.OnNotPierced]
+---@return ShanghaiWindy.Core.API.LuaSubscription 订阅，失败时为 nil The subscription, nil on failure
+---@param owner ShanghaiWindy.Core.Lua.LuaBehaviorProxy
+---@param weapon ShanghaiWindy.Core.IBaseFireSystem
+---@param callback ShanghaiWindy.Core.Delegate.OnLuaIntEventDelegate
+function WeaponAPI.OnNotPierced(owner, weapon, callback) end
+---订阅跳弹。
+---Subscribe to ricochets.
+---@static
+---@function [WeaponAPI.OnRicochet]
+---@return ShanghaiWindy.Core.API.LuaSubscription 订阅，失败时为 nil The subscription, nil on failure
+---@param owner ShanghaiWindy.Core.Lua.LuaBehaviorProxy
+---@param weapon ShanghaiWindy.Core.IBaseFireSystem
+---@param callback ShanghaiWindy.Core.Delegate.OnLuaEventDelegate
+function WeaponAPI.OnRicochet(owner, weapon, callback) end
+return WeaponAPI
 
 ---@class ShanghaiWindy.Core.IVehicleController
 local IVehicleController = {}

@@ -1,7 +1,7 @@
 {
     "name": "WindyVerse.ModBuild.Editor",
     "rootNamespace": "WindyVerse.ModBuild",
-    "references": [],
+    "references": ["Unity.ScriptableBuildPipeline.Editor"],
     "includePlatforms": ["Editor"],
     "excludePlatforms": [],
     "allowUnsafeCode": false,

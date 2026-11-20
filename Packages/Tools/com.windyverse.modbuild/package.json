@@ -3,5 +3,8 @@
   "version": "1.0.0",
   "displayName": "Panzer War Modpack Build",
   "description": "Batch-mode entry that builds one modpack per CI job.",
-  "unity": "2022.3"
+  "unity": "2022.3",
+  "dependencies": {
+    "com.unity.scriptablebuildpipeline": "1.21.25"
+  }
 }

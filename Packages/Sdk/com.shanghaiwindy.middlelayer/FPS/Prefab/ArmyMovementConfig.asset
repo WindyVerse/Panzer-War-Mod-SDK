@@ -20,11 +20,12 @@ MonoBehaviour:
   forwardSpeed: 3
   backSpeed: 2.2
   sideSpeed: 3
-  acceleration: 15
-  damping: 18
+  acceleration: 20
+  damping: 24
   locomotion:
     movingTurnSpeed: 540
     standingTurnSpeed: 72
+    aimTurnSpeed: 900
     turnStartAngle: 40
     turnEndAngle: 8
     largeTurnAngle: 80
@@ -41,11 +42,24 @@ MonoBehaviour:
     eyeForward: 0.04
     fieldOfView: 65
     weaponFieldOfView: 58
-    bobAmplitude: 0.004
+    bobAmplitude: 0.007
     lookSway: 0.012
     maxSwayAngle: 2
     settleTime: 0.1
     landingOffset: 0.018
+    sprintFieldOfViewBoost: 4
+    swayFrequency: 5
+    swayDamping: 0.6
+    strafeRoll: 0.5
+    strafeShift: 0.0015
+    verticalLag: 0.0018
+    kickBack: 0.025
+    kickRise: 2
+    maxKickBack: 0.04
+    maxKickRise: 4
+    kickFrequency: 9
+    kickDamping: 0.55
+    landingViewDip: 0.05
   runSpeed: 4.8
   jump:
     height: 1.3
@@ -53,16 +67,16 @@ MonoBehaviour:
   crouchHeight: 1
   crouchSpeedMult: 0.3
   crouchTransitionTime: 0.2
-  crouchCooldown: 0.5
+  crouchCooldown: 0.3
   slide:
     speedFactor: 1.5
-    baseDeceleration: -2
+    baseDeceleration: -4.5
     downhillFactor: 2.5
     uphillFactor: -3.5
     exitSpeed: 0.15
     hitFactor: -4
-    maxDuration: 2
-    cooldown: 1.5
+    maxDuration: 0.9
+    cooldown: 1
     maxGradient: 40
     deadZone: 5
     groundPress: -6
