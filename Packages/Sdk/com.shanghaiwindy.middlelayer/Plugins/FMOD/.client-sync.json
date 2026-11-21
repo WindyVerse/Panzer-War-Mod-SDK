@@ -1,6 +1,6 @@
 {
  "source": "Panzer-War-Client/Packages/com.windyverse.client.shared/Plugins/FMOD",
- "commit": "17ea3d732a9e126648746b510c28193f2a7399be",
+ "commit": "5adb0c84e165c0042b319334a9100b3d025f1da7",
  "files": {
   "FMODUnity.asmdef": "bced38c63279e3f05177fb81551956d0c888522c32877e03571d421b5981eb2c",
   "FMODUnity.asmdef.meta": "facf442268aab0168edacd792ae45c3c7f0daf7d308a3a351055e256ca62d313",

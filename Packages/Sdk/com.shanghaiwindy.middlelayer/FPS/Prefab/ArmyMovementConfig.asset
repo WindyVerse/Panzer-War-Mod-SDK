@@ -42,7 +42,10 @@ MonoBehaviour:
     eyeForward: 0.04
     fieldOfView: 65
     weaponFieldOfView: 58
-    bobAmplitude: 0.007
+    bobAmplitude: 0.011
+    bobShape: {x: 0.14, y: -1}
+    bobEuler: {x: 0.5, y: 0, z: -1}
+    gaitCatchUp: 0.5
     lookSway: 0.012
     maxSwayAngle: 2
     settleTime: 0.1

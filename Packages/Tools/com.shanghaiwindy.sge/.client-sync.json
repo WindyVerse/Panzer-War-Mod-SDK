@@ -1,6 +1,6 @@
 {
  "source": "Panzer-War-Client/Packages/com.shanghaiwindy.sge",
- "commit": "17ea3d732a9e126648746b510c28193f2a7399be",
+ "commit": "5adb0c84e165c0042b319334a9100b3d025f1da7",
  "files": {
   "ShaderGraphEssentials.meta": "06cc435d3936726a8d5643757933e9dbf24713e7b862e7aff689665423bf0ce2",
   "ShaderGraphEssentials/Plugin.meta": "6215f70f929e284f61143820e9292cda24adea71c2843e641fac77a6c9114783",
